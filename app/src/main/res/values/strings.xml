@@ -13,4 +13,7 @@
     <string name="action_example">Example action</string>
 
     <string name="action_settings">Settings</string>
+    <string name="inn">ИНН</string>
+    <string name="password">парол</string>
+    <string name="Enter">Войти</string>
 </resources>
