@@ -18,5 +18,7 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Ovozli qidiruv"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Bo‘lishish:"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Yig‘ish"</string>
+    <string name="app_name">1 UZ ДИРЕКТОР</string>
+    <string name="inn">INN</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

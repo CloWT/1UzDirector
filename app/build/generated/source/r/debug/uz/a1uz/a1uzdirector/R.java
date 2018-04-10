@@ -3071,11 +3071,12 @@ containing a value of this type.
         public static final int uz_launcher_ic=0x7f030002;
     }
     public static final class string {
-        public static final int BeginPeriod=0x7f060014;
-        public static final int CurrentSum=0x7f060015;
-        public static final int Enter=0x7f060016;
-        public static final int InSum=0x7f060017;
-        public static final int OutSum=0x7f060018;
+        public static final int BeginPeriod=0x7f060016;
+        public static final int CurrentSum=0x7f060017;
+        public static final int Enter=0x7f060018;
+        public static final int InSum=0x7f060019;
+        public static final int OutSum=0x7f06001a;
+        public static final int TMZ_Name=0x7f06001b;
         public static final int abc_action_bar_home_description=0x7f060000;
         public static final int abc_action_bar_home_description_format=0x7f060001;
         public static final int abc_action_bar_home_subtitle_description_format=0x7f060002;
@@ -3095,24 +3096,25 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with=0x7f060010;
         public static final int abc_shareactionprovider_share_with_application=0x7f060011;
         public static final int abc_toolbar_collapse_description=0x7f060012;
-        public static final int action_example=0x7f060019;
-        public static final int action_settings=0x7f06001a;
-        public static final int app_name=0x7f06001b;
-        public static final int appbar_scrolling_view_behavior=0x7f06001c;
-        public static final int bottom_sheet_behavior=0x7f06001d;
-        public static final int character_counter_pattern=0x7f06001e;
-        public static final int inn=0x7f06001f;
-        public static final int navigation_drawer_close=0x7f060020;
-        public static final int navigation_drawer_open=0x7f060021;
-        public static final int password=0x7f060022;
+        public static final int action_example=0x7f06001c;
+        public static final int action_settings=0x7f06001d;
+        public static final int app_name=0x7f060014;
+        public static final int appbar_scrolling_view_behavior=0x7f06001e;
+        public static final int bottom_sheet_behavior=0x7f06001f;
+        public static final int character_counter_pattern=0x7f060020;
+        public static final int inn=0x7f060015;
+        public static final int navigation_drawer_close=0x7f060021;
+        public static final int navigation_drawer_open=0x7f060022;
+        public static final int password=0x7f060023;
         public static final int status_bar_notification_info_overflow=0x7f060013;
-        public static final int store=0x7f060023;
-        public static final int test=0x7f060024;
-        public static final int title_activity_navigation=0x7f060025;
-        public static final int title_activity_store_period_table=0x7f060026;
-        public static final int title_section1=0x7f060027;
-        public static final int title_section2=0x7f060028;
-        public static final int title_section3=0x7f060029;
+        public static final int store=0x7f060024;
+        public static final int test=0x7f060025;
+        public static final int title_activity_navigation=0x7f060026;
+        public static final int title_activity_store_period_table=0x7f060027;
+        public static final int title_section1=0x7f060028;
+        public static final int title_section2=0x7f060029;
+        public static final int title_section3=0x7f06002a;
+        public static final int total=0x7f06002b;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f090087;

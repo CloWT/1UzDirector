@@ -143,7 +143,18 @@ public class StorePeriodTable extends AppCompatActivity {
 
         GetJson.execute(url,logic);
     }
+    TextView textView[][];
     private void ToTable(List<StorePeriodResult> periodResults){
+        /*
+        Clear old date from view
+         */
+        if(textView!=null){
+            for (TextView[] textViews:textView){
+                for (TextView tx :textViews) {
+                    periodTable.removeView(tx);
+                }
+            }
+        }
 
 
 
