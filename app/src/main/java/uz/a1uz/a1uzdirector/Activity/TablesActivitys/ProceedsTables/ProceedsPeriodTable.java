@@ -12,18 +12,12 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.util.ArrayList;
-
 import java.util.List;
-
-import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.models.BankPeriodResult;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.ProceedsTables.models.ProceedsPeriodResult;
-
 import uz.a1uz.a1uzdirector.EdatePeriod;
 import uz.a1uz.a1uzdirector.Helpers.DatePeriodPicker;
 import uz.a1uz.a1uzdirector.Helpers.FirstLastDate;
@@ -52,14 +46,12 @@ public class ProceedsPeriodTable extends AppCompatActivity {
         progressBar=(ProgressBar)findViewById(R.id.progres);
         progressBar.setVisibility(View.VISIBLE);
         tDatePeriod=(TextView) findViewById(R.id.tDatePeriod);
-        TextView proceedType=(TextView) findViewById(R.id.typeText);
         FirstLastDate datFL=new FirstLastDate();
         inDatePicker =new Intent(context, DatePeriodPicker.class);
         Intent inProceedTable=getIntent();
         ReportID=inProceedTable.getIntExtra("ReportID",-1);
         EdatePeriod e=EdatePeriod.valueOf(inProceedTable.getStringExtra("DateE"));
         String url;
-
         periodTable.setVisibility(View.VISIBLE);
         datFL.GetPeriodDate(e);
         CharSequence charSequence=datFL.getFirstDate()+" - "+ datFL.getLastDate();
@@ -80,7 +72,7 @@ public class ProceedsPeriodTable extends AppCompatActivity {
             String url= UrlHepler.Combine(URL_cons.PROCCEDPERIODREPORT,ReportID+"",
                     firstDate,secondDate,
                     UserInfo.getGUID());
-            tDatePeriod.setText(firstDate+" - "+secondDate);
+            tDatePeriod.setText(String.format("%s - %s", firstDate, secondDate));
             getFromJson(url);
         }
     }
@@ -166,11 +158,11 @@ public class ProceedsPeriodTable extends AppCompatActivity {
             TW[i][5].setText(periodResults.get(i).getSumma());
             for (int j = 0; j < TW[0].length; j++) {
                 if(i<sizeP-1&&sizeP>1){
-                    TW[i][j].setGravity(j==0? Gravity.LEFT:Gravity.RIGHT);
+                    TW[i][j].setGravity(j==0? Gravity.START:Gravity.END);
                     TW[i][j].setTextColor(ContextCompat.getColor(this,R.color.tableTopColor));
                     TW[i][j].setBackgroundResource(R.drawable.border_shape);
                 }else{
-                    TW[i][j].setGravity(Gravity.RIGHT);
+                    TW[i][j].setGravity(Gravity.END);
                     TW[i][j].setTextColor(ContextCompat.getColor(this,R.color.textColor));
                     TW[i][j].setBackgroundResource(R.color.tableTopColor);
 
