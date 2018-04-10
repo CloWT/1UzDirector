@@ -18,6 +18,6 @@ public abstract class GetJsonResult implements IGetJsonResult {
 
     @Override
     public void OnError(Exception e) {
-        new Throwable(""+e);
+        new Throwable(String.format("%s", e));
     }
 }

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:2:1-37:12
+ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:2:1-40:12
 	package
 		ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:3:5-35
 		INJECTED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml
@@ -30,7 +30,7 @@ ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:10:5-
 	android:name
 		ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:10:22-76
 application
-ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:12:5-35:19
+ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:12:5-38:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] D:\Sherzod\Android\1UzDirector\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.2\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:23.4.0] D:\Sherzod\Android\1UzDirector\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.4.0] D:\Sherzod\Android\1UzDirector\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
@@ -62,7 +62,7 @@ ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:22:17
 	android:name
 		ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:22:27-74
 activity#uz.a1uz.a1uzdirector.Activity.Main_Activity
-ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:25:9-27:71
+ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:25:9-27:62
 	android:configChanges
 		ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:27:13-59
 	android:name
@@ -92,9 +92,15 @@ ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:33:9-
 	android:name
 		ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:33:19-59
 activity#uz.a1uz.a1uzdirector.Activity.TablesActivitys.StoreTables.StoreTable
-ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:34:9-94
+ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:34:9-85
 	android:name
 		ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:34:19-82
+activity#uz.a1uz.a1uzdirector.Activity.TablesActivitys.StoreTables.StorePeriodTable
+ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:35:9-37:82
+	android:label
+		ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:37:13-70
+	android:name
+		ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:36:13-82
 uses-sdk
 INJECTED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] D:\Sherzod\Android\1UzDirector\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.2\AndroidManifest.xml:5:5-7:41

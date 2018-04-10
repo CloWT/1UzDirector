@@ -38,6 +38,9 @@
         <activity android:name="uz.a1uz.a1uzdirector.Activity.TablesActivitys.ProceedsTables.ProceedsPeriodTable" />
         <activity android:name="uz.a1uz.a1uzdirector.Helpers.DatePeriodPicker" />
         <activity android:name="uz.a1uz.a1uzdirector.Activity.TablesActivitys.StoreTables.StoreTable" />
+        <activity
+            android:name="uz.a1uz.a1uzdirector.Activity.TablesActivitys.StoreTables.StorePeriodTable"
+            android:label="@string/title_activity_store_period_table" />
     </application>
 
 </manifest>

@@ -8,6 +8,7 @@ import android.widget.DatePicker;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Locale;
 
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.BankPeriodTable;
 import uz.a1uz.a1uzdirector.EdatePeriod;
@@ -28,7 +29,7 @@ public class FirstLastDate{
         this.context=context;
         GetPeriodDate(edatePeriod);
     }
-    static DateFormat dateFormat = new SimpleDateFormat("dd.MM.YYYY");
+    private static DateFormat dateFormat = new SimpleDateFormat("dd.MM.YYYY", Locale.getDefault());
     public FirstLastDate() {
 
     }

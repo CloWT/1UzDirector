@@ -31,17 +31,19 @@ import uz.a1uz.a1uzdirector.constants.URL_cons;
 public class ProceedsPeriodTable extends AppCompatActivity {
     TableLayout periodTable;
     int ReportID;
-    Context context=this;
+    Context context;
     ProgressBar progressBar;
     TextView tDatePeriod;
     Intent inDatePicker;
     TableRow[] TR;
+    String url;
     int requesCodeForDatePicker=3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_proceeds_period_table);
+        context=this;
         periodTable=(TableLayout) findViewById(R.id.periodTable);
         progressBar=(ProgressBar)findViewById(R.id.progres);
         progressBar.setVisibility(View.VISIBLE);
@@ -51,11 +53,10 @@ public class ProceedsPeriodTable extends AppCompatActivity {
         Intent inProceedTable=getIntent();
         ReportID=inProceedTable.getIntExtra("ReportID",-1);
         EdatePeriod e=EdatePeriod.valueOf(inProceedTable.getStringExtra("DateE"));
-        String url;
+
         periodTable.setVisibility(View.VISIBLE);
         datFL.GetPeriodDate(e);
-        CharSequence charSequence=datFL.getFirstDate()+" - "+ datFL.getLastDate();
-        tDatePeriod.setText(charSequence);
+        tDatePeriod.setText(String.format("%s - %s", datFL.getFirstDate(), datFL.getLastDate()));
         url= UrlHepler.Combine(URL_cons.PROCCEDPERIODREPORT,ReportID+"",
                 datFL.getFirstDate(),datFL.getLastDate(),
                 UserInfo.getGUID());

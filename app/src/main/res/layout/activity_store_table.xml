@@ -6,53 +6,67 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg2"
     tools:context="uz.a1uz.a1uzdirector.Activity.TablesActivitys.StoreTables.StoreTable">
+    <ProgressBar
+        android:padding="25dp"
+        android:id="@+id/progres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/progressbarcust"
+        android:indeterminateOnly="true"/>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalView"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal"
+        android:layout_width="wrap_content"
+        android:scrollbarStyle="outsideOverlay"
+        >
 <TableLayout
     android:padding="15dp"
+    android:id="@+id/tableForStore"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
-    <TableRow android:background="@color/tableTopColor">
+    <TableRow android:background="@color/tableTopColor"
+
+        >
         <TextView
-            android:background="@drawable/border_dark_shape"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_column="1"
-            android:textAlignment="center"
-
-            android:text="sss"/>
+            android:text="@string/store"
+            android:layout_gravity="center|center_horizontal"
+            android:padding="5dip"
+            android:textColor="@color/textColor"/>
         <TextView
 
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:text="@string/BeginPeriod"
+            android:gravity="center"
+            android:padding="5dip"
+            android:textColor="@color/textColor"
+            />
+        <TextView
 
-            android:text="sss"/>
+            android:text="@string/InSum"
+            android:gravity="center"
+            android:padding="5dip"
+            android:textColor="@color/textColor"
+            />
+        <TextView
 
+            android:text="@string/OutSum"
+            android:gravity="center"
+            android:padding="5dip"
+            android:textColor="@color/textColor"
+
+            />
+        <TextView
+            android:text="@string/CurrentSum"
+            android:padding="5dip"
+            android:textColor="@color/textColor"
+            />
     </TableRow>
-    <TableRow android:background="@color/textColor">
-        <LinearLayout android:orientation="horizontal"
-            android:layout_column="1">
-            <TextView
 
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="sss"/>
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-
-                android:text="asd"/>
-
-        </LinearLayout>
-
-        <TextView
-
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-
-            android:text="sss"/>
-
-
-    </TableRow>
 
 </TableLayout>
+    </HorizontalScrollView>
+
 </LinearLayout>

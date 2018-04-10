@@ -1,30 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg2"
     tools:context="uz.a1uz.a1uzdirector.Activity.TablesActivitys.StoreTables.StoreTable">
+    <ProgressBar
+        android:padding="25dp"
+        android:id="@+id/progres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/progressbarcust"
+        android:indeterminateOnly="true"/>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalView"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal"
+        android:layout_width="wrap_content"
+        android:scrollbarStyle="outsideOverlay"
+        >
 <TableLayout
-    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:id="@+id/tableForStore"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content">
-    <TableRow>
-        <TextView android:text="dss "
-            android:layout_width="match_parent"
+    <TableRow android:background="@color/tableTopColor"
 
+        >
+        <TextView
+            android:text="@string/store"
+            android:layout_gravity="center|center_horizontal"
+            android:padding="5dip"
+            android:textColor="@color/textColor"/>
+        <TextView
 
-            android:background="@color/bgc3"/>
-        <Space />
-        <TextView android:text="dss "
-            android:background="@color/bgc4"/>
+            android:text="@string/BeginPeriod"
+            android:gravity="center"
+            android:padding="5dip"
+            android:textColor="@color/textColor"
+            />
+        <TextView
+
+            android:text="@string/InSum"
+            android:gravity="center"
+            android:padding="5dip"
+            android:textColor="@color/textColor"
+            />
+        <TextView
+
+            android:text="@string/OutSum"
+            android:gravity="center"
+            android:padding="5dip"
+            android:textColor="@color/textColor"
+
+            />
+        <TextView
+            android:text="@string/CurrentSum"
+            android:padding="5dip"
+            android:textColor="@color/textColor"
+            />
     </TableRow>
-    <TableRow>
-        <View>
-            <TextView android:text="dsss " android:background="@color/bgc4"/>
 
-            <TextView android:text="dss "/>
-        </View>
-        <TextView android:text="dss "/>
-    </TableRow>
+
 </TableLayout>
-</android.support.constraint.ConstraintLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

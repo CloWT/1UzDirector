@@ -24,14 +24,17 @@
         </activity>
         <activity
             android:name=".Activity.Main_Activity"
-            android:configChanges="orientation|screenSize"></activity>
+            android:configChanges="orientation|screenSize" />
         <activity android:name=".Activity.TablesActivitys.BankTables.AccountsTable" />
         <activity android:name=".Activity.TablesActivitys.BankTables.BankBankReport" />
         <activity android:name=".Activity.TablesActivitys.BankTables.BankPeriodTable" />
         <activity android:name=".Activity.TablesActivitys.ProceedsTables.ProceedsTable" />
         <activity android:name=".Activity.TablesActivitys.ProceedsTables.ProceedsPeriodTable" />
         <activity android:name=".Helpers.DatePeriodPicker" />
-        <activity android:name=".Activity.TablesActivitys.StoreTables.StoreTable"></activity>
+        <activity android:name=".Activity.TablesActivitys.StoreTables.StoreTable" />
+        <activity
+            android:name=".Activity.TablesActivitys.StoreTables.StorePeriodTable"
+            android:label="@string/title_activity_store_period_table"></activity>
     </application>
 
 </manifest>

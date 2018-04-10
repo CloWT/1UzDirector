@@ -16,4 +16,12 @@
     <string name="inn">ИНН</string>
     <string name="password">парол</string>
     <string name="Enter">Войти</string>
+    <string name="store">Склады</string>
+    <string name="BeginPeriod">Остаток на начало</string>
+    <string name="InSum">Приход</string>
+    <string name="OutSum">Расход</string>
+    <string name="CurrentSum">Текущий остаток</string>
+    <string name="title_activity_store_period_table">StorePeriodTable</string>
+    <string name="TMZ_Name">Наименование ТМЗ</string>
+    <string name="total">Итого</string>
 </resources>
