@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#fb000000</color>
+    <color name="colorPrimary2">#4caf50</color>
+    <color name="colorPrimaryDark2">#489b4b</color>
+    <color name="colorAccent2">#fb000000</color>
+    <color name="passwordColor">#fb000000</color>
+    <color name="passwordColor2">#39000000</color>
+    <color name="textColor">#ffffff</color>
+    <color name="bgc1">#b22196f3</color>
+    <color name="bgc2">#b2e29800</color>
+    <color name="bgc3">#b24caf50</color>
+    <color name="bgc4">#fbff5422</color>
+    <color name="bgc5">#b2795548</color>
+    <color name="bgc6">#b200bfd6</color>
+    <color name="transparent">#00000000</color>
+    <color name="tableTopColor" >#595c61</color>
+    <color name="tableTopColor2" >#8f9091</color>
+    <color name="blue">#2d61b5</color>
+    <color name="red">#a94442</color>
+</resources>

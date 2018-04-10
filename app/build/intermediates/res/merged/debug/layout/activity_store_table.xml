@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uz.a1uz.a1uzdirector.Activity.TablesActivitys.StoreTables.StoreTable">
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TableRow>
+        <TextView android:text="dss "
+            android:layout_width="match_parent"
+
+
+            android:background="@color/bgc3"/>
+        <Space />
+        <TextView android:text="dss "
+            android:background="@color/bgc4"/>
+    </TableRow>
+    <TableRow>
+        <View>
+            <TextView android:text="dsss " android:background="@color/bgc4"/>
+
+            <TextView android:text="dss "/>
+        </View>
+        <TextView android:text="dss "/>
+    </TableRow>
+</TableLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="uz.a1uz.a1uzdirector.Helpers.DatePeriodPicker"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+   >
+                <LinearLayout
+                    android:id="@+id/Fir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                    android:onClick="PeriodChecker">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C   "
+                    android:textSize="25dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/firstDate"
+                    android:text=""
+                    android:textSize="25dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Sec"
+                android:onClick="PeriodChecker">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="По  "
+                    android:onClick="PeriodChecker"
+                    android:textSize="25dp"/>
+            <TextView
+                android:id="@+id/secondDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="25dp"/>
+            </LinearLayout>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateSpin"
+
+
+        ></Spinner>
+
+
+
+
+</LinearLayout>
+    <Button android:layout_gravity="bottom"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="@color/textColor"
+        android:text="Принять"
+        style="@style/ButtonStyle"
+        android:onClick="SendDate"/>
+</GridLayout>
+

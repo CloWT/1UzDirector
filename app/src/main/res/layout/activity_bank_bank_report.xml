@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+
+    tools:context="uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.BankBankReport"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_column="1"
+
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Счет:"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/SchetSpin">
+        </Spinner>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Отчет актуален на "
+            android:background="#f2dede"
+            android:textColor="@color/red"
+            android:id="@+id/dateReport_text"
+            android:layout_column="3"/>
+
+    </LinearLayout>
+    <ProgressBar
+        android:padding="25dp"
+        android:id="@+id/progres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/layout"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal"
+        android:layout_width="wrap_content"
+        android:scrollbarStyle="insideInset"
+        android:fillViewport="true">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalView"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            android:layout_width="wrap_content"
+            >
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tableForBank"
+                android:padding="3dp">
+                <TableRow android:background="@color/tableTopColor"
+
+                    >
+                    <TextView
+                        android:text="Субконто"
+                        android:gravity="center|center_horizontal"
+                        android:padding="5dip"
+                        android:textColor="@color/textColor"/>
+                    <TextView
+
+                        android:text="Вчера"
+                        android:id="@+id/lastDay"
+                        android:gravity="center"
+                        android:padding="5dip"
+                        android:onClick="cLastDay"
+                        android:textColor="@color/textColor"
+                        />
+                    <TextView
+
+                        android:text="Текущая неделя"
+                        android:gravity="center"
+                        android:id="@+id/thisWeek"
+                        android:padding="5dip"
+                        android:onClick="cThisWeek"
+                        android:textColor="@color/textColor"
+                        />
+                    <TextView
+
+                        android:text="Прошлая неделя"
+                        android:gravity="center"
+                        android:id="@+id/LastWeek"
+                        android:onClick="cLastWeek"
+                        android:padding="5dip"
+                        android:textColor="@color/textColor"
+
+                        />
+                    <TextView
+                        android:text="Текущий месяц"
+                        android:padding="5dip"
+                        android:id="@+id/thisMonth"
+                        android:onClick="cThisMonth"
+                        android:textColor="@color/textColor"
+                        />
+                    <TextView
+                        android:text="Прошлый месяц"
+                        android:padding="5dip"
+                        android:id="@+id/lastMonth"
+                        android:onClick="cLastMonth"
+                        android:textColor="@color/textColor"
+                        />
+                    <TextView
+                        android:text="С начала Года"
+                        android:padding="5dip"
+                        android:id="@+id/thisYear"
+                        android:onClick="cThisyear"
+                        android:textColor="@color/textColor"
+                        />
+                </TableRow>
+
+                <TableRow android:background="@color/textColor"
+                    >
+                    <TextView
+                        android:text="На начало периода"
+                        android:gravity="left|center_horizontal"
+                        android:padding="5dip"
+                        android:background="@drawable/border_shape"
+                        android:textColor="@color/blue"
+                        />
+                    <TextView
+                        android:id="@+id/BPLastDay"
+                        android:text="---"
+                        android:onClick="cLastDay"
+                        android:gravity="right"
+                        android:padding="5dip"
+                        android:background="@drawable/border_shape"
+                        />
+                    <TextView
+                        android:id="@+id/BPThisWeek"
+                        android:text="---"
+                        android:onClick="cThisWeek"
+                        android:gravity="right"
+                        android:padding="5dip"
+                        android:background="@drawable/border_shape"
+                        />
+                    <TextView
+                        android:id="@+id/BPLastWeek"
+                        android:text="---"
+                        android:onClick="cLastWeek"
+                        android:gravity="right"
+                        android:padding="5dip"
+                        android:background="@drawable/border_shape"
+
+                        />
+                    <TextView
+                        android:id="@+id/BPThisMonth"
+                        android:text="---"
+                        android:onClick="cThisMonth"
+                        android:gravity="right"
+                        android:padding="5dip"
+                        android:background="@drawable/border_shape"
+                        />
+                    <TextView
+                        android:id="@+id/BPLastMonth"
+                        android:text="---"
+                        android:onClick="cLastMonth"
+                        android:gravity="right"
+                        android:padding="5dip"
+                        android:background="@drawable/border_shape"
+                        />
+                    <TextView
+                        android:id="@+id/BPThisYearBegin"
+                        android:text="---"
+                        android:onClick="cThisyear"
+                        android:gravity="right"
+                        android:padding="5dip"
+                        android:background="@drawable/border_shape"
+                        />
+                </TableRow>
+
+                <TableRow android:background="@color/textColor"
+
+                    >
+                    <TextView
+                        android:text="Приход"
+                        android:gravity="left|center_horizontal"
+                        android:padding="5dip"
+                        android:background="@drawable/border_shape"
+                        android:textColor="@color/blue"/>
+                    <TextView
+                        android:id="@+id/INLastDay"
+                        android:text="---"
+                        android:onClick="cLastDay"
+                        android:gravity="right"
+                        android:padding="5dip"
+                        android:textColor="@color/bgc3"
+                        android:background="@drawable/border_shape"
+                        />
+                    <TextView
+                        android:id="@+id/INThisWeek"
+                        android:text="---"
+                        android:onClick="cThisWeek"
+                        android:gravity="right"
+                        android:padding="5dip"
+                        android:textColor="@color/bgc3"
+                        android:background="@drawable/border_shape"
+                        />
+                    <TextView
+                        android:id="@+id/INLastWeek"
+                        android:text="---"
+                        android:onClick="cLastWeek"
+                        android:gravity="right"
+                        android:padding="5dip"
+                        android:textColor="@color/bgc3"
+                        android:background="@drawable/border_shape"
+
+                        />
+                    <TextView
+                        android:id="@+id/INThisMonth"
+                        android:text="---"
+                        android:onClick="cThisMonth"
+                        android:gravity="right"
+                        android:padding="5dip"
+                        android:textColor="@color/bgc3"
+                        android:background="@drawable/border_shape"
+                        />
+                    <TextView
+                        android:id="@+id/INLastMonth"
+                        android:text="---"
+                        android:onClick="cLastMonth"
+                        android:gravity="right"
+                        android:padding="5dip"
+                        android:textColor="@color/bgc3"
+                        android:background="@drawable/border_shape"
+                        />
+                    <TextView
+                        android:id="@+id/INThisYearBegin"
+                        android:text="---"
+                        android:onClick="cThisyear"
+                        android:gravity="right"
+                        android:padding="5dip"
+                        android:textColor="@color/bgc3"
+                        android:background="@drawable/border_shape"
+                        />
+                </TableRow>
+
+                <TableRow android:background="@color/textColor"
+
+                    >
+                    <TextView
+                        android:text="Расход"
+                        android:gravity="left"
+                        android:padding="5dip"
+                        android:background="@drawable/border_shape"
+                        android:textColor="@color/blue"/>
+                    <TextView
+                        android:id="@+id/OutLastDay"
+                        android:text="---"
+                        android:onClick="cLastDay"
+                        android:gravity="right"
+                        android:padding="5dip"
+                        android:textColor="@color/bgc4"
+                        android:background="@drawable/border_shape"
+                        />
+                    <TextView
+                        android:id="@+id/OutThisWeek"
+                        android:text="---"
+                        android:onClick="cThisWeek"
+                        android:gravity="right"
+                        android:padding="5dip"
+                        android:textColor="@color/bgc4"
+                        android:background="@drawable/border_shape"
+                        />
+                    <TextView
+                        android:id="@+id/OutLastWeek"
+                        android:text="---"
+                        android:onClick="cLastWeek"
+                        android:gravity="right"
+                        android:padding="5dip"
+                        android:textColor="@color/bgc4"
+                        android:background="@drawable/border_shape"
+
+                        />
+                    <TextView
+                        android:id="@+id/OutThisMonth"
+                        android:text="---"
+                        android:onClick="cThisMonth"
+                        android:gravity="right"
+                        android:padding="5dip"
+                        android:textColor="@color/bgc4"
+                        android:background="@drawable/border_shape"
+                        />
+                    <TextView
+                        android:id="@+id/OutLastMonth"
+                        android:text="---"
+                        android:onClick="cLastMonth"
+                        android:gravity="right"
+                        android:padding="5dip"
+                        android:textColor="@color/bgc4"
+                        android:background="@drawable/border_shape"
+                        />
+                    <TextView
+                        android:id="@+id/OutThisYearBegin"
+                        android:text="---"
+                        android:onClick="cThisyear"
+                        android:gravity="right"
+                        android:padding="5dip"
+                        android:textColor="@color/bgc4"
+                        android:background="@drawable/border_shape"
+                        />
+                </TableRow>
+
+                <TableRow android:background="@color/textColor"
+
+                    >
+                    <TextView
+                        android:text="На конец периода"
+                        android:gravity="left"
+                        android:padding="5dip"
+                        android:background="@drawable/border_shape"
+                        android:textColor="@color/blue"/>
+                    <TextView
+                        android:id="@+id/LPLastDay"
+                        android:text="---"
+                        android:onClick="cLastDay"
+                        android:gravity="right"
+                        android:padding="5dip"
+                        android:background="@drawable/border_shape"
+                        />
+                    <TextView
+                        android:id="@+id/LPThisWeek"
+                        android:text="---"
+                        android:onClick="cThisWeek"
+                        android:gravity="right"
+                        android:padding="5dip"
+                        android:background="@drawable/border_shape"
+                        />
+                    <TextView
+                        android:id="@+id/LPLastWeek"
+                        android:text="---"
+                        android:onClick="cLastWeek"
+                        android:gravity="right"
+                        android:padding="5dip"
+                        android:background="@drawable/border_shape"
+
+                        />
+                    <TextView
+                        android:id="@+id/LPThisMonth"
+                        android:text="---"
+                        android:onClick="cThisMonth"
+                        android:gravity="right"
+                        android:padding="5dip"
+                        android:background="@drawable/border_shape"
+                        />
+                    <TextView
+                        android:id="@+id/LPLastMonth"
+                        android:text="---"
+                        android:onClick="cLastMonth"
+                        android:gravity="right"
+                        android:padding="5dip"
+                        android:background="@drawable/border_shape"
+                        />
+                    <TextView
+                        android:id="@+id/LPThisYearBegin"
+                        android:text="---"
+                        android:onClick="cThisyear"
+                        android:gravity="right"
+                        android:padding="5dip"
+                        android:background="@drawable/border_shape"
+                        />
+                </TableRow>
+
+
+
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+</LinearLayout>

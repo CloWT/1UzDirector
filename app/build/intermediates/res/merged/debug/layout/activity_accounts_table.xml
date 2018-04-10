@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:orientation="vertical"
+    tools:context="uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.AccountsTable">
+    <ProgressBar
+        android:padding="25dp"
+        android:id="@+id/progres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/progressbarcust"
+        android:indeterminateOnly="true"/>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalView"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            android:layout_width="wrap_content"
+            android:scrollbarStyle="outsideOverlay"
+            >
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tableForBank"
+                android:layout_margin="5dp">
+                <TableRow android:background="@color/tableTopColor"
+
+                    >
+                    <TextView
+                        android:text="Счета"
+                        android:layout_gravity="center|center_horizontal"
+                        android:padding="5dip"
+                        android:textColor="@color/textColor"/>
+                    <TextView
+
+                        android:text="На начало дня"
+                        android:gravity="center"
+                        android:padding="5dip"
+                        android:textColor="@color/textColor"
+                        />
+                    <TextView
+
+                        android:text="Приход"
+                        android:gravity="center"
+                        android:padding="5dip"
+                        android:textColor="@color/textColor"
+                        />
+                    <TextView
+
+                        android:text="Расход"
+                        android:gravity="center"
+                        android:padding="5dip"
+                        android:textColor="@color/textColor"
+
+                        />
+                    <TextView
+                        android:text="Текущий остаток"
+                        android:padding="5dip"
+                        android:textColor="@color/textColor"
+                        />
+                </TableRow>
+
+
+            </TableLayout>
+        </HorizontalScrollView>
+
+
+</LinearLayout>

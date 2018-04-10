@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+
+    tools:context="uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.BankPeriodTable"
+    android:orientation="vertical">
+    <LinearLayout
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Период "
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tDatePeriod"
+            android:onClick="tDateClick"
+            android:textColor="@color/blue"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/typeText"/>
+
+    </LinearLayout>
+    <ProgressBar
+        android:padding="25dp"
+        android:id="@+id/progres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+    <ScrollView
+        android:id="@+id/layout"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal"
+        android:layout_width="wrap_content"
+        android:scrollbarStyle="outsideInset"
+        android:fillViewport="true"
+        android:layout_margin="10dp"
+        android:padding="10dp">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalView"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal"
+        android:layout_width="wrap_content"
+        >
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/periodTable"
+        >
+        <TableRow android:background="@color/tableTopColor"
+            android:id="@+id/headerTR">
+
+        <TextView
+
+            android:text="Детали операции"
+            android:layout_gravity="center|center_horizontal"
+            android:padding="5dip"
+            android:textColor="@color/textColor"/>
+        <TextView
+
+            android:text="Приход"
+            android:gravity="center"
+            android:padding="5dip"
+            android:textColor="@color/textColor"
+            />
+        <TextView
+
+            android:text="Расход"
+            android:gravity="center"
+            android:padding="5dip"
+            android:textColor="@color/textColor"
+            />
+        </TableRow>
+    </TableLayout>
+    </HorizontalScrollView>
+    </ScrollView>
+</LinearLayout>
