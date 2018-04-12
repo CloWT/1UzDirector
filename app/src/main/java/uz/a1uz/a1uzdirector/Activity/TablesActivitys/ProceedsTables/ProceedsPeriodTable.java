@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.ProceedsTables.models.ProceedsPeriodResult;
 import uz.a1uz.a1uzdirector.EdatePeriod;
+import uz.a1uz.a1uzdirector.Helpers.LayoutConfiguration;
 import uz.a1uz.a1uzdirector.Helpers.DatePeriodPicker;
 import uz.a1uz.a1uzdirector.Helpers.FirstLastDate;
 import uz.a1uz.a1uzdirector.Helpers.UrlHepler;
@@ -28,7 +29,7 @@ import uz.a1uz.a1uzdirector.JsoN.IGetJsonResult;
 import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
-public class ProceedsPeriodTable extends AppCompatActivity {
+public class ProceedsPeriodTable extends AppCompatActivity implements LayoutConfiguration<ProceedsPeriodResult> {
     TableLayout periodTable;
     int ReportID;
     Context context;
@@ -54,7 +55,7 @@ public class ProceedsPeriodTable extends AppCompatActivity {
         ReportID=inProceedTable.getIntExtra("ReportID",-1);
         EdatePeriod e=EdatePeriod.valueOf(inProceedTable.getStringExtra("DateE"));
 
-        periodTable.setVisibility(View.VISIBLE);
+        periodTable.setVisibility(View.INVISIBLE);
         datFL.GetPeriodDate(e);
         tDatePeriod.setText(String.format("%s - %s", datFL.getFirstDate(), datFL.getLastDate()));
         url= UrlHepler.Combine(URL_cons.PROCCEDPERIODREPORT,ReportID+"",
@@ -118,9 +119,9 @@ public class ProceedsPeriodTable extends AppCompatActivity {
                     if(jsonArray.length()<1)periodResults.add(new ProceedsPeriodResult(
                             "",""," Нет данных ","","",""
                     ));
-                    periodResults.add(new ProceedsPeriodResult("","","Итого","",
+                    periodResults.add(new ProceedsPeriodResult("Итого","","","",
                             "",js.getString("TotalSumma")));
-                    ToTable(periodResults);
+                    AddElemsToTable(periodResults);
 
 
 
@@ -140,7 +141,8 @@ public class ProceedsPeriodTable extends AppCompatActivity {
         });
 
     }
-    private void ToTable(List<ProceedsPeriodResult> periodResults){
+    @Override
+    public void AddElemsToTable(List<ProceedsPeriodResult> periodResults){
         if(TR!=null)
             for (TableRow tr:TR) {
                 periodTable.removeView(tr);
@@ -176,6 +178,16 @@ public class ProceedsPeriodTable extends AppCompatActivity {
 
         }
 
+
+    }
+
+    @Override
+    public void CustomSetTex(TextView[] txV, ProceedsPeriodResult periodResults) {
+
+    }
+
+    @Override
+    public void CustomLayoutParams(TextView[] txV) {
 
     }
 

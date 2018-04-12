@@ -3,14 +3,12 @@ package uz.a1uz.a1uzdirector.Activity.TablesActivitys.StoreTables;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.app.Activity;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.GridLayout;
 import android.widget.ProgressBar;
-import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,18 +19,19 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import uz.a1uz.a1uzdirector.Activity.TablesActivitys.ProceedsTables.models.ProceedsPeriodResult;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.StoreTables.models.StorePeriodResult;
 import uz.a1uz.a1uzdirector.EdatePeriod;
+import uz.a1uz.a1uzdirector.Helpers.LayoutConfiguration;
 import uz.a1uz.a1uzdirector.Helpers.DatePeriodPicker;
 import uz.a1uz.a1uzdirector.Helpers.FirstLastDate;
 import uz.a1uz.a1uzdirector.Helpers.UrlHepler;
+import uz.a1uz.a1uzdirector.Helpers.UserInfo;
 import uz.a1uz.a1uzdirector.JsoN.GetJson;
 import uz.a1uz.a1uzdirector.JsoN.IGetJsonResult;
 import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
-public class StorePeriodTable extends AppCompatActivity {
+public class StorePeriodTable extends AppCompatActivity implements LayoutConfiguration<StorePeriodResult> {
     GridLayout periodTable;
     int ReportID;
     Context context;
@@ -57,7 +56,7 @@ public class StorePeriodTable extends AppCompatActivity {
         ReportID=inProceedTable.getIntExtra("ReportID",-1);
         String name=inProceedTable.getStringExtra("Name");
         url= UrlHepler.Combine(URL_cons.STOREPERIODREPORT, String.valueOf(ReportID),
-                datFL.getFirstDate(),datFL.getLastDate());
+                datFL.getFirstDate(),datFL.getLastDate(), UserInfo.getGUID());
         getFromJson(url);
 
 
@@ -122,7 +121,7 @@ public class StorePeriodTable extends AppCompatActivity {
                             js.getString("PC"),
                             js.getString("EQ"),
                             js.getString("ES")));
-                    ToTable(periodResults);
+                    AddElemsToTable(periodResults);
 
 
 
@@ -144,22 +143,109 @@ public class StorePeriodTable extends AppCompatActivity {
         GetJson.execute(url,logic);
     }
     TextView textView[][];
-    private void ToTable(List<StorePeriodResult> periodResults){
-        /*
-        Clear old date from view
-         */
+
+
+
+    private void TextViewClear() {
         if(textView!=null){
             for (TextView[] textViews:textView){
                 for (TextView tx :textViews) {
                     periodTable.removeView(tx);
                 }
             }
+            if (tx != null) periodTable.removeView(tx);
+
         }
-
-
-
     }
 
     public void tDateClick(View view) {
+    }
+    TextView tx;
+    @Override
+    public void AddElemsToTable(List<StorePeriodResult> periodResults) {
+
+        GridLayout.LayoutParams param2 =new GridLayout.LayoutParams();
+        param2.setGravity(Gravity.FILL);
+        TextViewClear();
+        int sizeP=periodResults.size();
+        textView=new TextView[sizeP][11];
+        if(sizeP==1){
+            GridLayout.LayoutParams param =new GridLayout.LayoutParams();
+            param.columnSpec = GridLayout.spec(0,11);
+            param.setGravity(Gravity.FILL);
+            tx=new TextView(this);
+            tx.setGravity(Gravity.CENTER_HORIZONTAL);
+            tx.setTextColor(ContextCompat.getColor(this,R.color.tableTopColor));
+            tx.setBackgroundResource(R.drawable.border_shape);
+            tx.setText("Нет данных");
+            tx.setLayoutParams(param);
+            periodTable.addView(tx);
+
+            for (int i = 0; i < textView[0].length; i++) {
+                textView[0][i]=new TextView(this);
+//                textView[0][i].setGravity(Gravity.FILL);
+
+
+                textView[0][i].setTextColor(ContextCompat.getColor(this,R.color.textColor));
+                textView[0][i].setBackgroundResource(R.color.tableTopColor);
+                periodTable.addView(textView[0][i]);
+            }
+            CustomSetTex(textView[0],periodResults.get(0));
+            CustomLayoutParams(textView[0]);
+
+            return;}
+
+        for (int i = 0; i < textView.length; i++) {
+
+            for (int j = 0; j <textView[0].length ; j++) {
+                textView[i][j]=new TextView(this);
+
+                if(i<sizeP-1&&sizeP>1){
+
+//                    textView[i][j].setGravity(j==0? Gravity.START:Gravity.END);
+                    textView[i][j].setTextColor(ContextCompat.getColor(this,R.color.tableTopColor));
+                    textView[i][j].setBackgroundResource(R.drawable.border_shape);
+
+                }else{
+
+//
+                    textView[i][j].setTextColor(ContextCompat.getColor(this,R.color.textColor));
+                    textView[i][j].setBackgroundResource(R.color.tableTopColor);
+
+                }
+                textView[i][i].setLayoutParams(param2);
+                textView[i][j].setPadding(15,15,15,15);
+                periodTable.addView(textView[i][j]);
+            }
+            CustomSetTex(textView[i],periodResults.get(i));
+            CustomLayoutParams(textView[i]);
+
+        }
+
+
+    }
+    @Override
+    public void CustomSetTex(TextView[] txV, StorePeriodResult periodResults){
+        txV[0].setText(periodResults.getName());
+        txV[1].setText(periodResults.getUM());
+        txV[2].setText(periodResults.getPrice());
+        txV[3].setText(periodResults.getBQ());
+        txV[4].setText(periodResults.getBS());
+        txV[5].setText(periodResults.getPDQ());
+        txV[6].setText(periodResults.getPD());
+        txV[7].setText(periodResults.getPCQ());
+        txV[8].setText(periodResults.getPC());
+        txV[9].setText(periodResults.getEQ());
+        txV[10].setText(periodResults.getES());
+
+    }
+
+    @Override
+    public void CustomLayoutParams(TextView[] txV) {
+        for (TextView tx:txV) {
+            GridLayout.LayoutParams lp = (GridLayout.LayoutParams) tx.getLayoutParams();
+            lp.setGravity(Gravity.FILL_HORIZONTAL);
+            tx.setLayoutParams(lp);
+        }
     }
 }

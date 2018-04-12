@@ -23,17 +23,17 @@ public class StorePeriodResult {
      * @param ES Остаток на конец периода : Сумма
      */
     public StorePeriodResult(String Name, String UM, String Price, String BQ, String BS, String PDQ, String PD, String PCQ, String PC, String EQ, String ES) {
-        this.Name = Name;
-        this.UM = UM;
-        this.Price = Price;
-        this.BQ = BQ;
-        this.BS = BS;
-        this.PDQ = PDQ;
-        this.PD = PD;
-        this.PCQ = PCQ;
-        this.PC = PC;
-        this.EQ = EQ;
-        this.ES = ES;
+        this.Name = Name.equals("null")?"  ":Name;
+        this.UM = UM.equals("null")?"  ":UM;
+        this.Price = Price.equals("null")?"  ":Price;
+        this.BQ = BQ.equals("null")?"  ":BQ;
+        this.BS = BS.equals("null")?"  ":BS;
+        this.PDQ = PDQ.equals("null")?"  ":PDQ;
+        this.PD = PD.equals("null")?"  ":PD;
+        this.PCQ = PCQ.equals("null")?"  ":PCQ;
+        this.PC = PC.equals("null")?"  ":PC;
+        this.EQ = EQ.equals("null")?"  ":EQ;
+        this.ES = ES.equals("null")?"  ":ES;
     }
 
     public String getName() {

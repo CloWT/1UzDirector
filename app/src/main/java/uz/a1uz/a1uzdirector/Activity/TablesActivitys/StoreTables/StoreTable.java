@@ -41,7 +41,7 @@ public class StoreTable extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_store_table);
         context=this;
-        storeTable=(TableLayout)findViewById(R.id.tableForBank);
+        storeTable=(TableLayout)findViewById(R.id.tableForStore);
         progressBar=(ProgressBar)findViewById(R.id.progres);
 
         storeTable.setVisibility(View.INVISIBLE);
@@ -160,7 +160,7 @@ public class StoreTable extends AppCompatActivity {
 
         @Override
         public void onClick(View v) {
-            Intent intent= new Intent(context, BankBankReport.class);
+            Intent intent= new Intent(context, StorePeriodTable.class);
             intent.putExtra("ReportID",accountReportResult.getReportDecriptionID());
             intent.putExtra("Name",accountReportResult.getName());
             startActivity(intent);

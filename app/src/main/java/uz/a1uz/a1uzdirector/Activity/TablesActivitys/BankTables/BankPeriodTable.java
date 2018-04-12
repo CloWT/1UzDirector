@@ -21,6 +21,7 @@ import java.util.List;
 
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.models.BankPeriodResult;
 import uz.a1uz.a1uzdirector.EdatePeriod;
+import uz.a1uz.a1uzdirector.Helpers.LayoutConfiguration;
 import uz.a1uz.a1uzdirector.Helpers.DatePeriodPicker;
 import uz.a1uz.a1uzdirector.Helpers.FirstLastDate;
 import uz.a1uz.a1uzdirector.Helpers.Memory_tmp;
@@ -31,7 +32,7 @@ import uz.a1uz.a1uzdirector.Helpers.UrlHepler;
 import uz.a1uz.a1uzdirector.Helpers.UserInfo;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
-public class BankPeriodTable extends AppCompatActivity {
+public class BankPeriodTable extends AppCompatActivity implements LayoutConfiguration<BankPeriodResult> {
     TableLayout periodTable;
     int ReportID;
     Context context=this;
@@ -131,7 +132,7 @@ public class BankPeriodTable extends AppCompatActivity {
                             "начало: "+js.getString("BeginSum"),
                             "конец: "+js.getString("EndSum")
                     ));
-                    ToTable(periodResults);
+                    AddElemsToTable(periodResults);
 
 
                 }
@@ -151,7 +152,8 @@ public class BankPeriodTable extends AppCompatActivity {
      *
      * @param periodResults
      */
-    private void ToTable(List<BankPeriodResult> periodResults){
+    @Override
+    public void AddElemsToTable(List<BankPeriodResult> periodResults){
         if(TR!=null)
         for (TableRow tr:TR) {
             periodTable.removeView(tr);
@@ -188,7 +190,19 @@ public class BankPeriodTable extends AppCompatActivity {
 
     }
 
+    @Override
+    public void CustomSetTex(TextView[] txV, BankPeriodResult periodResults) {
+
+    }
+
+    @Override
+    public void CustomLayoutParams(TextView[] txV) {
+
+    }
+
     public void tDateClick(View view) {
         startActivityForResult(inDatePicker,requesCodeForDatePicker);
     }
+
+
 }

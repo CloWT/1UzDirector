@@ -20,4 +20,9 @@
     <color name="tableTopColor2" >#8f9091</color>
     <color name="blue">#2d61b5</color>
     <color name="red">#a94442</color>
+    <color name="red1">#ff4545</color>
+    <color name="red2">#fe7171</color>
+    <color name="red3">#fe8d8d</color>
+    <color name="red4">#feaaaa</color>
+
 </resources>

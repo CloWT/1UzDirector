@@ -3,30 +3,12 @@
 
     <item
         is-multidex="false"
-        jar="D:\Sherzod\Android\1UzDirector\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.0"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="D:\Sherzod\Android\1UzDirector\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_529667c96414099de05b9c748c6fc7db7833910a.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.0"
         sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
         <dex dex="D:\Sherzod\Android\1UzDirector\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_dce0f5dc4ec87302d879250c45fe5f3f72f02917.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Sherzod\Android\1UzDirector\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.0"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="D:\Sherzod\Android\1UzDirector\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_bf1b899d3cc35a035bddd49d7d2e6c6f819c28ad.jar" />
     </item>
     <item
         is-multidex="false"
@@ -39,21 +21,66 @@
     </item>
     <item
         is-multidex="false"
-        jar="D:\Sherzod\Android\1UzDirector\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.0"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="D:\Sherzod\Android\1UzDirector\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_75b8eef89aa36cf5c1f6c714c68c1ce9a5a71f2f.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.0"
         sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
         <dex dex="D:\Sherzod\Android\1UzDirector\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_fc18a0fdc80391aaf9a93e629f1a6f03cf6a9cf4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Program Files\Android\Android Studio\gradle\m2repository\org\jetbrains\kotlin\kotlin-stdlib-jre7\1.1.51\kotlin-stdlib-jre7-1.1.51.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="8b5933578dc55f32cfc1a25f1db6371e4161fb8f">
+        <dex dex="D:\Sherzod\Android\1UzDirector\app\build\intermediates\pre-dexed\debug\kotlin-stdlib-jre7-1.1.51_3e33fce3de7c7a62b3005eecd345c290fb96d045.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Sherzod\Android\1UzDirector\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="D:\Sherzod\Android\1UzDirector\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.4.0_acab7de1f1bddfe20c78c55eb1764e2f0529277d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Sherzod\Android\1UzDirector\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="D:\Sherzod\Android\1UzDirector\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_529667c96414099de05b9c748c6fc7db7833910a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Sherzod\Android\1UzDirector\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="D:\Sherzod\Android\1UzDirector\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_bf1b899d3cc35a035bddd49d7d2e6c6f819c28ad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Program Files\Android\Android Studio\gradle\m2repository\org\jetbrains\annotations\13.0\annotations-13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="919f0dfe192fb4e063e7dacadee7f8bb9a2672a9">
+        <dex dex="D:\Sherzod\Android\1UzDirector\app\build\intermediates\pre-dexed\debug\annotations-13.0_1a1ecf57ad78f2133cd33f7be09f61b9db498cc9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Sherzod\Android\1UzDirector\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="D:\Sherzod\Android\1UzDirector\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_75b8eef89aa36cf5c1f6c714c68c1ce9a5a71f2f.jar" />
     </item>
     <item
         is-multidex="false"
@@ -66,12 +93,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="D:\Sherzod\Android\1UzDirector\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jar="C:\Program Files\Android\Android Studio\gradle\m2repository\org\jetbrains\kotlin\kotlin-stdlib\1.1.51\kotlin-stdlib-1.1.51.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.0"
-        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
-        <dex dex="D:\Sherzod\Android\1UzDirector\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.4.0_acab7de1f1bddfe20c78c55eb1764e2f0529277d.jar" />
+        sha1="e34fe80c9714240525f665113dd3749415515655">
+        <dex dex="D:\Sherzod\Android\1UzDirector\app\build\intermediates\pre-dexed\debug\kotlin-stdlib-1.1.51_e71b5a135e124787cbf32bb3d499b807a4ffacdf.jar" />
     </item>
     <item
         is-multidex="false"

@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">1 UZ ДИРЕКТОР</string>
     <string name="inn">INN</string>
+    <string name="NumZnak">№</string>
 </resources>

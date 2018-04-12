@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg2"
+    android:orientation="vertical"
     tools:context="uz.a1uz.a1uzdirector.Activity.TablesActivitys.StoreTables.StoreTable">
     <ProgressBar
         android:padding="25dp"
@@ -13,8 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:visibility="gone"
-        android:indeterminateDrawable="@drawable/progressbarcust"
-        android:indeterminateOnly="true"/>
+/>
 
     <HorizontalScrollView
         android:id="@+id/horizontalView"

@@ -18,6 +18,8 @@ import android.widget.TextView;
 import java.util.List;
 
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.AccountsTable;
+import uz.a1uz.a1uzdirector.Activity.TablesActivitys.CreditTables.CreditTable;
+import uz.a1uz.a1uzdirector.Activity.TablesActivitys.CurrentTables.CurrentConsumptionTable;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.ProceedsTables.ProceedsTable;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.StoreTables.StoreTable;
 import uz.a1uz.a1uzdirector.R;
@@ -156,7 +158,7 @@ public class Widget_item_Adapter extends ArrayAdapter<Widget_item_model> {
             WidgetDropDownItem dropDownItem=(WidgetDropDownItem)parent.getSelectedItem();
             wg.setMiddle(dropDownItem.ButtonMiddle);
             wg.setMiddleText(dropDownItem.ButtonMiddleText);
-            wg.setBottomLeftText(dropDownItem.ButtonMiddleText);
+            wg.setBottomLeftText(dropDownItem.getName());
             holder.MiddleText.setText(wg.getMiddleText());
             holder.BottomLeftText.setText(wg.getBottomLeftText());
 
@@ -201,9 +203,13 @@ Spinner spinner;
                     intent= new Intent(context, ProceedsTable.class);
                     context.startActivity(intent);
                     break;
-                case URL_cons.CREDITREPORT: break;
-                case URL_cons.DEBITREPORT: break;
-                case URL_cons.CURRENTCOSTREPORT: break;
+                case URL_cons.CREDITREPORT:
+                    intent= new Intent(context, CreditTable.class);
+                    context.startActivity(intent);break;
+                case URL_cons.DEBITREPORT:
+                    break;
+                case URL_cons.CURRENTCOSTREPORT: intent= new Intent(context, CurrentConsumptionTable.class);
+                    context.startActivity(intent);break;
             }
 
         }

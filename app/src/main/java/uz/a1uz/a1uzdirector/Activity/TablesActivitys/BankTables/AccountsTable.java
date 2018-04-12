@@ -22,6 +22,7 @@ import java.util.List;
 
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.models.AccountReportResult;
 import uz.a1uz.a1uzdirector.Activity.components.models.WidgetDropDownItem;
+import uz.a1uz.a1uzdirector.Helpers.LayoutConfiguration;
 import uz.a1uz.a1uzdirector.JsoN.GetJson;
 import uz.a1uz.a1uzdirector.JsoN.IGetJsonResult;
 import uz.a1uz.a1uzdirector.Helpers.Memory_tmp;
@@ -30,7 +31,7 @@ import uz.a1uz.a1uzdirector.Helpers.UrlHepler;
 import uz.a1uz.a1uzdirector.Helpers.UserInfo;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
-public class AccountsTable extends AppCompatActivity {
+public class AccountsTable extends AppCompatActivity implements LayoutConfiguration<AccountReportResult> {
 String url= UrlHepler.Combine(URL_cons.ACCOUNTREPORT, UserInfo.getGUID());
 TableLayout bankTable;
 Context context;
@@ -115,7 +116,9 @@ ProgressBar progressBar;
         });
 
     }
-    private void AddElemsToTable(List<AccountReportResult> accountReportResults){
+
+    @Override
+    public void AddElemsToTable(List<AccountReportResult> accountReportResults){
         TextView TW[][]=new TextView[5][5];
         TableRow[] TR=new TableRow[accountReportResults.size()];
         for (int i = 0; i < accountReportResults.size(); i++) {
@@ -124,11 +127,8 @@ ProgressBar progressBar;
             for (int j = 0; j <TW[0].length ; j++) {
                 TW[i][j]=new TextView(this);
             }
-            TW[i][0].setText(accountReportResults.get(i).getName().toString());
-            TW[i][1].setText(accountReportResults.get(i).getBeginPeriodSum());
-            TW[i][2].setText(accountReportResults.get(i).getInSum());
-            TW[i][3].setText(accountReportResults.get(i).getOutSum());
-            TW[i][4].setText(accountReportResults.get(i).getCurrentSum());
+
+            CustomSetTex(TW[i],accountReportResults.get(i));
 
             for (int j = 0; j <5 ; j++) {
                 TW[i][j].setGravity(j==0? Gravity.LEFT:Gravity.RIGHT);
@@ -161,6 +161,21 @@ ProgressBar progressBar;
         }
 
     }
+
+    @Override
+    public void CustomSetTex(TextView[] txV, AccountReportResult periodResults) {
+        txV[0].setText(periodResults.getName().toString());
+        txV[1].setText(periodResults.getBeginPeriodSum());
+        txV[2].setText(periodResults.getInSum());
+        txV[3].setText(periodResults.getOutSum());
+        txV[4].setText(periodResults.getCurrentSum());
+    }
+
+    @Override
+    public void CustomLayoutParams(TextView[] txV) {
+
+    }
+
     private class ClickT implements View.OnClickListener {
         int accountReportResult;
         Context context;

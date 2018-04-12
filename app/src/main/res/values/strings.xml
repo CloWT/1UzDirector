@@ -24,4 +24,9 @@
     <string name="title_activity_store_period_table">StorePeriodTable</string>
     <string name="TMZ_Name">Наименование ТМЗ</string>
     <string name="total">Итого</string>
+    <string name="NumZnak">№</string>
+    <string name="Contragent">Контрагент</string>
+    <string name="Period">Период</string>
+    <string name="Contract">Договор</string>
+    <string name="title_activity_current_consumption_table">CurrentConsumptionTable</string>
 </resources>

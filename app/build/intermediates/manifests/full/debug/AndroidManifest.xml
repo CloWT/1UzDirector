@@ -38,9 +38,17 @@
         <activity android:name="uz.a1uz.a1uzdirector.Activity.TablesActivitys.ProceedsTables.ProceedsPeriodTable" />
         <activity android:name="uz.a1uz.a1uzdirector.Helpers.DatePeriodPicker" />
         <activity android:name="uz.a1uz.a1uzdirector.Activity.TablesActivitys.StoreTables.StoreTable" />
+        <activity android:name="uz.a1uz.a1uzdirector.Activity.TablesActivitys.StoreTables.StorePeriodTable" />
+        <activity android:name="uz.a1uz.a1uzdirector.Activity.TablesActivitys.CreditTables.CreditTable" />
+        <activity android:name="uz.a1uz.a1uzdirector.Activity.TablesActivitys.CreditTables.CreditSecondReport" />
         <activity
-            android:name="uz.a1uz.a1uzdirector.Activity.TablesActivitys.StoreTables.StorePeriodTable"
-            android:label="@string/title_activity_store_period_table" />
+            android:name="uz.a1uz.a1uzdirector.Activity.TablesActivitys.CurrentTables.CurrentConsumptionTable"
+            android:label="@string/title_activity_current_consumption_table"
+            android:parentActivityName="uz.a1uz.a1uzdirector.Activity.Main_Activity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uz.a1uz.a1uzdirector.Activity.Main_Activity" />
+        </activity>
     </application>
 
 </manifest>

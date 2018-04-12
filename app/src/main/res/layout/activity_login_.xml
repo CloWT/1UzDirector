@@ -8,7 +8,6 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/bg2"
     tools:context="uz.a1uz.a1uzdirector.Activity.Login_Activity">
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,6 +30,9 @@
                 android:layout_marginBottom="10dp"
                 android:hint="@string/inn"
 
+                android:inputType="none|number"
+                android:maxEms="3"
+                android:numeric="integer"
                 android:padding="5dp"
                 android:textColor="@color/textColor"
                 android:textSize="30sp"

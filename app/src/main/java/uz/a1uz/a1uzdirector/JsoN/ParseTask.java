@@ -45,7 +45,7 @@ public class ParseTask extends AsyncTask<Void, Void, String> {
         try {
             URL url= new URL(urltext);
             urlConnection = (HttpURLConnection) url.openConnection();
-            urlConnection.setConnectTimeout(50000);
+            urlConnection.setConnectTimeout(1000);
             urlConnection.setRequestMethod("GET");
             urlConnection.connect();
             System.out.println(url);

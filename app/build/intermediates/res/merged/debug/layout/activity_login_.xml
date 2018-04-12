@@ -31,6 +31,9 @@
                 android:layout_marginBottom="10dp"
                 android:hint="@string/inn"
 
+                android:inputType="none|number"
+                android:maxEms="3"
+                android:numeric="integer"
                 android:padding="5dp"
                 android:textColor="@color/textColor"
                 android:textSize="30sp"

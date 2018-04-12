@@ -7,20 +7,27 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endColumn": 104,
-                    "endOffset": 155
+                    "endColumn": 37,
+                    "endOffset": 88
                 },
                 "from": {
-                    "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-uz-rUZ\\values-uz-rUZ.xml"
+                    "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\values-uz-rUZ\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 146,
+                        "endColumn": 37,
+                        "endOffset": 179
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 3,
                     "startColumn": 4,
-                    "startOffset": 160,
-                    "endColumn": 107,
-                    "endOffset": 263
+                    "startOffset": 93,
+                    "endColumn": 104,
+                    "endOffset": 193
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-uz-rUZ\\values-uz-rUZ.xml"
@@ -30,9 +37,9 @@
                 "to": {
                     "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 268,
-                    "endColumn": 122,
-                    "endOffset": 386
+                    "startOffset": 198,
+                    "endColumn": 107,
+                    "endOffset": 301
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-uz-rUZ\\values-uz-rUZ.xml"
@@ -42,9 +49,9 @@
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 391,
-                    "endColumn": 103,
-                    "endOffset": 490
+                    "startOffset": 306,
+                    "endColumn": 122,
+                    "endOffset": 424
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-uz-rUZ\\values-uz-rUZ.xml"
@@ -54,9 +61,9 @@
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 495,
-                    "endColumn": 116,
-                    "endOffset": 607
+                    "startOffset": 429,
+                    "endColumn": 103,
+                    "endOffset": 528
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-uz-rUZ\\values-uz-rUZ.xml"
@@ -66,9 +73,9 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 612,
-                    "endColumn": 85,
-                    "endOffset": 693
+                    "startOffset": 533,
+                    "endColumn": 116,
+                    "endOffset": 645
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-uz-rUZ\\values-uz-rUZ.xml"
@@ -78,9 +85,9 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 698,
-                    "endColumn": 110,
-                    "endOffset": 804
+                    "startOffset": 650,
+                    "endColumn": 85,
+                    "endOffset": 731
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-uz-rUZ\\values-uz-rUZ.xml"
@@ -90,9 +97,9 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 809,
-                    "endColumn": 115,
-                    "endOffset": 920
+                    "startOffset": 736,
+                    "endColumn": 110,
+                    "endOffset": 842
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-uz-rUZ\\values-uz-rUZ.xml"
@@ -102,9 +109,9 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 925,
-                    "endColumn": 79,
-                    "endOffset": 1000
+                    "startOffset": 847,
+                    "endColumn": 115,
+                    "endOffset": 958
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-uz-rUZ\\values-uz-rUZ.xml"
@@ -114,9 +121,9 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 1005,
-                    "endColumn": 78,
-                    "endOffset": 1079
+                    "startOffset": 963,
+                    "endColumn": 79,
+                    "endOffset": 1038
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-uz-rUZ\\values-uz-rUZ.xml"
@@ -126,9 +133,9 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 1084,
-                    "endColumn": 83,
-                    "endOffset": 1163
+                    "startOffset": 1043,
+                    "endColumn": 78,
+                    "endOffset": 1117
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-uz-rUZ\\values-uz-rUZ.xml"
@@ -138,9 +145,9 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 1168,
-                    "endColumn": 108,
-                    "endOffset": 1272
+                    "startOffset": 1122,
+                    "endColumn": 83,
+                    "endOffset": 1201
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-uz-rUZ\\values-uz-rUZ.xml"
@@ -150,9 +157,9 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 1277,
-                    "endColumn": 106,
-                    "endOffset": 1379
+                    "startOffset": 1206,
+                    "endColumn": 108,
+                    "endOffset": 1310
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-uz-rUZ\\values-uz-rUZ.xml"
@@ -162,9 +169,9 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 1384,
-                    "endColumn": 100,
-                    "endOffset": 1480
+                    "startOffset": 1315,
+                    "endColumn": 106,
+                    "endOffset": 1417
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-uz-rUZ\\values-uz-rUZ.xml"
@@ -174,9 +181,9 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 1485,
-                    "endColumn": 107,
-                    "endOffset": 1588
+                    "startOffset": 1422,
+                    "endColumn": 100,
+                    "endOffset": 1518
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-uz-rUZ\\values-uz-rUZ.xml"
@@ -186,9 +193,9 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 1593,
-                    "endColumn": 104,
-                    "endOffset": 1693
+                    "startOffset": 1523,
+                    "endColumn": 107,
+                    "endOffset": 1626
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-uz-rUZ\\values-uz-rUZ.xml"
@@ -198,9 +205,9 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 1698,
+                    "startOffset": 1631,
                     "endColumn": 104,
-                    "endOffset": 1798
+                    "endOffset": 1731
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-uz-rUZ\\values-uz-rUZ.xml"
@@ -210,9 +217,9 @@
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1803,
-                    "endColumn": 98,
-                    "endOffset": 1897
+                    "startOffset": 1736,
+                    "endColumn": 104,
+                    "endOffset": 1836
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-uz-rUZ\\values-uz-rUZ.xml"
@@ -222,47 +229,45 @@
                 "to": {
                     "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 1902,
-                    "endColumn": 50,
-                    "endOffset": 1948
+                    "startOffset": 1841,
+                    "endColumn": 98,
+                    "endOffset": 1935
                 },
                 "from": {
-                    "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\values-uz-rUZ\\strings.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 57,
-                        "endColumn": 50,
-                        "endOffset": 103
-                    }
+                    "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-uz-rUZ\\values-uz-rUZ.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 1953,
-                    "endColumn": 35,
-                    "endOffset": 1984
+                    "startOffset": 1940,
+                    "endColumn": 50,
+                    "endOffset": 1986
                 },
                 "from": {
-                    "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\values-uz-rUZ\\strings.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 109,
-                        "endColumn": 35,
-                        "endOffset": 140
-                    }
+                    "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\values-uz-rUZ\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 1989,
+                    "startOffset": 1991,
+                    "endColumn": 35,
+                    "endOffset": 2022
+                },
+                "from": {
+                    "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\values-uz-rUZ\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 2027,
                     "endColumn": 100,
-                    "endOffset": 2085
+                    "endOffset": 2123
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-uz-rUZ\\values-uz-rUZ.xml"
