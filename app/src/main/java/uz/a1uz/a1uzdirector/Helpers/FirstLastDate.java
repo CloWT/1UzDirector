@@ -36,6 +36,7 @@ public class FirstLastDate{
     public static String CustomDateFormat(Calendar date){
         return dateFormat.format(date.getTime());
     }
+    public static
     Calendar first = Calendar.getInstance();
     Calendar second = Calendar.getInstance();
     FirstLastDate dat = null;

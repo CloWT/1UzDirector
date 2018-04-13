@@ -58,10 +58,10 @@ public class BankPeriodTable extends AppCompatActivity implements LayoutConfigur
         EdatePeriod e=EdatePeriod.valueOf(bankTableIntent.getStringExtra("DateE"));
         String url;
 
-        bankType.setText("  "+Memory_tmp.getDropDown(ReportID));
+        bankType.setText(String.format("  %s", Memory_tmp.getDropDown(ReportID)));
         periodTable.setVisibility(View.INVISIBLE);
         da.GetPeriodDate(e);
-        tDatePeriod.setText(da.getFirstDate()+" - "+da.getLastDate() );
+        tDatePeriod.setText(String.format("%s - %s", da.getFirstDate(), da.getLastDate()));
         url= UrlHepler.Combine(URL_cons.BANKPERIODREPORT,ReportID+"",
                 da.getFirstDate(),da.getLastDate(),UserInfo.getGUID());
         getFromJson(url);
@@ -73,7 +73,7 @@ public class BankPeriodTable extends AppCompatActivity implements LayoutConfigur
 
         if (data == null) {return;}
         if(requestCode==requesCodeForDatePicker&& resultCode==RESULT_OK){
-        String firstDate = data.getStringExtra("fDate");
+                String firstDate = data.getStringExtra("fDate");
         String secondDate = data.getStringExtra("sDate");
         String url= UrlHepler.Combine(URL_cons.BANKPERIODREPORT,ReportID+"",
                 firstDate,secondDate,UserInfo.getGUID());

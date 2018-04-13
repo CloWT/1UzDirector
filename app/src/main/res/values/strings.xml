@@ -29,4 +29,11 @@
     <string name="Period">Период</string>
     <string name="Contract">Договор</string>
     <string name="title_activity_current_consumption_table">CurrentConsumptionTable</string>
+    <string name="SebeStoimostGotovyProduksii">Себестоимость реализованной готовой продукции</string>
+    <string name="SebeStoimostRealizoTovar">Себестоимость реализованных товаров</string>
+    <string name="SebeStoimVypolnenRabotiUsl">Себестоимость выполненных работ и оказания услуг</string>
+    <string name="PoRealizatsii">По реализации</string>
+    <string name="AdministratiroRasxod">Административные расходы</string>
+    <string name="ProchieOperatRasxodi">Прочие операционные расходы</string>
+    <string name="VychitaemIzNalogoPribilivBudushem">Вычитаемые из налогооблагаемой прибыли в будущем</string>
 </resources>

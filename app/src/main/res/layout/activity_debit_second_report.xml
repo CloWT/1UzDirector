@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="uz.a1uz.a1uzdirector.Activity.TablesActivitys.DebitTables.DebitSecondReport">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/creditT"
+        />
+    <ProgressBar
+
+        android:id="@+id/progres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:visibility="gone" />
+    <ScrollView
+
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal"
+        android:layout_width="wrap_content"
+        android:scrollbarStyle="insideInset"
+
+        android:fillViewport="true">
+
+        <HorizontalScrollView
+
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            android:layout_width="wrap_content"
+            >
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="7"
+                android:id="@+id/periodTable">
+                <TextView
+                    android:text="@string/NumZnak"
+                    android:gravity="center"
+                    android:layout_gravity="fill"
+                    android:layout_rowSpan="2"
+                    android:background="@drawable/border_dark_shape"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"
+                    android:textColor="@color/textColor"/>
+                <TextView
+                    android:text="@string/Contract"
+                    android:gravity="center"
+                    android:layout_gravity="fill"
+                    android:layout_rowSpan="2"
+                    android:background="@drawable/border_dark_shape"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"
+                    android:textColor="@color/textColor"/>
+                <TextView
+                    android:text="Более 90 дн."
+                    android:gravity="center"
+                    android:layout_gravity="fill"
+                    android:layout_rowSpan="2"
+                    android:background="@drawable/border_dark_shape"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"
+                    android:textColor="@color/textColor"/>
+                <TextView
+                    android:text="До 90 дней"
+                    android:gravity="center"
+                    android:layout_gravity="fill"
+                    android:layout_rowSpan="2"
+                    android:background="@drawable/border_dark_shape"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"
+                    android:textColor="@color/textColor"/>
+                <TextView
+                    android:text="До 60 дней"
+                    android:gravity="center"
+                    android:layout_gravity="fill"
+                    android:layout_rowSpan="2"
+                    android:background="@drawable/border_dark_shape"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"
+                    android:textColor="@color/textColor"/>
+                <TextView
+                    android:text="До 30 дней"
+                    android:gravity="center"
+                    android:layout_gravity="fill"
+                    android:layout_rowSpan="2"
+                    android:background="@drawable/border_dark_shape"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"
+                    android:textColor="@color/textColor"/>
+                <TextView
+                    android:text="Всего"
+                    android:gravity="center"
+                    android:layout_gravity="fill"
+                    android:layout_rowSpan="2"
+                    android:background="@drawable/border_dark_shape"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"
+                    android:textColor="@color/textColor"/>
+
+            </GridLayout>
+
+
+        </HorizontalScrollView></ScrollView>
+
+</LinearLayout>

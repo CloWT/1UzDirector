@@ -19,10 +19,8 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.AccountsTable;
-import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.BankBankReport;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.models.AccountReportResult;
-import uz.a1uz.a1uzdirector.Activity.components.models.WidgetDropDownItem;
+import uz.a1uz.a1uzdirector.Activity.models.WidgetDropDownItem;
 import uz.a1uz.a1uzdirector.Helpers.Memory_tmp;
 import uz.a1uz.a1uzdirector.Helpers.UrlHepler;
 import uz.a1uz.a1uzdirector.Helpers.UserInfo;

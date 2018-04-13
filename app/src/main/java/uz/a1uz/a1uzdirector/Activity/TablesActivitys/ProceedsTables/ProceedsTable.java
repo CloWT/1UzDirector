@@ -9,14 +9,11 @@ import android.widget.TextView;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.BankPeriodTable;
-import uz.a1uz.a1uzdirector.Activity.components.models.WidgetDropDownItem;
 import uz.a1uz.a1uzdirector.EdatePeriod;
 import uz.a1uz.a1uzdirector.Helpers.FirstLastDate;
 import uz.a1uz.a1uzdirector.Helpers.UrlHepler;
 import uz.a1uz.a1uzdirector.Helpers.UserInfo;
 import uz.a1uz.a1uzdirector.JsoN.GetJson;
-import uz.a1uz.a1uzdirector.JsoN.GetJsonResult;
 import uz.a1uz.a1uzdirector.JsoN.IGetJsonResult;
 import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.constants.URL_cons;

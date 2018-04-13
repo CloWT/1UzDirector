@@ -8,9 +8,8 @@ import android.widget.ProgressBar;
 import java.util.ArrayList;
 import java.util.List;
 
-import uz.a1uz.a1uzdirector.Activity.components.models.Widget_Adapter;
-import uz.a1uz.a1uzdirector.Activity.components.models.Widget_item_Adapter;
-import uz.a1uz.a1uzdirector.Activity.components.models.Widget_item_model;
+import uz.a1uz.a1uzdirector.Activity.models.Widget_item_Adapter;
+import uz.a1uz.a1uzdirector.Activity.models.Widget_item_model;
 import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.WidgetsUrlsArr;
 

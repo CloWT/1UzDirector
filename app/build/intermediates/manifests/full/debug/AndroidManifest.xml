@@ -41,6 +41,8 @@
         <activity android:name="uz.a1uz.a1uzdirector.Activity.TablesActivitys.StoreTables.StorePeriodTable" />
         <activity android:name="uz.a1uz.a1uzdirector.Activity.TablesActivitys.CreditTables.CreditTable" />
         <activity android:name="uz.a1uz.a1uzdirector.Activity.TablesActivitys.CreditTables.CreditSecondReport" />
+        <activity android:name="uz.a1uz.a1uzdirector.Activity.TablesActivitys.DebitTables.DebitTable" />
+        <activity android:name="uz.a1uz.a1uzdirector.Activity.TablesActivitys.DebitTables.DebitSecondReport" />
         <activity
             android:name="uz.a1uz.a1uzdirector.Activity.TablesActivitys.CurrentTables.CurrentConsumptionTable"
             android:label="@string/title_activity_current_consumption_table"
@@ -49,6 +51,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="uz.a1uz.a1uzdirector.Activity.Main_Activity" />
         </activity>
+        <activity android:name="uz.a1uz.a1uzdirector.Activity.TablesActivitys.CurrentTables.CurrentConsumptionSecondTable" />
     </application>
 
 </manifest>

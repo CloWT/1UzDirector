@@ -377,6 +377,7 @@
     <integer name="cancel_button_image_alpha">127</integer>
     <integer name="design_snackbar_text_max_lines">2</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
+    <string name="AdministratiroRasxod">Административные расходы</string>
     <string name="BeginPeriod">Остаток на начало</string>
     <string name="Contract">Договор</string>
     <string name="Contragent">Контрагент</string>
@@ -386,7 +387,13 @@
     <string name="NumZnak">№</string>
     <string name="OutSum">Расход</string>
     <string name="Period">Период</string>
+    <string name="PoRealizatsii">По реализации</string>
+    <string name="ProchieOperatRasxodi">Прочие операционные расходы</string>
+    <string name="SebeStoimVypolnenRabotiUsl">Себестоимость выполненных работ и оказания услуг</string>
+    <string name="SebeStoimostGotovyProduksii">Себестоимость реализованной готовой продукции</string>
+    <string name="SebeStoimostRealizoTovar">Себестоимость реализованных товаров</string>
     <string name="TMZ_Name">Наименование ТМЗ</string>
+    <string name="VychitaemIzNalogoPribilivBudushem">Вычитаемые из налогооблагаемой прибыли в будущем</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
     <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>

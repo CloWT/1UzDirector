@@ -1,19 +1,16 @@
 package uz.a1uz.a1uzdirector.Activity;
 
 import android.content.Context;
-import android.content.res.Resources;
-import android.graphics.drawable.Drawable;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import uz.a1uz.a1uzdirector.Activity.components.models.WidgetDropDownItem;
-import uz.a1uz.a1uzdirector.Activity.components.models.Widget_item_model;
+import uz.a1uz.a1uzdirector.Activity.models.WidgetDropDownItem;
+import uz.a1uz.a1uzdirector.Activity.models.Widget_item_model;
 import uz.a1uz.a1uzdirector.JsoN.GetJsonResult;
 import uz.a1uz.a1uzdirector.JsoN.ParseTaskList;
 import uz.a1uz.a1uzdirector.R;

@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.models.AccountReportResult;
-import uz.a1uz.a1uzdirector.Activity.components.models.WidgetDropDownItem;
+import uz.a1uz.a1uzdirector.Activity.models.WidgetDropDownItem;
 import uz.a1uz.a1uzdirector.Helpers.LayoutConfiguration;
 import uz.a1uz.a1uzdirector.JsoN.GetJson;
 import uz.a1uz.a1uzdirector.JsoN.IGetJsonResult;

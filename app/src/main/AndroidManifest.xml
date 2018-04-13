@@ -35,6 +35,8 @@
         <activity android:name=".Activity.TablesActivitys.StoreTables.StorePeriodTable" />
         <activity android:name=".Activity.TablesActivitys.CreditTables.CreditTable" />
         <activity android:name=".Activity.TablesActivitys.CreditTables.CreditSecondReport" />
+        <activity android:name=".Activity.TablesActivitys.DebitTables.DebitTable" />
+        <activity android:name=".Activity.TablesActivitys.DebitTables.DebitSecondReport" />
         <activity
             android:name=".Activity.TablesActivitys.CurrentTables.CurrentConsumptionTable"
             android:label="@string/title_activity_current_consumption_table"
@@ -43,6 +45,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="uz.a1uz.a1uzdirector.Activity.Main_Activity" />
         </activity>
+        <activity android:name=".Activity.TablesActivitys.CurrentTables.CurrentConsumptionSecondTable"></activity>
     </application>
 
 </manifest>
