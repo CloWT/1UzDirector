@@ -2,6 +2,7 @@ package uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables;
 
 import android.content.Context;
 import android.content.Intent;
+import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -36,11 +37,73 @@ String url= UrlHepler.Combine(URL_cons.ACCOUNTREPORT, UserInfo.getGUID());
 TableLayout bankTable;
 Context context;
 ProgressBar progressBar;
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        System.out.println("onDestory");
+    }
+
+    @Override
+    public void onContentChanged() {
+        super.onContentChanged();
+        System.out.println("onContentChanged");
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        System.out.println("onBackPressed");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.out.println("OnPause");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        System.out.println("OnResume");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        System.out.println("OnResume");
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        System.out.println("onStart");
+    }
+
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+        System.out.println("OnPostResume");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        System.out.println("onStop");
+    }
+
+    @Override
+    protected void onPostCreate(@Nullable Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        System.out.println("OnPostCreate");
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         context=this;
         setContentView(R.layout.activity_accounts_table);
+        System.out.println("OnCreat");
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
         bankTable=(TableLayout)findViewById(R.id.tableForBank);

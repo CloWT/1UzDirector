@@ -44,6 +44,7 @@ public List<Widget_item_model> items;
         adapter=new Widget_item_Adapter(this,items);
 
         listView= (ListView) findViewById(R.id.custList);
+        listView.setDividerHeight(15);
         listView.setAdapter(adapter);
         new ButtonWidgetV2(this, urlsArr);
     }

@@ -16,10 +16,7 @@ import java.net.URL;
  */
 
 public class ParseTaskList extends AsyncTask<String,Integer,String[]> {
-    private Boolean _isError;
-    HttpURLConnection urlConnection = null;
-    BufferedReader reader = null;
-    IGetJsonResult logicItem;
+    private IGetJsonResult logicItem;
 
     @Override
     protected void onPreExecute() {
@@ -35,32 +32,33 @@ public class ParseTaskList extends AsyncTask<String,Integer,String[]> {
     protected String[] doInBackground(String... getJ) {
 
         String[] tmp=new String[getJ.length];
+        Boolean _isError;
         try {
             for (int i = 0; i < getJ.length; i++) {
                 URL url= new URL(getJ[i]);
-                urlConnection = (HttpURLConnection) url.openConnection();
+                HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
                 urlConnection.setConnectTimeout(10000);
                 urlConnection.setRequestMethod("GET");
                 urlConnection.connect();
-                System.out.println(url);
+
                 InputStream inputStream = urlConnection.getInputStream();
-                StringBuffer buffer = new StringBuffer();
-                reader = new BufferedReader(new InputStreamReader(inputStream,"UTF-8"), 8);
+                StringBuilder buffer = new StringBuilder();
+                BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"), 8);
                 String line;
                 while ((line = reader.readLine()) != null) {
                     buffer.append(line);
                 }
                 tmp[i] = buffer.toString();
-                _isError=false;
+                _isError =false;
 
                 urlConnection.disconnect();
                 publishProgress(i);
             }
         } catch (FileNotFoundException e){
             System.out.println(e.toString());
-            _isError=true;
+            _isError =true;
         } catch (Exception e) {
-            _isError=true;
+            _isError =true;
             e.printStackTrace();
 
         }

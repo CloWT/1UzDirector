@@ -23,11 +23,11 @@ import uz.a1uz.a1uzdirector.WidgetsUrlsArr;
  */
 
 public class ButtonWidgetV2 extends GetJsonResult {
-    int[] bcgColor={R.color.bgc1,R.color.bgc2,R.color.bgc3,R.color.bgc4,R.color.bgc5,R.color.bgc6};
-    String[] buttonUrls;
-    String[] reportUrls;
-    String[] secondReportUrls;
-    Main_Activity activity;
+    private int[] bcgColor={R.color.bgc1,R.color.bgc2,R.color.bgc3,R.color.bgc4,R.color.bgc5,R.color.bgc6};
+    private String[] buttonUrls;
+    private String[] reportUrls;
+    private String[] secondReportUrls;
+    private Main_Activity activity;
     int leng;
     public ButtonWidgetV2(Context context, WidgetsUrlsArr[] widgetsUrlsArrs) {
         super(context);
@@ -53,8 +53,7 @@ public class ButtonWidgetV2 extends GetJsonResult {
     }
     @Override
     public void OnProgressUpdate(int progress) {
-        //System.out.println(progress);
-        //activity.progressBar.setProgress(progress);
+
 
 
 

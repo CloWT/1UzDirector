@@ -93,21 +93,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Program Files\Android\Android Studio\gradle\m2repository\org\jetbrains\kotlin\kotlin-stdlib\1.1.51\kotlin-stdlib-1.1.51.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.0"
-        sha1="e34fe80c9714240525f665113dd3749415515655">
-        <dex dex="D:\Sherzod\Android\1UzDirector\app\build\intermediates\pre-dexed\debug\kotlin-stdlib-1.1.51_e71b5a135e124787cbf32bb3d499b807a4ffacdf.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="D:\Sherzod\Android\1UzDirector\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.0"
         sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
         <dex dex="D:\Sherzod\Android\1UzDirector\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_3b2e3c1f81ebe76f7c230cf11e3571a2b3d1fc26.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Program Files\Android\Android Studio\gradle\m2repository\org\jetbrains\kotlin\kotlin-stdlib\1.1.51\kotlin-stdlib-1.1.51.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e34fe80c9714240525f665113dd3749415515655">
+        <dex dex="D:\Sherzod\Android\1UzDirector\app\build\intermediates\pre-dexed\debug\kotlin-stdlib-1.1.51_e71b5a135e124787cbf32bb3d499b807a4ffacdf.jar" />
     </item>
     <item
         is-multidex="false"

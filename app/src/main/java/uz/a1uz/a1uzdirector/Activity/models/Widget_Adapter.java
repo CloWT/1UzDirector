@@ -130,7 +130,7 @@ public class Widget_Adapter extends BaseAdapter {
 //            holder.LeftSpinner.setOnItemSelectedListener(new ItemSelected(holder,wg));
         }
         if(wg.getBottomRightItems().length>0){
-            System.out.println();
+
             //holder.RightBotomLayout.setOnClickListener(new OnClick(holder.RightSpinner));
            // holder.RightSpinImage.setVisibility(View.VISIBLE);
             //holder.RightSpinner.setAdapter(wg.getBottomRightItems());

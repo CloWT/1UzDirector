@@ -89,7 +89,7 @@ public class CurrentConsumptionTable extends Activity {
                     progressBar.setVisibility(View.GONE);
                     periodTable.setVisibility(View.VISIBLE);
                     JSONArray js=jsonObject.getJSONArray("GetCurrentConsumptionReportResult");
-                    System.out.println(js.getString(0));
+
 
 
                     ((TextView)findViewById(R.id.curr1)).setText(js.getString(0));

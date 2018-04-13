@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
@@ -34,20 +35,23 @@ public class Login_Activity extends AppCompatActivity {
     SharedPreferences sPref;
     ArrayAdapter<String> adapter;
     String first="",second="",third="";
+    Context context;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_);
         etPass=(EditText)findViewById(R.id.password);
         loadText();
         String[] cats = {first, second, third};
         List<String> catList = Arrays.asList(cats);
-
+        context=this;
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, catList);
         INN=(AutoCompleteTextView)findViewById(R.id.INN);
         INN.setAdapter(adapter);
+        INN.setImeOptions(EditorInfo.IME_ACTION_NEXT);
         INN.setText(cats[0]);
         INN.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,7 +82,7 @@ public class Login_Activity extends AppCompatActivity {
         GetJson.execute(url, new IGetJsonResult() {
             @Override
             public void OnBegin() {
-                Login_Activity.this.btLogin.setEnabled(false);
+                ((Login_Activity)context).btLogin.setEnabled(false);
 
 
             }
@@ -95,9 +99,9 @@ public class Login_Activity extends AppCompatActivity {
 
             @Override
             public void OnError(Exception e) {
-             //   Toast.makeText(Login_Activity.this, "Error message"+e.getMessage(), Toast.LENGTH_LONG).show();
-                Log.e("Exception ",e.getMessage());
-                Login_Activity.this.btLogin.setEnabled(false);
+             //Toast.makeText(context, "Error message"+e.getMessage(), Toast.LENGTH_LONG).show();
+
+                ((Login_Activity)context).btLogin.setEnabled(true);
             }
 
             @Override

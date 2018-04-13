@@ -97,7 +97,7 @@ int reportID;
 
 
                     JSONObject j =jsonObject.getJSONObject("GetBankReportResult");
-                    System.out.println(j.toString());
+
                     ((TextView) findViewById(R.id.BPLastDay))        .setText(j.getString("BPLastDay"));
                     ((TextView) findViewById(R.id.BPLastWeek))       .setText(j.getString("BPLastWeek"));
                     ((TextView) findViewById(R.id.BPLastMonth))      .setText(j.getString("BPLastMonth"));

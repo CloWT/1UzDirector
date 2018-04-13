@@ -39,16 +39,16 @@ public class ParseTask extends AsyncTask<Void, Void, String> {
     public void setUrltext(String urltext) {
         this.urltext = urltext;
     }
+    Exception ee;
 
     @Override
     protected String doInBackground(Void... params) {
         try {
             URL url= new URL(urltext);
             urlConnection = (HttpURLConnection) url.openConnection();
-            urlConnection.setConnectTimeout(1000);
+            urlConnection.setConnectTimeout(25000);
             urlConnection.setRequestMethod("GET");
             urlConnection.connect();
-            System.out.println(url);
             InputStream inputStream = urlConnection.getInputStream();
             StringBuffer buffer = new StringBuffer();
             reader = new BufferedReader(new InputStreamReader(inputStream,"UTF-8"), 8);
@@ -59,17 +59,17 @@ public class ParseTask extends AsyncTask<Void, Void, String> {
 
             resultJson = buffer.toString();
             _isError=false;
-        } catch (FileNotFoundException e){
-            System.out.println(e.toString());
+        } catch (FileNotFoundException e){ee=e;
             _isError=true;
+
         }catch (SocketTimeoutException e){
             _isError=true;
-            logicItem.OnError(e);
+            ee=e;
         }
         catch (Exception e) {
             _isError=true;
-            e.printStackTrace();
-            logicItem.OnError(e);
+            ee=e;
+
         }
 
         return resultJson;
@@ -89,6 +89,7 @@ public class ParseTask extends AsyncTask<Void, Void, String> {
             if(!_isError){
                 logicItem.OnEnd(new JSONObject(s));
             }
+            else logicItem.OnError(ee);
         } catch (JSONException e) {
             e.printStackTrace();
             logicItem.OnError(e);
