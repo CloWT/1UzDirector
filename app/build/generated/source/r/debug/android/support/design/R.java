@@ -588,7 +588,7 @@ public final class R {
 		public static final int abc_textfield_search_material = 0x7f02004a;
 		public static final int design_fab_background = 0x7f020053;
 		public static final int design_snackbar_background = 0x7f020054;
-		public static final int notification_template_icon_bg = 0x7f02005c;
+		public static final int notification_template_icon_bg = 0x7f02005d;
 	}
 	public static final class id {
 		public static final int action0 = 0x7f0d00dc;
@@ -777,7 +777,7 @@ public final class R {
 		public static final int select_dialog_item_material = 0x7f04003d;
 		public static final int select_dialog_multichoice_material = 0x7f04003e;
 		public static final int select_dialog_singlechoice_material = 0x7f04003f;
-		public static final int support_simple_spinner_dropdown_item = 0x7f040043;
+		public static final int support_simple_spinner_dropdown_item = 0x7f040042;
 	}
 	public static final class string {
 		public static final int abc_action_bar_home_description = 0x7f060000;
@@ -799,9 +799,9 @@ public final class R {
 		public static final int abc_shareactionprovider_share_with = 0x7f060010;
 		public static final int abc_shareactionprovider_share_with_application = 0x7f060011;
 		public static final int abc_toolbar_collapse_description = 0x7f060012;
-		public static final int appbar_scrolling_view_behavior = 0x7f06005d;
-		public static final int bottom_sheet_behavior = 0x7f06005e;
-		public static final int character_counter_pattern = 0x7f06005f;
+		public static final int appbar_scrolling_view_behavior = 0x7f060068;
+		public static final int bottom_sheet_behavior = 0x7f060069;
+		public static final int character_counter_pattern = 0x7f06006a;
 		public static final int status_bar_notification_info_overflow = 0x7f060013;
 	}
 	public static final class style {

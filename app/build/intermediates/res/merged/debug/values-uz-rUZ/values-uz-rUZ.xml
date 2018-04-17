@@ -9,13 +9,20 @@
     <string name="Contract">Шартнома</string>
     <string name="Contragent">Контрагент</string>
     <string name="CurrentSum">Жорий қолдиқ</string>
+    <string name="Date">Сана</string>
     <string name="Day100">90 кундан ортиқ</string>
     <string name="Day30">30 кунгача</string>
     <string name="Day60">60 кунгача</string>
     <string name="Day90">90 кунгача</string>
+    <string name="Deyatelnost">Фаолият</string>
+    <string name="Document">Ҳужжат</string>
+    <string name="EdinyNalog">Ягона солиқ тўлови</string>
+    <string name="Edizm">Ед.изм</string>
     <string name="Enter">Кириш</string>
     <string name="From">гача</string>
+    <string name="GotovyProduck">Тайёр маҳсулот</string>
     <string name="InSum">Тушум</string>
+    <string name="Kolvo">сони</string>
     <string name="LastMonth">Ўтган ой</string>
     <string name="LastWeek">Ўтган хафта</string>
     <string name="NotData">Белгиланган давр учун маълумот топилмади</string>
@@ -26,20 +33,33 @@
     <string name="Period">"Давр "</string>
     <string name="PoRealizatsii">Сотиш бўйича</string>
     <string name="Prihod">Тушум</string>
+    <string name="ProCiRasxodi">Молиявий фаолият билан боғлиқ бошқа ҳаражатлар</string>
+    <string name="Prochie">Бошқа солиқлар</string>
     <string name="ProchieOperatRasxodi">Бошқа операциялар ҳаражатлари</string>
     <string name="Rasxod">Чиқим</string>
+    <string name="RasxodFinansDeayt">Молиявий фаолият билан боғлиқ ҳаражатлар</string>
+    <string name="RasxodProtsent">Маҳсулот кўринишидаги ҳаражатлар</string>
+    <string name="RasxodiNalog">Даромад солиғи бўйича ҳаражатлар</string>
+    <string name="RasxodiPeriod">Давр ҳаражатлари</string>
     <string name="ReportAcutal">Ҳисобот амал қилиш муддати</string>
     <string name="Schet">Ҳисобварақ</string>
     <string name="Scheta">"Ҳисобварақлар  "</string>
     <string name="SebeStoimVypolnenRabotiUsl">Кўрсатилган хизматлар ва тўланган иш ҳисоб китоблари таннархи</string>
     <string name="SebeStoimostGotovyProduksii">Тайёр маҳсулот таннархи</string>
     <string name="SebeStoimostRealizoTovar">Сотилган товарлар таннархи</string>
+    <string name="StatyaRasxodov">Ҳаражатлар моддаси</string>
     <string name="Subkonto">Субконто</string>
+    <string name="Summa">Сумма</string>
     <string name="TMZ_Name">ТМЗ номланиши</string>
     <string name="ThisMonth">Жорий ой</string>
     <string name="To">дан</string>
+    <string name="Torgovl">Савдо сотиқ</string>
     <string name="TotalAborot">Жами айланма харакат</string>
+    <string name="Tsena">Нарх</string>
+    <string name="Ubitki">Валюта айирбошлаш курси бўйича йўқотишлар</string>
+    <string name="Uslug">Хизмат кўрсатиш</string>
     <string name="VychitaemIzNalogoPribilivBudushem">Келажакда солиққа тортиладиган даромаддан чегирилиши мумкин</string>
+    <string name="VydiDeatelnosti">Фаолият турлари</string>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Boshiga o‘tish"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
     <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
@@ -67,12 +87,13 @@
     <string name="inBeginPeriod">Давр бошига</string>
     <string name="inEndPeriod">Давр охирига</string>
     <string name="inn">СТИР</string>
+    <string name="language">Тил</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="ostatokNakones">Охиридаги қолдиқ</string>
     <string name="password">"махфий код "</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
     <string name="store">Омборлар</string>
-    <string name="test">testtt</string>
     <string name="thisWeek">Жорий хафта</string>
     <string name="title_activity_current_consumption_table">CurrentConsumptionTable</string>
     <string name="title_activity_navigation">Navigation</string>

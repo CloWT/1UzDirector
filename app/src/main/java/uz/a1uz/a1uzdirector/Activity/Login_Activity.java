@@ -22,13 +22,14 @@ import org.json.JSONObject;
 import java.util.Arrays;
 import java.util.List;
 
+import uz.a1uz.a1uzdirector.Helpers.ActionBarCustomizer;
 import uz.a1uz.a1uzdirector.JsoN.GetJson;
 import uz.a1uz.a1uzdirector.JsoN.IGetJsonResult;
 import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.Helpers.UserInfo;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
-public class Login_Activity extends AppCompatActivity {
+public class Login_Activity extends ActionBarCustomizer {
     Button btLogin;
     AutoCompleteTextView INN;
     EditText etPass;
@@ -40,16 +41,19 @@ public class Login_Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        homeButton=false;
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_);
         etPass=(EditText)findViewById(R.id.password);
+        btLogin=(Button) findViewById(R.id.btLogin);
+        INN=(AutoCompleteTextView)findViewById(R.id.INN);
         loadText();
         String[] cats = {first, second, third};
         List<String> catList = Arrays.asList(cats);
         context=this;
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, catList);
-        INN=(AutoCompleteTextView)findViewById(R.id.INN);
+
         INN.setAdapter(adapter);
         INN.setImeOptions(EditorInfo.IME_ACTION_NEXT);
         INN.setText(cats[0]);
@@ -59,7 +63,7 @@ public class Login_Activity extends AppCompatActivity {
                 INN.showDropDown();
             }
         });
-        btLogin=(Button) findViewById(R.id.btLogin);
+
     }
 
     private boolean isNetworkAvailable() {
@@ -137,9 +141,9 @@ public class Login_Activity extends AppCompatActivity {
         String tmp=INN.getText().toString();
        if(tmp!=first||tmp!=second||tmp!=third) {
         ed.putString("first", tmp);
-        ed.putString("second", first.toString());
-        ed.putString("third", second.toString());
-        ed.commit();
+        ed.putString("second", first);
+        ed.putString("third", second);
+        ed.apply();
         loadText();
         adapter.notifyDataSetChanged();}
 

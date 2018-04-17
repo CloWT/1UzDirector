@@ -19,6 +19,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import uz.a1uz.a1uzdirector.Helpers.ActionBarCustomizer;
 import uz.a1uz.a1uzdirector.Helpers.LayoutConfiguration;
 import uz.a1uz.a1uzdirector.Helpers.UrlHepler;
 import uz.a1uz.a1uzdirector.Helpers.UserInfo;
@@ -27,7 +28,7 @@ import uz.a1uz.a1uzdirector.JsoN.IGetJsonResult;
 import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
-public class CreditTable extends AppCompatActivity implements LayoutConfiguration<CreditReportResult> {
+public class CreditTable extends ActionBarCustomizer implements LayoutConfiguration<CreditReportResult> {
     String url= UrlHepler.Combine(URL_cons.CREDITREPORT, UserInfo.getGUID());
     GridLayout creditTable;
     Context context;

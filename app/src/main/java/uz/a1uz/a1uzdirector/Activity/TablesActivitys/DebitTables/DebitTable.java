@@ -19,6 +19,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import uz.a1uz.a1uzdirector.Helpers.ActionBarCustomizer;
 import uz.a1uz.a1uzdirector.Helpers.LayoutConfiguration;
 import uz.a1uz.a1uzdirector.Helpers.UrlHepler;
 import uz.a1uz.a1uzdirector.Helpers.UserInfo;
@@ -27,7 +28,7 @@ import uz.a1uz.a1uzdirector.JsoN.IGetJsonResult;
 import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
-public class DebitTable extends AppCompatActivity implements LayoutConfiguration<DebitReportResult> {
+public class DebitTable extends ActionBarCustomizer implements LayoutConfiguration<DebitReportResult> {
     String url= UrlHepler.Combine(URL_cons.DEBITREPORT, UserInfo.getGUID());
     GridLayout debitTable;
     Context context;

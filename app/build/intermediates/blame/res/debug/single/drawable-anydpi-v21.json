@@ -1,5 +1,9 @@
 [
     {
+        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\left_arrow.xml",
+        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\left_arrow.xml"
+    },
+    {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_arrow_drop_down_black_24dp.xml",
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_arrow_drop_down_black_24dp.xml"
     },

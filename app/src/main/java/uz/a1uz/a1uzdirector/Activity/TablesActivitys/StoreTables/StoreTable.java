@@ -21,6 +21,7 @@ import java.util.List;
 
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.models.AccountReportResult;
 import uz.a1uz.a1uzdirector.Activity.models.WidgetDropDownItem;
+import uz.a1uz.a1uzdirector.Helpers.ActionBarCustomizer;
 import uz.a1uz.a1uzdirector.Helpers.Memory_tmp;
 import uz.a1uz.a1uzdirector.Helpers.UrlHepler;
 import uz.a1uz.a1uzdirector.Helpers.UserInfo;
@@ -29,7 +30,7 @@ import uz.a1uz.a1uzdirector.JsoN.IGetJsonResult;
 import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
-public class StoreTable extends AppCompatActivity {
+public class StoreTable extends ActionBarCustomizer {
     String url= UrlHepler.Combine(URL_cons.STOREREPORT, UserInfo.getGUID());
     TableLayout storeTable;
     Context context;

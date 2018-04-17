@@ -12,6 +12,10 @@
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_settings_black_24dp.png"
     },
     {
+        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\left_arrow.png",
+        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\left_arrow.png"
+    },
+    {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_drawer.png",
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\drawable-xxhdpi\\ic_drawer.png"
     },

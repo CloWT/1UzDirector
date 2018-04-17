@@ -65,4 +65,26 @@
     <string name="Day60">До 60 дней</string>
     <string name="Day30">До 30 дней</string>
     <string name="All">Всего</string>
+    <string name="StatyaRasxodov">Статьи расходов</string>
+    <string name="Summa">Сумма</string>
+    <string name="RasxodiPeriod">Расходы периода</string>
+    <string name="RasxodFinansDeayt">Расходы по финансовой деятельности</string>
+    <string name="RasxodProtsent">"Расходы в виде продуктов "</string>
+    <string name="Ubitki">"Убытки от валютных курсовых разниц "</string>
+    <string name="ProCiRasxodi">Прочие расходы по финансовой деятельности</string>
+    <string name="RasxodiNalog">Расходы по налогам от прибыли</string>
+    <string name="EdinyNalog">Единый налоговый платёж</string>
+    <string name="Prochie">Прочие налоги</string>
+    <string name="Date">Дата</string>
+    <string name="Document">Документ</string>
+    <string name="Deyatelnost">Деятельность</string>
+    <string name="VydiDeatelnosti">"Виды деятельности "</string>
+    <string name="GotovyProduck">Готовая продукция</string>
+    <string name="Torgovl">Торговля</string>
+    <string name="Uslug">Услуги</string>
+    <string name="Edizm">Ед.изм</string>
+    <string name="Tsena">Цена</string>
+    <string name="ostatokNakones">Остаток на конец</string>
+    <string name="Kolvo">Кол-во</string>
+    <string name="language">Язык</string>
 </resources>

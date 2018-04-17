@@ -21,6 +21,7 @@ import java.util.List;
 
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.models.BankPeriodResult;
 import uz.a1uz.a1uzdirector.EdatePeriod;
+import uz.a1uz.a1uzdirector.Helpers.ActionBarCustomizer;
 import uz.a1uz.a1uzdirector.Helpers.LayoutConfiguration;
 import uz.a1uz.a1uzdirector.Helpers.DatePeriodPicker;
 import uz.a1uz.a1uzdirector.Helpers.FirstLastDate;
@@ -32,7 +33,7 @@ import uz.a1uz.a1uzdirector.Helpers.UrlHepler;
 import uz.a1uz.a1uzdirector.Helpers.UserInfo;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
-public class BankPeriodTable extends AppCompatActivity implements LayoutConfiguration<BankPeriodResult> {
+public class BankPeriodTable extends ActionBarCustomizer implements LayoutConfiguration<BankPeriodResult> {
     TableLayout periodTable;
     int ReportID;
     Context context=this;

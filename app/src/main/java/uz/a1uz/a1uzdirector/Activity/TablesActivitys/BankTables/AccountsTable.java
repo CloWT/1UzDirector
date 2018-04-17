@@ -30,6 +30,7 @@ import java.util.Locale;
 
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.models.AccountReportResult;
 import uz.a1uz.a1uzdirector.Activity.models.WidgetDropDownItem;
+import uz.a1uz.a1uzdirector.Helpers.ActionBarCustomizer;
 import uz.a1uz.a1uzdirector.Helpers.LayoutConfiguration;
 import uz.a1uz.a1uzdirector.JsoN.GetJson;
 import uz.a1uz.a1uzdirector.JsoN.IGetJsonResult;
@@ -39,12 +40,12 @@ import uz.a1uz.a1uzdirector.Helpers.UrlHepler;
 import uz.a1uz.a1uzdirector.Helpers.UserInfo;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
-public class AccountsTable extends AppCompatActivity implements LayoutConfiguration<AccountReportResult> {
+public class AccountsTable extends ActionBarCustomizer implements LayoutConfiguration<AccountReportResult> {
 String url= UrlHepler.Combine(URL_cons.ACCOUNTREPORT, UserInfo.getGUID());
 TableLayout bankTable;
 Context context;
 ProgressBar progressBar;
-    AlertDialog.Builder builder;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,10 +53,7 @@ ProgressBar progressBar;
         context=this;
         setContentView(R.layout.activity_accounts_table);
         System.out.println("OnCreat");
-        getSupportActionBar().setHomeButtonEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setIcon(R.mipmap.uz_launcher_ic);
-        getSupportActionBar().setSubtitle("Банк");
+        setSubTitleC("Банк");
         bankTable=(TableLayout)findViewById(R.id.tableForBank);
         progressBar=(ProgressBar)findViewById(R.id.progres);
         progressBar.setProgressDrawable(getResources().getDrawable(R.drawable.progressbarcust));
@@ -128,61 +126,10 @@ ProgressBar progressBar;
             }
         });
 
-        builder = new AlertDialog.Builder(context);
-        builder.setTitle("");
-        // Add the buttons
-        builder.setPositiveButton("ru", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                String languageToLoad = "ru"; // your language
-                Locale locale = new Locale(languageToLoad);
-                Locale.setDefault(locale);
-                Configuration config = new Configuration();
-                config.locale = locale;
-                getBaseContext().getResources().updateConfiguration(config,
-                        getBaseContext().getResources().getDisplayMetrics());
-                dialog.dismiss();
 
 
 
 
-                Intent refresh = new Intent(context, AccountsTable.class);
-                startActivity(refresh);
-                finish();
-
-            }
-        });
-        builder.setNegativeButton("Uz", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                // User cancelled the dialog
-
-                String languageToLoad = "uz"; // your language
-                Locale locale = new Locale(languageToLoad);
-                Locale.setDefault(locale);
-                Configuration config = new Configuration();
-                config.locale = locale;
-                getBaseContext().getResources().updateConfiguration(config,
-                        getBaseContext().getResources().getDisplayMetrics());
-                dialog.dismiss();
-
-
-
-                Intent refresh = new Intent(context, AccountsTable.class);
-                startActivity(refresh);
-                finish();
-
-            }
-        });
-
-
-
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if(item.getItemId()==android.R.id.home)
-            builder.create().show();
-            //finish();
-        return super.onOptionsItemSelected(item);
     }
 
     @Override

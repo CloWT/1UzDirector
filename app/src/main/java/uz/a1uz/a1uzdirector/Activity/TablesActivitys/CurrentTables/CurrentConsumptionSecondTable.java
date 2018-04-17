@@ -13,12 +13,13 @@ import android.widget.TextView;
 import java.util.List;
 
 import uz.a1uz.a1uzdirector.EdatePeriod;
+import uz.a1uz.a1uzdirector.Helpers.ActionBarCustomizer;
 import uz.a1uz.a1uzdirector.Helpers.DatePeriodPicker;
 import uz.a1uz.a1uzdirector.Helpers.FirstLastDate;
 import uz.a1uz.a1uzdirector.Helpers.LayoutConfiguration;
 import uz.a1uz.a1uzdirector.R;
 
-public class CurrentConsumptionSecondTable extends AppCompatActivity implements LayoutConfiguration {
+public class CurrentConsumptionSecondTable extends ActionBarCustomizer implements LayoutConfiguration {
     GridLayout periodTable;
     Context context;
     ProgressBar progressBar;

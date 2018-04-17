@@ -16,6 +16,10 @@
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\drawable-mdpi\\ic_color_changer.png"
     },
     {
+        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\left_arrow.png",
+        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\left_arrow.png"
+    },
+    {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\drawer_shadow.9.png",
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\drawable-mdpi\\drawer_shadow.9.png"
     }

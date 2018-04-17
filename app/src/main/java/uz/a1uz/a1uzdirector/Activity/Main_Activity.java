@@ -12,12 +12,13 @@ import java.util.List;
 
 import uz.a1uz.a1uzdirector.Activity.models.Widget_item_Adapter;
 import uz.a1uz.a1uzdirector.Activity.models.Widget_item_model;
+import uz.a1uz.a1uzdirector.Helpers.ActionBarCustomizer;
 import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.WidgetsUrlsArr;
 
 import static uz.a1uz.a1uzdirector.constants.URL_cons.*;
 
-public class Main_Activity extends AppCompatActivity  {
+public class Main_Activity extends ActionBarCustomizer {
 public List<Widget_item_model> items;
     public Widget_item_Adapter adapter;
 

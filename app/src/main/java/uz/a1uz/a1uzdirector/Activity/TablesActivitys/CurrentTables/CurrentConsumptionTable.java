@@ -19,6 +19,7 @@ import java.util.List;
 
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.StoreTables.models.StorePeriodResult;
 import uz.a1uz.a1uzdirector.EdatePeriod;
+import uz.a1uz.a1uzdirector.Helpers.ActionBarCustomizer;
 import uz.a1uz.a1uzdirector.Helpers.DatePeriodPicker;
 import uz.a1uz.a1uzdirector.Helpers.FirstLastDate;
 import uz.a1uz.a1uzdirector.Helpers.UrlHepler;
@@ -28,7 +29,7 @@ import uz.a1uz.a1uzdirector.JsoN.IGetJsonResult;
 import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
-public class CurrentConsumptionTable extends Activity {
+public class CurrentConsumptionTable extends ActionBarCustomizer {
     GridLayout periodTable;
     Context context;
     ProgressBar progressBar;

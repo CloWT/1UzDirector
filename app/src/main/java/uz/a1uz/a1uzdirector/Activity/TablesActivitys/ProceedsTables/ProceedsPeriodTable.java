@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.ProceedsTables.models.ProceedsPeriodResult;
 import uz.a1uz.a1uzdirector.EdatePeriod;
+import uz.a1uz.a1uzdirector.Helpers.ActionBarCustomizer;
 import uz.a1uz.a1uzdirector.Helpers.LayoutConfiguration;
 import uz.a1uz.a1uzdirector.Helpers.DatePeriodPicker;
 import uz.a1uz.a1uzdirector.Helpers.FirstLastDate;
@@ -29,7 +30,7 @@ import uz.a1uz.a1uzdirector.JsoN.IGetJsonResult;
 import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
-public class ProceedsPeriodTable extends AppCompatActivity implements LayoutConfiguration<ProceedsPeriodResult> {
+public class ProceedsPeriodTable extends ActionBarCustomizer implements LayoutConfiguration<ProceedsPeriodResult> {
     TableLayout periodTable;
     int ReportID;
     Context context;

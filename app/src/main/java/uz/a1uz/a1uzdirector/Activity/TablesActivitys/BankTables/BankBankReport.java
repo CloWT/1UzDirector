@@ -18,6 +18,7 @@ import java.util.List;
 
 import uz.a1uz.a1uzdirector.Activity.models.WidgetDropDownItem;
 import uz.a1uz.a1uzdirector.EdatePeriod;
+import uz.a1uz.a1uzdirector.Helpers.ActionBarCustomizer;
 import uz.a1uz.a1uzdirector.Helpers.FirstLastDate;
 import uz.a1uz.a1uzdirector.JsoN.GetJson;
 import uz.a1uz.a1uzdirector.JsoN.IGetJsonResult;
@@ -27,7 +28,7 @@ import uz.a1uz.a1uzdirector.Helpers.UrlHepler;
 import uz.a1uz.a1uzdirector.Helpers.UserInfo;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
-public class BankBankReport extends AppCompatActivity {
+public class BankBankReport extends ActionBarCustomizer {
 int reportID;
     Spinner spinner;
     TableLayout tableLayout;

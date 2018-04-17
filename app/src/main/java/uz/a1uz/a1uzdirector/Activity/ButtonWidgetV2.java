@@ -99,7 +99,8 @@ public class ButtonWidgetV2 extends GetJsonResult {
         Log.e("Message:", message);
         if(!isOk) {
 
-            Widget_item_model model=new Widget_item_model(dropDownLeft,BottomLEftTex,dropDownRight,BottomRightText,Middle,MiddleText,TopText,backgroundColor,reportUrl,secondReportUrl);
+            Widget_item_model model=new Widget_item_model(dropDownLeft,"",
+                    dropDownRight,"",Middle,MiddleText,"",backgroundColor,reportUrl,secondReportUrl);
 
             activity.items.add(model);
             activity.adapter.notifyDataSetChanged();

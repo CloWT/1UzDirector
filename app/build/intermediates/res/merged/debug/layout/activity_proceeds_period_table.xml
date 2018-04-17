@@ -68,35 +68,35 @@
                         android:textColor="@color/textColor"/>
                     <TextView
 
-                        android:text="Дата"
+                        android:text="@string/Date"
                         android:gravity="center"
                         android:padding="5dip"
                         android:textColor="@color/textColor"
                         />
                     <TextView
 
-                        android:text="Контрагент"
+                        android:text="@string/Contragent"
                         android:gravity="center"
                         android:padding="5dip"
                         android:textColor="@color/textColor"
                         />
                     <TextView
 
-                        android:text="Документ"
+                        android:text="@string/Document"
                         android:gravity="center"
                         android:padding="5dip"
                         android:textColor="@color/textColor"
                         />
                     <TextView
 
-                        android:text="Деятельность"
+                        android:text="@string/Deyatelnost"
                         android:gravity="center"
                         android:padding="5dip"
                         android:textColor="@color/textColor"
                         />
                     <TextView
 
-                        android:text="Сумма"
+                        android:text="@string/Summa"
                         android:gravity="center"
                         android:padding="5dip"
                         android:textColor="@color/textColor"

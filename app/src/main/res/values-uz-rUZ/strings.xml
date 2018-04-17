@@ -62,4 +62,26 @@
     <string name="Day60">60 кунгача</string>
     <string name="Day30">30 кунгача</string>
     <string name="All">Жами</string>
+    <string name="StatyaRasxodov">Ҳаражатлар моддаси</string>
+    <string name="RasxodiPeriod">Давр ҳаражатлари</string>
+    <string name="Summa">Сумма</string>
+    <string name="RasxodFinansDeayt">Молиявий фаолият билан боғлиқ ҳаражатлар</string>
+    <string name="RasxodProtsent">Маҳсулот кўринишидаги ҳаражатлар</string>
+    <string name="Ubitki">Валюта айирбошлаш курси бўйича йўқотишлар</string>
+    <string name="ProCiRasxodi">Молиявий фаолият билан боғлиқ бошқа ҳаражатлар</string>
+    <string name="RasxodiNalog">Даромад солиғи бўйича ҳаражатлар</string>
+    <string name="EdinyNalog">Ягона солиқ тўлови</string>
+    <string name="Prochie">Бошқа солиқлар</string>
+    <string name="Date">Сана</string>
+    <string name="Document">Ҳужжат</string>
+    <string name="Deyatelnost">Фаолият</string>
+    <string name="VydiDeatelnosti">Фаолият турлари</string>
+    <string name="GotovyProduck">Тайёр маҳсулот</string>
+    <string name="Torgovl">Савдо сотиқ</string>
+    <string name="Uslug">Хизмат кўрсатиш</string>
+    <string name="Edizm">Ед.изм</string>
+    <string name="Tsena">Нарх</string>
+    <string name="ostatokNakones">Охиридаги қолдиқ</string>
+    <string name="Kolvo">сони</string>
+    <string name="language">Тил</string>
 </resources>
