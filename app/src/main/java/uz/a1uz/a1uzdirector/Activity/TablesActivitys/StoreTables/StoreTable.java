@@ -86,7 +86,7 @@ public class StoreTable extends AppCompatActivity {
 
                     }
                     accRepResults.add(new AccountReportResult(
-                            "Итого",
+                            getString(R.string.total),
                             hh.getString("TotalBeginPeriodSum"),
                             hh.getString("TotalInSum"),
                             hh.getString("TotalOutSum"),

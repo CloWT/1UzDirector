@@ -18,7 +18,11 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.AccountsTable;
+import uz.a1uz.a1uzdirector.Activity.TablesActivitys.CreditTables.CreditTable;
+import uz.a1uz.a1uzdirector.Activity.TablesActivitys.CurrentTables.CurrentConsumptionTable;
+import uz.a1uz.a1uzdirector.Activity.TablesActivitys.DebitTables.DebitTable;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.ProceedsTables.ProceedsTable;
+import uz.a1uz.a1uzdirector.Activity.TablesActivitys.StoreTables.StoreTable;
 import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
@@ -75,11 +79,25 @@ public class Widget_Adapter extends BaseAdapter {
         LinearLayout LeftBotomLayout=(LinearLayout)view.findViewById(R.id.left_bottom_layout);
         LinearLayout RightBotomLayout=(LinearLayout) view.findViewById(R.id.right_bottom_layout);
 
-        ArrayAdapter<WidgetDropDownItem> spinnerArrayAdapter = new ArrayAdapter<>(
-                context,R.layout.simple_spinner_item,wg.getBottomLeftItems());
-        spinnerArrayAdapter.setDropDownViewResource(R.layout.simple_spinner_dropdown_item);
-        LeftSpinner.setAdapter(spinnerArrayAdapter);
-        LeftSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        SpinnerAddElements(wg, LeftSpinner, RightSpinner);
+
+        SpinnerAddItems(LeftBotomLayout,LeftSpinImage,LeftSpinner,wg);
+        TopTex.setText(wg.getTopText());
+        MiddleText.setText(wg.getMiddleText());
+        BottomLeftText.setText(wg.getBottomLeftText());
+        BottomRightText.setText(wg.getBottomRightText());
+        linearLayout.setBackgroundResource(wg.getBackgroundColor());
+        linearLayout.setOnClickListener(new Widget_Adapter.LayoutClick(wg));
+
+        return view;
+    }
+
+    private void SpinnerAddElements(Widget_item_model wg, Spinner leftSpinner, Spinner rightSpinner) {
+        ArrayAdapter<WidgetDropDownItem> leftSpinAdap = new ArrayAdapter<>(
+                context, R.layout.simple_spinner_item,wg.getBottomLeftItems());
+        leftSpinAdap.setDropDownViewResource(R.layout.simple_spinner_dropdown_item);
+        leftSpinner.setAdapter(leftSpinAdap);
+        leftSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 System.out.println("Clickk");
@@ -91,35 +109,28 @@ public class Widget_Adapter extends BaseAdapter {
             }
         });
 
-        SpinnerAddItems(LeftBotomLayout,LeftSpinImage,LeftSpinner,wg);
-        LeftSpinner.setTag(position);
-        TopTex.setTag(position);
-        ImageRight.setTag(position);
-        MiddleText.setTag(position);
-        LeftSpinner.setTag(position);
-        BottomLeftText.setTag(position);
-        LeftSpinImage.setTag(position);
-        BottomRightText.setTag(position);
-        RightSpinImage.setTag(position);
-        RightSpinner.setTag(position);
-        linearLayout.setTag(position);
-        LeftBotomLayout.setTag(position);
-        RightBotomLayout.setTag(position);
+        ArrayAdapter<WidgetDropDownItem> rightSpinAdap = new ArrayAdapter<>(
+                context,R.layout.simple_spinner_item,wg.getBottomLeftItems());
+        rightSpinAdap.setDropDownViewResource(R.layout.simple_spinner_dropdown_item);
+        rightSpinner.setAdapter(rightSpinAdap);
+        rightSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                System.out.println("Clickk");
+            }
 
-        TopTex.setText(wg.getTopText());
-        MiddleText.setText(wg.getMiddleText());
-        BottomLeftText.setText(wg.getBottomLeftText());
-        BottomRightText.setText(wg.getBottomRightText());
-        linearLayout.setBackgroundResource(wg.getBackgroundColor());
-        linearLayout.setOnClickListener(new Widget_Adapter.LayoutClick(wg));
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
 
-        return view;
+            }
+        });
     }
+
     Widget_item_model getWidget(int position){
         return ((Widget_item_model) getItem(position));
     }
     private void SpinnerAddItems(LinearLayout leftBotomLayout, ImageButton leftSpinImage, Spinner leftSpinner, Widget_item_model wg) {
-        if(wg.getBottomLeftItems()!=null){
+        if(wg.getBottomLeftItems().length>0){
             leftBotomLayout.setOnClickListener(new Widget_Adapter.OnClick(leftSpinner));
             leftSpinImage.setVisibility(View.VISIBLE);
 //            ArrayAdapter<WidgetDropDownItem> spinnerArrayAdapter = new ArrayAdapter<>(
@@ -200,14 +211,23 @@ public class Widget_Adapter extends BaseAdapter {
                     intent= new Intent(context, AccountsTable.class);
                     context.startActivity(intent);
                     break;
-                case URL_cons.STOREREPORT: break;
+                case URL_cons.STOREREPORT:
+                    intent= new Intent(context, StoreTable.class);
+                    context.startActivity(intent);break;
                 case URL_cons.PROCCEDREPORT:
                     intent= new Intent(context, ProceedsTable.class);
                     context.startActivity(intent);
                     break;
-                case URL_cons.CREDITREPORT: break;
-                case URL_cons.DEBITREPORT: break;
-                case URL_cons.CURRENTCOSTREPORT: break;
+                case URL_cons.CREDITREPORT:
+                    intent= new Intent(context, CreditTable.class);
+                    context.startActivity(intent);break;
+                case URL_cons.DEBITREPORT:
+                    intent= new Intent(context, DebitTable.class);
+                    context.startActivity(intent);
+                    break;
+
+                case URL_cons.CURRENTCOSTREPORT: intent= new Intent(context, CurrentConsumptionTable.class);
+                    context.startActivity(intent);break;
             }
 
         }

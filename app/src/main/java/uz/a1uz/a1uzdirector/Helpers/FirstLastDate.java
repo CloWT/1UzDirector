@@ -29,14 +29,14 @@ public class FirstLastDate{
         this.context=context;
         GetPeriodDate(edatePeriod);
     }
-    private static DateFormat dateFormat = new SimpleDateFormat("dd.MM.YYYY", Locale.getDefault());
+    private static DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy", Locale.getDefault());
     public FirstLastDate() {
 
     }
     public static String CustomDateFormat(Calendar date){
         return dateFormat.format(date.getTime());
     }
-    public static
+
     Calendar first = Calendar.getInstance();
     Calendar second = Calendar.getInstance();
     FirstLastDate dat = null;
@@ -124,7 +124,7 @@ public class FirstLastDate{
 
 
 
-;
+
 
     public String getFirstDate() {
         return firstDate;

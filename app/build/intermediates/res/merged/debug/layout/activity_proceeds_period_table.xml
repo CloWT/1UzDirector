@@ -62,7 +62,7 @@
 
                     <TextView
 
-                        android:text="№"
+                        android:text="@string/NumZnak"
                         android:layout_gravity="center|center_horizontal"
                         android:padding="5dip"
                         android:textColor="@color/textColor"/>

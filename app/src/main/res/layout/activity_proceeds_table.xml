@@ -33,13 +33,13 @@
 
                     >
                     <TextView
-                        android:text="Виды деятельности"
+                        android:text="@string/VydiDeatelnosti"
                         android:gravity="center|center_horizontal"
                         android:padding="5dip"
                         android:textColor="@color/textColor"/>
                     <TextView
 
-                        android:text="Вчера"
+                        android:text="@string/yesterday"
                         android:id="@+id/lastDay"
                         android:gravity="center"
                         android:padding="5dip"
@@ -48,7 +48,7 @@
                         />
                     <TextView
 
-                        android:text="Текущая неделя"
+                        android:text="@string/thisWeek"
                         android:gravity="center"
                         android:id="@+id/thisWeek"
                         android:padding="5dip"
@@ -57,7 +57,7 @@
                         />
                     <TextView
 
-                        android:text="Прошлая неделя"
+                        android:text="@string/LastWeek"
                         android:gravity="center"
                         android:id="@+id/LastWeek"
                         android:onClick="cLastWeek"
@@ -66,21 +66,21 @@
 
                         />
                     <TextView
-                        android:text="Текущий месяц"
+                        android:text="@string/ThisMonth"
                         android:padding="5dip"
                         android:id="@+id/thisMonth"
                         android:onClick="cThisMonth"
                         android:textColor="@color/textColor"
                         />
                     <TextView
-                        android:text="Прошлый месяц"
+                        android:text="@string/LastMonth"
                         android:padding="5dip"
                         android:id="@+id/lastMonth"
                         android:onClick="cLastMonth"
                         android:textColor="@color/textColor"
                         />
                     <TextView
-                        android:text="С начала Года"
+                        android:text="@string/Beginyear"
                         android:padding="5dip"
                         android:id="@+id/thisYear"
                         android:onClick="cThisyear"
@@ -91,7 +91,7 @@
                 <TableRow android:background="@color/textColor"
                     >
                     <TextView
-                        android:text="Готовая продукция"
+                        android:text="@string/GotovyProduck"
                         android:gravity="left|center_horizontal"
                         android:padding="5dip"
                         android:background="@drawable/border_shape"
@@ -152,7 +152,7 @@
 
                     >
                     <TextView
-                        android:text="Торговля"
+                        android:text="@string/Torgovl"
                         android:gravity="left|center_horizontal"
                         android:padding="5dip"
                         android:background="@drawable/border_shape"
@@ -212,7 +212,7 @@
 
                     >
                     <TextView
-                        android:text="Услуги"
+                        android:text="@string/Uslug"
                         android:gravity="left"
                         android:padding="5dip"
                         android:background="@drawable/border_shape"
@@ -221,7 +221,7 @@
                         android:id="@+id/SerLastDay"
                         android:text="0"
                         android:onClick="cLastDay"
-                        android:gravity="right"
+                        android:gravity="end"
                         android:padding="5dip"
                         android:background="@drawable/border_shape"
                         />
@@ -229,7 +229,7 @@
                         android:id="@+id/SerThisWeek"
                         android:text="0"
                         android:onClick="cThisWeek"
-                        android:gravity="right"
+                        android:gravity="end"
                         android:padding="5dip"
                         android:background="@drawable/border_shape"
                         />
@@ -237,7 +237,7 @@
                         android:id="@+id/SerLastWeek"
                         android:text="0"
                         android:onClick="cLastWeek"
-                        android:gravity="right"
+                        android:gravity="end"
                         android:padding="5dip"
                         android:background="@drawable/border_shape"
 
@@ -246,7 +246,7 @@
                         android:id="@+id/SerThisMonth"
                         android:text="0"
                         android:onClick="cThisMonth"
-                        android:gravity="right"
+                        android:gravity="end"
                         android:padding="5dip"
                         android:background="@drawable/border_shape"
                         />
@@ -254,7 +254,7 @@
                         android:id="@+id/SerLastMonth"
                         android:text="0"
                         android:onClick="cLastMonth"
-                        android:gravity="right"
+                        android:gravity="end"
                         android:padding="5dip"
                         android:background="@drawable/border_shape"
                         />
@@ -262,7 +262,7 @@
                         android:id="@+id/SerThisYearBegin"
                         android:text="0"
                         android:onClick="cThisyear"
-                        android:gravity="right"
+                        android:gravity="end"
                         android:padding="5dip"
                         android:background="@drawable/border_shape"
                         />
@@ -272,8 +272,8 @@
 
                     >
                     <TextView
-                        android:text="Итого"
-                        android:gravity="left"
+                        android:text="@string/total"
+                        android:gravity="start"
                         android:padding="5dip"
                         android:background="@drawable/border_dark_shape"
                         android:textColor="@color/textColor"/>
@@ -281,7 +281,7 @@
                         android:id="@+id/TotalLastDay"
                         android:text="0"
                         android:onClick="cLastDay"
-                        android:gravity="right"
+                        android:gravity="end"
                         android:padding="5dip"
                         android:background="@drawable/border_dark_shape"
                         android:textColor="@color/textColor"
@@ -290,7 +290,7 @@
                         android:id="@+id/TotalThisWeek"
                         android:text="0"
                         android:onClick="cThisWeek"
-                        android:gravity="right"
+                        android:gravity="end"
                         android:padding="5dip"
                         android:background="@drawable/border_dark_shape"
                         android:textColor="@color/textColor"
@@ -299,7 +299,7 @@
                         android:id="@+id/TotalLastWeek"
                         android:text="0"
                         android:onClick="cLastWeek"
-                        android:gravity="right"
+                        android:gravity="end"
                         android:padding="5dip"
                         android:background="@drawable/border_dark_shape"
                         android:textColor="@color/textColor"
@@ -309,7 +309,7 @@
                         android:id="@+id/TotalThisMonth"
                         android:text="0"
                         android:onClick="cThisMonth"
-                        android:gravity="right"
+                        android:gravity="end"
                         android:padding="5dip"
                         android:background="@drawable/border_dark_shape"
                         android:textColor="@color/textColor"
@@ -318,7 +318,7 @@
                         android:id="@+id/TotalLastMonth"
                         android:text="0"
                         android:onClick="cLastMonth"
-                        android:gravity="right"
+                        android:gravity="end"
                         android:padding="5dip"
                         android:background="@drawable/border_dark_shape"
                         android:textColor="@color/textColor"
@@ -327,7 +327,7 @@
                         android:id="@+id/TotalThisYearBegin"
                         android:text="0"
                         android:onClick="cThisyear"
-                        android:gravity="right"
+                        android:gravity="end"
                         android:padding="5dip"
                         android:background="@drawable/border_dark_shape"
                         android:textColor="@color/textColor"

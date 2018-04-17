@@ -177,7 +177,7 @@ public class StorePeriodTable extends AppCompatActivity implements LayoutConfigu
             tx.setGravity(Gravity.CENTER_HORIZONTAL);
             tx.setTextColor(ContextCompat.getColor(this,R.color.tableTopColor));
             tx.setBackgroundResource(R.drawable.border_shape);
-            tx.setText("Нет данных");
+            tx.setText(getString(R.string.NotData));
             tx.setLayoutParams(param);
             periodTable.addView(tx);
 

@@ -1,21 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="action_settings">Settings</string>
+    <string name="inn">ИНН</string>
+    <string name="password">пароль</string>
+    <string name="Enter">Войти</string>
     <string name="app_name">1 UZ ДИРЕКТОР</string>
-    <string name="test">testtt</string>
     <string name="title_activity_navigation">Navigation</string>
-
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
-
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
     <string name="action_example">Example action</string>
-
-    <string name="action_settings">Settings</string>
-    <string name="inn">ИНН</string>
-    <string name="password">парол</string>
-    <string name="Enter">Войти</string>
     <string name="store">Склады</string>
     <string name="BeginPeriod">Остаток на начало</string>
     <string name="InSum">Приход</string>
@@ -30,10 +26,61 @@
     <string name="Contract">Договор</string>
     <string name="title_activity_current_consumption_table">CurrentConsumptionTable</string>
     <string name="SebeStoimostGotovyProduksii">Себестоимость реализованной готовой продукции</string>
-    <string name="SebeStoimostRealizoTovar">Себестоимость реализованных товаров</string>
-    <string name="SebeStoimVypolnenRabotiUsl">Себестоимость выполненных работ и оказания услуг</string>
+    <string name="SebeStoimostRealizoTovar">"Себестоимость реализованных товаров "</string>
+    <string name="SebeStoimVypolnenRabotiUsl">Себестоимость выплаченных работ и оказанных услуг</string>
     <string name="PoRealizatsii">По реализации</string>
     <string name="AdministratiroRasxod">Административные расходы</string>
     <string name="ProchieOperatRasxodi">Прочие операционные расходы</string>
-    <string name="VychitaemIzNalogoPribilivBudushem">Вычитаемые из налогооблагаемой прибыли в будущем</string>
+    <string name="VychitaemIzNalogoPribilivBudushem">"Вычитаемый из налогооблагаемой прибыли в будущем "</string>
+    <string name="From">C</string>
+    <string name="To">По</string>
+    <string name="accept">Принят</string>
+    <string name="Bank">Банк</string>
+    <string name="Schet">Счет:</string>
+    <string name="ReportAcutal">"Отчёт актуален на "</string>
+    <string name="Subkonto">Субконто</string>
+    <string name="yesterday">Вчера</string>
+    <string name="thisWeek">Текущая неделя</string>
+    <string name="LastWeek">Прошлая неделя</string>
+    <string name="ThisMonth">Текущий месяц</string>
+    <string name="LastMonth">Прошлый месяц</string>
+    <string name="Beginyear">С начало Года</string>
+    <string name="inBeginPeriod">На начало периода</string>
+    <string name="Prihod">Приход</string>
+    <string name="Rasxod">Расход</string>
+    <string name="inEndPeriod">На конец периода</string>
+    <string name="Scheta">Счета</string>
+    <string name="BeginDay">На начало дня</string>
+    <string name="TotalAborot">Итого обороты</string>
+    <string name="Ostatki">Остатки на</string>
+    <string name="begin">начало:</string>
+    <string name="end">конец:</string>
+    <string name="NotData">Нет данных за указанный период</string>
+    <string name="OperationDetail">Детали операции</string>
+    <string name="Day100">Более 90 дн.</string>
+    <string name="Day90">До 90 дней</string>
+    <string name="Day60">До 60 дней</string>
+    <string name="Day30">До 30 дней</string>
+    <string name="All">Всего</string>
+    <string name="StatyaRasxodov">Статья расходов</string>
+    <string name="Summa">Сумма</string>
+    <string name="RasxodiPeriod">Расходы периода</string>
+    <string name="RasxodFinansDeayt">Расходы по финансовой деятельности</string>
+    <string name="RasxodProtsent">Расходы в виде процентов</string>
+    <string name="Ubitki">Убытки от валютных курсовых разниц</string>
+    <string name="ProCiRasxodi">Прочие расходы по финансовой деятельности</string>
+    <string name="RasxodiNalog">Расходы по налогам от прибыли</string>
+    <string name="EdinyNalog">Единый налоговый платёж</string>
+    <string name="Prochie">Прочие налоги</string>
+    <string name="Date">Дата</string>
+    <string name="Document">Документ</string>
+    <string name="Deyatelnost">Деятельность</string>
+    <string name="VydiDeatelnosti">Виды деятельности</string>
+    <string name="GotovyProduck">Готовая продукция</string>
+    <string name="Torgovl">Торговля</string>
+    <string name="Uslug">Услуги</string>
+    <string name="Edizm">Ед.изм</string>
+    <string name="Tsena">Цена</string>
+    <string name="ostatokNakones">Остаток на конец</string>
+    <string name="Kolvo">Кол-во</string>
 </resources>

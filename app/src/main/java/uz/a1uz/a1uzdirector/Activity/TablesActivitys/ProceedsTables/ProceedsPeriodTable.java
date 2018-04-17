@@ -117,9 +117,9 @@ public class ProceedsPeriodTable extends AppCompatActivity implements LayoutConf
                         );
                     }
                     if(jsonArray.length()<1)periodResults.add(new ProceedsPeriodResult(
-                            "",""," Нет данных ","","",""
+                            "","",getString(R.string.NotData),"","",""
                     ));
-                    periodResults.add(new ProceedsPeriodResult("Итого","","","",
+                    periodResults.add(new ProceedsPeriodResult(getString(R.string.total),"","","",
                             "",js.getString("TotalSumma")));
                     AddElemsToTable(periodResults);
 

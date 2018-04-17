@@ -85,7 +85,7 @@ public class CreditTable extends AppCompatActivity implements LayoutConfiguratio
                     creditReportResults.add(new CreditReportResult(
                             "",
                             -1,
-                            "Итого",
+                            getString(R.string.total),
                             "",
                             js.getString("TSumma"),
                             js.getString("TDay30"),

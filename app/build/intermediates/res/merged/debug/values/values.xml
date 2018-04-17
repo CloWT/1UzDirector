@@ -174,7 +174,7 @@
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
     <color name="primary_material_dark">@color/material_grey_900</color>
-    <color name="primary_material_light">@color/material_grey_100</color>
+    <color name="primary_material_light">#4caf50</color>
     <color name="primary_text_default_material_dark">#ffffffff</color>
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4Dffffff</color>
@@ -378,22 +378,55 @@
     <integer name="design_snackbar_text_max_lines">2</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="AdministratiroRasxod">Административные расходы</string>
+    <string name="All">Всего</string>
+    <string name="Bank">Банк</string>
+    <string name="BeginDay">На начало дня</string>
     <string name="BeginPeriod">Остаток на начало</string>
+    <string name="Beginyear">С начало Года</string>
     <string name="Contract">Договор</string>
     <string name="Contragent">Контрагент</string>
     <string name="CurrentSum">Текущий остаток</string>
+    <string name="Day100">Более 90 дн.</string>
+    <string name="Day30">До 30 дней</string>
+    <string name="Day60">До 60 дней</string>
+    <string name="Day90">До 90 дней</string>
+    <string name="EdinyNalog">Единый налоговый платёж</string>
     <string name="Enter">Войти</string>
+    <string name="From">C</string>
     <string name="InSum">Приход</string>
+    <string name="LastMonth">Прошлый месяц</string>
+    <string name="LastWeek">Прошлая неделя</string>
+    <string name="NotData">Нет данных за указанный период</string>
     <string name="NumZnak">№</string>
+    <string name="OperationDetail">Детали операции</string>
+    <string name="Ostatki">Остатки на</string>
     <string name="OutSum">Расход</string>
     <string name="Period">Период</string>
     <string name="PoRealizatsii">По реализации</string>
+    <string name="Prihod">Приход</string>
+    <string name="ProCiRasxodi">Прочие расходы по финансовой деятельности</string>
+    <string name="Prochie">Прочие налоги</string>
     <string name="ProchieOperatRasxodi">Прочие операционные расходы</string>
-    <string name="SebeStoimVypolnenRabotiUsl">Себестоимость выполненных работ и оказания услуг</string>
+    <string name="Rasxod">Расход</string>
+    <string name="RasxodFinansDeayt">Расходы по финансовой деятельности</string>
+    <string name="RasxodProtsent">Расходы в виде процентов</string>
+    <string name="RasxodiNalog">Расходы по налогам от прибыли</string>
+    <string name="RasxodiPeriod">Расходы периода</string>
+    <string name="ReportAcutal">"Отчёт актуален на "</string>
+    <string name="Schet">Счет:</string>
+    <string name="Scheta">Счета</string>
+    <string name="SebeStoimVypolnenRabotiUsl">Себестоимость выплаченных работ и оказанных услуг</string>
     <string name="SebeStoimostGotovyProduksii">Себестоимость реализованной готовой продукции</string>
-    <string name="SebeStoimostRealizoTovar">Себестоимость реализованных товаров</string>
+    <string name="SebeStoimostRealizoTovar">"Себестоимость реализованных товаров "</string>
+    <string name="StatyaRasxodov">Статья расходов</string>
+    <string name="Subkonto">Субконто</string>
+    <string name="Summa">Сумма</string>
     <string name="TMZ_Name">Наименование ТМЗ</string>
-    <string name="VychitaemIzNalogoPribilivBudushem">Вычитаемые из налогооблагаемой прибыли в будущем</string>
+    <string name="ThisMonth">Текущий месяц</string>
+    <string name="To">По</string>
+    <string name="TotalAborot">Итого обороты</string>
+    <string name="Ubitki">Убытки от валютных курсовых разниц</string>
+    <string name="VychitaemIzNalogoPribilivBudushem">"Вычитаемый из налогооблагаемой прибыли в будущем "</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
     <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
@@ -413,19 +446,25 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="accept">Принят</string>
     <string name="action_example">Example action</string>
     <string name="action_settings">Settings</string>
     <string name="app_name">1 UZ ДИРЕКТОР</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="begin">начало:</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
+    <string name="end">конец:</string>
+    <string name="inBeginPeriod">На начало периода</string>
+    <string name="inEndPeriod">На конец периода</string>
     <string name="inn">ИНН</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="password">парол</string>
+    <string name="password">пароль</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="store">Склады</string>
     <string name="test">testtt</string>
+    <string name="thisWeek">Текущая неделя</string>
     <string name="title_activity_current_consumption_table">CurrentConsumptionTable</string>
     <string name="title_activity_navigation">Navigation</string>
     <string name="title_activity_store_period_table">StorePeriodTable</string>
@@ -433,6 +472,7 @@
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
     <string name="total">Итого</string>
+    <string name="yesterday">Вчера</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
@@ -442,6 +482,15 @@
         <item name="android:windowExitAnimation">@anim/design_bottom_sheet_slide_out</item>
     </style>
     <style name="AppThemess" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@drawable/bg2</item>
+        <item name="android:progressDrawable">@drawable/progressbarcust</item>
+
+    </style>
+    <style name="AppThemesss" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>

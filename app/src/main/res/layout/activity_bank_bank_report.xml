@@ -21,13 +21,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_column="1"
 
             >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Счет:"/>
+            android:text="@string/Schet"/>
         <Spinner
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -38,11 +37,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Отчет актуален на "
+            android:text="@string/ReportAcutal"
             android:background="#f2dede"
             android:textColor="@color/red"
-            android:id="@+id/dateReport_text"
-            android:layout_column="3"/>
+            android:id="@+id/dateReport_text" />
 
     </LinearLayout>
     <ProgressBar
@@ -57,7 +55,7 @@
         android:id="@+id/layout"
         android:layout_height="wrap_content"
         android:scrollbars="horizontal"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:scrollbarStyle="insideInset"
         android:fillViewport="true">
 
@@ -76,13 +74,13 @@
 
                     >
                     <TextView
-                        android:text="Субконто"
+                        android:text="@string/Subkonto"
                         android:gravity="center|center_horizontal"
                         android:padding="5dip"
                         android:textColor="@color/textColor"/>
                     <TextView
 
-                        android:text="Вчера"
+                        android:text="@string/yesterday"
                         android:id="@+id/lastDay"
                         android:gravity="center"
                         android:padding="5dip"
@@ -91,7 +89,7 @@
                         />
                     <TextView
 
-                        android:text="Текущая неделя"
+                        android:text="@string/thisWeek"
                         android:gravity="center"
                         android:id="@+id/thisWeek"
                         android:padding="5dip"
@@ -100,7 +98,7 @@
                         />
                     <TextView
 
-                        android:text="Прошлая неделя"
+                        android:text="@string/LastWeek"
                         android:gravity="center"
                         android:id="@+id/LastWeek"
                         android:onClick="cLastWeek"
@@ -109,21 +107,21 @@
 
                         />
                     <TextView
-                        android:text="Текущий месяц"
+                        android:text="@string/ThisMonth"
                         android:padding="5dip"
                         android:id="@+id/thisMonth"
                         android:onClick="cThisMonth"
                         android:textColor="@color/textColor"
                         />
                     <TextView
-                        android:text="Прошлый месяц"
+                        android:text="@string/LastMonth"
                         android:padding="5dip"
                         android:id="@+id/lastMonth"
                         android:onClick="cLastMonth"
                         android:textColor="@color/textColor"
                         />
                     <TextView
-                        android:text="С начала Года"
+                        android:text="@string/Beginyear"
                         android:padding="5dip"
                         android:id="@+id/thisYear"
                         android:onClick="cThisyear"
@@ -134,8 +132,8 @@
                 <TableRow android:background="@color/textColor"
                     >
                     <TextView
-                        android:text="На начало периода"
-                        android:gravity="left|center_horizontal"
+                        android:text="@string/inBeginPeriod"
+                        android:gravity="start|center_horizontal"
                         android:padding="5dip"
                         android:background="@drawable/border_shape"
                         android:textColor="@color/blue"
@@ -144,7 +142,7 @@
                         android:id="@+id/BPLastDay"
                         android:text="---"
                         android:onClick="cLastDay"
-                        android:gravity="right"
+                        android:gravity="end"
                         android:padding="5dip"
                         android:background="@drawable/border_shape"
                         />
@@ -152,7 +150,7 @@
                         android:id="@+id/BPThisWeek"
                         android:text="---"
                         android:onClick="cThisWeek"
-                        android:gravity="right"
+                        android:gravity="end"
                         android:padding="5dip"
                         android:background="@drawable/border_shape"
                         />
@@ -160,7 +158,7 @@
                         android:id="@+id/BPLastWeek"
                         android:text="---"
                         android:onClick="cLastWeek"
-                        android:gravity="right"
+                        android:gravity="end"
                         android:padding="5dip"
                         android:background="@drawable/border_shape"
 
@@ -169,7 +167,7 @@
                         android:id="@+id/BPThisMonth"
                         android:text="---"
                         android:onClick="cThisMonth"
-                        android:gravity="right"
+                        android:gravity="end"
                         android:padding="5dip"
                         android:background="@drawable/border_shape"
                         />
@@ -177,7 +175,7 @@
                         android:id="@+id/BPLastMonth"
                         android:text="---"
                         android:onClick="cLastMonth"
-                        android:gravity="right"
+                        android:gravity="end"
                         android:padding="5dip"
                         android:background="@drawable/border_shape"
                         />
@@ -185,7 +183,7 @@
                         android:id="@+id/BPThisYearBegin"
                         android:text="---"
                         android:onClick="cThisyear"
-                        android:gravity="right"
+                        android:gravity="end"
                         android:padding="5dip"
                         android:background="@drawable/border_shape"
                         />
@@ -195,8 +193,8 @@
 
                     >
                     <TextView
-                        android:text="Приход"
-                        android:gravity="left|center_horizontal"
+                        android:text="@string/Prihod"
+                        android:gravity="start|center_horizontal"
                         android:padding="5dip"
                         android:background="@drawable/border_shape"
                         android:textColor="@color/blue"/>
@@ -204,7 +202,7 @@
                         android:id="@+id/INLastDay"
                         android:text="---"
                         android:onClick="cLastDay"
-                        android:gravity="right"
+                        android:gravity="end"
                         android:padding="5dip"
                         android:textColor="@color/bgc3"
                         android:background="@drawable/border_shape"
@@ -261,7 +259,7 @@
 
                     >
                     <TextView
-                        android:text="Расход"
+                        android:text="@string/Rasxod"
                         android:gravity="left"
                         android:padding="5dip"
                         android:background="@drawable/border_shape"
@@ -327,7 +325,7 @@
 
                     >
                     <TextView
-                        android:text="На конец периода"
+                        android:text="@string/inEndPeriod"
                         android:gravity="left"
                         android:padding="5dip"
                         android:background="@drawable/border_shape"

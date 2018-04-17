@@ -67,7 +67,7 @@
                         android:padding="5dip"
                         android:textColor="@color/textColor"/>
                     <TextView
-                        android:text="Ед.изм"
+                        android:text="@string/Edizm"
                         android:gravity="center"
                         android:layout_gravity="fill"
                         android:background="@drawable/border_dark_shape"
@@ -81,7 +81,7 @@
                         android:layout_gravity="fill"
                         android:background="@drawable/border_dark_shape"
                         android:layout_height="match_parent"
-                        android:text="Цена"
+                        android:text="@string/Tsena"
                         android:padding="5dip"
                         android:layout_rowSpan="2"
                         android:textColor="@color/textColor"
@@ -91,7 +91,7 @@
                         android:layout_gravity="fill"
                             android:background="@drawable/border_dark_shape"
                             android:layout_height="match_parent"
-                            android:text="Остаток на начало"
+                            android:text="@string/BeginPeriod"
                             android:padding="5dip"
                             android:layout_columnSpan="2"
                             android:textColor="@color/textColor"
@@ -101,7 +101,7 @@
                         android:gravity="center"
                         android:layout_gravity="fill"
                             android:background="@drawable/border_dark_shape"
-                            android:text="Приход"
+                            android:text="@string/InSum"
                             android:padding="5dip"
                             android:textColor="@color/textColor"
                             android:layout_columnSpan="2"
@@ -110,7 +110,7 @@
                         android:gravity="center"
                         android:layout_gravity="fill"
                     android:background="@drawable/border_dark_shape"
-                    android:text="Расход"
+                    android:text="@string/OutSum"
                     android:padding="5dip"
                     android:textColor="@color/textColor"
                     android:layout_columnSpan="2"
@@ -119,7 +119,7 @@
                         android:gravity="center"
                         android:layout_gravity="fill"
                             android:background="@drawable/border_dark_shape"
-                            android:text="Остаток на конец"
+                            android:text="@string/ostatokNakones"
                             android:padding="5dip"
                             android:textColor="@color/textColor"
                         android:layout_columnSpan="2"
@@ -128,7 +128,7 @@
                         android:gravity="center"
                         android:layout_gravity="fill"
                         android:background="@drawable/border_dark_shape"
-                        android:text="Кол-во"
+                        android:text="@string/Kolvo"
                         android:padding="5dip"
                         android:textColor="@color/textColor"
 
@@ -137,7 +137,7 @@
                         android:gravity="center"
                         android:layout_gravity="fill"
                         android:background="@drawable/border_dark_shape"
-                        android:text="Сумма"
+                        android:text="@string/Summa"
                         android:padding="5dip"
                         android:textColor="@color/textColor"
                         />
@@ -145,24 +145,7 @@
                         android:gravity="center"
                         android:layout_gravity="fill"
                         android:background="@drawable/border_dark_shape"
-                        android:text="Кол-во"
-                        android:padding="5dip"
-                        android:textColor="@color/textColor"
-
-                        />
-                    <TextView
-                        android:gravity="center"
-                        android:layout_gravity="fill"
-                        android:background="@drawable/border_dark_shape"
-                        android:text="Сумма"
-                        android:padding="5dip"
-                        android:textColor="@color/textColor"
-                        />
-                    <TextView
-                        android:gravity="center"
-                        android:layout_gravity="fill"
-                        android:background="@drawable/border_dark_shape"
-                        android:text="Кол-во"
+                        android:text="@string/Kolvo"
                         android:padding="5dip"
                         android:textColor="@color/textColor"
 
@@ -171,7 +154,7 @@
                         android:gravity="center"
                         android:layout_gravity="fill"
                         android:background="@drawable/border_dark_shape"
-                        android:text="Сумма"
+                        android:text="@string/Summa"
                         android:padding="5dip"
                         android:textColor="@color/textColor"
                         />
@@ -179,7 +162,7 @@
                         android:gravity="center"
                         android:layout_gravity="fill"
                         android:background="@drawable/border_dark_shape"
-                        android:text="Кол-во"
+                        android:text="@string/Kolvo"
                         android:padding="5dip"
                         android:textColor="@color/textColor"
 
@@ -188,7 +171,24 @@
                         android:gravity="center"
                         android:layout_gravity="fill"
                         android:background="@drawable/border_dark_shape"
-                        android:text="Сумма"
+                        android:text="@string/Summa"
+                        android:padding="5dip"
+                        android:textColor="@color/textColor"
+                        />
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="fill"
+                        android:background="@drawable/border_dark_shape"
+                        android:text="@string/Kolvo"
+                        android:padding="5dip"
+                        android:textColor="@color/textColor"
+
+                        />
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="fill"
+                        android:background="@drawable/border_dark_shape"
+                        android:text="@string/Summa"
                         android:padding="5dip"
                         android:textColor="@color/textColor"
                         />

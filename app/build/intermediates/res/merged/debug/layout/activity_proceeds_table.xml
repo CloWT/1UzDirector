@@ -272,7 +272,7 @@
 
                     >
                     <TextView
-                        android:text="Итого"
+                        android:text="@string/total"
                         android:gravity="left"
                         android:padding="5dip"
                         android:background="@drawable/border_dark_shape"

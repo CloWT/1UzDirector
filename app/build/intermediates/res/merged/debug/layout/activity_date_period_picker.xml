@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="uz.a1uz.a1uzdirector.Helpers.DatePeriodPicker"
     android:layout_width="match_parent"
@@ -24,15 +23,15 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C   "
-                    android:textSize="25dp"
+                    android:text="@string/From"
+                    android:textSize="25sp"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/firstDate"
                     android:text=""
-                    android:textSize="25dp"
+                    android:textSize="25sp"
                     />
             </LinearLayout>
 
@@ -45,15 +44,15 @@
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="По  "
+                    android:text="@string/To"
                     android:onClick="PeriodChecker"
-                    android:textSize="25dp"/>
+                    android:textSize="25sp"/>
             <TextView
                 android:id="@+id/secondDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=""
-                android:textSize="25dp"/>
+                android:textSize="25sp"/>
             </LinearLayout>
 
     <Spinner
@@ -72,8 +71,8 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:textColor="@color/textColor"
-        android:text="Принять"
-        style="@style/ButtonStyle"
+        android:text="@string/accept"
+        android:background="#a3db00"
         android:onClick="SendDate"/>
 </GridLayout>
 

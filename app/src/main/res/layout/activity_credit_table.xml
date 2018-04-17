@@ -54,7 +54,7 @@
                 android:padding="5dip"
                 android:textColor="@color/textColor"/>
             <TextView
-                android:text="Более 90 дн."
+                android:text="@string/Day100"
                 android:gravity="center"
                 android:layout_gravity="fill"
                 android:background="@drawable/border_dark_shape"
@@ -62,7 +62,7 @@
                 android:padding="5dip"
                 android:textColor="@color/textColor"/>
             <TextView
-                android:text="До 90 дней"
+                android:text="@string/Day90"
                 android:gravity="center"
                 android:layout_gravity="fill"
                 android:background="@drawable/border_dark_shape"
@@ -70,7 +70,7 @@
                 android:padding="5dip"
                 android:textColor="@color/textColor"/>
             <TextView
-                android:text="До 60 дней"
+                android:text="@string/Day60"
                 android:gravity="center"
                 android:layout_gravity="fill"
                 android:background="@drawable/border_dark_shape"
@@ -78,7 +78,7 @@
                 android:padding="5dip"
                 android:textColor="@color/textColor"/>
             <TextView
-                android:text="До 30 дней"
+                android:text="@string/Day30"
                 android:gravity="center"
                 android:layout_gravity="fill"
                 android:background="@drawable/border_dark_shape"
@@ -86,7 +86,7 @@
                 android:padding="5dip"
                 android:textColor="@color/textColor"/>
             <TextView
-                android:text="Всего"
+                android:text="@string/All"
                 android:gravity="center"
                 android:layout_gravity="fill"
                 android:background="@drawable/border_dark_shape"

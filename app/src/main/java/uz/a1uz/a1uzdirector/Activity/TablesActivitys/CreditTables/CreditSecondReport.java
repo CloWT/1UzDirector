@@ -91,8 +91,8 @@ public class CreditSecondReport extends AppCompatActivity implements LayoutConfi
                     creditReportResults.add(new CreditReportResult(
                             "",
                             -1,
-                            "Итого",
-                            "Итого",
+                            getString(R.string.total),
+                            getString(R.string.total),
                             js.getString("TSumma"),
                             js.getString("TDay30"),
                             js.getString("TDay60"),

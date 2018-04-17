@@ -58,6 +58,7 @@ public class ParseTask extends AsyncTask<Void, Void, String> {
             }
 
             resultJson = buffer.toString();
+            urlConnection.disconnect();
             _isError=false;
         } catch (FileNotFoundException e){ee=e;
             _isError=true;

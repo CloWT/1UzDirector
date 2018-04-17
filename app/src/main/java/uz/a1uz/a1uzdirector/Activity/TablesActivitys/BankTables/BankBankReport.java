@@ -122,7 +122,7 @@ int reportID;
                     ((TextView) findViewById(R.id.OutThisMonth))     .setText(j.getString("OutThisMonth"));
                     ((TextView) findViewById(R.id.OutThisWeek))      .setText(j.getString("OutThisWeek"));
                     ((TextView) findViewById(R.id.OutThisYearBegin)) .setText(j.getString("OutThisYearBegin"));
-                    ((TextView) findViewById(R.id.dateReport_text)) .setText("Отчет актуален на "+j.getString("ActualDate"));
+                    ((TextView) findViewById(R.id.dateReport_text)) .setText(getString(R.string.ReportAcutal)+" "+j.getString("ActualDate"));
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }         }            @Override

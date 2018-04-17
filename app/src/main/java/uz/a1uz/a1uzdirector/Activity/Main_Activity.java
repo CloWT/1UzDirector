@@ -2,6 +2,8 @@ package uz.a1uz.a1uzdirector.Activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 
@@ -49,6 +51,10 @@ public List<Widget_item_model> items;
         new ButtonWidgetV2(this, urlsArr);
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return super.onCreateOptionsMenu(menu);
+    }
 
     @Override
     protected void onStart() {

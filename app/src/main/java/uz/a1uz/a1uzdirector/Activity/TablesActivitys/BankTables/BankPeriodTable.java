@@ -121,16 +121,16 @@ public class BankPeriodTable extends AppCompatActivity implements LayoutConfigur
 
                         ));
                     }
-                    if(jsonArray.length()<1) periodResults.add(new BankPeriodResult("    Нет данных","",""));
+                    if(jsonArray.length()<1) periodResults.add(new BankPeriodResult(getString(R.string.NotData),"",""));
                     periodResults.add(new BankPeriodResult(
-                            "Итого обороты ",
+                            getString(R.string.TotalAborot),
                             js.getString("TotalInSum"),
                             js.getString("TotalOutSum")
                     ));
                     periodResults.add(new BankPeriodResult(
-                            "Остатки на ",
-                            "начало: "+js.getString("BeginSum"),
-                            "конец: "+js.getString("EndSum")
+                            getString(R.string.Ostatki),
+                            getString(R.string.begin)+js.getString("BeginSum"),
+                            getString(R.string.end)+js.getString("EndSum")
                     ));
                     AddElemsToTable(periodResults);
 

@@ -85,7 +85,7 @@ public class DebitTable extends AppCompatActivity implements LayoutConfiguration
                     creditReportResults.add(new DebitReportResult(
                             "",
                             -1,
-                            "Итого",
+                            getString(R.string.total),
                             "",
                             js.getString("TSumma"),
                             js.getString("TDay30"),

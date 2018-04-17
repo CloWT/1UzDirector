@@ -35,34 +35,34 @@
 
                     >
                     <TextView
-                        android:text="Счета"
+                        android:text="@string/Scheta"
                         android:layout_gravity="center|center_horizontal"
                         android:padding="5dip"
                         android:textColor="@color/textColor"/>
                     <TextView
 
-                        android:text="На начало дня"
+                        android:text="@string/BeginDay"
                         android:gravity="center"
                         android:padding="5dip"
                         android:textColor="@color/textColor"
                         />
                     <TextView
 
-                        android:text="Приход"
+                        android:text="@string/InSum"
                         android:gravity="center"
                         android:padding="5dip"
                         android:textColor="@color/textColor"
                         />
                     <TextView
 
-                        android:text="Расход"
+                        android:text="@string/OutSum"
                         android:gravity="center"
                         android:padding="5dip"
                         android:textColor="@color/textColor"
 
                         />
                     <TextView
-                        android:text="Текущий остаток"
+                        android:text="@string/CurrentSum"
                         android:padding="5dip"
                         android:textColor="@color/textColor"
                         />

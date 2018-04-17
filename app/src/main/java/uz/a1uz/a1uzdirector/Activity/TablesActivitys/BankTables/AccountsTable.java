@@ -1,25 +1,32 @@
 package uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import org.jetbrains.annotations.TestOnly;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.models.AccountReportResult;
 import uz.a1uz.a1uzdirector.Activity.models.WidgetDropDownItem;
@@ -37,66 +44,7 @@ String url= UrlHepler.Combine(URL_cons.ACCOUNTREPORT, UserInfo.getGUID());
 TableLayout bankTable;
 Context context;
 ProgressBar progressBar;
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        System.out.println("onDestory");
-    }
-
-    @Override
-    public void onContentChanged() {
-        super.onContentChanged();
-        System.out.println("onContentChanged");
-    }
-
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        System.out.println("onBackPressed");
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        System.out.println("OnPause");
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        System.out.println("OnResume");
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-        System.out.println("OnResume");
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        System.out.println("onStart");
-    }
-
-    @Override
-    protected void onPostResume() {
-        super.onPostResume();
-        System.out.println("OnPostResume");
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        System.out.println("onStop");
-    }
-
-    @Override
-    protected void onPostCreate(@Nullable Bundle savedInstanceState) {
-        super.onPostCreate(savedInstanceState);
-        System.out.println("OnPostCreate");
-    }
+    AlertDialog.Builder builder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,8 +52,10 @@ ProgressBar progressBar;
         context=this;
         setContentView(R.layout.activity_accounts_table);
         System.out.println("OnCreat");
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setIcon(R.mipmap.uz_launcher_ic);
+        getSupportActionBar().setSubtitle("Банк");
         bankTable=(TableLayout)findViewById(R.id.tableForBank);
         progressBar=(ProgressBar)findViewById(R.id.progres);
         progressBar.setProgressDrawable(getResources().getDrawable(R.drawable.progressbarcust));
@@ -155,7 +105,7 @@ ProgressBar progressBar;
 
                     }
                     accRepResults.add(new AccountReportResult(
-                            "Итого",
+                            getString(R.string.total),
                             hh.getString("TotalBeginPeriodSum"),
                             hh.getString("TotalInSum"),
                             hh.getString("TotalOutSum"),
@@ -178,6 +128,61 @@ ProgressBar progressBar;
             }
         });
 
+        builder = new AlertDialog.Builder(context);
+        builder.setTitle("");
+        // Add the buttons
+        builder.setPositiveButton("ru", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                String languageToLoad = "ru"; // your language
+                Locale locale = new Locale(languageToLoad);
+                Locale.setDefault(locale);
+                Configuration config = new Configuration();
+                config.locale = locale;
+                getBaseContext().getResources().updateConfiguration(config,
+                        getBaseContext().getResources().getDisplayMetrics());
+                dialog.dismiss();
+
+
+
+
+                Intent refresh = new Intent(context, AccountsTable.class);
+                startActivity(refresh);
+                finish();
+
+            }
+        });
+        builder.setNegativeButton("Uz", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                // User cancelled the dialog
+
+                String languageToLoad = "uz"; // your language
+                Locale locale = new Locale(languageToLoad);
+                Locale.setDefault(locale);
+                Configuration config = new Configuration();
+                config.locale = locale;
+                getBaseContext().getResources().updateConfiguration(config,
+                        getBaseContext().getResources().getDisplayMetrics());
+                dialog.dismiss();
+
+
+
+                Intent refresh = new Intent(context, AccountsTable.class);
+                startActivity(refresh);
+                finish();
+
+            }
+        });
+
+
+
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId()==android.R.id.home)
+            builder.create().show();
+            //finish();
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
@@ -194,7 +199,7 @@ ProgressBar progressBar;
             CustomSetTex(TW[i],accountReportResults.get(i));
 
             for (int j = 0; j <5 ; j++) {
-                TW[i][j].setGravity(j==0? Gravity.LEFT:Gravity.RIGHT);
+                TW[i][j].setGravity(j==0? Gravity.START:Gravity.END);
                 TW[i][j].setBackgroundResource(R.drawable.border_shape);
                 if(accountReportResults.size()-1==i){
                     TW[i][j].setTextColor(ContextCompat.getColor(this,R.color.textColor));
@@ -227,7 +232,7 @@ ProgressBar progressBar;
 
     @Override
     public void CustomSetTex(TextView[] txV, AccountReportResult periodResults) {
-        txV[0].setText(periodResults.getName().toString());
+        txV[0].setText(periodResults.getName());
         txV[1].setText(periodResults.getBeginPeriodSum());
         txV[2].setText(periodResults.getInSum());
         txV[3].setText(periodResults.getOutSum());

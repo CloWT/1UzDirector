@@ -30,10 +30,11 @@ import uz.a1uz.a1uzdirector.constants.URL_cons;
  * Created by sh.khodjabaev on 09.03.2018.
  */
 
-public class Widget_item_Adapter extends ArrayAdapter<Widget_item_model> {
-    private final Context context;
-    private final List<Widget_item_model> items;
+public class Widget_item_Adapter extends ArrayAdapter<Widget_item_model> implements View.OnClickListener {
+    private Context context;
+    private List<Widget_item_model> items;
     private LayoutInflater inflater;
+
 
 
     public Widget_item_Adapter(Context context, List<Widget_item_model> items) {
@@ -42,19 +43,39 @@ public class Widget_item_Adapter extends ArrayAdapter<Widget_item_model> {
         this.items = items;
         this.inflater= (LayoutInflater) context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
     }
+
+    @Override
+    public void onClick(View v) {
+
+
+
+        int position=(Integer) v.getTag();
+        Object object= getItem(position);
+        Widget_item_model dataModel=(Widget_item_model)object;
+
+
+        switch (v.getId())
+        {
+            case R.id.left_spinner:
+                if(dataModel.getBottomLeftItems().length>0) v.performClick();
+
+                break;
+        }
+    }
+
     static class ViewHolder{
-        public TextView     TopTex          ;
-        public ImageView    ImageRight      ;
-        public TextView     MiddleText      ;
-        public Spinner      LeftSpinner     ;
-        public TextView     BottomLeftText  ;
-        public ImageButton  LeftSpinImage   ;
-        public TextView     BottomRightText ;
-        public ImageButton  RightSpinImage  ;
-        public Spinner      RightSpinner    ;
-        public LinearLayout linearLayout    ;
-        public LinearLayout LeftBotomLayout ;
-        public LinearLayout RightBotomLayout ;
+        TextView     TopTex          ;
+        ImageView    ImageRight      ;
+        TextView     MiddleText      ;
+        Spinner      LeftSpinner     ;
+        TextView     BottomLeftText  ;
+        ImageButton  LeftSpinImage   ;
+        TextView     BottomRightText ;
+        ImageButton  RightSpinImage  ;
+        Spinner      RightSpinner    ;
+        LinearLayout linearLayout    ;
+        LinearLayout LeftBotomLayout ;
+        LinearLayout RightBotomLayout ;
 
     }
 
@@ -63,7 +84,7 @@ public class Widget_item_Adapter extends ArrayAdapter<Widget_item_model> {
         return items.size();
     }
 
-    @Nullable
+
     @Override
     public Widget_item_model getItem(int position) {
         return items.get(position);
@@ -75,11 +96,11 @@ public class Widget_item_Adapter extends ArrayAdapter<Widget_item_model> {
     }
 
     public View getView(int position, View convertView, ViewGroup parent) {
-        final ViewHolder holder;
+         ViewHolder holder;
 
         View view =convertView;
         if(view==null) {
-            LayoutInflater inflater= (LayoutInflater) context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
+
             view=inflater.inflate(R.layout.widget,parent,false);
             holder=new ViewHolder();
             holder.TopTex         =(TextView   ) view.findViewById(R.id.TopText);
@@ -102,10 +123,8 @@ public class Widget_item_Adapter extends ArrayAdapter<Widget_item_model> {
         }
         Widget_item_model wg=items.get(position);
         SpinnerAddItems(holder,wg);
-
         holder.linearLayout.setBackgroundResource(wg.getBackgroundColor());
         holder.linearLayout.setOnClickListener(new LayoutClick(wg));
-
         holder.TopTex.setText(wg.getTopText());
         holder.MiddleText.setText(wg.getMiddleText());
         holder.BottomLeftText.setText(wg.getBottomLeftText());
@@ -122,6 +141,7 @@ public class Widget_item_Adapter extends ArrayAdapter<Widget_item_model> {
      */
     private void SpinnerAddItems(ViewHolder holder, Widget_item_model wg) {
         if(wg.getBottomLeftItems().length>0){
+            //
             holder.LeftBotomLayout.setOnClickListener(new OnClick(holder.LeftSpinner));
             holder.LeftSpinImage.setVisibility(View.VISIBLE);
             ArrayAdapter<WidgetDropDownItem> spinnerArrayAdapter = new ArrayAdapter<>(
