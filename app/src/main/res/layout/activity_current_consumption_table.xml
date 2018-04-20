@@ -78,7 +78,7 @@
                     android:gravity="left"
                     android:layout_gravity="fill"
                     android:background="@drawable/border_shape"
-                    android:text="@string/SebeStoimostGotovyProduksii"
+                    android:text="@string/SebeStoimostRealiProdukts"
                     android:textStyle="bold"
                     android:padding="5dip"
                     android:textColor="#000000"

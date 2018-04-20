@@ -3,6 +3,7 @@ package uz.a1uz.a1uzdirector.Helpers;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -11,6 +12,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.Locale;
 
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.AccountsTable;
@@ -34,12 +39,12 @@ public class ActionBarCustomizer extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
         builder = new AlertDialog.Builder(this);
         AlertBuild();
 
     }
+
+
 
     @Override
     protected void onStart() {
@@ -66,9 +71,8 @@ public class ActionBarCustomizer extends AppCompatActivity {
                 getBaseContext().getResources().updateConfiguration(config,
                         getBaseContext().getResources().getDisplayMetrics());
                 dialog.dismiss();
-
-
-
+                UserInfo.setLan(UserInfo.EheaderLang.eRu);
+                SaveLang(UserInfo.getLan());
                 finish();
                 startActivity(getIntent());
 
@@ -85,12 +89,10 @@ public class ActionBarCustomizer extends AppCompatActivity {
                 Configuration config = new Configuration();
                 config.locale = locale;
                 getBaseContext().getResources().updateConfiguration(config,
-                        null);
-
+                        getBaseContext().getResources().getDisplayMetrics());
                 dialog.dismiss();
-
-
-
+                UserInfo.setLan(UserInfo.EheaderLang.eRu);
+                SaveLang(UserInfo.getLan());
                 finish();
               startActivity(getIntent());
 
@@ -112,5 +114,13 @@ public class ActionBarCustomizer extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu, menu);
         return true;
+    }
+    SharedPreferences sPref;
+    private void SaveLang(String lan){
+        sPref = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref.edit();
+        ed.putString("lang", lan);
+            ed.apply();
+
     }
 }

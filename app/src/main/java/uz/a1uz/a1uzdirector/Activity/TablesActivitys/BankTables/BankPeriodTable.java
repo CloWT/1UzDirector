@@ -45,6 +45,7 @@ public class BankPeriodTable extends ActionBarCustomizer implements LayoutConfig
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setSubTitleC("ВЫПИСКА ПО СЧЕТУ");
         setContentView(R.layout.activity_bank_period_table);
         periodTable=(TableLayout)findViewById(R.id.periodTable);
         periodTable.setBackgroundResource(R.drawable.border_dark_shape);

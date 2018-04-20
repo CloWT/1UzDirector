@@ -12,7 +12,7 @@
     <string name="title_activity_store_period_table">StorePeriodTable</string>
     <string name="title_activity_current_consumption_table">CurrentConsumptionTable</string>
     <string name="From">гача</string>
-    <string name="AdministratiroRasxod">Маъмурий ҳаражатлар</string>
+    <string name="AdministratiroRasxod">Маъмурий харажатлар</string>
     <string name="Bank">Банк</string>
     <string name="Enter">Кириш</string>
     <string name="yesterday">Кеча</string>
@@ -26,7 +26,7 @@
     <string name="BeginDay">Кун бошига</string>
     <string name="inBeginPeriod">Давр бошига</string>
     <string name="BeginPeriod">Бошидаги қолдиқ</string>
-    <string name="ReportAcutal">Ҳисобот амал қилиш муддати</string>
+    <string name="ReportAcutal">Ҳисобот ---- йил санасига қадар амал қилади</string>
     <string name="password">"махфий код "</string>
     <string name="Period">"Давр "</string>
     <string name="To">дан</string>
@@ -34,12 +34,12 @@
     <string name="accept">Қабул қилиш</string>
     <string name="InSum">Тушум</string>
     <string name="Prihod">Тушум</string>
-    <string name="ProchieOperatRasxodi">Бошқа операциялар ҳаражатлари</string>
-    <string name="LastWeek">Ўтган хафта</string>
+    <string name="ProchieOperatRasxodi">Бошқа операциялар харажатлари</string>
+    <string name="LastWeek">Ўтган ҳафта</string>
     <string name="LastMonth">Ўтган ой</string>
     <string name="OutSum">Чиқим</string>
     <string name="Rasxod">Чиқим</string>
-    <string name="SebeStoimVypolnenRabotiUsl">Кўрсатилган хизматлар ва тўланган иш ҳисоб китоблари таннархи</string>
+    <string name="SebeStoimVypolnenRabotiUsl">Кўрсатилган хизматлар ва тўланган иш ҳақи ҳисоблари таннархи</string>
     <string name="SebeStoimostGotovyProduksii">Тайёр маҳсулот таннархи</string>
     <string name="SebeStoimostRealizoTovar">Сотилган товарлар таннархи</string>
     <string name="store">Омборлар</string>
@@ -47,7 +47,7 @@
     <string name="Subkonto">Субконто</string>
     <string name="Schet">Ҳисобварақ</string>
     <string name="Scheta">"Ҳисобварақлар  "</string>
-    <string name="thisWeek">Жорий хафта</string>
+    <string name="thisWeek">Жорий ҳафта</string>
     <string name="ThisMonth">Жорий ой</string>
     <string name="CurrentSum">Жорий қолдиқ</string>
     <string name="NumZnak">№</string>
@@ -55,7 +55,7 @@
     <string name="Ostatki">Қолдиқ</string>
     <string name="begin">бошига:</string>
     <string name="end">охирига :</string>
-    <string name="NotData">Белгиланган давр учун маълумот топилмади</string>
+    <string name="NotData">Белгиланган давр учун маълумот мавжуд эмас</string>
     <string name="OperationDetail">Батафсил жараён</string>
     <string name="Day100">90 кундан ортиқ</string>
     <string name="Day90">90 кунгача</string>
@@ -65,11 +65,11 @@
     <string name="StatyaRasxodov">Ҳаражатлар моддаси</string>
     <string name="RasxodiPeriod">Давр ҳаражатлари</string>
     <string name="Summa">Сумма</string>
-    <string name="RasxodFinansDeayt">Молиявий фаолият билан боғлиқ ҳаражатлар</string>
+    <string name="RasxodFinansDeayt">Молиявий фаолият билан боғлиқ харажатлар</string>
     <string name="RasxodProtsent">Маҳсулот кўринишидаги ҳаражатлар</string>
     <string name="Ubitki">Валюта айирбошлаш курси бўйича йўқотишлар</string>
-    <string name="ProCiRasxodi">Молиявий фаолият билан боғлиқ бошқа ҳаражатлар</string>
-    <string name="RasxodiNalog">Даромад солиғи бўйича ҳаражатлар</string>
+    <string name="ProCiRasxodi">Молиявий фаолият билан боғлиқ бошқа харажатлар</string>
+    <string name="RasxodiNalog">Даромад солиғи бўйича харажатлар</string>
     <string name="EdinyNalog">Ягона солиқ тўлови</string>
     <string name="Prochie">Бошқа солиқлар</string>
     <string name="Date">Сана</string>
@@ -77,11 +77,12 @@
     <string name="Deyatelnost">Фаолият</string>
     <string name="VydiDeatelnosti">Фаолият турлари</string>
     <string name="GotovyProduck">Тайёр маҳсулот</string>
-    <string name="Torgovl">Савдо сотиқ</string>
+    <string name="Torgovl">Савдо-сотиқ</string>
     <string name="Uslug">Хизмат кўрсатиш</string>
     <string name="Edizm">Ед.изм</string>
     <string name="Tsena">Нарх</string>
     <string name="ostatokNakones">Охиридаги қолдиқ</string>
     <string name="Kolvo">сони</string>
     <string name="language">Тил</string>
+    <string name="SebeStoimostRealiProdukts">"Сотилган маҳсулотлар таннархи "</string>
 </resources>

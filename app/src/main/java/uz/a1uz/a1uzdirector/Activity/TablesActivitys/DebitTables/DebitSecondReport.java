@@ -39,6 +39,7 @@ public class DebitSecondReport extends ActionBarCustomizer implements LayoutConf
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_debit_second_report);
+        setSubTitleC("ДЕТАЛИЗАЦИЯ");
         context=this;
         debitTable =(GridLayout) findViewById(R.id.periodTable);
         progressBar=(ProgressBar)findViewById(R.id.progres);

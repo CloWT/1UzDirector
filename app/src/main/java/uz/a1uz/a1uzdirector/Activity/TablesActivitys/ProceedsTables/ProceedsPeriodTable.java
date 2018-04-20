@@ -45,6 +45,7 @@ public class ProceedsPeriodTable extends ActionBarCustomizer implements LayoutCo
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_proceeds_period_table);
+        setSubTitleC("ВЫРУЧКА ЗА ПЕРИОД");
         context=this;
         periodTable=(TableLayout) findViewById(R.id.periodTable);
         progressBar=(ProgressBar)findViewById(R.id.progres);

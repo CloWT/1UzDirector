@@ -39,6 +39,7 @@ public class CreditSecondReport extends ActionBarCustomizer implements LayoutCon
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_credit_second_report);
+        setSubTitleC("ДЕТАЛИЗАЦИЯ");
         context=this;
         creditTable=(GridLayout) findViewById(R.id.periodTable);
         progressBar=(ProgressBar)findViewById(R.id.progres);

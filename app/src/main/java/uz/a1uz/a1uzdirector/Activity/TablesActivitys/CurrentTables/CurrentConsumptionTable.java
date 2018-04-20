@@ -45,6 +45,7 @@ public class CurrentConsumptionTable extends ActionBarCustomizer {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_current_consumption_table);
+        setSubTitleC("ТЕКУЩИЕ РАСХОДЫ");
         context=this;
         periodTable=(GridLayout)findViewById(R.id.periodTable);
         progressBar=(ProgressBar)findViewById(R.id.progres);

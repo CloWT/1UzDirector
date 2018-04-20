@@ -1,6 +1,7 @@
 package uz.a1uz.a1uzdirector.JsoN;
 
 import android.os.AsyncTask;
+import android.widget.Toast;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -12,6 +13,8 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.SocketTimeoutException;
 import java.net.URL;
+
+import uz.a1uz.a1uzdirector.Helpers.UserInfo;
 
 /**
  * Created by tempuser on 10.01.2018.
@@ -46,7 +49,8 @@ public class ParseTask extends AsyncTask<Void, Void, String> {
         try {
             URL url= new URL(urltext);
             urlConnection = (HttpURLConnection) url.openConnection();
-            urlConnection.setConnectTimeout(25000);
+            urlConnection.setRequestProperty("Accept-Language", UserInfo.getLan());
+            urlConnection.setConnectTimeout(15000);
             urlConnection.setRequestMethod("GET");
             urlConnection.connect();
             InputStream inputStream = urlConnection.getInputStream();
@@ -62,7 +66,7 @@ public class ParseTask extends AsyncTask<Void, Void, String> {
             _isError=false;
         } catch (FileNotFoundException e){ee=e;
             _isError=true;
-
+            ee=e;
         }catch (SocketTimeoutException e){
             _isError=true;
             ee=e;

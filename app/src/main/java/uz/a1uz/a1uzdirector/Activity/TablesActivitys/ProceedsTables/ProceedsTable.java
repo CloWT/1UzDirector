@@ -24,6 +24,7 @@ public class ProceedsTable extends ActionBarCustomizer {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setSubTitleC("ВЫРУЧКА");
         setContentView(R.layout.activity_proceeds_table);
         AddElemsToTable();
     }

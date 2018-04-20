@@ -38,6 +38,7 @@ public class StoreTable extends ActionBarCustomizer {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setSubTitleC("СКЛАДЫ");
         setContentView(R.layout.activity_store_table);
         context=this;
         storeTable=(TableLayout)findViewById(R.id.tableForStore);

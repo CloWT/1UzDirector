@@ -38,6 +38,7 @@ public class CreditTable extends ActionBarCustomizer implements LayoutConfigurat
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_credit_table);
+        setSubTitleC("МЫ ДОЛЖНЫ");
         context=this;
         creditTable=(GridLayout) findViewById(R.id.periodTable);
         progressBar=(ProgressBar)findViewById(R.id.progres);

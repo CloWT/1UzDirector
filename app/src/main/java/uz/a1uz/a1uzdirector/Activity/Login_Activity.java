@@ -41,13 +41,16 @@ public class Login_Activity extends ActionBarCustomizer {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        homeButton=false;
-
+        homeButton=false; // back button
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_);
         etPass=(EditText)findViewById(R.id.password);
         btLogin=(Button) findViewById(R.id.btLogin);
         INN=(AutoCompleteTextView)findViewById(R.id.INN);
+
+        sPref = getPreferences(MODE_PRIVATE);
+        UserInfo.setLan(sPref.getString("lang", String.valueOf(UserInfo.EheaderLang.eRu)));
+
         loadText();
         String[] cats = {first, second, third};
         List<String> catList = Arrays.asList(cats);

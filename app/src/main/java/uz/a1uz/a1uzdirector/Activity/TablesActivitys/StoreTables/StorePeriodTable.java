@@ -43,6 +43,7 @@ public class StorePeriodTable extends ActionBarCustomizer implements LayoutConfi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setSubTitleC("СКЛАД");
         setContentView(R.layout.activity_store_period_table);
         context=this;
         periodTable=(GridLayout)findViewById(R.id.periodTable);

@@ -2,6 +2,7 @@ package uz.a1uz.a1uzdirector.JsoN;
 
 import android.os.AsyncTask;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
@@ -10,6 +11,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+
+import uz.a1uz.a1uzdirector.Helpers.UserInfo;
 
 /**
  * Created by sh.khodjabaev on 30.03.2018.
@@ -27,16 +30,18 @@ public class ParseTaskList extends AsyncTask<String,Integer,String[]> {
     public ParseTaskList(IGetJsonResult logic) {
         logicItem = logic;
     }
-
+    Boolean _isError;
+    Exception ee;
     @Override
     protected String[] doInBackground(String... getJ) {
 
         String[] tmp=new String[getJ.length];
-        Boolean _isError;
+
         try {
             for (int i = 0; i < getJ.length; i++) {
                 URL url= new URL(getJ[i]);
                 HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+                urlConnection.setRequestProperty("Accept-Language", UserInfo.getLan());
                 urlConnection.setConnectTimeout(10000);
                 urlConnection.setRequestMethod("GET");
                 urlConnection.connect();
@@ -74,7 +79,10 @@ public class ParseTaskList extends AsyncTask<String,Integer,String[]> {
 
     @Override
     protected void onPostExecute(String[] s) {
-        logicItem.OnEnd(s);
         super.onPostExecute(s);
+        if(!_isError){
+            logicItem.OnEnd(s);
+        }
+        else logicItem.OnError(ee);
     }
 }

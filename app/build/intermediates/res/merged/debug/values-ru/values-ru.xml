@@ -45,7 +45,8 @@
     <string name="Schet">Счет:</string>
     <string name="Scheta">Счета</string>
     <string name="SebeStoimVypolnenRabotiUsl">Себестоимость выплаченных работ и оказанных услуг</string>
-    <string name="SebeStoimostGotovyProduksii">Себестоимость реализованной готовой продукции</string>
+    <string name="SebeStoimostGotovyProduksii">"Себестоимость реализованной готовый продукции "</string>
+    <string name="SebeStoimostRealiProdukts">Себестоимость реализованный продукции</string>
     <string name="SebeStoimostRealizoTovar">"Себестоимость реализованных товаров "</string>
     <string name="StatyaRasxodov">Статьи расходов</string>
     <string name="Subkonto">Субконто</string>

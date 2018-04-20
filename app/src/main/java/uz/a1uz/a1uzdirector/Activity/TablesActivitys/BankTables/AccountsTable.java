@@ -53,7 +53,7 @@ ProgressBar progressBar;
         context=this;
         setContentView(R.layout.activity_accounts_table);
         System.out.println("OnCreat");
-        setSubTitleC("Банк");
+        setSubTitleC("БАНК");
         bankTable=(TableLayout)findViewById(R.id.tableForBank);
         progressBar=(ProgressBar)findViewById(R.id.progres);
         progressBar.setProgressDrawable(getResources().getDrawable(R.drawable.progressbarcust));

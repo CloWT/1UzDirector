@@ -38,6 +38,7 @@ public class DebitTable extends ActionBarCustomizer implements LayoutConfigurati
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_credit_table);
+        setSubTitleC("НАМ ДОЛЖНЫ");
         context=this;
         debitTable =(GridLayout) findViewById(R.id.periodTable);
         progressBar=(ProgressBar)findViewById(R.id.progres);
