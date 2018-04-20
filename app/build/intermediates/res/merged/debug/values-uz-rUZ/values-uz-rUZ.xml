@@ -42,7 +42,7 @@
     <string name="RasxodiNalog">Даромад солиғи бўйича харажатлар</string>
     <string name="RasxodiPeriod">Давр ҳаражатлари</string>
     <string name="ReportAcutal">Ҳисобот ---- йил санасига қадар амал қилади</string>
-    <string name="Schet">Ҳисобварақ</string>
+    <string name="Schet">Ҳисобварақ:</string>
     <string name="Scheta">"Ҳисобварақлар  "</string>
     <string name="SebeStoimVypolnenRabotiUsl">Кўрсатилган хизматлар ва тўланган иш ҳақи ҳисоблари таннархи</string>
     <string name="SebeStoimostGotovyProduksii">Тайёр маҳсулот таннархи</string>
@@ -53,7 +53,7 @@
     <string name="Summa">Сумма</string>
     <string name="TMZ_Name">ТМЗ номланиши</string>
     <string name="ThisMonth">Жорий ой</string>
-    <string name="To">дан</string>
+    <string name="To">"дан "</string>
     <string name="Torgovl">Савдо-сотиқ</string>
     <string name="TotalAborot">Жами айланма харакат</string>
     <string name="Tsena">Нарх</string>

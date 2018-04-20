@@ -6,5 +6,9 @@
     {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu.xml",
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\menu\\menu.xml"
+    },
+    {
+        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\menu\\color_change_popup.xml",
+        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\menu\\color_change_popup.xml"
     }
 ]

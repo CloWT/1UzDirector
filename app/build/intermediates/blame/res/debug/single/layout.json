@@ -224,6 +224,10 @@
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\layout\\design_navigation_item_subheader.xml"
     },
     {
+        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\switch_item.xml",
+        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\layout\\switch_item.xml"
+    },
+    {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\simple_spinner_item.xml",
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\layout\\simple_spinner_item.xml"
     },

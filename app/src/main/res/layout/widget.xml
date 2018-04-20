@@ -27,6 +27,7 @@
             android:src="@drawable/ic_settings_black_24dp"
             android:layout_width="30dp"
             android:layout_height="30dp"
+            android:backgroundTint="#00ffffff"
             android:padding="1dp"
             android:id="@+id/ImageRight"/>
     </GridLayout>

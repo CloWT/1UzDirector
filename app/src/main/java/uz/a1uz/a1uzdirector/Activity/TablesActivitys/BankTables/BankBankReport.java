@@ -36,7 +36,7 @@ int reportID;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setSubTitleC("СЧЕТ");
+        setSubTitleC(getString(R.string.SchetT));
         setContentView(R.layout.activity_bank_bank_report);
         spinner=(Spinner) findViewById(R.id.SchetSpin);
         tableLayout=(TableLayout)findViewById(R.id.tableForBank);

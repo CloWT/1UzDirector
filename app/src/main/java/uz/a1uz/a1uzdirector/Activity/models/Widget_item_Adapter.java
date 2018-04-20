@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -12,8 +13,10 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.PopupMenu;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -95,7 +98,7 @@ public class Widget_item_Adapter extends ArrayAdapter<Widget_item_model> impleme
         return position;
     }
 
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
          ViewHolder holder;
 
         View view =convertView;
@@ -125,6 +128,7 @@ public class Widget_item_Adapter extends ArrayAdapter<Widget_item_model> impleme
         SpinnerAddItems(holder,wg);
         holder.linearLayout.setBackgroundResource(wg.getBackgroundColor());
         holder.linearLayout.setOnClickListener(new LayoutClick(wg));
+        holder.ImageRight.setOnClickListener(new popOnClick(wg));
         holder.TopTex.setText(wg.getTopText());
         holder.MiddleText.setText(wg.getMiddleText());
         holder.BottomLeftText.setText(wg.getBottomLeftText());
@@ -133,6 +137,7 @@ public class Widget_item_Adapter extends ArrayAdapter<Widget_item_model> impleme
 
         return view;
     }
+
 
     /**
      *
@@ -203,9 +208,38 @@ Spinner spinner;
         }
     }
 
+    private class popOnClick implements View.OnClickListener{
+        Widget_item_model wg;
+        public popOnClick(Widget_item_model wg) {
+            this.wg=wg;
+        }
+        PopupMenu.OnMenuItemClickListener onMenuItemClickListener=new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.red:
+                        wg.setBackgroundColor(R.color.bgc4);
+                        return true;
+                    case R.id.green:
+                        wg.setBackgroundColor(R.color.bgc3);
+                        return true;
+                    default:return false;
+                }
+            }
+        };
+        @Override
+        public void onClick(View v) {
+            PopupMenu popupMenu = new PopupMenu(context, v);
+            popupMenu.inflate(R.menu.color_change_popup);
+            popupMenu.show();
+            Toast.makeText(context, ""+wg.getBackgroundColor(), Toast.LENGTH_SHORT).show();
+            popupMenu.setOnMenuItemClickListener(onMenuItemClickListener);
+        }
+    }
+
     private class LayoutClick implements View.OnClickListener {
         Widget_item_model wg;
-        public LayoutClick(Widget_item_model wg) {
+        LayoutClick(Widget_item_model wg) {
             this.wg=wg;
         }
 

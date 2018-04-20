@@ -32,8 +32,8 @@
     <string name="AdministratiroRasxod">Административные расходы</string>
     <string name="ProchieOperatRasxodi">Прочие операционные расходы</string>
     <string name="VychitaemIzNalogoPribilivBudushem">"Вычитаемый из налогооблагаемой прибыли в будущем "</string>
-    <string name="From">C</string>
-    <string name="To">По</string>
+    <string name="From">C </string>
+    <string name="To">"По "</string>
     <string name="accept">Принят</string>
     <string name="Bank">Банк</string>
     <string name="Schet">Счет:</string>
@@ -85,4 +85,5 @@
     <string name="Kolvo">Кол-во</string>
     <string name="language">Язык</string>
     <string name="SebeStoimostRealiProdukts">Себестоимость реализованный продукции</string>
+    <string name="SchetT">СЧЕТ</string>
 </resources>

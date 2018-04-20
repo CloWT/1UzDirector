@@ -29,7 +29,7 @@
     <string name="ReportAcutal">Ҳисобот ---- йил санасига қадар амал қилади</string>
     <string name="password">"махфий код "</string>
     <string name="Period">"Давр "</string>
-    <string name="To">дан</string>
+    <string name="To">"дан "</string>
     <string name="PoRealizatsii">Сотиш бўйича</string>
     <string name="accept">Қабул қилиш</string>
     <string name="InSum">Тушум</string>
@@ -45,7 +45,7 @@
     <string name="store">Омборлар</string>
     <string name="Beginyear">Йил бошидан</string>
     <string name="Subkonto">Субконто</string>
-    <string name="Schet">Ҳисобварақ</string>
+    <string name="Schet">Ҳисобварақ:</string>
     <string name="Scheta">"Ҳисобварақлар  "</string>
     <string name="thisWeek">Жорий ҳафта</string>
     <string name="ThisMonth">Жорий ой</string>

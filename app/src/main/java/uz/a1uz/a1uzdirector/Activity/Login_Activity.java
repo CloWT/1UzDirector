@@ -21,6 +21,7 @@ import org.json.JSONObject;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
 
 import uz.a1uz.a1uzdirector.Helpers.ActionBarCustomizer;
 import uz.a1uz.a1uzdirector.JsoN.GetJson;
@@ -50,6 +51,7 @@ public class Login_Activity extends ActionBarCustomizer {
 
         sPref = getPreferences(MODE_PRIVATE);
         UserInfo.setLan(sPref.getString("lang", String.valueOf(UserInfo.EheaderLang.eRu)));
+        Set<String> set = sPref.getStringSet("key", null);
 
         loadText();
         String[] cats = {first, second, third};

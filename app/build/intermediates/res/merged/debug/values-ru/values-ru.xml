@@ -43,6 +43,7 @@
     <string name="RasxodiPeriod">Расходы периода</string>
     <string name="ReportAcutal">"Отчёт актуален на "</string>
     <string name="Schet">Счет:</string>
+    <string name="SchetT">СЧЕТ</string>
     <string name="Scheta">Счета</string>
     <string name="SebeStoimVypolnenRabotiUsl">Себестоимость выплаченных работ и оказанных услуг</string>
     <string name="SebeStoimostGotovyProduksii">"Себестоимость реализованной готовый продукции "</string>
@@ -53,7 +54,7 @@
     <string name="Summa">Сумма</string>
     <string name="TMZ_Name">Наименование ТМЗ</string>
     <string name="ThisMonth">Текущий месяц</string>
-    <string name="To">По</string>
+    <string name="To">"По "</string>
     <string name="Torgovl">Торговля</string>
     <string name="TotalAborot">Итого обороты</string>
     <string name="Tsena">Цена</string>
