@@ -14,6 +14,7 @@
     <string name="Day30">До 30 дней</string>
     <string name="Day60">До 60 дней</string>
     <string name="Day90">До 60 дней</string>
+    <string name="Detalizat">ДЕТАЛИЗАЦИЯ</string>
     <string name="Deyatelnost">Деятельность</string>
     <string name="Document">Документ</string>
     <string name="EdinyNalog">Единый налоговый платёж</string>
@@ -25,6 +26,8 @@
     <string name="Kolvo">Кол-во</string>
     <string name="LastMonth">Прошлый месяц</string>
     <string name="LastWeek">Прошлая неделя</string>
+    <string name="MyDoljni">МЫ ДОЛЖНЫ</string>
+    <string name="NamDoljny">НАМ ДОЛЖНЫ</string>
     <string name="NotData">Нет данных за указанный период</string>
     <string name="NumZnak">№</string>
     <string name="OperationDetail">Детали операции</string>
@@ -49,10 +52,12 @@
     <string name="SebeStoimostGotovyProduksii">Себестоимость реализованной готовой продукции</string>
     <string name="SebeStoimostRealiProdukts">"Себестоимость реализованной продукции  "</string>
     <string name="SebeStoimostRealizoTovar">"Себестоимость реализованных товаров "</string>
+    <string name="Sklad">СКЛАД</string>
     <string name="StatyaRasxodov">Статьи расходов</string>
     <string name="Subkonto">Субконто</string>
     <string name="Summa">Сумма</string>
     <string name="TMZ_Name">Наименование ТМЗ</string>
+    <string name="TekushiyRasxody">ТЕКУЩИЕ РАСХОДЫ</string>
     <string name="ThisMonth">Текущий месяц</string>
     <string name="To">"По "</string>
     <string name="Torgovl">Торговля</string>
@@ -60,8 +65,11 @@
     <string name="Tsena">Цена</string>
     <string name="Ubitki">"Убытки от валютных курсовых разниц "</string>
     <string name="Uslug">Услуги</string>
+    <string name="VpiskaPoSChetu">ВЫПИСКА ПО СЧЕТУ</string>
     <string name="VychitaemIzNalogoPribilivBudushem">"ВВычитаемые из налогооблагаемой прибыли в будущем "</string>
     <string name="VydiDeatelnosti">"Виды деятельности "</string>
+    <string name="Vyruchka">ВЫРУЧКА</string>
+    <string name="VyruchkaZaPeriod">ВЫРУЧКА ЗА ПЕРИОД</string>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Перейти на главный экран"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
     <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>

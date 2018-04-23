@@ -3,6 +3,7 @@ package uz.a1uz.a1uzdirector.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.support.v7.app.AppCompatActivity;
@@ -21,6 +22,7 @@ import org.json.JSONObject;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Locale;
 import java.util.Set;
 
 import uz.a1uz.a1uzdirector.Helpers.ActionBarCustomizer;
@@ -42,15 +44,19 @@ public class Login_Activity extends ActionBarCustomizer {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        sPref = getPreferences(MODE_PRIVATE);
+        UserInfo.setLan(sPref.getString("lang", String.valueOf(UserInfo.EheaderLang.eRu)),getBaseContext());
+        System.out.println("OnCreate1");
         homeButton=false; // back button
         super.onCreate(savedInstanceState);
+        System.out.println("OnCreate2");
         setContentView(R.layout.activity_login_);
         etPass=(EditText)findViewById(R.id.password);
         btLogin=(Button) findViewById(R.id.btLogin);
         INN=(AutoCompleteTextView)findViewById(R.id.INN);
 
-        sPref = getPreferences(MODE_PRIVATE);
-        UserInfo.setLan(sPref.getString("lang", String.valueOf(UserInfo.EheaderLang.eRu)));
+
+
         Set<String> set = sPref.getStringSet("key", null);
 
         loadText();

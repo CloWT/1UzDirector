@@ -25,27 +25,34 @@
         <activity
             android:name=".Activity.Main_Activity"
             android:configChanges="orientation|screenSize" />
-        <activity android:name=".Activity.TablesActivitys.BankTables.AccountsTable" />
-        <activity android:name=".Activity.TablesActivitys.BankTables.BankBankReport" />
-        <activity android:name=".Activity.TablesActivitys.BankTables.BankPeriodTable" />
-        <activity android:name=".Activity.TablesActivitys.ProceedsTables.ProceedsTable" />
-        <activity android:name=".Activity.TablesActivitys.ProceedsTables.ProceedsPeriodTable" />
+        <activity android:name=".Activity.TablesActivitys.BankTables.AccountsTable" android:configChanges="orientation"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Activity.TablesActivitys.BankTables.BankBankReport" android:configChanges="orientation"
+            android:screenOrientation="landscape" />
+        <activity android:name=".Activity.TablesActivitys.BankTables.BankPeriodTable" android:configChanges="orientation"
+            android:screenOrientation="landscape" />
+        <activity android:name=".Activity.TablesActivitys.ProceedsTables.ProceedsTable"  android:configChanges="orientation"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Activity.TablesActivitys.ProceedsTables.ProceedsPeriodTable"  android:configChanges="orientation"
+            android:screenOrientation="landscape"/>
         <activity android:name=".Helpers.DatePeriodPicker" />
-        <activity android:name=".Activity.TablesActivitys.StoreTables.StoreTable" />
-        <activity android:name=".Activity.TablesActivitys.StoreTables.StorePeriodTable" />
-        <activity android:name=".Activity.TablesActivitys.CreditTables.CreditTable" />
-        <activity android:name=".Activity.TablesActivitys.CreditTables.CreditSecondReport" />
-        <activity android:name=".Activity.TablesActivitys.DebitTables.DebitTable" />
-        <activity android:name=".Activity.TablesActivitys.DebitTables.DebitSecondReport" />
+        <activity android:name=".Activity.TablesActivitys.StoreTables.StoreTable"  android:configChanges="orientation"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Activity.TablesActivitys.StoreTables.StorePeriodTable"  android:configChanges="orientation"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Activity.TablesActivitys.CreditTables.CreditTable"  android:configChanges="orientation"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Activity.TablesActivitys.CreditTables.CreditSecondReport"  android:configChanges="orientation"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Activity.TablesActivitys.DebitTables.DebitTable"  android:configChanges="orientation"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Activity.TablesActivitys.DebitTables.DebitSecondReport"  android:configChanges="orientation"
+            android:screenOrientation="landscape"/>
         <activity
-            android:name=".Activity.TablesActivitys.CurrentTables.CurrentConsumptionTable"
-            android:label="@string/title_activity_current_consumption_table"
-            android:parentActivityName=".Activity.Main_Activity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="uz.a1uz.a1uzdirector.Activity.Main_Activity" />
-        </activity>
-        <activity android:name=".Activity.TablesActivitys.CurrentTables.CurrentConsumptionSecondTable"></activity>
+            android:name=".Activity.TablesActivitys.CurrentTables.CurrentConsumptionTable"  android:configChanges="orientation"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Activity.TablesActivitys.CurrentTables.CurrentConsumptionSecondTable"  android:configChanges="orientation"
+            android:screenOrientation="landscape"/>
     </application>
 
 </manifest>

@@ -3,6 +3,7 @@ package uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.support.annotation.Nullable;
@@ -50,10 +51,12 @@ ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        SharedPreferences sPref = getPreferences(MODE_PRIVATE);
+        UserInfo.setLan(sPref.getString("lang", String.valueOf(UserInfo.EheaderLang.eRu)),getBaseContext());
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_accounts_table);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+
 
         context=this;
         System.out.println("OnCreat");

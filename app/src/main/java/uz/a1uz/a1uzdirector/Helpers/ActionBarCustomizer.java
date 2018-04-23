@@ -38,7 +38,11 @@ public class ActionBarCustomizer extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+        sPref = getPreferences(MODE_PRIVATE);
+        UserInfo.setLan(sPref.getString("lang", String.valueOf(UserInfo.EheaderLang.eRu)),getBaseContext());
+        System.out.println("OnCreate3");
         super.onCreate(savedInstanceState);
+        System.out.println("OnCreate4");
         builder = new AlertDialog.Builder(this);
         AlertBuild();
 
@@ -63,15 +67,7 @@ public class ActionBarCustomizer extends AppCompatActivity {
         // Add the buttons
         builder.setPositiveButton("ru", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
-                String languageToLoad = "ru"; // your language
-                Locale locale = new Locale(languageToLoad);
-                Locale.setDefault(locale);
-                Configuration config = new Configuration();
-                config.locale = locale;
-                getBaseContext().getResources().updateConfiguration(config,
-                        getBaseContext().getResources().getDisplayMetrics());
-                dialog.dismiss();
-                UserInfo.setLan(UserInfo.EheaderLang.eRu);
+                UserInfo.setLan(UserInfo.EheaderLang.eRu,getBaseContext());
                 SaveLang(UserInfo.getLan());
                 finish();
                 startActivity(getIntent());
@@ -81,17 +77,7 @@ public class ActionBarCustomizer extends AppCompatActivity {
         });
         builder.setNegativeButton("Uz", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
-                // User cancelled the dialog
-
-                String languageToLoad = "uz"; // your language
-                Locale locale = new Locale(languageToLoad);
-                Locale.setDefault(locale);
-                Configuration config = new Configuration();
-                config.locale = locale;
-                getBaseContext().getResources().updateConfiguration(config,
-                        getBaseContext().getResources().getDisplayMetrics());
-                dialog.dismiss();
-                UserInfo.setLan(UserInfo.EheaderLang.eRu);
+                UserInfo.setLan(UserInfo.EheaderLang.eUz,getBaseContext());
                 SaveLang(UserInfo.getLan());
                 finish();
               startActivity(getIntent());

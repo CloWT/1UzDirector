@@ -1,5 +1,9 @@
 package uz.a1uz.a1uzdirector.Helpers;
 
+import android.content.Context;
+import android.content.res.Configuration;
+
+import java.util.Locale;
 import java.util.UUID;
 
 /**
@@ -7,7 +11,7 @@ import java.util.UUID;
  */
 
 public class UserInfo {
-    public static final String Url="http://83.69.139.133:5050";
+    public static final String Url="http://83.69.139.133:5050";//="http://10.0.2.2:8080";
     private static String GUID;
     private static EheaderLang lan=EheaderLang.eRu;
 
@@ -15,23 +19,31 @@ public class UserInfo {
         if(GUID==null) GUID=UUID.randomUUID().toString();
         return GUID;
     }
+    static Locale locale;
+    static Configuration config;
 
     public static String getLan() {
         return String.valueOf(lan);
     }
 
-    public static void setLan(EheaderLang lan) {
+    public static void setLan(EheaderLang lan, Context context) {
         UserInfo.lan = lan;
+        locale = new Locale(lan.toString());
+        Locale.setDefault(locale);
+        config = new Configuration();
+        config.locale = locale;
+        context.getResources().updateConfiguration(config,
+                context.getResources().getDisplayMetrics());
     }
-    public static void setLan(String lan) {
+    public static void setLan(String lan,Context context) {
         for (EheaderLang e :EheaderLang.values()) {
-            if(e.getStringVal().equals(lan)) UserInfo.lan=e;
+            if(e.getStringVal().equals(lan)) UserInfo.setLan(e,context);
         }
 
     }
 
     public enum EheaderLang {
-        eRu("ru-RU"),eUz("uz-Cyrl-UZ");
+        eRu("ru-RU"),eUz("uz"),eUz_Cyrl("uz-Cyrl-UZ");
 
 
         private String stringVal;

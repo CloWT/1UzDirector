@@ -14,6 +14,7 @@
     <string name="Day30">30 кунгача</string>
     <string name="Day60">60 кунгача</string>
     <string name="Day90">90 кунгача</string>
+    <string name="Detalizat">Батафсил жараён</string>
     <string name="Deyatelnost">Фаолият</string>
     <string name="Document">Ҳужжат</string>
     <string name="EdinyNalog">Ягона солиқ тўлови</string>
@@ -25,6 +26,8 @@
     <string name="Kolvo">сони</string>
     <string name="LastMonth">Ўтган ой</string>
     <string name="LastWeek">Ўтган ҳафта</string>
+    <string name="MyDoljni">Биз қарздормиз</string>
+    <string name="NamDoljny">Бизга қарздор</string>
     <string name="NotData">Белгиланган давр учун маълумот мавжуд эмас</string>
     <string name="NumZnak">№</string>
     <string name="OperationDetail">Батафсил жараён</string>
@@ -43,15 +46,18 @@
     <string name="RasxodiPeriod">Давр ҳаражатлари</string>
     <string name="ReportAcutal">Ҳисобот ---- йил санасига қадар амал қилади</string>
     <string name="Schet">Ҳисобварақ:</string>
+    <string name="SchetT">Ҳисобварақ</string>
     <string name="Scheta">"Ҳисобварақлар  "</string>
     <string name="SebeStoimVypolnenRabotiUsl">Кўрсатилган хизматлар ва тўланган иш ҳақи ҳисоблари таннархи</string>
     <string name="SebeStoimostGotovyProduksii">Тайёр маҳсулот таннархи</string>
     <string name="SebeStoimostRealiProdukts">"Сотилган маҳсулотлар таннархи "</string>
     <string name="SebeStoimostRealizoTovar">Сотилган товарлар таннархи</string>
+    <string name="Sklad">Омбор</string>
     <string name="StatyaRasxodov">Ҳаражатлар моддаси</string>
     <string name="Subkonto">Субконто</string>
     <string name="Summa">Сумма</string>
     <string name="TMZ_Name">ТМЗ номланиши</string>
+    <string name="TekushiyRasxody">Жорий харажатлар</string>
     <string name="ThisMonth">Жорий ой</string>
     <string name="To">"дан "</string>
     <string name="Torgovl">Савдо-сотиқ</string>
@@ -59,8 +65,11 @@
     <string name="Tsena">Нарх</string>
     <string name="Ubitki">Валюта айирбошлаш курси бўйича йўқотишлар</string>
     <string name="Uslug">Хизмат кўрсатиш</string>
+    <string name="VpiskaPoSChetu">Ҳисобварақ кўчирмаси</string>
     <string name="VychitaemIzNalogoPribilivBudushem">ККелажакда солиққа тортиладиган даромаддан чегирилиши мумкин</string>
     <string name="VydiDeatelnosti">Фаолият турлари</string>
+    <string name="Vyruchka">Даромад</string>
+    <string name="VyruchkaZaPeriod">Давр даромади</string>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Boshiga o‘tish"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
     <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
