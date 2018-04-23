@@ -2,6 +2,7 @@ package uz.a1uz.a1uzdirector.Activity.TablesActivitys.StoreTables;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -38,7 +39,9 @@ public class StoreTable extends ActionBarCustomizer {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setSubTitleC("СКЛАДЫ");
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        setSubTitleC(getString(R.string.Sklad));
+
         setContentView(R.layout.activity_store_table);
         context=this;
         storeTable=(TableLayout)findViewById(R.id.tableForStore);
@@ -119,14 +122,14 @@ public class StoreTable extends ActionBarCustomizer {
             for (int j = 0; j <TW[0].length ; j++) {
                 TW[i][j]=new TextView(this);
             }
-            TW[i][0].setText(accountReportResults.get(i).getName().toString());
+            TW[i][0].setText(accountReportResults.get(i).getName());
             TW[i][1].setText(accountReportResults.get(i).getBeginPeriodSum());
             TW[i][2].setText(accountReportResults.get(i).getInSum());
             TW[i][3].setText(accountReportResults.get(i).getOutSum());
             TW[i][4].setText(accountReportResults.get(i).getCurrentSum());
 
             for (int j = 0; j <5 ; j++) {
-                TW[i][j].setGravity(j==0? Gravity.LEFT:Gravity.RIGHT);
+                TW[i][j].setGravity(j==0? Gravity.START:Gravity.END);
                 TW[i][j].setBackgroundResource(R.drawable.border_shape);
                 if(accountReportResults.size()-1==i){
                     TW[i][j].setTextColor(ContextCompat.getColor(this,R.color.textColor));
@@ -153,7 +156,7 @@ public class StoreTable extends ActionBarCustomizer {
     private class ClickT implements View.OnClickListener {
         AccountReportResult accountReportResult;
         Context context;
-        public ClickT(AccountReportResult accountReportResult, Context context) {
+        ClickT(AccountReportResult accountReportResult, Context context) {
             this.accountReportResult=accountReportResult;
             this.context=context;
         }

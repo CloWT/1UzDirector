@@ -2,6 +2,7 @@ package uz.a1uz.a1uzdirector.Activity.TablesActivitys.CreditTables;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -39,7 +40,9 @@ public class CreditSecondReport extends ActionBarCustomizer implements LayoutCon
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_credit_second_report);
-        setSubTitleC("ДЕТАЛИЗАЦИЯ");
+        setSubTitleC(getString(R.string.Detalizat));
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+
         context=this;
         creditTable=(GridLayout) findViewById(R.id.periodTable);
         progressBar=(ProgressBar)findViewById(R.id.progres);

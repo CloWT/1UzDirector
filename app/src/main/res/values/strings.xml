@@ -27,11 +27,11 @@
     <string name="title_activity_current_consumption_table">CurrentConsumptionTable</string>
     <string name="SebeStoimostGotovyProduksii">Себестоимость реализованной готовой продукции</string>
     <string name="SebeStoimostRealizoTovar">"Себестоимость реализованных товаров "</string>
-    <string name="SebeStoimVypolnenRabotiUsl">Себестоимость выплаченных работ и оказанных услуг</string>
+    <string name="SebeStoimVypolnenRabotiUsl">"Себестоимость выполненных работ и оказанных услуг "</string>
     <string name="PoRealizatsii">По реализации</string>
     <string name="AdministratiroRasxod">Административные расходы</string>
     <string name="ProchieOperatRasxodi">Прочие операционные расходы</string>
-    <string name="VychitaemIzNalogoPribilivBudushem">"Вычитаемый из налогооблагаемой прибыли в будущем "</string>
+    <string name="VychitaemIzNalogoPribilivBudushem">"Вычитаемые из налогооблагаемой прибыли в будущем "</string>
     <string name="From">C </string>
     <string name="To">"По "</string>
     <string name="accept">Принят</string>
@@ -44,7 +44,7 @@
     <string name="LastWeek">Прошлая неделя</string>
     <string name="ThisMonth">Текущий месяц</string>
     <string name="LastMonth">Прошлый месяц</string>
-    <string name="Beginyear">С начало Года</string>
+    <string name="Beginyear">"С начала года "</string>
     <string name="inBeginPeriod">На начало периода</string>
     <string name="Prihod">Приход</string>
     <string name="Rasxod">Расход</string>
@@ -66,7 +66,7 @@
     <string name="Summa">Сумма</string>
     <string name="RasxodiPeriod">Расходы периода</string>
     <string name="RasxodFinansDeayt">Расходы по финансовой деятельности</string>
-    <string name="RasxodProtsent">"Расходы в виде продуктов "</string>
+    <string name="RasxodProtsent">"Расходы в виде процентов "</string>
     <string name="Ubitki">Убытки от валютных курсовых разниц</string>
     <string name="ProCiRasxodi">Прочие расходы по финансовой деятельности</string>
     <string name="RasxodiNalog">Расходы по налогам от прибыли</string>
@@ -84,6 +84,14 @@
     <string name="ostatokNakones">Остаток на конец</string>
     <string name="Kolvo">Кол-во</string>
     <string name="language">Язык</string>
-    <string name="SebeStoimostRealiProdukts">Себестоимость реализованный продукции</string>
+    <string name="SebeStoimostRealiProdukts">"Себестоимость реализованной продукции "</string>
     <string name="SchetT">СЧЕТ</string>
+    <string name="VpiskaPoSChetu">ВЫПИСКА ПО СЧЕТУ</string>
+    <string name="Detalizat">ДЕТАЛИЗАЦИЯ</string>
+    <string name="MyDoljni">МЫ ДОЛЖНЫ</string>
+    <string name="TekushiyRasxody">ТЕКУЩИЕ РАСХОДЫ</string>
+    <string name="NamDoljny">НАМ ДОЛЖНЫ</string>
+    <string name="VyruchkaZaPeriod">ВЫРУЧКА ЗА ПЕРИОД</string>
+    <string name="Vyruchka">ВЫРУЧКА</string>
+    <string name="Sklad">СКЛАД</string>
 </resources>

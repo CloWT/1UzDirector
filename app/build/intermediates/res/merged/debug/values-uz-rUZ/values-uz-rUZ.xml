@@ -38,7 +38,7 @@
     <string name="ProchieOperatRasxodi">Бошқа операциялар харажатлари</string>
     <string name="Rasxod">Чиқим</string>
     <string name="RasxodFinansDeayt">Молиявий фаолият билан боғлиқ харажатлар</string>
-    <string name="RasxodProtsent">Маҳсулот кўринишидаги ҳаражатлар</string>
+    <string name="RasxodProtsent">Фоиз кўринишидаги ҳаражатлар</string>
     <string name="RasxodiNalog">Даромад солиғи бўйича харажатлар</string>
     <string name="RasxodiPeriod">Давр ҳаражатлари</string>
     <string name="ReportAcutal">Ҳисобот ---- йил санасига қадар амал қилади</string>
@@ -59,7 +59,7 @@
     <string name="Tsena">Нарх</string>
     <string name="Ubitki">Валюта айирбошлаш курси бўйича йўқотишлар</string>
     <string name="Uslug">Хизмат кўрсатиш</string>
-    <string name="VychitaemIzNalogoPribilivBudushem">Келажакда солиққа тортиладиган даромаддан чегирилиши мумкин</string>
+    <string name="VychitaemIzNalogoPribilivBudushem">ККелажакда солиққа тортиладиган даромаддан чегирилиши мумкин</string>
     <string name="VydiDeatelnosti">Фаолият турлари</string>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Boshiga o‘tish"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>

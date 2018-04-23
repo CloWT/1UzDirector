@@ -1,6 +1,7 @@
 package uz.a1uz.a1uzdirector.Activity.TablesActivitys.ProceedsTables;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -24,7 +25,8 @@ public class ProceedsTable extends ActionBarCustomizer {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setSubTitleC("ВЫРУЧКА");
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        setSubTitleC(getString(R.string.Vyruchka));
         setContentView(R.layout.activity_proceeds_table);
         AddElemsToTable();
     }

@@ -2,6 +2,7 @@ package uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -45,8 +46,10 @@ public class BankPeriodTable extends ActionBarCustomizer implements LayoutConfig
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setSubTitleC("ВЫПИСКА ПО СЧЕТУ");
+        setSubTitleC(getString(R.string.VpiskaPoSChetu));
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         setContentView(R.layout.activity_bank_period_table);
+
         periodTable=(TableLayout)findViewById(R.id.periodTable);
         periodTable.setBackgroundResource(R.drawable.border_dark_shape);
         progressBar=(ProgressBar)findViewById(R.id.progres);
@@ -79,7 +82,7 @@ public class BankPeriodTable extends ActionBarCustomizer implements LayoutConfig
         String secondDate = data.getStringExtra("sDate");
         String url= UrlHepler.Combine(URL_cons.BANKPERIODREPORT,ReportID+"",
                 firstDate,secondDate,UserInfo.getGUID());
-            tDatePeriod.setText(firstDate+" - "+secondDate);
+            tDatePeriod.setText(String.format("%s - %s", firstDate, secondDate));
         getFromJson(url);
         }
     }
@@ -172,11 +175,11 @@ public class BankPeriodTable extends ActionBarCustomizer implements LayoutConfig
             TW[i][2].setText(periodResults.get(i).getOutSum());
             for (int j = 0; j < TW[0].length; j++) {
                 if(i<sizeP-2&&sizeP>2){
-                    TW[i][j].setGravity(j==0?Gravity.LEFT:Gravity.RIGHT);
+                    TW[i][j].setGravity(j==0?Gravity.START:Gravity.END);
                     TW[i][j].setTextColor(ContextCompat.getColor(this,R.color.tableTopColor));
                     TW[i][j].setBackgroundResource(R.drawable.border_shape);
                 }else{
-                    TW[i][j].setGravity(Gravity.RIGHT);
+                    TW[i][j].setGravity(Gravity.END);
                     TW[i][j].setTextColor(ContextCompat.getColor(this,R.color.textColor));
                     TW[i][j].setBackgroundResource(R.color.tableTopColor);
 

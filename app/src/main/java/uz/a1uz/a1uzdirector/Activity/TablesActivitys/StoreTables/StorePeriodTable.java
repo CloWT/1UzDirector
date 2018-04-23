@@ -2,6 +2,7 @@ package uz.a1uz.a1uzdirector.Activity.TablesActivitys.StoreTables;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -39,19 +40,25 @@ public class StorePeriodTable extends ActionBarCustomizer implements LayoutConfi
     ProgressBar progressBar;
     Intent inDatePicker;
     String url;
+    TextView tDatePeriod;
+    int requesCodeForDatePicker=6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setSubTitleC("СКЛАД");
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        setSubTitleC(getString(R.string.Sklad));
         setContentView(R.layout.activity_store_period_table);
         context=this;
+
         periodTable=(GridLayout)findViewById(R.id.periodTable);
         progressBar=(ProgressBar)findViewById(R.id.progres);
+        tDatePeriod=(TextView) findViewById(R.id.tDatePeriod);
+
         inDatePicker=new Intent(context, DatePeriodPicker.class);
 
         FirstLastDate datFL=new FirstLastDate(EdatePeriod.ThisMonth);
-
+        tDatePeriod.setText(String.format("%s - %s", datFL.getFirstDate(), datFL.getLastDate()));
 
 
         Intent inProceedTable=getIntent();
@@ -59,14 +66,23 @@ public class StorePeriodTable extends ActionBarCustomizer implements LayoutConfi
         String name=inProceedTable.getStringExtra("Name");
         url= UrlHepler.Combine(URL_cons.STOREPERIODREPORT, String.valueOf(ReportID),
                 datFL.getFirstDate(),datFL.getLastDate(), UserInfo.getGUID());
-        getFromJson(url);
+        getFromJson(datFL.getFirstDate(),datFL.getLastDate());
+    }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if(data==null) return;
+        if(requestCode==requesCodeForDatePicker && resultCode==RESULT_OK){
+            String firstDate=data.getStringExtra("fDate");
+            String secondDate=data.getStringExtra("sDate");
+            tDatePeriod.setText(String.format("%s - %s", firstDate, secondDate));
+            getFromJson(firstDate,secondDate);
 
-
+        }
 
     }
 
-    private void getFromJson(String url) {
+    private void getFromJson(String fDate, String sDate) {
         IGetJsonResult logic=new IGetJsonResult() {
             @Override
             public void OnBegin() {
@@ -142,6 +158,9 @@ public class StorePeriodTable extends ActionBarCustomizer implements LayoutConfi
             }
         };
 
+        url= UrlHepler.Combine(URL_cons.STOREPERIODREPORT, String.valueOf(ReportID),
+                fDate,sDate, UserInfo.getGUID());
+
         GetJson.execute(url,logic);
     }
     TextView textView[][];
@@ -161,6 +180,7 @@ public class StorePeriodTable extends ActionBarCustomizer implements LayoutConfi
     }
 
     public void tDateClick(View view) {
+        startActivityForResult(inDatePicker,requesCodeForDatePicker);
     }
     TextView tx;
     @Override

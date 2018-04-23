@@ -2,6 +2,7 @@ package uz.a1uz.a1uzdirector.Activity.TablesActivitys.CurrentTables;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.View;
@@ -45,7 +46,9 @@ public class CurrentConsumptionTable extends ActionBarCustomizer {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_current_consumption_table);
-        setSubTitleC("ТЕКУЩИЕ РАСХОДЫ");
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        setSubTitleC(getString(R.string.TekushiyRasxody));
+
         context=this;
         periodTable=(GridLayout)findViewById(R.id.periodTable);
         progressBar=(ProgressBar)findViewById(R.id.progres);

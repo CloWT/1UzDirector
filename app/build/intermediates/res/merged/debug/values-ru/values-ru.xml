@@ -5,7 +5,7 @@
     <string name="Bank">Банк</string>
     <string name="BeginDay">На начало дня</string>
     <string name="BeginPeriod">Остаток на начало</string>
-    <string name="Beginyear">С начало Года</string>
+    <string name="Beginyear">"С начала года "</string>
     <string name="Contract">Договор</string>
     <string name="Contragent">Контрагент</string>
     <string name="CurrentSum">Текущий остаток</string>
@@ -38,16 +38,16 @@
     <string name="ProchieOperatRasxodi">Прочие операционные расходы</string>
     <string name="Rasxod">Расход</string>
     <string name="RasxodFinansDeayt">Расходы по финансовой деятельности</string>
-    <string name="RasxodProtsent">"Расходы в виде продуктов "</string>
+    <string name="RasxodProtsent">"Расходы в виде процентов "</string>
     <string name="RasxodiNalog">Расходы по налогам от прибыли</string>
     <string name="RasxodiPeriod">Расходы периода</string>
     <string name="ReportAcutal">"Отчёт актуален на "</string>
     <string name="Schet">Счет:</string>
     <string name="SchetT">СЧЕТ</string>
     <string name="Scheta">Счета</string>
-    <string name="SebeStoimVypolnenRabotiUsl">Себестоимость выплаченных работ и оказанных услуг</string>
-    <string name="SebeStoimostGotovyProduksii">"Себестоимость реализованной готовый продукции "</string>
-    <string name="SebeStoimostRealiProdukts">Себестоимость реализованный продукции</string>
+    <string name="SebeStoimVypolnenRabotiUsl">"Себестоимость выполненных работ и оказанных услуг "</string>
+    <string name="SebeStoimostGotovyProduksii">Себестоимость реализованной готовой продукции</string>
+    <string name="SebeStoimostRealiProdukts">"Себестоимость реализованной продукции  "</string>
     <string name="SebeStoimostRealizoTovar">"Себестоимость реализованных товаров "</string>
     <string name="StatyaRasxodov">Статьи расходов</string>
     <string name="Subkonto">Субконто</string>
@@ -60,7 +60,7 @@
     <string name="Tsena">Цена</string>
     <string name="Ubitki">"Убытки от валютных курсовых разниц "</string>
     <string name="Uslug">Услуги</string>
-    <string name="VychitaemIzNalogoPribilivBudushem">"Вычитаемый из налогооблагаемой прибыли в будущем "</string>
+    <string name="VychitaemIzNalogoPribilivBudushem">"ВВычитаемые из налогооблагаемой прибыли в будущем "</string>
     <string name="VydiDeatelnosti">"Виды деятельности "</string>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Перейти на главный экран"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>

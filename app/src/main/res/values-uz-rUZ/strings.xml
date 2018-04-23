@@ -16,7 +16,7 @@
     <string name="Bank">Банк</string>
     <string name="Enter">Кириш</string>
     <string name="yesterday">Кеча</string>
-    <string name="VychitaemIzNalogoPribilivBudushem">Келажакда солиққа тортиладиган даромаддан чегирилиши мумкин</string>
+    <string name="VychitaemIzNalogoPribilivBudushem">ККелажакда солиққа тортиладиган даромаддан чегирилиши мумкин</string>
     <string name="Contract">Шартнома</string>
     <string name="inn">СТИР</string>
     <string name="total">"Жами "</string>
@@ -66,7 +66,7 @@
     <string name="RasxodiPeriod">Давр ҳаражатлари</string>
     <string name="Summa">Сумма</string>
     <string name="RasxodFinansDeayt">Молиявий фаолият билан боғлиқ харажатлар</string>
-    <string name="RasxodProtsent">Маҳсулот кўринишидаги ҳаражатлар</string>
+    <string name="RasxodProtsent">Фоиз кўринишидаги ҳаражатлар</string>
     <string name="Ubitki">Валюта айирбошлаш курси бўйича йўқотишлар</string>
     <string name="ProCiRasxodi">Молиявий фаолият билан боғлиқ бошқа харажатлар</string>
     <string name="RasxodiNalog">Даромад солиғи бўйича харажатлар</string>
@@ -85,4 +85,13 @@
     <string name="Kolvo">сони</string>
     <string name="language">Тил</string>
     <string name="SebeStoimostRealiProdukts">"Сотилган маҳсулотлар таннархи "</string>
+    <string name="Sklad">Омбор</string>
+    <string name="Vyruchka">Даромад</string>
+    <string name="MyDoljni">Биз қарздормиз</string>
+    <string name="TekushiyRasxody">Жорий харажатлар</string>
+    <string name="NamDoljny">Бизга қарздор</string>
+    <string name="VyruchkaZaPeriod">Давр даромади</string>
+    <string name="Detalizat">Батафсил жараён</string>
+    <string name="VpiskaPoSChetu">Ҳисобварақ кўчирмаси</string>
+    <string name="SchetT">Ҳисобварақ</string>
 </resources>

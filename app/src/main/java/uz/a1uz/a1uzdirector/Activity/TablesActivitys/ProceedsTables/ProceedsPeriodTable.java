@@ -2,8 +2,8 @@ package uz.a1uz.a1uzdirector.Activity.TablesActivitys.ProceedsTables;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -45,12 +45,15 @@ public class ProceedsPeriodTable extends ActionBarCustomizer implements LayoutCo
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_proceeds_period_table);
-        setSubTitleC("ВЫРУЧКА ЗА ПЕРИОД");
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        setSubTitleC(getString(R.string.VyruchkaZaPeriod));
+
         context=this;
         periodTable=(TableLayout) findViewById(R.id.periodTable);
         progressBar=(ProgressBar)findViewById(R.id.progres);
         progressBar.setVisibility(View.VISIBLE);
         tDatePeriod=(TextView) findViewById(R.id.tDatePeriod);
+
         FirstLastDate datFL=new FirstLastDate();
         inDatePicker =new Intent(context, DatePeriodPicker.class);
         Intent inProceedTable=getIntent();
@@ -63,7 +66,7 @@ public class ProceedsPeriodTable extends ActionBarCustomizer implements LayoutCo
         url= UrlHepler.Combine(URL_cons.PROCCEDPERIODREPORT,ReportID+"",
                 datFL.getFirstDate(),datFL.getLastDate(),
                 UserInfo.getGUID());
-        getFromJson(url);
+        getFromJson(datFL.getFirstDate(),datFL.getLastDate());
 
     }
     @Override
@@ -73,14 +76,14 @@ public class ProceedsPeriodTable extends ActionBarCustomizer implements LayoutCo
         if(requestCode==requesCodeForDatePicker&& resultCode==RESULT_OK){
             String firstDate = data.getStringExtra("fDate");
             String secondDate = data.getStringExtra("sDate");
-            String url= UrlHepler.Combine(URL_cons.PROCCEDPERIODREPORT,ReportID+"",
-                    firstDate,secondDate,
-                    UserInfo.getGUID());
             tDatePeriod.setText(String.format("%s - %s", firstDate, secondDate));
-            getFromJson(url);
+            getFromJson(firstDate, secondDate);
         }
     }
-    void getFromJson(String url){
+    void getFromJson(String fDate, String sDate){
+        String url=UrlHepler.Combine(URL_cons.PROCCEDPERIODREPORT,ReportID+"",
+                fDate,sDate,
+                UserInfo.getGUID());
         GetJson.execute(url, new IGetJsonResult() {
             @Override
             public void OnBegin() {
@@ -163,11 +166,11 @@ public class ProceedsPeriodTable extends ActionBarCustomizer implements LayoutCo
             TW[i][5].setText(periodResults.get(i).getSumma());
             for (int j = 0; j < TW[0].length; j++) {
                 if(i<sizeP-1&&sizeP>1){
-                    TW[i][j].setGravity(j==0? Gravity.START:Gravity.END);
+                    TW[i][j].setGravity(Gravity.START);
                     TW[i][j].setTextColor(ContextCompat.getColor(this,R.color.tableTopColor));
                     TW[i][j].setBackgroundResource(R.drawable.border_shape);
                 }else{
-                    TW[i][j].setGravity(Gravity.END);
+                    TW[i][j].setGravity(Gravity.START);
                     TW[i][j].setTextColor(ContextCompat.getColor(this,R.color.textColor));
                     TW[i][j].setBackgroundResource(R.color.tableTopColor);
 

@@ -3,6 +3,7 @@ package uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
@@ -50,8 +51,11 @@ ProgressBar progressBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        context=this;
+
         setContentView(R.layout.activity_accounts_table);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+
+        context=this;
         System.out.println("OnCreat");
         setSubTitleC(getString(R.string.Bank));
         bankTable=(TableLayout)findViewById(R.id.tableForBank);
@@ -194,7 +198,7 @@ ProgressBar progressBar;
     private class ClickT implements View.OnClickListener {
         int accountReportResult;
         Context context;
-        public ClickT(int accountReportResult, Context context) {
+        ClickT(int accountReportResult, Context context) {
             this.accountReportResult=accountReportResult;
             this.context=context;
         }

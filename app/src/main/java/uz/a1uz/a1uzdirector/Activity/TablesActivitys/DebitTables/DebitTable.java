@@ -2,6 +2,7 @@ package uz.a1uz.a1uzdirector.Activity.TablesActivitys.DebitTables;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -38,7 +39,8 @@ public class DebitTable extends ActionBarCustomizer implements LayoutConfigurati
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_credit_table);
-        setSubTitleC("НАМ ДОЛЖНЫ");
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        setSubTitleC(getString(R.string.NamDoljny));
         context=this;
         debitTable =(GridLayout) findViewById(R.id.periodTable);
         progressBar=(ProgressBar)findViewById(R.id.progres);
@@ -209,7 +211,7 @@ public class DebitTable extends ActionBarCustomizer implements LayoutConfigurati
     }
     class OnClick implements  View.OnClickListener{
         int id;
-        public OnClick(int ReportDecriptionID) {
+        OnClick(int ReportDecriptionID) {
             id=ReportDecriptionID;
 
         }

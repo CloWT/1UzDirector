@@ -1,6 +1,7 @@
 package uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -37,7 +38,9 @@ int reportID;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setSubTitleC(getString(R.string.SchetT));
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         setContentView(R.layout.activity_bank_bank_report);
+
         spinner=(Spinner) findViewById(R.id.SchetSpin);
         tableLayout=(TableLayout)findViewById(R.id.tableForBank);
         progressBar=(ProgressBar)findViewById(R.id.progres);
@@ -123,7 +126,7 @@ int reportID;
                     ((TextView) findViewById(R.id.OutThisMonth))     .setText(j.getString("OutThisMonth"));
                     ((TextView) findViewById(R.id.OutThisWeek))      .setText(j.getString("OutThisWeek"));
                     ((TextView) findViewById(R.id.OutThisYearBegin)) .setText(j.getString("OutThisYearBegin"));
-                    ((TextView) findViewById(R.id.dateReport_text)) .setText(getString(R.string.ReportAcutal)+" "+j.getString("ActualDate"));
+                    ((TextView) findViewById(R.id.dateReport_text)) .setText(String.format("%s %s", getString(R.string.ReportAcutal), j.getString("ActualDate")));
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }         }            @Override
