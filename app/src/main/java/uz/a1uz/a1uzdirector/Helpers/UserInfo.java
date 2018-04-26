@@ -19,11 +19,19 @@ public class UserInfo {
         if(GUID==null) GUID=UUID.randomUUID().toString();
         return GUID;
     }
+
+    public static void setGUID(String GUID) {
+        UserInfo.GUID = GUID;
+    }
+
     static Locale locale;
     static Configuration config;
 
     public static String getLan() {
         return String.valueOf(lan);
+    }
+    public static EheaderLang getLanE() {
+        return lan;
     }
 
     public static void setLan(EheaderLang lan, Context context) {

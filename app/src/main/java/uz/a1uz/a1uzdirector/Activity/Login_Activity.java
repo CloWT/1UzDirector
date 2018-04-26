@@ -6,6 +6,8 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Build;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,8 +16,10 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.widget.ToggleButton;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -40,6 +44,7 @@ public class Login_Activity extends ActionBarCustomizer {
     ArrayAdapter<String> adapter;
     String first="",second="",third="";
     Context context;
+    ToggleButton tgButton;
 
 
     @Override
@@ -54,6 +59,31 @@ public class Login_Activity extends ActionBarCustomizer {
         etPass=(EditText)findViewById(R.id.password);
         btLogin=(Button) findViewById(R.id.btLogin);
         INN=(AutoCompleteTextView)findViewById(R.id.INN);
+        tgButton=(ToggleButton)findViewById(R.id.toggleButton);
+
+        tgButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+               if(isChecked) {
+                   if(UserInfo.getLanE()== UserInfo.EheaderLang.eUz) return;
+
+                    UserInfo.setLan(UserInfo.EheaderLang.eUz,getBaseContext());
+                    SaveLang(UserInfo.getLan());
+                    finish();
+                    startActivity(getIntent());
+
+                }
+                else{
+                   if(UserInfo.getLanE()== UserInfo.EheaderLang.eRu) return;
+                    UserInfo.setLan(UserInfo.EheaderLang.eRu,getBaseContext());
+                    SaveLang(UserInfo.getLan());
+                    finish();
+                    startActivity(getIntent());
+                }
+            }
+        });
+
+
 
 
 
@@ -64,7 +94,11 @@ public class Login_Activity extends ActionBarCustomizer {
         List<String> catList = Arrays.asList(cats);
         context=this;
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, catList);
+        switch (UserInfo.getLanE()){
+            case eRu:tgButton.setChecked(false);  break;
+            case eUz: tgButton.setChecked(true);break;
 
+        }
         INN.setAdapter(adapter);
         INN.setImeOptions(EditorInfo.IME_ACTION_NEXT);
         INN.setText(cats[0]);
@@ -166,6 +200,13 @@ public class Login_Activity extends ActionBarCustomizer {
         second=sPref.getString("second", "");
         third=sPref.getString("third", "");
 
+
+    }
+    private void SaveLang(String lan){
+        sPref = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref.edit();
+        ed.putString("lang", lan);
+        ed.apply();
 
     }
 }

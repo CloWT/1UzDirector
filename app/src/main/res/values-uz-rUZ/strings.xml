@@ -26,7 +26,7 @@
     <string name="BeginDay">Кун бошига</string>
     <string name="inBeginPeriod">Давр бошига</string>
     <string name="BeginPeriod">Бошидаги қолдиқ</string>
-    <string name="ReportAcutal">Ҳисобот ---- йил санасига қадар амал қилади</string>
+    <string name="ReportAcutal">Ҳисобот амал қилиш муддати</string>
     <string name="password">"махфий код "</string>
     <string name="Period">"Давр "</string>
     <string name="To">"дан "</string>

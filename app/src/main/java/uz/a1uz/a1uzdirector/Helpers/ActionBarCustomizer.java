@@ -39,7 +39,7 @@ public class ActionBarCustomizer extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         sPref = getPreferences(MODE_PRIVATE);
-        UserInfo.setLan(sPref.getString("lang", String.valueOf(UserInfo.EheaderLang.eRu)),getBaseContext());
+        UserInfo.setLan(sPref.getString("lang", String.valueOf(UserInfo.getLanE())),getBaseContext());
         System.out.println("OnCreate3");
         super.onCreate(savedInstanceState);
         System.out.println("OnCreate4");

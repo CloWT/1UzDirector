@@ -21,7 +21,7 @@ import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.jetbrains.annotations.TestOnly;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -51,8 +51,8 @@ ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        SharedPreferences sPref = getPreferences(MODE_PRIVATE);
-        UserInfo.setLan(sPref.getString("lang", String.valueOf(UserInfo.EheaderLang.eRu)),getBaseContext());
+//        SharedPreferences sPref = getPreferences(MODE_PRIVATE);
+//        UserInfo.setLan(sPref.getString("lang", String.valueOf(UserInfo.EheaderLang.eRu)),getBaseContext());
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_accounts_table);

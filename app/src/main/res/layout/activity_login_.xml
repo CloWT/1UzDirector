@@ -27,13 +27,14 @@
                 android:id="@+id/Info_text"/>
             <ToggleButton
                 android:layout_column="2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:id="@+id/toggleButton"
                 android:checked="false"
-                android:text="ToggleButton"
-                android:textOff="Uz"
-                android:textOn="Ру"/>
+                android:background="#a3db00"
+
+                android:textOff="UZ"
+                android:textOn="РУ"/>
         </GridLayout>
 
         <GridLayout
