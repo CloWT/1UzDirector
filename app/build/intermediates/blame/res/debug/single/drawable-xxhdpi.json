@@ -4,6 +4,10 @@
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\drawable-xxhdpi\\ic_color_changer.png"
     },
     {
+        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_lang.png",
+        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\drawable-xxhdpi\\ic_lang.png"
+    },
+    {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\drawer_shadow.9.png",
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\drawable-xxhdpi\\drawer_shadow.9.png"
     },
@@ -20,7 +24,15 @@
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\drawable-xxhdpi\\ic_drawer.png"
     },
     {
+        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_payment.png",
+        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_payment.png"
+    },
+    {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_arrow_drop_down_black_24dp.png",
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_arrow_drop_down_black_24dp.png"
+    },
+    {
+        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\pop_item_color.png",
+        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\pop_item_color.png"
     }
 ]

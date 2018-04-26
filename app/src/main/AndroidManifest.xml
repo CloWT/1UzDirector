@@ -24,35 +24,35 @@
         </activity>
         <activity
             android:name=".Activity.Main_Activity"
-            android:configChanges="orientation|screenSize" />
+            android:configChanges="orientation" />
         <activity android:name=".Activity.TablesActivitys.BankTables.AccountsTable" android:configChanges="orientation"
-            android:screenOrientation="landscape"/>
+            />
         <activity android:name=".Activity.TablesActivitys.BankTables.BankBankReport" android:configChanges="orientation"
-            android:screenOrientation="landscape" />
+             />
         <activity android:name=".Activity.TablesActivitys.BankTables.BankPeriodTable" android:configChanges="orientation"
-            android:screenOrientation="landscape" />
+             />
         <activity android:name=".Activity.TablesActivitys.ProceedsTables.ProceedsTable"  android:configChanges="orientation"
-            android:screenOrientation="landscape"/>
+            />
         <activity android:name=".Activity.TablesActivitys.ProceedsTables.ProceedsPeriodTable"  android:configChanges="orientation"
-            android:screenOrientation="landscape"/>
+            />
         <activity android:name=".Helpers.DatePeriodPicker" />
         <activity android:name=".Activity.TablesActivitys.StoreTables.StoreTable"  android:configChanges="orientation"
-            android:screenOrientation="landscape"/>
+            />
         <activity android:name=".Activity.TablesActivitys.StoreTables.StorePeriodTable"  android:configChanges="orientation"
-            android:screenOrientation="landscape"/>
+            />
         <activity android:name=".Activity.TablesActivitys.CreditTables.CreditTable"  android:configChanges="orientation"
-            android:screenOrientation="landscape"/>
+            />
         <activity android:name=".Activity.TablesActivitys.CreditTables.CreditSecondReport"  android:configChanges="orientation"
-            android:screenOrientation="landscape"/>
+            />
         <activity android:name=".Activity.TablesActivitys.DebitTables.DebitTable"  android:configChanges="orientation"
-            android:screenOrientation="landscape"/>
+            />
         <activity android:name=".Activity.TablesActivitys.DebitTables.DebitSecondReport"  android:configChanges="orientation"
-            android:screenOrientation="landscape"/>
+            />
         <activity
             android:name=".Activity.TablesActivitys.CurrentTables.CurrentConsumptionTable"  android:configChanges="orientation"
-            android:screenOrientation="landscape"/>
+            />
         <activity android:name=".Activity.TablesActivitys.CurrentTables.CurrentConsumptionSecondTable"  android:configChanges="orientation"
-            android:screenOrientation="landscape"/>
+            />
     </application>
 
 </manifest>

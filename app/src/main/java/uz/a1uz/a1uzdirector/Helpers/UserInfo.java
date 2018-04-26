@@ -3,8 +3,11 @@ package uz.a1uz.a1uzdirector.Helpers;
 import android.content.Context;
 import android.content.res.Configuration;
 
+import java.util.List;
 import java.util.Locale;
 import java.util.UUID;
+
+import uz.a1uz.a1uzdirector.Activity.models.Widget_item_model;
 
 /**
  * Created by sh.khodjabaev on 05.03.2018.
@@ -14,6 +17,8 @@ public class UserInfo {
     public static final String Url="http://83.69.139.133:5050";//="http://10.0.2.2:8080";
     private static String GUID;
     private static EheaderLang lan=EheaderLang.eRu;
+    private static List<Widget_item_model> widgetListItems;
+
 
     public static String getGUID() {
         if(GUID==null) GUID=UUID.randomUUID().toString();
@@ -48,6 +53,14 @@ public class UserInfo {
             if(e.getStringVal().equals(lan)) UserInfo.setLan(e,context);
         }
 
+    }
+
+    public static void setWidgetListItems(List<Widget_item_model> widgetListItems) {
+        UserInfo.widgetListItems = widgetListItems;
+    }
+
+    public static List<Widget_item_model> getWidgetListItems() {
+        return widgetListItems;
     }
 
     public enum EheaderLang {

@@ -161,7 +161,7 @@ ProgressBar progressBar;
                 }
                 if (j==0&&i<accountReportResults.size()-1)
                     TW[i][j].setTextColor(ContextCompat.getColor(this,R.color.blue));
-                TW[i][j].setPadding(5,5,5,5);
+                TW[i][j].setPadding(10,10,10,10);
                 TR[i].addView(TW[i][j]);
             }
             if(accountReportResults.size()-1==i){

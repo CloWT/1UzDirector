@@ -3,7 +3,13 @@ package uz.a1uz.a1uzdirector.Activity.models;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.drawable.Drawable;
 import android.support.annotation.Nullable;
+import android.support.v7.view.menu.MenuBuilder;
+import android.support.v7.view.menu.MenuPopupHelper;
+import android.support.v7.widget.PopupMenu;
+import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -13,19 +19,23 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.PopupMenu;
+
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
+import uz.a1uz.a1uzdirector.Activity.Main_Activity;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.AccountsTable;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.CreditTables.CreditTable;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.CurrentTables.CurrentConsumptionTable;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.DebitTables.DebitTable;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.ProceedsTables.ProceedsTable;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.StoreTables.StoreTable;
+import uz.a1uz.a1uzdirector.Helpers.CustomDialogClass;
 import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
@@ -97,6 +107,7 @@ public class Widget_item_Adapter extends ArrayAdapter<Widget_item_model> impleme
     public long getItemId(int position) {
         return position;
     }
+    int counter=0;
 
     public View getView(final int position, View convertView, ViewGroup parent) {
          ViewHolder holder;
@@ -126,9 +137,20 @@ public class Widget_item_Adapter extends ArrayAdapter<Widget_item_model> impleme
         }
         Widget_item_model wg=items.get(position);
         SpinnerAddItems(holder,wg);
+        SharedPreferences sPref=((Activity)context).getPreferences(Context.MODE_PRIVATE);
+//        Set<String> set = sPref.getStringSet("WIDGETCOLORS", null);
+//        counter=0;
+//
+//        for (String s : set) {
+//            if(position==counter) {
+//                holder.linearLayout.setBackgroundResource(Integer.parseInt(s));
+//                break;
+//            }
+//            counter++;
+//        }
         holder.linearLayout.setBackgroundResource(wg.getBackgroundColor());
         holder.linearLayout.setOnClickListener(new LayoutClick(wg));
-        holder.ImageRight.setOnClickListener(new popOnClick(wg));
+        holder.ImageRight.setOnClickListener(new popOnClick(wg,holder));
         holder.TopTex.setText(wg.getTopText());
         holder.MiddleText.setText(wg.getMiddleText());
         holder.BottomLeftText.setText(wg.getBottomLeftText());
@@ -210,17 +232,22 @@ Spinner spinner;
 
     private class popOnClick implements View.OnClickListener{
         Widget_item_model wg;
-        public popOnClick(Widget_item_model wg) {
+        ViewHolder holder;
+        public popOnClick(Widget_item_model wg, ViewHolder holder) {
             this.wg=wg;
+            this.holder=holder;
         }
         PopupMenu.OnMenuItemClickListener onMenuItemClickListener=new PopupMenu.OnMenuItemClickListener() {
+
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.red:
+                        holder.linearLayout.setBackgroundResource(R.color.bgc4);
                         wg.setBackgroundColor(R.color.bgc4);
                         return true;
                     case R.id.green:
+                        holder.linearLayout.setBackgroundResource(R.color.bgc3);
                         wg.setBackgroundColor(R.color.bgc3);
                         return true;
                     default:return false;
@@ -229,11 +256,14 @@ Spinner spinner;
         };
         @Override
         public void onClick(View v) {
-            PopupMenu popupMenu = new PopupMenu(context, v);
-            popupMenu.inflate(R.menu.color_change_popup);
-            popupMenu.show();
-            Toast.makeText(context, ""+wg.getBackgroundColor(), Toast.LENGTH_SHORT).show();
-            popupMenu.setOnMenuItemClickListener(onMenuItemClickListener);
+//            PopupMenu popupMenu = new PopupMenu(context, v);
+//            popupMenu.inflate(R.menu.color_change_popup);
+//            popupMenu.show();
+//            Toast.makeText(context, ""+wg.getBackgroundColor(), Toast.LENGTH_SHORT).show();
+//            popupMenu.setOnMenuItemClickListener(onMenuItemClickListener);
+            CustomDialogClass dialogClass=new CustomDialogClass(((Main_Activity)context),holder.linearLayout,wg);
+            dialogClass.show();
+
         }
     }
 

@@ -24,7 +24,10 @@ import android.widget.ToggleButton;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
 import java.util.Set;
@@ -82,13 +85,6 @@ public class Login_Activity extends ActionBarCustomizer {
                 }
             }
         });
-
-
-
-
-
-        Set<String> set = sPref.getStringSet("key", null);
-
         loadText();
         String[] cats = {first, second, third};
         List<String> catList = Arrays.asList(cats);
@@ -159,6 +155,7 @@ public class Login_Activity extends ActionBarCustomizer {
                 try {
                     JSONObject c= (JSONObject) jsonObject.get("LogInResult");
                    if(c.getBoolean("IsOk")&&c.getBoolean("IsAuthorization")){
+                       UserInfo.setWidgetListItems(null);
                        saveText();
                        OpenAcitive();
                    }else {

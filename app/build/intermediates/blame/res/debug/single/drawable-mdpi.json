@@ -22,5 +22,17 @@
     {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\drawer_shadow.9.png",
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\drawable-mdpi\\drawer_shadow.9.png"
+    },
+    {
+        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\pop_item_color.png",
+        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\pop_item_color.png"
+    },
+    {
+        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_payment.png",
+        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_payment.png"
+    },
+    {
+        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_lang.png",
+        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\drawable-mdpi\\ic_lang.png"
     }
 ]

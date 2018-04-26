@@ -93,6 +93,7 @@
     <string name="action_settings">Settings</string>
     <string name="app_name">1 UZ ДИРЕКТОР</string>
     <string name="begin">бошига:</string>
+    <string name="chooseColor">Рангни танланг:</string>
     <string name="end">охирига :</string>
     <string name="inBeginPeriod">Давр бошига</string>
     <string name="inEndPeriod">Давр охирига</string>
@@ -102,6 +103,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="ostatokNakones">Охиридаги қолдиқ</string>
     <string name="password">"махфий код "</string>
+    <string name="payFor">Тўлов</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
     <string name="store">Омборлар</string>
     <string name="thisWeek">Жорий ҳафта</string>

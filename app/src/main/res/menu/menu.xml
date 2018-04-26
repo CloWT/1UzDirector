@@ -5,8 +5,16 @@
         android:orderInCategory="1"
         android:title="@string/language"
         android:menuCategory="secondary"
-        android:icon="@mipmap/uz_launcher_ic"
-        app:showAsAction="never" >
+        android:icon="@drawable/ic_lang"
+        app:showAsAction="always" >
+    </item>
+    <item
+        android:id="@+id/payForDirecotr"
+        android:orderInCategory="1"
+        android:title="@string/payFor"
+        android:menuCategory="secondary"
+        android:icon="@drawable/ic_payment"
+        app:showAsAction="ifRoom" >
     </item>
 
 

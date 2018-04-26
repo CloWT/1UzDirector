@@ -10,5 +10,13 @@
     {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\left_arrow.png",
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\left_arrow.png"
+    },
+    {
+        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\pop_item_color.png",
+        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\pop_item_color.png"
+    },
+    {
+        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_payment.png",
+        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_payment.png"
     }
 ]

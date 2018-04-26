@@ -94,6 +94,7 @@
     <string name="action_settings">Settings</string>
     <string name="app_name">1 UZ ДИРЕКТОР</string>
     <string name="begin">начало:</string>
+    <string name="chooseColor">Выбрать цвет:</string>
     <string name="end">конец:</string>
     <string name="inBeginPeriod">На начало периода</string>
     <string name="inEndPeriod">На конец периода</string>
@@ -103,6 +104,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="ostatokNakones">Остаток на конец</string>
     <string name="password">пароль</string>
+    <string name="payFor">Оплата</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">">999"</string>
     <string name="store">Склады</string>
     <string name="thisWeek">Текущая неделя</string>

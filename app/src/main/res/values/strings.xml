@@ -94,4 +94,6 @@
     <string name="VyruchkaZaPeriod">ВЫРУЧКА ЗА ПЕРИОД</string>
     <string name="Vyruchka">ВЫРУЧКА</string>
     <string name="Sklad">СКЛАД</string>
+    <string name="payFor">Оплата</string>
+    <string name="chooseColor">Выбрать цвет:</string>
 </resources>

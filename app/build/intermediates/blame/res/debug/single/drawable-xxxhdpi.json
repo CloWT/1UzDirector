@@ -4,8 +4,16 @@
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_settings_black_24dp.png"
     },
     {
+        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_payment.png",
+        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_payment.png"
+    },
+    {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\left_arrow.png",
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\left_arrow.png"
+    },
+    {
+        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\pop_item_color.png",
+        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\pop_item_color.png"
     },
     {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_arrow_drop_down_black_24dp.png",

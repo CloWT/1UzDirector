@@ -72,6 +72,7 @@ public class ButtonWidgetV2 extends GetJsonResult {
                 e.printStackTrace();
             }
         }
+        UserInfo.setWidgetListItems(activity.items);
 
     }
     @Override
