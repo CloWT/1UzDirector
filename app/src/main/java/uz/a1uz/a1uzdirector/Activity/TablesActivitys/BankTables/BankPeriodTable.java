@@ -45,7 +45,6 @@ public class BankPeriodTable extends ActionBarCustomizer implements LayoutConfig
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setSubTitleC(getString(R.string.VpiskaPoSChetu));
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         setContentView(R.layout.activity_bank_period_table);
 
         periodTable=(TableLayout)findViewById(R.id.periodTable);
