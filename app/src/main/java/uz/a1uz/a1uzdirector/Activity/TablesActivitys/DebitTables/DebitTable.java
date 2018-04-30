@@ -39,7 +39,6 @@ public class DebitTable extends ActionBarCustomizer implements LayoutConfigurati
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_credit_table);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         setSubTitleC(getString(R.string.NamDoljny));
         context=this;
         debitTable =(GridLayout) findViewById(R.id.periodTable);

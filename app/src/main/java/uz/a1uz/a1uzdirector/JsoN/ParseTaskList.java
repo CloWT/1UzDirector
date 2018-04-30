@@ -42,7 +42,7 @@ public class ParseTaskList extends AsyncTask<String,Integer,String[]> {
                 URL url= new URL(getJ[i]);
                 HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
                 urlConnection.setRequestProperty("Accept-Language", UserInfo.getLan());
-                urlConnection.setConnectTimeout(10000);
+                urlConnection.setConnectTimeout(20000);
                 urlConnection.setRequestMethod("GET");
                 urlConnection.connect();
 

@@ -1,5 +1,6 @@
 package uz.a1uz.a1uzdirector.Activity;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -10,6 +11,7 @@ import android.os.Build;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -39,7 +41,7 @@ import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.Helpers.UserInfo;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
-public class Login_Activity extends ActionBarCustomizer {
+public class Login_Activity extends AppCompatActivity {
     Button btLogin;
     AutoCompleteTextView INN;
     EditText etPass;
@@ -55,7 +57,7 @@ public class Login_Activity extends ActionBarCustomizer {
         sPref = getPreferences(MODE_PRIVATE);
         UserInfo.setLan(sPref.getString("lang", String.valueOf(UserInfo.EheaderLang.eRu)),getBaseContext());
         System.out.println("OnCreate1");
-        homeButton=false; // back button
+        //homeButton=false; // back button
         super.onCreate(savedInstanceState);
         System.out.println("OnCreate2");
         setContentView(R.layout.activity_login_);
@@ -155,6 +157,7 @@ public class Login_Activity extends ActionBarCustomizer {
                 try {
                     JSONObject c= (JSONObject) jsonObject.get("LogInResult");
                    if(c.getBoolean("IsOk")&&c.getBoolean("IsAuthorization")){
+                       UserInfo.setINN(INN.getText().toString());
                        UserInfo.setWidgetListItems(null);
                        saveText();
                        OpenAcitive();

@@ -39,7 +39,6 @@ public class StoreTable extends ActionBarCustomizer {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         setSubTitleC(getString(R.string.Sklad));
 
         setContentView(R.layout.activity_store_table);

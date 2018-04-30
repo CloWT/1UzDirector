@@ -41,7 +41,7 @@ public class CreditSecondReport extends ActionBarCustomizer implements LayoutCon
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_credit_second_report);
         setSubTitleC(getString(R.string.Detalizat));
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
         context=this;
         creditTable=(GridLayout) findViewById(R.id.periodTable);

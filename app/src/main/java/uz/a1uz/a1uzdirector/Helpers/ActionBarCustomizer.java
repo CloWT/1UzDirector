@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
@@ -20,6 +21,7 @@ import java.util.Locale;
 
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.AccountsTable;
 import uz.a1uz.a1uzdirector.R;
+import uz.a1uz.a1uzdirector.constants.URL_cons;
 
 /**
  * Created by sh.khodjabaev on 17.04.2018.
@@ -92,6 +94,10 @@ public class ActionBarCustomizer extends AppCompatActivity {
        switch (item.getItemId()){
             case android.R.id.home: finish(); break;
            case R.id.languageSet: builder.show();break;
+           case R.id.payForDirecotr:
+               Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(URL_cons.PAYMENT+UserInfo.getINN()));
+               startActivity(browserIntent);
+               break;
         }
         return super.onOptionsItemSelected(item);
     }

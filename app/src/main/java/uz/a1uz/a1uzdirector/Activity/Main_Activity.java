@@ -1,5 +1,6 @@
 package uz.a1uz.a1uzdirector.Activity;
 
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
@@ -14,6 +15,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.TreeSet;
 
 import uz.a1uz.a1uzdirector.Activity.models.Widget_item_Adapter;
 import uz.a1uz.a1uzdirector.Activity.models.Widget_item_model;
@@ -56,7 +58,7 @@ public class Main_Activity extends ActionBarCustomizer {
         listView= (ListView) findViewById(R.id.custList);
         listView.setDividerHeight(15);
         listView.setAdapter(adapter);
-        getConfigForWidgetsFromPreferecnce();
+
 
     }
 
@@ -74,37 +76,29 @@ public class Main_Activity extends ActionBarCustomizer {
         Log.e("On: ","Get");
     }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        SharedPreferences sPref=getPreferences(Context.MODE_PRIVATE);
+        Set<String> set = new TreeSet<>();
+        List<String> listOfExistingScores = new ArrayList<>();
+
+        SharedPreferences.Editor ed = sPref.edit();
+        ed.putInt("w_bank",items.get(0).getBackgroundColor());
+        ed.putInt("w_store",items.get(1).getBackgroundColor());
+        ed.putInt("w_proceeds",items.get(2).getBackgroundColor());
+        ed.putInt("w_credit",items.get(3).getBackgroundColor());
+        ed.putInt("w_debit",items.get(4).getBackgroundColor());
+        ed.putInt("w_currentconsumption",items.get(5).getBackgroundColor());
+        ed.apply();
+    }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         return super.onCreateOptionsMenu(menu);
     }
-    private void getConfigForWidgetsFromPreferecnce(){
-        //Set the values
-        SharedPreferences sPref=getPreferences(MODE_PRIVATE);
-        Set<String> sets = new HashSet<String>();
-        List<String> listOfExistingScores = new ArrayList<>();
-        listOfExistingScores.add(""+R.color.bgc1);
-        listOfExistingScores.add(""+R.color.bgc2);
-        listOfExistingScores.add(""+R.color.bgc3);
-        listOfExistingScores.add(""+R.color.bgc4);
-        listOfExistingScores.add(""+R.color.bgc5);
-        listOfExistingScores.add(""+R.color.bgc6);
-        sets.addAll(listOfExistingScores);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putStringSet("WIDGETCOLORS", sets);
 
-        ed.commit();
-
-
-        Set<String> set = sPref.getStringSet("WIDGETCOLORS", null);
-
-        for (String s:set) {
-            System.out.println(s);
-        }
-
-    };
 
 }
 

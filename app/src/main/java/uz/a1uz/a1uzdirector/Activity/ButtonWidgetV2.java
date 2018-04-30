@@ -1,13 +1,20 @@
 package uz.a1uz.a1uzdirector.Activity;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 import uz.a1uz.a1uzdirector.Activity.models.WidgetDropDownItem;
 import uz.a1uz.a1uzdirector.Activity.models.Widget_item_model;
@@ -28,8 +35,8 @@ public class ButtonWidgetV2 extends GetJsonResult {
     private String[] reportUrls;
     private String[] secondReportUrls;
     private Main_Activity activity;
-    int leng;
-    public ButtonWidgetV2(Context context, WidgetsUrlsArr[] widgetsUrlsArrs) {
+    private int leng;
+    ButtonWidgetV2(Context context, WidgetsUrlsArr[] widgetsUrlsArrs) {
         super(context);
         activity=(Main_Activity) context;
         leng=widgetsUrlsArrs.length;
@@ -41,9 +48,36 @@ public class ButtonWidgetV2 extends GetJsonResult {
             reportUrls[i]=widgetsUrlsArrs[i].getUrlReport();
             secondReportUrls[i]=widgetsUrlsArrs[i].getUrlSecondReport();
         }
+        addColorFromSharedPrefrence();
         ParseTaskList parseTaskList=new ParseTaskList(this);
         parseTaskList.execute(buttonUrls);
 
+    }
+    private void addColorFromSharedPrefrence(){
+        int counter=0;
+        SharedPreferences sPref=activity.getPreferences(Context.MODE_PRIVATE);
+
+        if(sPref.getInt("w_bank",-1)<0) {
+
+            SharedPreferences.Editor ed = sPref.edit();
+            ed.putInt("w_bank",bcgColor[0]);
+            ed.putInt("w_store",bcgColor[1]);
+            ed.putInt("w_proceeds",bcgColor[2]);
+            ed.putInt("w_credit",bcgColor[3]);
+            ed.putInt("w_debit",bcgColor[4]);
+            ed.putInt("w_currentconsumption",bcgColor[5]);
+            ed.apply();
+        }
+        else {
+            bcgColor=new int[6];
+            bcgColor[0]=sPref.getInt("w_bank",R.color.bgc1);
+            bcgColor[1]=sPref.getInt("w_store",R.color.bgc2);
+            bcgColor[2]=sPref.getInt("w_proceeds",R.color.bgc3);
+            bcgColor[3]=sPref.getInt("w_credit",R.color.bgc4);
+            bcgColor[4]=sPref.getInt("w_debit",R.color.bgc5);
+            bcgColor[5]=sPref.getInt("w_currentconsumption",R.color.bgc6);
+
+        }
     }
 
     @Override

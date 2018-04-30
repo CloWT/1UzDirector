@@ -38,7 +38,7 @@ int reportID;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setSubTitleC(getString(R.string.SchetT));
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         setContentView(R.layout.activity_bank_bank_report);
 
         spinner=(Spinner) findViewById(R.id.SchetSpin);

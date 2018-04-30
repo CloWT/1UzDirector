@@ -45,7 +45,7 @@ public class CurrentConsumptionSecondTable extends ActionBarCustomizer implement
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_current_consumption_second_table);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+
         setSubTitleC(getString(R.string.StatyaRasxodov));
 
         context=this;

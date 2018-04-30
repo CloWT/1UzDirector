@@ -46,7 +46,7 @@ public class CurrentConsumptionTable extends ActionBarCustomizer {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_current_consumption_table);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+
         setSubTitleC(getString(R.string.TekushiyRasxody));
 
         context=this;

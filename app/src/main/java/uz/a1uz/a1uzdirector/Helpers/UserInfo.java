@@ -18,6 +18,7 @@ public class UserInfo {
     private static String GUID;
     private static EheaderLang lan=EheaderLang.eRu;
     private static List<Widget_item_model> widgetListItems;
+    private static String INN;
 
 
     public static String getGUID() {
@@ -61,6 +62,14 @@ public class UserInfo {
 
     public static List<Widget_item_model> getWidgetListItems() {
         return widgetListItems;
+    }
+
+    public static void setINN(String INN) {
+        UserInfo.INN = INN;
+    }
+
+    public static String getINN() {
+        return INN;
     }
 
     public enum EheaderLang {

@@ -45,7 +45,6 @@ public class ProceedsPeriodTable extends ActionBarCustomizer implements LayoutCo
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_proceeds_period_table);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         setSubTitleC(getString(R.string.VyruchkaZaPeriod));
 
         context=this;

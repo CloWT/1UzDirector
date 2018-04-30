@@ -40,7 +40,7 @@ public class CreditTable extends ActionBarCustomizer implements LayoutConfigurat
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_credit_table);
         setSubTitleC(getString(R.string.MyDoljni));
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
         context=this;
         creditTable=(GridLayout) findViewById(R.id.periodTable);

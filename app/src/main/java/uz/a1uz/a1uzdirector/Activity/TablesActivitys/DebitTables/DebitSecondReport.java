@@ -40,7 +40,6 @@ public class DebitSecondReport extends ActionBarCustomizer implements LayoutConf
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_debit_second_report);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         setSubTitleC(getString(R.string.Detalizat));
         context=this;
         debitTable =(GridLayout) findViewById(R.id.periodTable);

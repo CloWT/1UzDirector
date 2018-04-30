@@ -25,7 +25,6 @@ public class ProceedsTable extends ActionBarCustomizer {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         setSubTitleC(getString(R.string.Vyruchka));
         setContentView(R.layout.activity_proceeds_table);
         AddElemsToTable();

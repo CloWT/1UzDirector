@@ -10,6 +10,10 @@ public final class URL_cons {
     public static final String
             LOGINRESULT= UserInfo.Url+
             "/rest/user/LogIn";
+
+    public static final String PAYMENT="http://1uz.uz/ru/offer/?designname=director&inn=";
+
+
     public static final String SETDATABASES=UserInfo.Url+"/Rest/DataBase/SetDataBase/1"; // 1
     public static final String DATABASES = UserInfo.Url + "/Rest/DataBase/GetDataBases";
     /**
