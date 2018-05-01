@@ -6,7 +6,7 @@
         android:title="@string/language"
         android:menuCategory="secondary"
         android:icon="@drawable/ic_lang"
-        app:showAsAction="always" >
+        app:showAsAction="never" >
     </item>
     <item
         android:id="@+id/payForDirecotr"
@@ -14,7 +14,16 @@
         android:title="@string/payFor"
         android:menuCategory="secondary"
         android:icon="@drawable/ic_payment"
-        app:showAsAction="ifRoom" >
+        app:showAsAction="never" >
+    </item>
+    <item
+        android:id="@+id/updatActivty"
+        android:orderInCategory="1"
+        android:title="Update"
+        android:menuCategory="secondary"
+        android:icon="@drawable/ic_autorenew_black_24dp"
+        app:showAsAction="always"
+        >
     </item>
 
 

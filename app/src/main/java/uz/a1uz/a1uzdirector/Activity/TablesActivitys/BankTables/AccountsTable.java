@@ -63,7 +63,6 @@ ProgressBar progressBar;
         setSubTitleC(getString(R.string.Bank));
         bankTable=(TableLayout)findViewById(R.id.tableForBank);
         progressBar=(ProgressBar)findViewById(R.id.progres);
-        progressBar.setProgressDrawable(getResources().getDrawable(R.drawable.progressbarcust));
 
         bankTable.setVisibility(View.INVISIBLE);
         GetJson.execute(url, new IGetJsonResult() {

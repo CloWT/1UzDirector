@@ -2752,16 +2752,17 @@ containing a value of this type.
         public static final int design_snackbar_background=0x7f020054;
         public static final int drawer_shadow=0x7f020055;
         public static final int ic_arrow_drop_down_black_24dp=0x7f020056;
-        public static final int ic_color_changer=0x7f020057;
-        public static final int ic_drawer=0x7f020058;
-        public static final int ic_lang=0x7f020059;
-        public static final int ic_payment=0x7f02005a;
-        public static final int ic_settings_black_24dp=0x7f02005b;
-        public static final int left_arrow=0x7f02005c;
-        public static final int notification_template_icon_bg=0x7f020060;
-        public static final int pop_item_color=0x7f02005d;
-        public static final int progressbarcust=0x7f02005e;
-        public static final int red_shape=0x7f02005f;
+        public static final int ic_autorenew_black_24dp=0x7f020057;
+        public static final int ic_color_changer=0x7f020058;
+        public static final int ic_drawer=0x7f020059;
+        public static final int ic_lang=0x7f02005a;
+        public static final int ic_payment=0x7f02005b;
+        public static final int ic_settings_black_24dp=0x7f02005c;
+        public static final int left_arrow=0x7f02005d;
+        public static final int notification_template_icon_bg=0x7f020061;
+        public static final int pop_item_color=0x7f02005e;
+        public static final int progressbarcust=0x7f02005f;
+        public static final int red_shape=0x7f020060;
     }
     public static final class id {
         public static final int BPLastDay=0x7f0d007d;
@@ -2835,13 +2836,13 @@ containing a value of this type.
         public static final int action_bar_title=0x7f0d0042;
         public static final int action_context_bar=0x7f0d0063;
         public static final int action_divider=0x7f0d00ea;
-        public static final int action_example=0x7f0d0104;
+        public static final int action_example=0x7f0d0105;
         public static final int action_menu_divider=0x7f0d0002;
         public static final int action_menu_presenter=0x7f0d0003;
         public static final int action_mode_bar=0x7f0d005f;
         public static final int action_mode_bar_stub=0x7f0d005e;
         public static final int action_mode_close_button=0x7f0d0044;
-        public static final int action_settings=0x7f0d0105;
+        public static final int action_settings=0x7f0d0106;
         public static final int activity_chooser_view_content=0x7f0d0045;
         public static final int activity_login_=0x7f0d00b1;
         public static final int activity_main_=0x7f0d00b8;
@@ -3021,6 +3022,7 @@ containing a value of this type.
         public static final int touch_outside=0x7f0d00dd;
         public static final int typeText=0x7f0d0096;
         public static final int up=0x7f0d0009;
+        public static final int updatActivty=0x7f0d0104;
         public static final int useLogo=0x7f0d001c;
         public static final int view_offset_helper=0x7f0d000a;
         public static final int withText=0x7f0d003f;

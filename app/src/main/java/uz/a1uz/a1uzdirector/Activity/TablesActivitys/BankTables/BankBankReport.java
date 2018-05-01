@@ -42,7 +42,6 @@ int reportID;
         spinner=(Spinner) findViewById(R.id.SchetSpin);
         tableLayout=(TableLayout)findViewById(R.id.tableForBank);
         progressBar=(ProgressBar)findViewById(R.id.progres);
-        progressBar.setProgressDrawable(getResources().getDrawable(R.drawable.progressbarcust));
         tableLayout.setVisibility(View.INVISIBLE);
         progressBar.setVisibility(View.VISIBLE);
         ArrayAdapter<WidgetDropDownItem> adapter=

@@ -1,10 +1,12 @@
 package uz.a1uz.a1uzdirector.JsoN;
 
+import android.content.Context;
 import android.os.AsyncTask;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
@@ -20,6 +22,7 @@ import uz.a1uz.a1uzdirector.Helpers.UserInfo;
 
 public class ParseTaskList extends AsyncTask<String,Integer,String[]> {
     private IGetJsonResult logicItem;
+    private Context context;
 
     @Override
     protected void onPreExecute() {
@@ -27,7 +30,7 @@ public class ParseTaskList extends AsyncTask<String,Integer,String[]> {
         logicItem.OnBegin();
     }
 
-    public ParseTaskList(IGetJsonResult logic) {
+    public ParseTaskList(Context context,IGetJsonResult logic) {
         logicItem = logic;
     }
     Boolean _isError;
@@ -40,15 +43,16 @@ public class ParseTaskList extends AsyncTask<String,Integer,String[]> {
         try {
             for (int i = 0; i < getJ.length; i++) {
                 URL url= new URL(getJ[i]);
+                JsonFileWriterReader jsonFileWriterReader=new JsonFileWriterReader(context,getJ[i]);
                 HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
                 urlConnection.setRequestProperty("Accept-Language", UserInfo.getLan());
                 urlConnection.setConnectTimeout(20000);
                 urlConnection.setRequestMethod("GET");
                 urlConnection.connect();
 
-                InputStream inputStream = urlConnection.getInputStream();
+                InputStream inputStream = new BufferedInputStream(urlConnection.getInputStream());
                 StringBuilder buffer = new StringBuilder();
-                BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"), 8);
+                BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"), 16);
                 String line;
                 while ((line = reader.readLine()) != null) {
                     buffer.append(line);

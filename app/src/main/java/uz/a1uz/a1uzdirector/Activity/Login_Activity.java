@@ -35,8 +35,10 @@ import java.util.Locale;
 import java.util.Set;
 
 import uz.a1uz.a1uzdirector.Helpers.ActionBarCustomizer;
+import uz.a1uz.a1uzdirector.Helpers.UrlHepler;
 import uz.a1uz.a1uzdirector.JsoN.GetJson;
 import uz.a1uz.a1uzdirector.JsoN.IGetJsonResult;
+import uz.a1uz.a1uzdirector.JsoN.JsonFileWriterReader;
 import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.Helpers.UserInfo;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
@@ -59,6 +61,7 @@ public class Login_Activity extends AppCompatActivity {
         System.out.println("OnCreate1");
         //homeButton=false; // back button
         super.onCreate(savedInstanceState);
+        JsonFileWriterReader.mIsHasJsonFile(this, URL_cons.ACCOUNTFORBANK);
         System.out.println("OnCreate2");
         setContentView(R.layout.activity_login_);
         etPass=(EditText)findViewById(R.id.password);
@@ -121,7 +124,7 @@ public class Login_Activity extends AppCompatActivity {
             return;
         }
         if(INN.getText().length()<1||etPass.getText().length()<1){
-            Toast.makeText(this, "Password is Empty", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "Password is Empty", Toast.LENGTH_SHORT).show();
             return;
         }
         String url= URL_cons.LOGINRESULT+"/"+INN.getText().toString()+"/"+etPass.getText().toString()+"/"+ UserInfo.getGUID();

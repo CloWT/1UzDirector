@@ -1,13 +1,16 @@
 package uz.a1uz.a1uzdirector.Activity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 
@@ -23,6 +26,7 @@ import uz.a1uz.a1uzdirector.Helpers.ActionBarCustomizer;
 import uz.a1uz.a1uzdirector.Helpers.UserInfo;
 import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.WidgetsUrlsArr;
+import uz.a1uz.a1uzdirector.constants.URL_cons;
 
 import static uz.a1uz.a1uzdirector.constants.URL_cons.*;
 
@@ -92,12 +96,6 @@ public class Main_Activity extends ActionBarCustomizer {
         ed.putInt("w_debit",items.get(4).getBackgroundColor());
         ed.putInt("w_currentconsumption",items.get(5).getBackgroundColor());}
         ed.apply();
-    }
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        return super.onCreateOptionsMenu(menu);
     }
 
 

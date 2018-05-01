@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'BeProNorma'
+            keyPassword 'CloWT0907'
+            storeFile file('D:/Sherzod/keyFor1UzDirector(!important)/1UZDirector_key.jks')
+            storePassword 'CloWT0907'
+        }
+    }
     compileSdkVersion 23
     buildToolsVersion "24.0.0"
     defaultConfig {
@@ -15,6 +23,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
     }
     productFlavors {

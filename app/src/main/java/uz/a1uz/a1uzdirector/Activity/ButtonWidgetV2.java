@@ -49,7 +49,7 @@ public class ButtonWidgetV2 extends GetJsonResult {
             secondReportUrls[i]=widgetsUrlsArrs[i].getUrlSecondReport();
         }
         addColorFromSharedPrefrence();
-        ParseTaskList parseTaskList=new ParseTaskList(this);
+        ParseTaskList parseTaskList=new ParseTaskList(context,this);
         parseTaskList.execute(buttonUrls);
 
     }

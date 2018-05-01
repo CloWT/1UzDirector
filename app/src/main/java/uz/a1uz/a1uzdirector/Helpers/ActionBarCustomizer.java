@@ -29,7 +29,7 @@ import uz.a1uz.a1uzdirector.constants.URL_cons;
  */
 
 public class ActionBarCustomizer extends AppCompatActivity {
-    AlertDialog.Builder builder;
+    protected AlertDialog.Builder builder;
     DialogForLangSet diLangSet;
     Intent alertInet;
     protected boolean homeButton=true;
@@ -100,6 +100,11 @@ public class ActionBarCustomizer extends AppCompatActivity {
            case R.id.payForDirecotr:
                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(URL_cons.PAYMENT+UserInfo.getINN()));
                startActivity(browserIntent);
+               break;
+           case R.id.updatActivty:
+               UserInfo.setWidgetListItems(null);
+               finish();
+               startActivity(getIntent());
                break;
         }
         return super.onOptionsItemSelected(item);
