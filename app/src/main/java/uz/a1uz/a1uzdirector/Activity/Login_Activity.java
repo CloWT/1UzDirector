@@ -120,7 +120,7 @@ public class Login_Activity extends AppCompatActivity {
             Toast.makeText(this, "Internet Or Wifi Not Connected", Toast.LENGTH_SHORT).show();
             return;
         }
-        if(INN.getText().length()<1){
+        if(INN.getText().length()<1||etPass.getText().length()<1){
             Toast.makeText(this, "Password is Empty", Toast.LENGTH_SHORT).show();
             return;
         }

@@ -20,7 +20,7 @@
     <string name="EdinyNalog">Ягона солиқ тўлови</string>
     <string name="Edizm">Ед.изм</string>
     <string name="Enter">Кириш</string>
-    <string name="From">гача</string>
+    <string name="From">дан</string>
     <string name="GotovyProduck">Тайёр маҳсулот</string>
     <string name="InSum">Тушум</string>
     <string name="Kolvo">сони</string>
@@ -59,7 +59,7 @@
     <string name="TMZ_Name">ТМЗ номланиши</string>
     <string name="TekushiyRasxody">Жорий харажатлар</string>
     <string name="ThisMonth">Жорий ой</string>
-    <string name="To">"дан "</string>
+    <string name="To">гача</string>
     <string name="Torgovl">Савдо-сотиқ</string>
     <string name="TotalAborot">Жами айланма харакат</string>
     <string name="Tsena">Нарх</string>
@@ -91,7 +91,7 @@
     <string name="accept">Қабул қилиш</string>
     <string name="action_example">Example action</string>
     <string name="action_settings">Settings</string>
-    <string name="app_name">1 UZ ДИРЕКТОР</string>
+    <string name="app_name">1UZ ДИРЕКТОР</string>
     <string name="begin">бошига:</string>
     <string name="chooseColor">Рангни танланг:</string>
     <string name="end">охирига :</string>

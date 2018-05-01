@@ -4,12 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.drawable.Drawable;
-import android.support.annotation.Nullable;
-import android.support.v7.view.menu.MenuBuilder;
-import android.support.v7.view.menu.MenuPopupHelper;
 import android.support.v7.widget.PopupMenu;
-import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -22,11 +17,8 @@ import android.widget.LinearLayout;
 
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import java.util.Iterator;
 import java.util.List;
-import java.util.Set;
 
 import uz.a1uz.a1uzdirector.Activity.Main_Activity;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.AccountsTable;
@@ -35,7 +27,7 @@ import uz.a1uz.a1uzdirector.Activity.TablesActivitys.CurrentTables.CurrentConsum
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.DebitTables.DebitTable;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.ProceedsTables.ProceedsTable;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.StoreTables.StoreTable;
-import uz.a1uz.a1uzdirector.Helpers.CustomDialogClass;
+import uz.a1uz.a1uzdirector.Helpers.CustomDialogs.CustomDialogClass;
 import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 

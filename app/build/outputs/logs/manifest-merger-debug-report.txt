@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:2:1-58:12
+ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:2:1-59:12
 	package
 		ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:3:5-35
 		INJECTED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml
@@ -30,7 +30,7 @@ ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:10:5-
 	android:name
 		ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:10:22-76
 application
-ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:12:5-56:19
+ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:12:5-57:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] D:\Sherzod\Android\1UzDirector\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.2\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:23.4.0] D:\Sherzod\Android\1UzDirector\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.4.0] D:\Sherzod\Android\1UzDirector\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
@@ -149,6 +149,10 @@ ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:54:9-
 		ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:54:105-140
 	android:name
 		ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:54:19-103
+activity#uz.a1uz.a1uzdirector.Helpers.ActionBarCustomizer
+ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:56:9-65
+	android:name
+		ADDED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml:56:19-62
 uses-sdk
 INJECTED from D:\Sherzod\Android\1UzDirector\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] D:\Sherzod\Android\1UzDirector\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.2\AndroidManifest.xml:5:5-7:41

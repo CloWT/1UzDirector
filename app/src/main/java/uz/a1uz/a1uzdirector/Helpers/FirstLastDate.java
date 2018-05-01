@@ -2,7 +2,6 @@ package uz.a1uz.a1uzdirector.Helpers;
 
 import android.app.DatePickerDialog;
 import android.content.Context;
-import android.view.View;
 import android.widget.DatePicker;
 
 import java.text.DateFormat;
@@ -10,8 +9,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.BankPeriodTable;
-import uz.a1uz.a1uzdirector.EdatePeriod;
+import uz.a1uz.a1uzdirector.Enums.EdatePeriod;
 
 /**
  * Created by sh.khodjabaev on 03.04.2018.
@@ -20,12 +18,12 @@ import uz.a1uz.a1uzdirector.EdatePeriod;
 public class FirstLastDate{
     private String firstDate;
     private String lastDate;
-    Context context;
+    private Context context;
 
     public FirstLastDate(EdatePeriod edatePeriod) {
         GetPeriodDate(edatePeriod);
     }
-    public FirstLastDate(EdatePeriod edatePeriod, Context context) {
+    FirstLastDate(EdatePeriod edatePeriod, Context context) {
         this.context=context;
         GetPeriodDate(edatePeriod);
     }
@@ -33,7 +31,7 @@ public class FirstLastDate{
     public FirstLastDate() {
 
     }
-    public static String CustomDateFormat(Calendar date){
+    static String CustomDateFormat(Calendar date){
         return dateFormat.format(date.getTime());
     }
 

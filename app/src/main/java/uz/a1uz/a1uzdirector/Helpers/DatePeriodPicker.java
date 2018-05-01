@@ -11,17 +11,13 @@ import android.widget.ArrayAdapter;
 import android.widget.DatePicker;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import java.text.DateFormatSymbols;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.BankPeriodTable;
-import uz.a1uz.a1uzdirector.EdatePeriod;
+import uz.a1uz.a1uzdirector.Enums.EdatePeriod;
 import uz.a1uz.a1uzdirector.R;
-import uz.a1uz.a1uzdirector.constants.URL_cons;
 
 import static uz.a1uz.a1uzdirector.Helpers.FirstLastDate.CustomDateFormat;
 
@@ -64,7 +60,7 @@ public class DatePeriodPicker extends AppCompatActivity {
 
     private void SpinnerAction() {
 
-        EdatePeriod[] d=EdatePeriod.values();
+        EdatePeriod[] d=EdatePeriod.values(Locale.getDefault());
         ArrayAdapter<EdatePeriod> adapter=new ArrayAdapter<>(this,R.layout.simple_spinner_item,d);
         adapter.setDropDownViewResource(R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);

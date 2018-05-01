@@ -84,12 +84,13 @@ public class Main_Activity extends ActionBarCustomizer {
         List<String> listOfExistingScores = new ArrayList<>();
 
         SharedPreferences.Editor ed = sPref.edit();
+        if(items.size()>0){
         ed.putInt("w_bank",items.get(0).getBackgroundColor());
         ed.putInt("w_store",items.get(1).getBackgroundColor());
         ed.putInt("w_proceeds",items.get(2).getBackgroundColor());
         ed.putInt("w_credit",items.get(3).getBackgroundColor());
         ed.putInt("w_debit",items.get(4).getBackgroundColor());
-        ed.putInt("w_currentconsumption",items.get(5).getBackgroundColor());
+        ed.putInt("w_currentconsumption",items.get(5).getBackgroundColor());}
         ed.apply();
     }
 

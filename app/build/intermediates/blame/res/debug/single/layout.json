@@ -12,12 +12,12 @@
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
-        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_alert_dialog_material.xml"
-    },
-    {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_accounts_table.xml",
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\layout\\activity_accounts_table.xml"
+    },
+    {
+        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
@@ -142,6 +142,10 @@
     {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_debit_second_report.xml",
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\layout\\activity_debit_second_report.xml"
+    },
+    {
+        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_dialog_for_lang_pick.xml",
+        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\layout\\custom_dialog_for_lang_pick.xml"
     },
     {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",

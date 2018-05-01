@@ -2770,8 +2770,8 @@ containing a value of this type.
         public static final int BPThisMonth=0x7f0d0080;
         public static final int BPThisWeek=0x7f0d007e;
         public static final int BPThisYearBegin=0x7f0d0082;
-        public static final int BottomLeftText=0x7f0d00f6;
-        public static final int BottomRightText=0x7f0d00f9;
+        public static final int BottomLeftText=0x7f0d00f9;
+        public static final int BottomRightText=0x7f0d00fc;
         public static final int Fir=0x7f0d00ac;
         public static final int INLastDay=0x7f0d0083;
         public static final int INLastMonth=0x7f0d0087;
@@ -2780,7 +2780,7 @@ containing a value of this type.
         public static final int INThisMonth=0x7f0d0086;
         public static final int INThisWeek=0x7f0d0084;
         public static final int INThisYearBegin=0x7f0d0088;
-        public static final int ImageRight=0x7f0d00f2;
+        public static final int ImageRight=0x7f0d00f5;
         public static final int Info_text=0x7f0d00b2;
         public static final int LPLastDay=0x7f0d008f;
         public static final int LPLastMonth=0x7f0d0093;
@@ -2789,7 +2789,7 @@ containing a value of this type.
         public static final int LPThisWeek=0x7f0d0090;
         public static final int LPThisYearBegin=0x7f0d0094;
         public static final int LastWeek=0x7f0d0079;
-        public static final int MiddleText=0x7f0d00f3;
+        public static final int MiddleText=0x7f0d00f6;
         public static final int OTLastDay=0x7f0d00c1;
         public static final int OTLastMonth=0x7f0d00c5;
         public static final int OTLastWeek=0x7f0d00c3;
@@ -2816,14 +2816,16 @@ containing a value of this type.
         public static final int SerThisMonth=0x7f0d00ca;
         public static final int SerThisWeek=0x7f0d00c8;
         public static final int SerThisYearBegin=0x7f0d00cc;
-        public static final int TopText=0x7f0d00f1;
+        public static final int TopText=0x7f0d00f4;
         public static final int TotalLastDay=0x7f0d00cd;
         public static final int TotalLastMonth=0x7f0d00d1;
         public static final int TotalLastWeek=0x7f0d00cf;
         public static final int TotalThisMonth=0x7f0d00d0;
         public static final int TotalThisWeek=0x7f0d00ce;
         public static final int TotalThisYearBegin=0x7f0d00d2;
-        public static final int action0=0x7f0d00e3;
+        public static final int _ruText=0x7f0d00dc;
+        public static final int _uzText=0x7f0d00da;
+        public static final int action0=0x7f0d00e6;
         public static final int action_bar=0x7f0d0062;
         public static final int action_bar_activity_content=0x7f0d0000;
         public static final int action_bar_container=0x7f0d0061;
@@ -2832,14 +2834,14 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f0d0043;
         public static final int action_bar_title=0x7f0d0042;
         public static final int action_context_bar=0x7f0d0063;
-        public static final int action_divider=0x7f0d00e7;
-        public static final int action_example=0x7f0d0101;
+        public static final int action_divider=0x7f0d00ea;
+        public static final int action_example=0x7f0d0104;
         public static final int action_menu_divider=0x7f0d0002;
         public static final int action_menu_presenter=0x7f0d0003;
         public static final int action_mode_bar=0x7f0d005f;
         public static final int action_mode_bar_stub=0x7f0d005e;
         public static final int action_mode_close_button=0x7f0d0044;
-        public static final int action_settings=0x7f0d0102;
+        public static final int action_settings=0x7f0d0105;
         public static final int activity_chooser_view_content=0x7f0d0045;
         public static final int activity_login_=0x7f0d00b1;
         public static final int activity_main_=0x7f0d00b8;
@@ -2851,13 +2853,13 @@ containing a value of this type.
         public static final int bottom=0x7f0d0025;
         public static final int btLogin=0x7f0d00b7;
         public static final int buttonPanel=0x7f0d004c;
-        public static final int cancel_action=0x7f0d00e4;
+        public static final int cancel_action=0x7f0d00e7;
         public static final int center=0x7f0d0026;
         public static final int center_horizontal=0x7f0d0027;
         public static final int center_vertical=0x7f0d0028;
         public static final int chains=0x7f0d0012;
         public static final int checkbox=0x7f0d005a;
-        public static final int chronometer=0x7f0d00ea;
+        public static final int chronometer=0x7f0d00ed;
         public static final int clip_horizontal=0x7f0d0034;
         public static final int clip_vertical=0x7f0d0035;
         public static final int collapseActionView=0x7f0d003c;
@@ -2894,15 +2896,15 @@ containing a value of this type.
         public static final int dd=0x7f0d00ba;
         public static final int decor_content_parent=0x7f0d0060;
         public static final int default_activity_button=0x7f0d0048;
-        public static final int design_bottom_sheet=0x7f0d00db;
-        public static final int design_menu_item_action_area=0x7f0d00e2;
-        public static final int design_menu_item_action_area_stub=0x7f0d00e1;
-        public static final int design_menu_item_text=0x7f0d00e0;
-        public static final int design_navigation_view=0x7f0d00df;
+        public static final int design_bottom_sheet=0x7f0d00de;
+        public static final int design_menu_item_action_area=0x7f0d00e5;
+        public static final int design_menu_item_action_area_stub=0x7f0d00e4;
+        public static final int design_menu_item_text=0x7f0d00e3;
+        public static final int design_navigation_view=0x7f0d00e2;
         public static final int disableHome=0x7f0d0017;
         public static final int edit_query=0x7f0d0064;
         public static final int end=0x7f0d0029;
-        public static final int end_padder=0x7f0d00ef;
+        public static final int end_padder=0x7f0d00f2;
         public static final int enterAlways=0x7f0d001d;
         public static final int enterAlwaysCollapsed=0x7f0d001e;
         public static final int exitUntilCollapsed=0x7f0d001f;
@@ -2914,7 +2916,7 @@ containing a value of this type.
         public static final int firstDate=0x7f0d00ad;
         public static final int fixed=0x7f0d0040;
         public static final int forName=0x7f0d009a;
-        public static final int green=0x7f0d00fe;
+        public static final int green=0x7f0d0101;
         public static final int headerTR=0x7f0d0098;
         public static final int home=0x7f0d0004;
         public static final int homeAsUp=0x7f0d0018;
@@ -2922,27 +2924,28 @@ containing a value of this type.
         public static final int icon=0x7f0d004a;
         public static final int ifRoom=0x7f0d003d;
         public static final int image=0x7f0d0047;
-        public static final int info=0x7f0d00ee;
+        public static final int info=0x7f0d00f1;
         public static final int item_touch_helper_previous_elevation=0x7f0d0005;
-        public static final int languageSet=0x7f0d00ff;
+        public static final int lang_switcher=0x7f0d00db;
+        public static final int languageSet=0x7f0d0102;
         public static final int lastDay=0x7f0d0077;
         public static final int lastMonth=0x7f0d007b;
         public static final int layout=0x7f0d0076;
         public static final int left=0x7f0d002b;
-        public static final int left_bottom_layout=0x7f0d00f5;
-        public static final int left_spin_img=0x7f0d00f7;
-        public static final int left_spinner=0x7f0d00f4;
-        public static final int line1=0x7f0d00e8;
-        public static final int line3=0x7f0d00ec;
-        public static final int linearLayout=0x7f0d00f0;
+        public static final int left_bottom_layout=0x7f0d00f8;
+        public static final int left_spin_img=0x7f0d00fa;
+        public static final int left_spinner=0x7f0d00f7;
+        public static final int line1=0x7f0d00eb;
+        public static final int line3=0x7f0d00ef;
+        public static final int linearLayout=0x7f0d00f3;
         public static final int listMode=0x7f0d0014;
         public static final int list_item=0x7f0d0049;
-        public static final int media_actions=0x7f0d00e6;
-        public static final int menugroup1=0x7f0d00fc;
+        public static final int media_actions=0x7f0d00e9;
+        public static final int menugroup1=0x7f0d00ff;
         public static final int middle=0x7f0d003a;
         public static final int mini=0x7f0d0038;
         public static final int multiply=0x7f0d002f;
-        public static final int navigation_header_container=0x7f0d00de;
+        public static final int navigation_header_container=0x7f0d00e1;
         public static final int never=0x7f0d003e;
         public static final int none=0x7f0d0013;
         public static final int normal=0x7f0d0015;
@@ -2951,18 +2954,18 @@ containing a value of this type.
         public static final int parent=0x7f0d000b;
         public static final int parentPanel=0x7f0d004e;
         public static final int password=0x7f0d00b6;
-        public static final int payForDirecotr=0x7f0d0100;
+        public static final int payForDirecotr=0x7f0d0103;
         public static final int periodTable=0x7f0d0097;
         public static final int pin=0x7f0d0024;
         public static final int progres=0x7f0d0071;
         public static final int progress_circular=0x7f0d0006;
         public static final int progress_horizontal=0x7f0d0007;
         public static final int radio=0x7f0d005c;
-        public static final int red=0x7f0d00fd;
+        public static final int red=0x7f0d0100;
         public static final int right=0x7f0d002c;
-        public static final int right_bottom_layout=0x7f0d00f8;
-        public static final int right_spin_img=0x7f0d00fa;
-        public static final int right_spinner=0x7f0d00fb;
+        public static final int right_bottom_layout=0x7f0d00fb;
+        public static final int right_spin_img=0x7f0d00fd;
+        public static final int right_spinner=0x7f0d00fe;
         public static final int screen=0x7f0d0030;
         public static final int scroll=0x7f0d0020;
         public static final int scrollIndicatorDown=0x7f0d0056;
@@ -2985,8 +2988,8 @@ containing a value of this type.
         public static final int showCustom=0x7f0d0019;
         public static final int showHome=0x7f0d001a;
         public static final int showTitle=0x7f0d001b;
-        public static final int snackbar_action=0x7f0d00dd;
-        public static final int snackbar_text=0x7f0d00dc;
+        public static final int snackbar_action=0x7f0d00e0;
+        public static final int snackbar_text=0x7f0d00df;
         public static final int snap=0x7f0d0021;
         public static final int spacer=0x7f0d004d;
         public static final int spinn=0x7f0d00b5;
@@ -2997,25 +3000,25 @@ containing a value of this type.
         public static final int src_in=0x7f0d0032;
         public static final int src_over=0x7f0d0033;
         public static final int start=0x7f0d002d;
-        public static final int status_bar_latest_event_content=0x7f0d00e5;
+        public static final int status_bar_latest_event_content=0x7f0d00e8;
         public static final int submit_area=0x7f0d006d;
         public static final int tDatePeriod=0x7f0d0095;
         public static final int tabMode=0x7f0d0016;
         public static final int tableForBank=0x7f0d0073;
         public static final int tableForStore=0x7f0d00d3;
-        public static final int text=0x7f0d00ed;
-        public static final int text2=0x7f0d00eb;
+        public static final int text=0x7f0d00f0;
+        public static final int text2=0x7f0d00ee;
         public static final int textSpacerNoButtons=0x7f0d0055;
         public static final int thisMonth=0x7f0d007a;
         public static final int thisWeek=0x7f0d0078;
         public static final int thisYear=0x7f0d007c;
-        public static final int time=0x7f0d00e9;
+        public static final int time=0x7f0d00ec;
         public static final int title=0x7f0d004b;
         public static final int title_template=0x7f0d0050;
         public static final int toggleButton=0x7f0d00b3;
         public static final int top=0x7f0d002e;
         public static final int topPanel=0x7f0d004f;
-        public static final int touch_outside=0x7f0d00da;
+        public static final int touch_outside=0x7f0d00dd;
         public static final int typeText=0x7f0d0096;
         public static final int up=0x7f0d0009;
         public static final int useLogo=0x7f0d001c;
@@ -3076,35 +3079,37 @@ containing a value of this type.
         public static final int activity_store_period_table=0x7f040027;
         public static final int activity_store_table=0x7f040028;
         public static final int custom_dialog_for_color_picker=0x7f040029;
-        public static final int design_bottom_sheet_dialog=0x7f04002a;
-        public static final int design_layout_snackbar=0x7f04002b;
-        public static final int design_layout_snackbar_include=0x7f04002c;
-        public static final int design_layout_tab_icon=0x7f04002d;
-        public static final int design_layout_tab_text=0x7f04002e;
-        public static final int design_menu_item_action_area=0x7f04002f;
-        public static final int design_navigation_item=0x7f040030;
-        public static final int design_navigation_item_header=0x7f040031;
-        public static final int design_navigation_item_separator=0x7f040032;
-        public static final int design_navigation_item_subheader=0x7f040033;
-        public static final int design_navigation_menu=0x7f040034;
-        public static final int design_navigation_menu_item=0x7f040035;
-        public static final int dialog_payment=0x7f040036;
-        public static final int notification_media_action=0x7f040037;
-        public static final int notification_media_cancel_action=0x7f040038;
-        public static final int notification_template_big_media=0x7f040039;
-        public static final int notification_template_big_media_narrow=0x7f04003a;
-        public static final int notification_template_lines=0x7f04003b;
-        public static final int notification_template_media=0x7f04003c;
-        public static final int notification_template_part_chronometer=0x7f04003d;
-        public static final int notification_template_part_time=0x7f04003e;
-        public static final int select_dialog_item_material=0x7f04003f;
-        public static final int select_dialog_multichoice_material=0x7f040040;
-        public static final int select_dialog_singlechoice_material=0x7f040041;
-        public static final int simple_spinner_dropdown_item=0x7f040042;
-        public static final int simple_spinner_item=0x7f040043;
-        public static final int support_simple_spinner_dropdown_item=0x7f040044;
-        public static final int switch_item=0x7f040045;
-        public static final int widget=0x7f040046;
+        public static final int custom_dialog_for_lang_pick=0x7f04002a;
+        public static final int design_bottom_sheet_dialog=0x7f04002b;
+        public static final int design_layout_snackbar=0x7f04002c;
+        public static final int design_layout_snackbar_include=0x7f04002d;
+        public static final int design_layout_tab_icon=0x7f04002e;
+        public static final int design_layout_tab_text=0x7f04002f;
+        public static final int design_menu_item_action_area=0x7f040030;
+        public static final int design_navigation_item=0x7f040031;
+        public static final int design_navigation_item_header=0x7f040032;
+        public static final int design_navigation_item_separator=0x7f040033;
+        public static final int design_navigation_item_subheader=0x7f040034;
+        public static final int design_navigation_menu=0x7f040035;
+        public static final int design_navigation_menu_item=0x7f040036;
+        public static final int dialog_payment=0x7f040037;
+        public static final int notification_media_action=0x7f040038;
+        public static final int notification_media_cancel_action=0x7f040039;
+        public static final int notification_template_big_media=0x7f04003a;
+        public static final int notification_template_big_media_narrow=0x7f04003b;
+        public static final int notification_template_lines=0x7f04003c;
+        public static final int notification_template_media=0x7f04003d;
+        public static final int notification_template_part_chronometer=0x7f04003e;
+        public static final int notification_template_part_time=0x7f04003f;
+        public static final int select_dialog_item_material=0x7f040040;
+        public static final int select_dialog_multichoice_material=0x7f040041;
+        public static final int select_dialog_singlechoice_material=0x7f040042;
+        public static final int simple_spinner_dropdown_item=0x7f040043;
+        public static final int simple_spinner_item=0x7f040044;
+        public static final int ss=0x7f040045;
+        public static final int support_simple_spinner_dropdown_item=0x7f040046;
+        public static final int switch_item=0x7f040047;
+        public static final int widget=0x7f040048;
     }
     public static final class menu {
         public static final int color_change_popup=0x7f0e0000;
@@ -3603,33 +3608,33 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBar_background uz.a1uz.a1uzdirector:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundSplit uz.a1uz.a1uzdirector:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundStacked uz.a1uz.a1uzdirector:backgroundStacked}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEnd uz.a1uz.a1uzdirector:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetLeft uz.a1uz.a1uzdirector:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetRight uz.a1uz.a1uzdirector:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStart uz.a1uz.a1uzdirector:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_customNavigationLayout uz.a1uz.a1uzdirector:customNavigationLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_displayOptions uz.a1uz.a1uzdirector:displayOptions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_divider uz.a1uz.a1uzdirector:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_elevation uz.a1uz.a1uzdirector:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_height uz.a1uz.a1uzdirector:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_hideOnContentScroll uz.a1uz.a1uzdirector:hideOnContentScroll}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeAsUpIndicator uz.a1uz.a1uzdirector:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeLayout uz.a1uz.a1uzdirector:homeLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_icon uz.a1uz.a1uzdirector:icon}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle uz.a1uz.a1uzdirector:indeterminateProgressStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_itemPadding uz.a1uz.a1uzdirector:itemPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_logo uz.a1uz.a1uzdirector:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_navigationMode uz.a1uz.a1uzdirector:navigationMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_popupTheme uz.a1uz.a1uzdirector:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarPadding uz.a1uz.a1uzdirector:progressBarPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarStyle uz.a1uz.a1uzdirector:progressBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitle uz.a1uz.a1uzdirector:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitleTextStyle uz.a1uz.a1uzdirector:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_title uz.a1uz.a1uzdirector:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_titleTextStyle uz.a1uz.a1uzdirector:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_background uz.BirUz.director:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit uz.BirUz.director:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked uz.BirUz.director:backgroundStacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEnd uz.BirUz.director:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetLeft uz.BirUz.director:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetRight uz.BirUz.director:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStart uz.BirUz.director:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout uz.BirUz.director:customNavigationLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions uz.BirUz.director:displayOptions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_divider uz.BirUz.director:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_elevation uz.BirUz.director:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_height uz.BirUz.director:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_hideOnContentScroll uz.BirUz.director:hideOnContentScroll}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeAsUpIndicator uz.BirUz.director:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout uz.BirUz.director:homeLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_icon uz.BirUz.director:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle uz.BirUz.director:indeterminateProgressStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding uz.BirUz.director:itemPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_logo uz.BirUz.director:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode uz.BirUz.director:navigationMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_popupTheme uz.BirUz.director:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding uz.BirUz.director:progressBarPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle uz.BirUz.director:progressBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle uz.BirUz.director:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle uz.BirUz.director:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_title uz.BirUz.director:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle uz.BirUz.director:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionBar_background
            @see #ActionBar_backgroundSplit
@@ -3669,17 +3674,17 @@ containing a value of this type.
             0x7f010046, 0x7f010047, 0x7f010083
         };
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#background}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#background}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:background
+          @attr name uz.BirUz.director:background
         */
         public static final int ActionBar_background = 10;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3687,11 +3692,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name uz.a1uz.a1uzdirector:backgroundSplit
+          @attr name uz.BirUz.director:backgroundSplit
         */
         public static final int ActionBar_backgroundSplit = 12;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#backgroundStacked}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#backgroundStacked}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3699,11 +3704,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name uz.a1uz.a1uzdirector:backgroundStacked
+          @attr name uz.BirUz.director:backgroundStacked
         */
         public static final int ActionBar_backgroundStacked = 11;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3715,11 +3720,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:contentInsetEnd
+          @attr name uz.BirUz.director:contentInsetEnd
         */
         public static final int ActionBar_contentInsetEnd = 21;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3731,11 +3736,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:contentInsetLeft
+          @attr name uz.BirUz.director:contentInsetLeft
         */
         public static final int ActionBar_contentInsetLeft = 22;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3747,11 +3752,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:contentInsetRight
+          @attr name uz.BirUz.director:contentInsetRight
         */
         public static final int ActionBar_contentInsetRight = 23;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3763,21 +3768,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:contentInsetStart
+          @attr name uz.BirUz.director:contentInsetStart
         */
         public static final int ActionBar_contentInsetStart = 20;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#customNavigationLayout}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#customNavigationLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:customNavigationLayout
+          @attr name uz.BirUz.director:customNavigationLayout
         */
         public static final int ActionBar_customNavigationLayout = 13;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#displayOptions}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#displayOptions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3795,21 +3800,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:displayOptions
+          @attr name uz.BirUz.director:displayOptions
         */
         public static final int ActionBar_displayOptions = 3;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#divider}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#divider}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:divider
+          @attr name uz.BirUz.director:divider
         */
         public static final int ActionBar_divider = 9;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#elevation}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#elevation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3821,11 +3826,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:elevation
+          @attr name uz.BirUz.director:elevation
         */
         public static final int ActionBar_elevation = 24;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#height}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#height}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3837,11 +3842,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:height
+          @attr name uz.BirUz.director:height
         */
         public static final int ActionBar_height = 0;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#hideOnContentScroll}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#hideOnContentScroll}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3851,51 +3856,51 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:hideOnContentScroll
+          @attr name uz.BirUz.director:hideOnContentScroll
         */
         public static final int ActionBar_hideOnContentScroll = 19;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:homeAsUpIndicator
+          @attr name uz.BirUz.director:homeAsUpIndicator
         */
         public static final int ActionBar_homeAsUpIndicator = 26;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#homeLayout}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#homeLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:homeLayout
+          @attr name uz.BirUz.director:homeLayout
         */
         public static final int ActionBar_homeLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#icon}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#icon}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:icon
+          @attr name uz.BirUz.director:icon
         */
         public static final int ActionBar_icon = 7;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#indeterminateProgressStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#indeterminateProgressStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:indeterminateProgressStyle
+          @attr name uz.BirUz.director:indeterminateProgressStyle
         */
         public static final int ActionBar_indeterminateProgressStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#itemPadding}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#itemPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3907,21 +3912,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:itemPadding
+          @attr name uz.BirUz.director:itemPadding
         */
         public static final int ActionBar_itemPadding = 18;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#logo}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#logo}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:logo
+          @attr name uz.BirUz.director:logo
         */
         public static final int ActionBar_logo = 8;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#navigationMode}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#navigationMode}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3935,21 +3940,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>listMode</code></td><td>1</td><td></td></tr>
 <tr><td><code>tabMode</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:navigationMode
+          @attr name uz.BirUz.director:navigationMode
         */
         public static final int ActionBar_navigationMode = 2;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#popupTheme}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:popupTheme
+          @attr name uz.BirUz.director:popupTheme
         */
         public static final int ActionBar_popupTheme = 25;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#progressBarPadding}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#progressBarPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3961,21 +3966,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:progressBarPadding
+          @attr name uz.BirUz.director:progressBarPadding
         */
         public static final int ActionBar_progressBarPadding = 17;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#progressBarStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#progressBarStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:progressBarStyle
+          @attr name uz.BirUz.director:progressBarStyle
         */
         public static final int ActionBar_progressBarStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#subtitle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3985,21 +3990,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:subtitle
+          @attr name uz.BirUz.director:subtitle
         */
         public static final int ActionBar_subtitle = 4;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:subtitleTextStyle
+          @attr name uz.BirUz.director:subtitleTextStyle
         */
         public static final int ActionBar_subtitleTextStyle = 6;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#title}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#title}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4009,17 +4014,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:title
+          @attr name uz.BirUz.director:title
         */
         public static final int ActionBar_title = 1;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:titleTextStyle
+          @attr name uz.BirUz.director:titleTextStyle
         */
         public static final int ActionBar_titleTextStyle = 5;
         /** Attributes that can be used with a ActionBarLayout.
@@ -4071,12 +4076,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMode_background uz.a1uz.a1uzdirector:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_backgroundSplit uz.a1uz.a1uzdirector:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_closeItemLayout uz.a1uz.a1uzdirector:closeItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_height uz.a1uz.a1uzdirector:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_subtitleTextStyle uz.a1uz.a1uzdirector:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_titleTextStyle uz.a1uz.a1uzdirector:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_background uz.BirUz.director:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit uz.BirUz.director:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_closeItemLayout uz.BirUz.director:closeItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_height uz.BirUz.director:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle uz.BirUz.director:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle uz.BirUz.director:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionMode_background
            @see #ActionMode_backgroundSplit
@@ -4090,17 +4095,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01003a, 0x7f010048
         };
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#background}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#background}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:background
+          @attr name uz.BirUz.director:background
         */
         public static final int ActionMode_background = 3;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -4108,21 +4113,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name uz.a1uz.a1uzdirector:backgroundSplit
+          @attr name uz.BirUz.director:backgroundSplit
         */
         public static final int ActionMode_backgroundSplit = 4;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#closeItemLayout}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#closeItemLayout}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:closeItemLayout
+          @attr name uz.BirUz.director:closeItemLayout
         */
         public static final int ActionMode_closeItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#height}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#height}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -4134,27 +4139,27 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:height
+          @attr name uz.BirUz.director:height
         */
         public static final int ActionMode_height = 0;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:subtitleTextStyle
+          @attr name uz.BirUz.director:subtitleTextStyle
         */
         public static final int ActionMode_subtitleTextStyle = 2;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:titleTextStyle
+          @attr name uz.BirUz.director:titleTextStyle
         */
         public static final int ActionMode_titleTextStyle = 1;
         /** Attributes that can be used with a ActivityChooserView.
@@ -4163,8 +4168,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable uz.a1uz.a1uzdirector:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActivityChooserView_initialActivityCount uz.a1uz.a1uzdirector:initialActivityCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable uz.BirUz.director:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount uz.BirUz.director:initialActivityCount}</code></td><td></td></tr>
            </table>
            @see #ActivityChooserView_expandActivityOverflowButtonDrawable
            @see #ActivityChooserView_initialActivityCount
@@ -4173,17 +4178,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010049, 0x7f01004a
         };
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#expandActivityOverflowButtonDrawable}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#expandActivityOverflowButtonDrawable}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:expandActivityOverflowButtonDrawable
+          @attr name uz.BirUz.director:expandActivityOverflowButtonDrawable
         */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#initialActivityCount}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#initialActivityCount}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
@@ -4193,7 +4198,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:initialActivityCount
+          @attr name uz.BirUz.director:initialActivityCount
         */
         public static final int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a AlertDialog.
@@ -4203,11 +4208,11 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout uz.a1uz.a1uzdirector:buttonPanelSideLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listItemLayout uz.a1uz.a1uzdirector:listItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listLayout uz.a1uz.a1uzdirector:listLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout uz.a1uz.a1uzdirector:multiChoiceItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout uz.a1uz.a1uzdirector:singleChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout uz.BirUz.director:buttonPanelSideLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listItemLayout uz.BirUz.director:listItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listLayout uz.BirUz.director:listLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout uz.BirUz.director:multiChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout uz.BirUz.director:singleChoiceItemLayout}</code></td><td></td></tr>
            </table>
            @see #AlertDialog_android_layout
            @see #AlertDialog_buttonPanelSideLayout
@@ -4227,53 +4232,53 @@ containing a value of this type.
         */
         public static final int AlertDialog_android_layout = 0;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#buttonPanelSideLayout}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#buttonPanelSideLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:buttonPanelSideLayout
+          @attr name uz.BirUz.director:buttonPanelSideLayout
         */
         public static final int AlertDialog_buttonPanelSideLayout = 1;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#listItemLayout}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#listItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:listItemLayout
+          @attr name uz.BirUz.director:listItemLayout
         */
         public static final int AlertDialog_listItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#listLayout}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#listLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:listLayout
+          @attr name uz.BirUz.director:listLayout
         */
         public static final int AlertDialog_listLayout = 2;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#multiChoiceItemLayout}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#multiChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:multiChoiceItemLayout
+          @attr name uz.BirUz.director:multiChoiceItemLayout
         */
         public static final int AlertDialog_multiChoiceItemLayout = 3;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#singleChoiceItemLayout}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#singleChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:singleChoiceItemLayout
+          @attr name uz.BirUz.director:singleChoiceItemLayout
         */
         public static final int AlertDialog_singleChoiceItemLayout = 4;
         /** Attributes that can be used with a AppBarLayout.
@@ -4283,8 +4288,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_elevation uz.a1uz.a1uzdirector:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_expanded uz.a1uz.a1uzdirector:expanded}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_elevation uz.BirUz.director:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_expanded uz.BirUz.director:expanded}</code></td><td></td></tr>
            </table>
            @see #AppBarLayout_android_background
            @see #AppBarLayout_elevation
@@ -4300,7 +4305,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppBarLayout_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#elevation}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#elevation}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -4312,11 +4317,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:elevation
+          @attr name uz.BirUz.director:elevation
         */
         public static final int AppBarLayout_elevation = 1;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#expanded}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#expanded}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -4326,7 +4331,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:expanded
+          @attr name uz.BirUz.director:expanded
         */
         public static final int AppBarLayout_expanded = 2;
         /** Attributes that can be used with a AppBarLayout_LayoutParams.
@@ -4335,8 +4340,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollFlags uz.a1uz.a1uzdirector:layout_scrollFlags}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollInterpolator uz.a1uz.a1uzdirector:layout_scrollInterpolator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollFlags uz.BirUz.director:layout_scrollFlags}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollInterpolator uz.BirUz.director:layout_scrollInterpolator}</code></td><td></td></tr>
            </table>
            @see #AppBarLayout_LayoutParams_layout_scrollFlags
            @see #AppBarLayout_LayoutParams_layout_scrollInterpolator
@@ -4345,7 +4350,7 @@ containing a value of this type.
             0x7f010051, 0x7f010052
         };
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_scrollFlags}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_scrollFlags}
           attribute's value can be found in the {@link #AppBarLayout_LayoutParams} array.
 
 
@@ -4361,17 +4366,17 @@ containing a value of this type.
 <tr><td><code>enterAlwaysCollapsed</code></td><td>0x8</td><td></td></tr>
 <tr><td><code>snap</code></td><td>0x10</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_scrollFlags
+          @attr name uz.BirUz.director:layout_scrollFlags
         */
         public static final int AppBarLayout_LayoutParams_layout_scrollFlags = 0;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_scrollInterpolator}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_scrollInterpolator}
           attribute's value can be found in the {@link #AppBarLayout_LayoutParams} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:layout_scrollInterpolator
+          @attr name uz.BirUz.director:layout_scrollInterpolator
         */
         public static final int AppBarLayout_LayoutParams_layout_scrollInterpolator = 1;
         /** Attributes that can be used with a AppCompatImageView.
@@ -4381,7 +4386,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatImageView_android_src android:src}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatImageView_srcCompat uz.a1uz.a1uzdirector:srcCompat}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatImageView_srcCompat uz.BirUz.director:srcCompat}</code></td><td></td></tr>
            </table>
            @see #AppCompatImageView_android_src
            @see #AppCompatImageView_srcCompat
@@ -4396,13 +4401,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatImageView_android_src = 0;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#srcCompat}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#srcCompat}
           attribute's value can be found in the {@link #AppCompatImageView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:srcCompat
+          @attr name uz.BirUz.director:srcCompat
         */
         public static final int AppCompatImageView_srcCompat = 1;
         /** Attributes that can be used with a AppCompatTextView.
@@ -4412,7 +4417,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_textAllCaps uz.a1uz.a1uzdirector:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_textAllCaps uz.BirUz.director:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #AppCompatTextView_android_textAppearance
            @see #AppCompatTextView_textAllCaps
@@ -4427,14 +4432,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTextView_android_textAppearance = 0;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#textAllCaps}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name uz.a1uz.a1uzdirector:textAllCaps
+          @attr name uz.BirUz.director:textAllCaps
         */
         public static final int AppCompatTextView_textAllCaps = 1;
         /** Attributes that can be used with a AppCompatTheme.
@@ -4443,118 +4448,118 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarDivider uz.a1uz.a1uzdirector:actionBarDivider}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground uz.a1uz.a1uzdirector:actionBarItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme uz.a1uz.a1uzdirector:actionBarPopupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarSize uz.a1uz.a1uzdirector:actionBarSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle uz.a1uz.a1uzdirector:actionBarSplitStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarStyle uz.a1uz.a1uzdirector:actionBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle uz.a1uz.a1uzdirector:actionBarTabBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle uz.a1uz.a1uzdirector:actionBarTabStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle uz.a1uz.a1uzdirector:actionBarTabTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTheme uz.a1uz.a1uzdirector:actionBarTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme uz.a1uz.a1uzdirector:actionBarWidgetTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionButtonStyle uz.a1uz.a1uzdirector:actionButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle uz.a1uz.a1uzdirector:actionDropDownStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance uz.a1uz.a1uzdirector:actionMenuTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor uz.a1uz.a1uzdirector:actionMenuTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeBackground uz.a1uz.a1uzdirector:actionModeBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle uz.a1uz.a1uzdirector:actionModeCloseButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable uz.a1uz.a1uzdirector:actionModeCloseDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable uz.a1uz.a1uzdirector:actionModeCopyDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable uz.a1uz.a1uzdirector:actionModeCutDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable uz.a1uz.a1uzdirector:actionModeFindDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable uz.a1uz.a1uzdirector:actionModePasteDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle uz.a1uz.a1uzdirector:actionModePopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable uz.a1uz.a1uzdirector:actionModeSelectAllDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable uz.a1uz.a1uzdirector:actionModeShareDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground uz.a1uz.a1uzdirector:actionModeSplitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeStyle uz.a1uz.a1uzdirector:actionModeStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable uz.a1uz.a1uzdirector:actionModeWebSearchDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle uz.a1uz.a1uzdirector:actionOverflowButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle uz.a1uz.a1uzdirector:actionOverflowMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle uz.a1uz.a1uzdirector:activityChooserViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle uz.a1uz.a1uzdirector:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons uz.a1uz.a1uzdirector:alertDialogCenterButtons}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogStyle uz.a1uz.a1uzdirector:alertDialogStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogTheme uz.a1uz.a1uzdirector:alertDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarDivider uz.BirUz.director:actionBarDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground uz.BirUz.director:actionBarItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme uz.BirUz.director:actionBarPopupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarSize uz.BirUz.director:actionBarSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle uz.BirUz.director:actionBarSplitStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarStyle uz.BirUz.director:actionBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle uz.BirUz.director:actionBarTabBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle uz.BirUz.director:actionBarTabStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle uz.BirUz.director:actionBarTabTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTheme uz.BirUz.director:actionBarTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme uz.BirUz.director:actionBarWidgetTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionButtonStyle uz.BirUz.director:actionButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle uz.BirUz.director:actionDropDownStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance uz.BirUz.director:actionMenuTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor uz.BirUz.director:actionMenuTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeBackground uz.BirUz.director:actionModeBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle uz.BirUz.director:actionModeCloseButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable uz.BirUz.director:actionModeCloseDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable uz.BirUz.director:actionModeCopyDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable uz.BirUz.director:actionModeCutDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable uz.BirUz.director:actionModeFindDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable uz.BirUz.director:actionModePasteDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle uz.BirUz.director:actionModePopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable uz.BirUz.director:actionModeSelectAllDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable uz.BirUz.director:actionModeShareDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground uz.BirUz.director:actionModeSplitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeStyle uz.BirUz.director:actionModeStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable uz.BirUz.director:actionModeWebSearchDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle uz.BirUz.director:actionOverflowButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle uz.BirUz.director:actionOverflowMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle uz.BirUz.director:activityChooserViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle uz.BirUz.director:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons uz.BirUz.director:alertDialogCenterButtons}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogStyle uz.BirUz.director:alertDialogStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogTheme uz.BirUz.director:alertDialogTheme}</code></td><td></td></tr>
            <tr><td><code>{@link #AppCompatTheme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #AppCompatTheme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle uz.a1uz.a1uzdirector:autoCompleteTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle uz.a1uz.a1uzdirector:borderlessButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle uz.a1uz.a1uzdirector:buttonBarButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle uz.a1uz.a1uzdirector:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle uz.a1uz.a1uzdirector:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle uz.a1uz.a1uzdirector:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarStyle uz.a1uz.a1uzdirector:buttonBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonStyle uz.a1uz.a1uzdirector:buttonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall uz.a1uz.a1uzdirector:buttonStyleSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_checkboxStyle uz.a1uz.a1uzdirector:checkboxStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle uz.a1uz.a1uzdirector:checkedTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorAccent uz.a1uz.a1uzdirector:colorAccent}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorButtonNormal uz.a1uz.a1uzdirector:colorButtonNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlActivated uz.a1uz.a1uzdirector:colorControlActivated}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlHighlight uz.a1uz.a1uzdirector:colorControlHighlight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlNormal uz.a1uz.a1uzdirector:colorControlNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorPrimary uz.a1uz.a1uzdirector:colorPrimary}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark uz.a1uz.a1uzdirector:colorPrimaryDark}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal uz.a1uz.a1uzdirector:colorSwitchThumbNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_controlBackground uz.a1uz.a1uzdirector:controlBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding uz.a1uz.a1uzdirector:dialogPreferredPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dialogTheme uz.a1uz.a1uzdirector:dialogTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dividerHorizontal uz.a1uz.a1uzdirector:dividerHorizontal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dividerVertical uz.a1uz.a1uzdirector:dividerVertical}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle uz.a1uz.a1uzdirector:dropDownListViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight uz.a1uz.a1uzdirector:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextBackground uz.a1uz.a1uzdirector:editTextBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextColor uz.a1uz.a1uzdirector:editTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextStyle uz.a1uz.a1uzdirector:editTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator uz.a1uz.a1uzdirector:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_imageButtonStyle uz.a1uz.a1uzdirector:imageButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator uz.a1uz.a1uzdirector:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog uz.a1uz.a1uzdirector:listDividerAlertDialog}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle uz.a1uz.a1uzdirector:listPopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight uz.a1uz.a1uzdirector:listPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge uz.a1uz.a1uzdirector:listPreferredItemHeightLarge}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall uz.a1uz.a1uzdirector:listPreferredItemHeightSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft uz.a1uz.a1uzdirector:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight uz.a1uz.a1uzdirector:listPreferredItemPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelBackground uz.a1uz.a1uzdirector:panelBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme uz.a1uz.a1uzdirector:panelMenuListTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth uz.a1uz.a1uzdirector:panelMenuListWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_popupMenuStyle uz.a1uz.a1uzdirector:popupMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_popupWindowStyle uz.a1uz.a1uzdirector:popupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_radioButtonStyle uz.a1uz.a1uzdirector:radioButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyle uz.a1uz.a1uzdirector:ratingBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator uz.a1uz.a1uzdirector:ratingBarStyleIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall uz.a1uz.a1uzdirector:ratingBarStyleSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_searchViewStyle uz.a1uz.a1uzdirector:searchViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_seekBarStyle uz.a1uz.a1uzdirector:seekBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_selectableItemBackground uz.a1uz.a1uzdirector:selectableItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless uz.a1uz.a1uzdirector:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle uz.a1uz.a1uzdirector:spinnerDropDownItemStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_spinnerStyle uz.a1uz.a1uzdirector:spinnerStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_switchStyle uz.a1uz.a1uzdirector:switchStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu uz.a1uz.a1uzdirector:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem uz.a1uz.a1uzdirector:textAppearanceListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall uz.a1uz.a1uzdirector:textAppearanceListItemSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle uz.a1uz.a1uzdirector:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle uz.a1uz.a1uzdirector:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu uz.a1uz.a1uzdirector:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem uz.a1uz.a1uzdirector:textColorAlertDialogListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl uz.a1uz.a1uzdirector:textColorSearchUrl}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle uz.a1uz.a1uzdirector:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_toolbarStyle uz.a1uz.a1uzdirector:toolbarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionBar uz.a1uz.a1uzdirector:windowActionBar}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay uz.a1uz.a1uzdirector:windowActionBarOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay uz.a1uz.a1uzdirector:windowActionModeOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor uz.a1uz.a1uzdirector:windowFixedHeightMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor uz.a1uz.a1uzdirector:windowFixedHeightMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor uz.a1uz.a1uzdirector:windowFixedWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor uz.a1uz.a1uzdirector:windowFixedWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor uz.a1uz.a1uzdirector:windowMinWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor uz.a1uz.a1uzdirector:windowMinWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowNoTitle uz.a1uz.a1uzdirector:windowNoTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle uz.BirUz.director:autoCompleteTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle uz.BirUz.director:borderlessButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle uz.BirUz.director:buttonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle uz.BirUz.director:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle uz.BirUz.director:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle uz.BirUz.director:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarStyle uz.BirUz.director:buttonBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonStyle uz.BirUz.director:buttonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall uz.BirUz.director:buttonStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_checkboxStyle uz.BirUz.director:checkboxStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle uz.BirUz.director:checkedTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorAccent uz.BirUz.director:colorAccent}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorButtonNormal uz.BirUz.director:colorButtonNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlActivated uz.BirUz.director:colorControlActivated}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlHighlight uz.BirUz.director:colorControlHighlight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlNormal uz.BirUz.director:colorControlNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorPrimary uz.BirUz.director:colorPrimary}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark uz.BirUz.director:colorPrimaryDark}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal uz.BirUz.director:colorSwitchThumbNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_controlBackground uz.BirUz.director:controlBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding uz.BirUz.director:dialogPreferredPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dialogTheme uz.BirUz.director:dialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dividerHorizontal uz.BirUz.director:dividerHorizontal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dividerVertical uz.BirUz.director:dividerVertical}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle uz.BirUz.director:dropDownListViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight uz.BirUz.director:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextBackground uz.BirUz.director:editTextBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextColor uz.BirUz.director:editTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextStyle uz.BirUz.director:editTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator uz.BirUz.director:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_imageButtonStyle uz.BirUz.director:imageButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator uz.BirUz.director:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog uz.BirUz.director:listDividerAlertDialog}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle uz.BirUz.director:listPopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight uz.BirUz.director:listPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge uz.BirUz.director:listPreferredItemHeightLarge}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall uz.BirUz.director:listPreferredItemHeightSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft uz.BirUz.director:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight uz.BirUz.director:listPreferredItemPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelBackground uz.BirUz.director:panelBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme uz.BirUz.director:panelMenuListTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth uz.BirUz.director:panelMenuListWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_popupMenuStyle uz.BirUz.director:popupMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_popupWindowStyle uz.BirUz.director:popupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_radioButtonStyle uz.BirUz.director:radioButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyle uz.BirUz.director:ratingBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator uz.BirUz.director:ratingBarStyleIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall uz.BirUz.director:ratingBarStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_searchViewStyle uz.BirUz.director:searchViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_seekBarStyle uz.BirUz.director:seekBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_selectableItemBackground uz.BirUz.director:selectableItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless uz.BirUz.director:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle uz.BirUz.director:spinnerDropDownItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_spinnerStyle uz.BirUz.director:spinnerStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_switchStyle uz.BirUz.director:switchStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu uz.BirUz.director:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem uz.BirUz.director:textAppearanceListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall uz.BirUz.director:textAppearanceListItemSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle uz.BirUz.director:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle uz.BirUz.director:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu uz.BirUz.director:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem uz.BirUz.director:textColorAlertDialogListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl uz.BirUz.director:textColorSearchUrl}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle uz.BirUz.director:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_toolbarStyle uz.BirUz.director:toolbarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionBar uz.BirUz.director:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay uz.BirUz.director:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay uz.BirUz.director:windowActionModeOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor uz.BirUz.director:windowFixedHeightMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor uz.BirUz.director:windowFixedHeightMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor uz.BirUz.director:windowFixedWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor uz.BirUz.director:windowFixedWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor uz.BirUz.director:windowMinWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor uz.BirUz.director:windowMinWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowNoTitle uz.BirUz.director:windowNoTitle}</code></td><td></td></tr>
            </table>
            @see #AppCompatTheme_actionBarDivider
            @see #AppCompatTheme_actionBarItemBackground
@@ -4700,37 +4705,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100bf, 0x7f0100c0, 0x7f0100c1, 0x7f0100c2
         };
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionBarDivider}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionBarDivider}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionBarDivider
+          @attr name uz.BirUz.director:actionBarDivider
         */
         public static final int AppCompatTheme_actionBarDivider = 23;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionBarItemBackground}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionBarItemBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionBarItemBackground
+          @attr name uz.BirUz.director:actionBarItemBackground
         */
         public static final int AppCompatTheme_actionBarItemBackground = 24;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionBarPopupTheme}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionBarPopupTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionBarPopupTheme
+          @attr name uz.BirUz.director:actionBarPopupTheme
         */
         public static final int AppCompatTheme_actionBarPopupTheme = 17;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionBarSize}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionBarSize}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4750,111 +4755,111 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:actionBarSize
+          @attr name uz.BirUz.director:actionBarSize
         */
         public static final int AppCompatTheme_actionBarSize = 22;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionBarSplitStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionBarSplitStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionBarSplitStyle
+          @attr name uz.BirUz.director:actionBarSplitStyle
         */
         public static final int AppCompatTheme_actionBarSplitStyle = 19;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionBarStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionBarStyle
+          @attr name uz.BirUz.director:actionBarStyle
         */
         public static final int AppCompatTheme_actionBarStyle = 18;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionBarTabBarStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionBarTabBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionBarTabBarStyle
+          @attr name uz.BirUz.director:actionBarTabBarStyle
         */
         public static final int AppCompatTheme_actionBarTabBarStyle = 13;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionBarTabStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionBarTabStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionBarTabStyle
+          @attr name uz.BirUz.director:actionBarTabStyle
         */
         public static final int AppCompatTheme_actionBarTabStyle = 12;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionBarTabTextStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionBarTabTextStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionBarTabTextStyle
+          @attr name uz.BirUz.director:actionBarTabTextStyle
         */
         public static final int AppCompatTheme_actionBarTabTextStyle = 14;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionBarTheme}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionBarTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionBarTheme
+          @attr name uz.BirUz.director:actionBarTheme
         */
         public static final int AppCompatTheme_actionBarTheme = 20;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionBarWidgetTheme}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionBarWidgetTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionBarWidgetTheme
+          @attr name uz.BirUz.director:actionBarWidgetTheme
         */
         public static final int AppCompatTheme_actionBarWidgetTheme = 21;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionButtonStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionButtonStyle
+          @attr name uz.BirUz.director:actionButtonStyle
         */
         public static final int AppCompatTheme_actionButtonStyle = 49;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionDropDownStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionDropDownStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionDropDownStyle
+          @attr name uz.BirUz.director:actionDropDownStyle
         */
         public static final int AppCompatTheme_actionDropDownStyle = 45;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionMenuTextAppearance}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionMenuTextAppearance}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionMenuTextAppearance
+          @attr name uz.BirUz.director:actionMenuTextAppearance
         */
         public static final int AppCompatTheme_actionMenuTextAppearance = 25;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionMenuTextColor}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionMenuTextColor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4862,181 +4867,181 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionMenuTextColor
+          @attr name uz.BirUz.director:actionMenuTextColor
         */
         public static final int AppCompatTheme_actionMenuTextColor = 26;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionModeBackground}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionModeBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionModeBackground
+          @attr name uz.BirUz.director:actionModeBackground
         */
         public static final int AppCompatTheme_actionModeBackground = 29;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionModeCloseButtonStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionModeCloseButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionModeCloseButtonStyle
+          @attr name uz.BirUz.director:actionModeCloseButtonStyle
         */
         public static final int AppCompatTheme_actionModeCloseButtonStyle = 28;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionModeCloseDrawable}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionModeCloseDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionModeCloseDrawable
+          @attr name uz.BirUz.director:actionModeCloseDrawable
         */
         public static final int AppCompatTheme_actionModeCloseDrawable = 31;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionModeCopyDrawable}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionModeCopyDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionModeCopyDrawable
+          @attr name uz.BirUz.director:actionModeCopyDrawable
         */
         public static final int AppCompatTheme_actionModeCopyDrawable = 33;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionModeCutDrawable}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionModeCutDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionModeCutDrawable
+          @attr name uz.BirUz.director:actionModeCutDrawable
         */
         public static final int AppCompatTheme_actionModeCutDrawable = 32;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionModeFindDrawable}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionModeFindDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionModeFindDrawable
+          @attr name uz.BirUz.director:actionModeFindDrawable
         */
         public static final int AppCompatTheme_actionModeFindDrawable = 37;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionModePasteDrawable}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionModePasteDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionModePasteDrawable
+          @attr name uz.BirUz.director:actionModePasteDrawable
         */
         public static final int AppCompatTheme_actionModePasteDrawable = 34;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionModePopupWindowStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionModePopupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionModePopupWindowStyle
+          @attr name uz.BirUz.director:actionModePopupWindowStyle
         */
         public static final int AppCompatTheme_actionModePopupWindowStyle = 39;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionModeSelectAllDrawable}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionModeSelectAllDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionModeSelectAllDrawable
+          @attr name uz.BirUz.director:actionModeSelectAllDrawable
         */
         public static final int AppCompatTheme_actionModeSelectAllDrawable = 35;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionModeShareDrawable}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionModeShareDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionModeShareDrawable
+          @attr name uz.BirUz.director:actionModeShareDrawable
         */
         public static final int AppCompatTheme_actionModeShareDrawable = 36;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionModeSplitBackground}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionModeSplitBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionModeSplitBackground
+          @attr name uz.BirUz.director:actionModeSplitBackground
         */
         public static final int AppCompatTheme_actionModeSplitBackground = 30;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionModeStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionModeStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionModeStyle
+          @attr name uz.BirUz.director:actionModeStyle
         */
         public static final int AppCompatTheme_actionModeStyle = 27;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionModeWebSearchDrawable}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionModeWebSearchDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionModeWebSearchDrawable
+          @attr name uz.BirUz.director:actionModeWebSearchDrawable
         */
         public static final int AppCompatTheme_actionModeWebSearchDrawable = 38;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionOverflowButtonStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionOverflowButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionOverflowButtonStyle
+          @attr name uz.BirUz.director:actionOverflowButtonStyle
         */
         public static final int AppCompatTheme_actionOverflowButtonStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionOverflowMenuStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionOverflowMenuStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionOverflowMenuStyle
+          @attr name uz.BirUz.director:actionOverflowMenuStyle
         */
         public static final int AppCompatTheme_actionOverflowMenuStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#activityChooserViewStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#activityChooserViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:activityChooserViewStyle
+          @attr name uz.BirUz.director:activityChooserViewStyle
         */
         public static final int AppCompatTheme_activityChooserViewStyle = 57;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#alertDialogButtonGroupStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#alertDialogButtonGroupStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:alertDialogButtonGroupStyle
+          @attr name uz.BirUz.director:alertDialogButtonGroupStyle
         */
         public static final int AppCompatTheme_alertDialogButtonGroupStyle = 92;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#alertDialogCenterButtons}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#alertDialogCenterButtons}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5046,27 +5051,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:alertDialogCenterButtons
+          @attr name uz.BirUz.director:alertDialogCenterButtons
         */
         public static final int AppCompatTheme_alertDialogCenterButtons = 93;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#alertDialogStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#alertDialogStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:alertDialogStyle
+          @attr name uz.BirUz.director:alertDialogStyle
         */
         public static final int AppCompatTheme_alertDialogStyle = 91;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#alertDialogTheme}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#alertDialogTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:alertDialogTheme
+          @attr name uz.BirUz.director:alertDialogTheme
         */
         public static final int AppCompatTheme_alertDialogTheme = 94;
         /**
@@ -5082,117 +5087,117 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_android_windowIsFloating = 0;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#autoCompleteTextViewStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#autoCompleteTextViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:autoCompleteTextViewStyle
+          @attr name uz.BirUz.director:autoCompleteTextViewStyle
         */
         public static final int AppCompatTheme_autoCompleteTextViewStyle = 99;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#borderlessButtonStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#borderlessButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:borderlessButtonStyle
+          @attr name uz.BirUz.director:borderlessButtonStyle
         */
         public static final int AppCompatTheme_borderlessButtonStyle = 54;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#buttonBarButtonStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#buttonBarButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:buttonBarButtonStyle
+          @attr name uz.BirUz.director:buttonBarButtonStyle
         */
         public static final int AppCompatTheme_buttonBarButtonStyle = 51;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#buttonBarNegativeButtonStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#buttonBarNegativeButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:buttonBarNegativeButtonStyle
+          @attr name uz.BirUz.director:buttonBarNegativeButtonStyle
         */
         public static final int AppCompatTheme_buttonBarNegativeButtonStyle = 97;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#buttonBarNeutralButtonStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#buttonBarNeutralButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:buttonBarNeutralButtonStyle
+          @attr name uz.BirUz.director:buttonBarNeutralButtonStyle
         */
         public static final int AppCompatTheme_buttonBarNeutralButtonStyle = 98;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#buttonBarPositiveButtonStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#buttonBarPositiveButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:buttonBarPositiveButtonStyle
+          @attr name uz.BirUz.director:buttonBarPositiveButtonStyle
         */
         public static final int AppCompatTheme_buttonBarPositiveButtonStyle = 96;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#buttonBarStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#buttonBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:buttonBarStyle
+          @attr name uz.BirUz.director:buttonBarStyle
         */
         public static final int AppCompatTheme_buttonBarStyle = 50;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#buttonStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#buttonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:buttonStyle
+          @attr name uz.BirUz.director:buttonStyle
         */
         public static final int AppCompatTheme_buttonStyle = 100;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#buttonStyleSmall}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#buttonStyleSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:buttonStyleSmall
+          @attr name uz.BirUz.director:buttonStyleSmall
         */
         public static final int AppCompatTheme_buttonStyleSmall = 101;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#checkboxStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#checkboxStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:checkboxStyle
+          @attr name uz.BirUz.director:checkboxStyle
         */
         public static final int AppCompatTheme_checkboxStyle = 102;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#checkedTextViewStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#checkedTextViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:checkedTextViewStyle
+          @attr name uz.BirUz.director:checkedTextViewStyle
         */
         public static final int AppCompatTheme_checkedTextViewStyle = 103;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#colorAccent}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#colorAccent}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5203,11 +5208,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:colorAccent
+          @attr name uz.BirUz.director:colorAccent
         */
         public static final int AppCompatTheme_colorAccent = 84;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#colorButtonNormal}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#colorButtonNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5218,11 +5223,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:colorButtonNormal
+          @attr name uz.BirUz.director:colorButtonNormal
         */
         public static final int AppCompatTheme_colorButtonNormal = 88;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#colorControlActivated}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#colorControlActivated}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5233,11 +5238,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:colorControlActivated
+          @attr name uz.BirUz.director:colorControlActivated
         */
         public static final int AppCompatTheme_colorControlActivated = 86;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#colorControlHighlight}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#colorControlHighlight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5248,11 +5253,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:colorControlHighlight
+          @attr name uz.BirUz.director:colorControlHighlight
         */
         public static final int AppCompatTheme_colorControlHighlight = 87;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#colorControlNormal}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#colorControlNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5263,11 +5268,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:colorControlNormal
+          @attr name uz.BirUz.director:colorControlNormal
         */
         public static final int AppCompatTheme_colorControlNormal = 85;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#colorPrimary}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#colorPrimary}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5278,11 +5283,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:colorPrimary
+          @attr name uz.BirUz.director:colorPrimary
         */
         public static final int AppCompatTheme_colorPrimary = 82;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#colorPrimaryDark}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#colorPrimaryDark}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5293,11 +5298,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:colorPrimaryDark
+          @attr name uz.BirUz.director:colorPrimaryDark
         */
         public static final int AppCompatTheme_colorPrimaryDark = 83;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#colorSwitchThumbNormal}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#colorSwitchThumbNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5308,21 +5313,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:colorSwitchThumbNormal
+          @attr name uz.BirUz.director:colorSwitchThumbNormal
         */
         public static final int AppCompatTheme_colorSwitchThumbNormal = 89;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#controlBackground}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#controlBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:controlBackground
+          @attr name uz.BirUz.director:controlBackground
         */
         public static final int AppCompatTheme_controlBackground = 90;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#dialogPreferredPadding}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#dialogPreferredPadding}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5334,51 +5339,51 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:dialogPreferredPadding
+          @attr name uz.BirUz.director:dialogPreferredPadding
         */
         public static final int AppCompatTheme_dialogPreferredPadding = 43;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#dialogTheme}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#dialogTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:dialogTheme
+          @attr name uz.BirUz.director:dialogTheme
         */
         public static final int AppCompatTheme_dialogTheme = 42;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#dividerHorizontal}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#dividerHorizontal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:dividerHorizontal
+          @attr name uz.BirUz.director:dividerHorizontal
         */
         public static final int AppCompatTheme_dividerHorizontal = 56;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#dividerVertical}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#dividerVertical}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:dividerVertical
+          @attr name uz.BirUz.director:dividerVertical
         */
         public static final int AppCompatTheme_dividerVertical = 55;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#dropDownListViewStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#dropDownListViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:dropDownListViewStyle
+          @attr name uz.BirUz.director:dropDownListViewStyle
         */
         public static final int AppCompatTheme_dropDownListViewStyle = 74;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#dropdownListPreferredItemHeight}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#dropdownListPreferredItemHeight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5390,21 +5395,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:dropdownListPreferredItemHeight
+          @attr name uz.BirUz.director:dropdownListPreferredItemHeight
         */
         public static final int AppCompatTheme_dropdownListPreferredItemHeight = 46;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#editTextBackground}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#editTextBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:editTextBackground
+          @attr name uz.BirUz.director:editTextBackground
         */
         public static final int AppCompatTheme_editTextBackground = 63;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#editTextColor}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#editTextColor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5412,71 +5417,71 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name uz.a1uz.a1uzdirector:editTextColor
+          @attr name uz.BirUz.director:editTextColor
         */
         public static final int AppCompatTheme_editTextColor = 62;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#editTextStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#editTextStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:editTextStyle
+          @attr name uz.BirUz.director:editTextStyle
         */
         public static final int AppCompatTheme_editTextStyle = 104;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:homeAsUpIndicator
+          @attr name uz.BirUz.director:homeAsUpIndicator
         */
         public static final int AppCompatTheme_homeAsUpIndicator = 48;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#imageButtonStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#imageButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:imageButtonStyle
+          @attr name uz.BirUz.director:imageButtonStyle
         */
         public static final int AppCompatTheme_imageButtonStyle = 64;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#listChoiceBackgroundIndicator}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#listChoiceBackgroundIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:listChoiceBackgroundIndicator
+          @attr name uz.BirUz.director:listChoiceBackgroundIndicator
         */
         public static final int AppCompatTheme_listChoiceBackgroundIndicator = 81;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#listDividerAlertDialog}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#listDividerAlertDialog}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:listDividerAlertDialog
+          @attr name uz.BirUz.director:listDividerAlertDialog
         */
         public static final int AppCompatTheme_listDividerAlertDialog = 44;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#listPopupWindowStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#listPopupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:listPopupWindowStyle
+          @attr name uz.BirUz.director:listPopupWindowStyle
         */
         public static final int AppCompatTheme_listPopupWindowStyle = 75;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#listPreferredItemHeight}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#listPreferredItemHeight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5488,11 +5493,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:listPreferredItemHeight
+          @attr name uz.BirUz.director:listPreferredItemHeight
         */
         public static final int AppCompatTheme_listPreferredItemHeight = 69;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#listPreferredItemHeightLarge}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#listPreferredItemHeightLarge}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5504,11 +5509,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:listPreferredItemHeightLarge
+          @attr name uz.BirUz.director:listPreferredItemHeightLarge
         */
         public static final int AppCompatTheme_listPreferredItemHeightLarge = 71;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#listPreferredItemHeightSmall}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#listPreferredItemHeightSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5520,11 +5525,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:listPreferredItemHeightSmall
+          @attr name uz.BirUz.director:listPreferredItemHeightSmall
         */
         public static final int AppCompatTheme_listPreferredItemHeightSmall = 70;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#listPreferredItemPaddingLeft}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#listPreferredItemPaddingLeft}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5536,11 +5541,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:listPreferredItemPaddingLeft
+          @attr name uz.BirUz.director:listPreferredItemPaddingLeft
         */
         public static final int AppCompatTheme_listPreferredItemPaddingLeft = 72;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#listPreferredItemPaddingRight}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#listPreferredItemPaddingRight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5552,31 +5557,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:listPreferredItemPaddingRight
+          @attr name uz.BirUz.director:listPreferredItemPaddingRight
         */
         public static final int AppCompatTheme_listPreferredItemPaddingRight = 73;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#panelBackground}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#panelBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:panelBackground
+          @attr name uz.BirUz.director:panelBackground
         */
         public static final int AppCompatTheme_panelBackground = 78;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#panelMenuListTheme}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#panelMenuListTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:panelMenuListTheme
+          @attr name uz.BirUz.director:panelMenuListTheme
         */
         public static final int AppCompatTheme_panelMenuListTheme = 80;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#panelMenuListWidth}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#panelMenuListWidth}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5588,201 +5593,201 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:panelMenuListWidth
+          @attr name uz.BirUz.director:panelMenuListWidth
         */
         public static final int AppCompatTheme_panelMenuListWidth = 79;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#popupMenuStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#popupMenuStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:popupMenuStyle
+          @attr name uz.BirUz.director:popupMenuStyle
         */
         public static final int AppCompatTheme_popupMenuStyle = 60;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#popupWindowStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#popupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:popupWindowStyle
+          @attr name uz.BirUz.director:popupWindowStyle
         */
         public static final int AppCompatTheme_popupWindowStyle = 61;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#radioButtonStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#radioButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:radioButtonStyle
+          @attr name uz.BirUz.director:radioButtonStyle
         */
         public static final int AppCompatTheme_radioButtonStyle = 105;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#ratingBarStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#ratingBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:ratingBarStyle
+          @attr name uz.BirUz.director:ratingBarStyle
         */
         public static final int AppCompatTheme_ratingBarStyle = 106;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#ratingBarStyleIndicator}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#ratingBarStyleIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:ratingBarStyleIndicator
+          @attr name uz.BirUz.director:ratingBarStyleIndicator
         */
         public static final int AppCompatTheme_ratingBarStyleIndicator = 107;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#ratingBarStyleSmall}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#ratingBarStyleSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:ratingBarStyleSmall
+          @attr name uz.BirUz.director:ratingBarStyleSmall
         */
         public static final int AppCompatTheme_ratingBarStyleSmall = 108;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#searchViewStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#searchViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:searchViewStyle
+          @attr name uz.BirUz.director:searchViewStyle
         */
         public static final int AppCompatTheme_searchViewStyle = 68;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#seekBarStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#seekBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:seekBarStyle
+          @attr name uz.BirUz.director:seekBarStyle
         */
         public static final int AppCompatTheme_seekBarStyle = 109;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#selectableItemBackground}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#selectableItemBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:selectableItemBackground
+          @attr name uz.BirUz.director:selectableItemBackground
         */
         public static final int AppCompatTheme_selectableItemBackground = 52;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#selectableItemBackgroundBorderless}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#selectableItemBackgroundBorderless}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:selectableItemBackgroundBorderless
+          @attr name uz.BirUz.director:selectableItemBackgroundBorderless
         */
         public static final int AppCompatTheme_selectableItemBackgroundBorderless = 53;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#spinnerDropDownItemStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#spinnerDropDownItemStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:spinnerDropDownItemStyle
+          @attr name uz.BirUz.director:spinnerDropDownItemStyle
         */
         public static final int AppCompatTheme_spinnerDropDownItemStyle = 47;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#spinnerStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#spinnerStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:spinnerStyle
+          @attr name uz.BirUz.director:spinnerStyle
         */
         public static final int AppCompatTheme_spinnerStyle = 110;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#switchStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#switchStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:switchStyle
+          @attr name uz.BirUz.director:switchStyle
         */
         public static final int AppCompatTheme_switchStyle = 111;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#textAppearanceLargePopupMenu}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#textAppearanceLargePopupMenu}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:textAppearanceLargePopupMenu
+          @attr name uz.BirUz.director:textAppearanceLargePopupMenu
         */
         public static final int AppCompatTheme_textAppearanceLargePopupMenu = 40;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#textAppearanceListItem}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#textAppearanceListItem}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:textAppearanceListItem
+          @attr name uz.BirUz.director:textAppearanceListItem
         */
         public static final int AppCompatTheme_textAppearanceListItem = 76;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#textAppearanceListItemSmall}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#textAppearanceListItemSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:textAppearanceListItemSmall
+          @attr name uz.BirUz.director:textAppearanceListItemSmall
         */
         public static final int AppCompatTheme_textAppearanceListItemSmall = 77;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#textAppearanceSearchResultSubtitle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#textAppearanceSearchResultSubtitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:textAppearanceSearchResultSubtitle
+          @attr name uz.BirUz.director:textAppearanceSearchResultSubtitle
         */
         public static final int AppCompatTheme_textAppearanceSearchResultSubtitle = 66;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#textAppearanceSearchResultTitle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#textAppearanceSearchResultTitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:textAppearanceSearchResultTitle
+          @attr name uz.BirUz.director:textAppearanceSearchResultTitle
         */
         public static final int AppCompatTheme_textAppearanceSearchResultTitle = 65;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#textAppearanceSmallPopupMenu}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#textAppearanceSmallPopupMenu}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:textAppearanceSmallPopupMenu
+          @attr name uz.BirUz.director:textAppearanceSmallPopupMenu
         */
         public static final int AppCompatTheme_textAppearanceSmallPopupMenu = 41;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#textColorAlertDialogListItem}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#textColorAlertDialogListItem}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5790,11 +5795,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name uz.a1uz.a1uzdirector:textColorAlertDialogListItem
+          @attr name uz.BirUz.director:textColorAlertDialogListItem
         */
         public static final int AppCompatTheme_textColorAlertDialogListItem = 95;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#textColorSearchUrl}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#textColorSearchUrl}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5802,31 +5807,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name uz.a1uz.a1uzdirector:textColorSearchUrl
+          @attr name uz.BirUz.director:textColorSearchUrl
         */
         public static final int AppCompatTheme_textColorSearchUrl = 67;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#toolbarNavigationButtonStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#toolbarNavigationButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:toolbarNavigationButtonStyle
+          @attr name uz.BirUz.director:toolbarNavigationButtonStyle
         */
         public static final int AppCompatTheme_toolbarNavigationButtonStyle = 59;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#toolbarStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#toolbarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:toolbarStyle
+          @attr name uz.BirUz.director:toolbarStyle
         */
         public static final int AppCompatTheme_toolbarStyle = 58;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#windowActionBar}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5836,11 +5841,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:windowActionBar
+          @attr name uz.BirUz.director:windowActionBar
         */
         public static final int AppCompatTheme_windowActionBar = 2;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5850,11 +5855,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:windowActionBarOverlay
+          @attr name uz.BirUz.director:windowActionBarOverlay
         */
         public static final int AppCompatTheme_windowActionBarOverlay = 4;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#windowActionModeOverlay}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#windowActionModeOverlay}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5864,11 +5869,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:windowActionModeOverlay
+          @attr name uz.BirUz.director:windowActionModeOverlay
         */
         public static final int AppCompatTheme_windowActionModeOverlay = 5;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#windowFixedHeightMajor}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#windowFixedHeightMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5883,11 +5888,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:windowFixedHeightMajor
+          @attr name uz.BirUz.director:windowFixedHeightMajor
         */
         public static final int AppCompatTheme_windowFixedHeightMajor = 9;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#windowFixedHeightMinor}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#windowFixedHeightMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5902,11 +5907,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:windowFixedHeightMinor
+          @attr name uz.BirUz.director:windowFixedHeightMinor
         */
         public static final int AppCompatTheme_windowFixedHeightMinor = 7;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#windowFixedWidthMajor}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#windowFixedWidthMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5921,11 +5926,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:windowFixedWidthMajor
+          @attr name uz.BirUz.director:windowFixedWidthMajor
         */
         public static final int AppCompatTheme_windowFixedWidthMajor = 6;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#windowFixedWidthMinor}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#windowFixedWidthMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5940,11 +5945,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:windowFixedWidthMinor
+          @attr name uz.BirUz.director:windowFixedWidthMinor
         */
         public static final int AppCompatTheme_windowFixedWidthMinor = 8;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#windowMinWidthMajor}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#windowMinWidthMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5959,11 +5964,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:windowMinWidthMajor
+          @attr name uz.BirUz.director:windowMinWidthMajor
         */
         public static final int AppCompatTheme_windowMinWidthMajor = 10;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#windowMinWidthMinor}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#windowMinWidthMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5978,11 +5983,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:windowMinWidthMinor
+          @attr name uz.BirUz.director:windowMinWidthMinor
         */
         public static final int AppCompatTheme_windowMinWidthMinor = 11;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#windowNoTitle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#windowNoTitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5992,7 +5997,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:windowNoTitle
+          @attr name uz.BirUz.director:windowNoTitle
         */
         public static final int AppCompatTheme_windowNoTitle = 3;
         /** Attributes that can be used with a BottomSheetBehavior_Params.
@@ -6001,8 +6006,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #BottomSheetBehavior_Params_behavior_hideable uz.a1uz.a1uzdirector:behavior_hideable}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomSheetBehavior_Params_behavior_peekHeight uz.a1uz.a1uzdirector:behavior_peekHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Params_behavior_hideable uz.BirUz.director:behavior_hideable}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Params_behavior_peekHeight uz.BirUz.director:behavior_peekHeight}</code></td><td></td></tr>
            </table>
            @see #BottomSheetBehavior_Params_behavior_hideable
            @see #BottomSheetBehavior_Params_behavior_peekHeight
@@ -6011,7 +6016,7 @@ containing a value of this type.
             0x7f0100c3, 0x7f0100c4
         };
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#behavior_hideable}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#behavior_hideable}
           attribute's value can be found in the {@link #BottomSheetBehavior_Params} array.
 
 
@@ -6021,11 +6026,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:behavior_hideable
+          @attr name uz.BirUz.director:behavior_hideable
         */
         public static final int BottomSheetBehavior_Params_behavior_hideable = 1;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#behavior_peekHeight}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#behavior_peekHeight}
           attribute's value can be found in the {@link #BottomSheetBehavior_Params} array.
 
 
@@ -6037,7 +6042,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:behavior_peekHeight
+          @attr name uz.BirUz.director:behavior_peekHeight
         */
         public static final int BottomSheetBehavior_Params_behavior_peekHeight = 0;
         /** Attributes that can be used with a ButtonBarLayout.
@@ -6046,7 +6051,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ButtonBarLayout_allowStacking uz.a1uz.a1uzdirector:allowStacking}</code></td><td></td></tr>
+           <tr><td><code>{@link #ButtonBarLayout_allowStacking uz.BirUz.director:allowStacking}</code></td><td></td></tr>
            </table>
            @see #ButtonBarLayout_allowStacking
          */
@@ -6054,7 +6059,7 @@ containing a value of this type.
             0x7f0100c5
         };
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#allowStacking}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#allowStacking}
           attribute's value can be found in the {@link #ButtonBarLayout} array.
 
 
@@ -6064,7 +6069,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:allowStacking
+          @attr name uz.BirUz.director:allowStacking
         */
         public static final int ButtonBarLayout_allowStacking = 0;
         /** Attributes that can be used with a CollapsingAppBarLayout_LayoutParams.
@@ -6073,8 +6078,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseMode uz.a1uz.a1uzdirector:layout_collapseMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier uz.a1uz.a1uzdirector:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseMode uz.BirUz.director:layout_collapseMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier uz.BirUz.director:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
            </table>
            @see #CollapsingAppBarLayout_LayoutParams_layout_collapseMode
            @see #CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier
@@ -6083,7 +6088,7 @@ containing a value of this type.
             0x7f0100c6, 0x7f0100c7
         };
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_collapseMode}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_collapseMode}
           attribute's value can be found in the {@link #CollapsingAppBarLayout_LayoutParams} array.
 
 
@@ -6097,11 +6102,11 @@ containing a value of this type.
 <tr><td><code>pin</code></td><td>1</td><td></td></tr>
 <tr><td><code>parallax</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_collapseMode
+          @attr name uz.BirUz.director:layout_collapseMode
         */
         public static final int CollapsingAppBarLayout_LayoutParams_layout_collapseMode = 0;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_collapseParallaxMultiplier}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_collapseParallaxMultiplier}
           attribute's value can be found in the {@link #CollapsingAppBarLayout_LayoutParams} array.
 
 
@@ -6111,7 +6116,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_collapseParallaxMultiplier
+          @attr name uz.BirUz.director:layout_collapseParallaxMultiplier
         */
         public static final int CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier = 1;
         /** Attributes that can be used with a CollapsingToolbarLayout.
@@ -6120,20 +6125,20 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity uz.a1uz.a1uzdirector:collapsedTitleGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance uz.a1uz.a1uzdirector:collapsedTitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim uz.a1uz.a1uzdirector:contentScrim}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity uz.a1uz.a1uzdirector:expandedTitleGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin uz.a1uz.a1uzdirector:expandedTitleMargin}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom uz.a1uz.a1uzdirector:expandedTitleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd uz.a1uz.a1uzdirector:expandedTitleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart uz.a1uz.a1uzdirector:expandedTitleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop uz.a1uz.a1uzdirector:expandedTitleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance uz.a1uz.a1uzdirector:expandedTitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim uz.a1uz.a1uzdirector:statusBarScrim}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_title uz.a1uz.a1uzdirector:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled uz.a1uz.a1uzdirector:titleEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId uz.a1uz.a1uzdirector:toolbarId}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity uz.BirUz.director:collapsedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance uz.BirUz.director:collapsedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim uz.BirUz.director:contentScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity uz.BirUz.director:expandedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin uz.BirUz.director:expandedTitleMargin}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom uz.BirUz.director:expandedTitleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd uz.BirUz.director:expandedTitleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart uz.BirUz.director:expandedTitleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop uz.BirUz.director:expandedTitleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance uz.BirUz.director:expandedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim uz.BirUz.director:statusBarScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_title uz.BirUz.director:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled uz.BirUz.director:titleEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId uz.BirUz.director:toolbarId}</code></td><td></td></tr>
            </table>
            @see #CollapsingToolbarLayout_collapsedTitleGravity
            @see #CollapsingToolbarLayout_collapsedTitleTextAppearance
@@ -6157,7 +6162,7 @@ containing a value of this type.
             0x7f0100d3, 0x7f0100d4
         };
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#collapsedTitleGravity}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#collapsedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6178,21 +6183,21 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:collapsedTitleGravity
+          @attr name uz.BirUz.director:collapsedTitleGravity
         */
         public static final int CollapsingToolbarLayout_collapsedTitleGravity = 11;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#collapsedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#collapsedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:collapsedTitleTextAppearance
+          @attr name uz.BirUz.director:collapsedTitleTextAppearance
         */
         public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance = 7;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#contentScrim}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#contentScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6203,11 +6208,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:contentScrim
+          @attr name uz.BirUz.director:contentScrim
         */
         public static final int CollapsingToolbarLayout_contentScrim = 8;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#expandedTitleGravity}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#expandedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6228,11 +6233,11 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:expandedTitleGravity
+          @attr name uz.BirUz.director:expandedTitleGravity
         */
         public static final int CollapsingToolbarLayout_expandedTitleGravity = 12;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#expandedTitleMargin}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#expandedTitleMargin}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6244,11 +6249,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:expandedTitleMargin
+          @attr name uz.BirUz.director:expandedTitleMargin
         */
         public static final int CollapsingToolbarLayout_expandedTitleMargin = 1;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#expandedTitleMarginBottom}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#expandedTitleMarginBottom}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6260,11 +6265,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:expandedTitleMarginBottom
+          @attr name uz.BirUz.director:expandedTitleMarginBottom
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginBottom = 5;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#expandedTitleMarginEnd}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#expandedTitleMarginEnd}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6276,11 +6281,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:expandedTitleMarginEnd
+          @attr name uz.BirUz.director:expandedTitleMarginEnd
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginEnd = 4;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#expandedTitleMarginStart}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#expandedTitleMarginStart}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6292,11 +6297,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:expandedTitleMarginStart
+          @attr name uz.BirUz.director:expandedTitleMarginStart
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginStart = 2;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#expandedTitleMarginTop}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#expandedTitleMarginTop}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6308,21 +6313,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:expandedTitleMarginTop
+          @attr name uz.BirUz.director:expandedTitleMarginTop
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginTop = 3;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#expandedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#expandedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:expandedTitleTextAppearance
+          @attr name uz.BirUz.director:expandedTitleTextAppearance
         */
         public static final int CollapsingToolbarLayout_expandedTitleTextAppearance = 6;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#statusBarScrim}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#statusBarScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6333,11 +6338,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:statusBarScrim
+          @attr name uz.BirUz.director:statusBarScrim
         */
         public static final int CollapsingToolbarLayout_statusBarScrim = 9;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#title}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#title}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6347,11 +6352,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:title
+          @attr name uz.BirUz.director:title
         */
         public static final int CollapsingToolbarLayout_title = 0;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#titleEnabled}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#titleEnabled}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6361,17 +6366,17 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:titleEnabled
+          @attr name uz.BirUz.director:titleEnabled
         */
         public static final int CollapsingToolbarLayout_titleEnabled = 13;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#toolbarId}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#toolbarId}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:toolbarId
+          @attr name uz.BirUz.director:toolbarId
         */
         public static final int CollapsingToolbarLayout_toolbarId = 10;
         /** Attributes that can be used with a CompoundButton.
@@ -6381,8 +6386,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTint uz.a1uz.a1uzdirector:buttonTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTintMode uz.a1uz.a1uzdirector:buttonTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTint uz.BirUz.director:buttonTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTintMode uz.BirUz.director:buttonTintMode}</code></td><td></td></tr>
            </table>
            @see #CompoundButton_android_button
            @see #CompoundButton_buttonTint
@@ -6398,7 +6403,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CompoundButton_android_button = 0;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#buttonTint}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#buttonTint}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -6409,11 +6414,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:buttonTint
+          @attr name uz.BirUz.director:buttonTint
         */
         public static final int CompoundButton_buttonTint = 1;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#buttonTintMode}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#buttonTintMode}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -6429,7 +6434,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:buttonTintMode
+          @attr name uz.BirUz.director:buttonTintMode
         */
         public static final int CompoundButton_buttonTintMode = 2;
         /** Attributes that can be used with a ConstraintLayout_Layout.
@@ -6443,50 +6448,50 @@ containing a value of this type.
            <tr><td><code>{@link #ConstraintLayout_Layout_android_minHeight android:minHeight}</code></td><td></td></tr>
            <tr><td><code>{@link #ConstraintLayout_Layout_android_minWidth android:minWidth}</code></td><td></td></tr>
            <tr><td><code>{@link #ConstraintLayout_Layout_android_orientation android:orientation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_constraintSet uz.a1uz.a1uzdirector:constraintSet}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_creator uz.a1uz.a1uzdirector:layout_constraintBaseline_creator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf uz.a1uz.a1uzdirector:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_creator uz.a1uz.a1uzdirector:layout_constraintBottom_creator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toBottomOf uz.a1uz.a1uzdirector:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toTopOf uz.a1uz.a1uzdirector:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintDimensionRatio uz.a1uz.a1uzdirector:layout_constraintDimensionRatio}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toEndOf uz.a1uz.a1uzdirector:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toStartOf uz.a1uz.a1uzdirector:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_begin uz.a1uz.a1uzdirector:layout_constraintGuide_begin}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_end uz.a1uz.a1uzdirector:layout_constraintGuide_end}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_percent uz.a1uz.a1uzdirector:layout_constraintGuide_percent}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_default uz.a1uz.a1uzdirector:layout_constraintHeight_default}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_max uz.a1uz.a1uzdirector:layout_constraintHeight_max}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_min uz.a1uz.a1uzdirector:layout_constraintHeight_min}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_bias uz.a1uz.a1uzdirector:layout_constraintHorizontal_bias}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle uz.a1uz.a1uzdirector:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_weight uz.a1uz.a1uzdirector:layout_constraintHorizontal_weight}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_creator uz.a1uz.a1uzdirector:layout_constraintLeft_creator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toLeftOf uz.a1uz.a1uzdirector:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toRightOf uz.a1uz.a1uzdirector:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_creator uz.a1uz.a1uzdirector:layout_constraintRight_creator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toLeftOf uz.a1uz.a1uzdirector:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toRightOf uz.a1uz.a1uzdirector:layout_constraintRight_toRightOf}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toEndOf uz.a1uz.a1uzdirector:layout_constraintStart_toEndOf}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toStartOf uz.a1uz.a1uzdirector:layout_constraintStart_toStartOf}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_creator uz.a1uz.a1uzdirector:layout_constraintTop_creator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toBottomOf uz.a1uz.a1uzdirector:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toTopOf uz.a1uz.a1uzdirector:layout_constraintTop_toTopOf}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_bias uz.a1uz.a1uzdirector:layout_constraintVertical_bias}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_chainStyle uz.a1uz.a1uzdirector:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_weight uz.a1uz.a1uzdirector:layout_constraintVertical_weight}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_default uz.a1uz.a1uzdirector:layout_constraintWidth_default}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_max uz.a1uz.a1uzdirector:layout_constraintWidth_max}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_min uz.a1uz.a1uzdirector:layout_constraintWidth_min}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteX uz.a1uz.a1uzdirector:layout_editor_absoluteX}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteY uz.a1uz.a1uzdirector:layout_editor_absoluteY}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginBottom uz.a1uz.a1uzdirector:layout_goneMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginEnd uz.a1uz.a1uzdirector:layout_goneMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginLeft uz.a1uz.a1uzdirector:layout_goneMarginLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginRight uz.a1uz.a1uzdirector:layout_goneMarginRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginStart uz.a1uz.a1uzdirector:layout_goneMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginTop uz.a1uz.a1uzdirector:layout_goneMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_optimizationLevel uz.a1uz.a1uzdirector:layout_optimizationLevel}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_constraintSet uz.BirUz.director:constraintSet}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_creator uz.BirUz.director:layout_constraintBaseline_creator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf uz.BirUz.director:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_creator uz.BirUz.director:layout_constraintBottom_creator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toBottomOf uz.BirUz.director:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toTopOf uz.BirUz.director:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintDimensionRatio uz.BirUz.director:layout_constraintDimensionRatio}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toEndOf uz.BirUz.director:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toStartOf uz.BirUz.director:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_begin uz.BirUz.director:layout_constraintGuide_begin}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_end uz.BirUz.director:layout_constraintGuide_end}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_percent uz.BirUz.director:layout_constraintGuide_percent}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_default uz.BirUz.director:layout_constraintHeight_default}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_max uz.BirUz.director:layout_constraintHeight_max}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_min uz.BirUz.director:layout_constraintHeight_min}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_bias uz.BirUz.director:layout_constraintHorizontal_bias}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle uz.BirUz.director:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_weight uz.BirUz.director:layout_constraintHorizontal_weight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_creator uz.BirUz.director:layout_constraintLeft_creator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toLeftOf uz.BirUz.director:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toRightOf uz.BirUz.director:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_creator uz.BirUz.director:layout_constraintRight_creator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toLeftOf uz.BirUz.director:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toRightOf uz.BirUz.director:layout_constraintRight_toRightOf}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toEndOf uz.BirUz.director:layout_constraintStart_toEndOf}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toStartOf uz.BirUz.director:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_creator uz.BirUz.director:layout_constraintTop_creator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toBottomOf uz.BirUz.director:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toTopOf uz.BirUz.director:layout_constraintTop_toTopOf}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_bias uz.BirUz.director:layout_constraintVertical_bias}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_chainStyle uz.BirUz.director:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_weight uz.BirUz.director:layout_constraintVertical_weight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_default uz.BirUz.director:layout_constraintWidth_default}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_max uz.BirUz.director:layout_constraintWidth_max}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_min uz.BirUz.director:layout_constraintWidth_min}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteX uz.BirUz.director:layout_editor_absoluteX}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteY uz.BirUz.director:layout_editor_absoluteY}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginBottom uz.BirUz.director:layout_goneMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginEnd uz.BirUz.director:layout_goneMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginLeft uz.BirUz.director:layout_goneMarginLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginRight uz.BirUz.director:layout_goneMarginRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginStart uz.BirUz.director:layout_goneMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginTop uz.BirUz.director:layout_goneMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_optimizationLevel uz.BirUz.director:layout_optimizationLevel}</code></td><td></td></tr>
            </table>
            @see #ConstraintLayout_Layout_android_maxHeight
            @see #ConstraintLayout_Layout_android_maxWidth
@@ -6584,17 +6589,17 @@ containing a value of this type.
         */
         public static final int ConstraintLayout_Layout_android_orientation = 0;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#constraintSet}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#constraintSet}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:constraintSet
+          @attr name uz.BirUz.director:constraintSet
         */
         public static final int ConstraintLayout_Layout_constraintSet = 5;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintBaseline_creator}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintBaseline_creator}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -6604,11 +6609,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintBaseline_creator
+          @attr name uz.BirUz.director:layout_constraintBaseline_creator
         */
         public static final int ConstraintLayout_Layout_layout_constraintBaseline_creator = 6;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintBaseline_toBaselineOf}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintBaseline_toBaselineOf}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -6622,11 +6627,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>parent</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintBaseline_toBaselineOf
+          @attr name uz.BirUz.director:layout_constraintBaseline_toBaselineOf
         */
         public static final int ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf = 7;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintBottom_creator}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintBottom_creator}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -6636,11 +6641,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintBottom_creator
+          @attr name uz.BirUz.director:layout_constraintBottom_creator
         */
         public static final int ConstraintLayout_Layout_layout_constraintBottom_creator = 8;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintBottom_toBottomOf}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintBottom_toBottomOf}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -6654,11 +6659,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>parent</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintBottom_toBottomOf
+          @attr name uz.BirUz.director:layout_constraintBottom_toBottomOf
         */
         public static final int ConstraintLayout_Layout_layout_constraintBottom_toBottomOf = 9;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintBottom_toTopOf}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintBottom_toTopOf}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -6672,11 +6677,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>parent</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintBottom_toTopOf
+          @attr name uz.BirUz.director:layout_constraintBottom_toTopOf
         */
         public static final int ConstraintLayout_Layout_layout_constraintBottom_toTopOf = 10;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintDimensionRatio}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintDimensionRatio}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -6686,11 +6691,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintDimensionRatio
+          @attr name uz.BirUz.director:layout_constraintDimensionRatio
         */
         public static final int ConstraintLayout_Layout_layout_constraintDimensionRatio = 11;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintEnd_toEndOf}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintEnd_toEndOf}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -6704,11 +6709,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>parent</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintEnd_toEndOf
+          @attr name uz.BirUz.director:layout_constraintEnd_toEndOf
         */
         public static final int ConstraintLayout_Layout_layout_constraintEnd_toEndOf = 12;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintEnd_toStartOf}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintEnd_toStartOf}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -6722,11 +6727,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>parent</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintEnd_toStartOf
+          @attr name uz.BirUz.director:layout_constraintEnd_toStartOf
         */
         public static final int ConstraintLayout_Layout_layout_constraintEnd_toStartOf = 13;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintGuide_begin}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintGuide_begin}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -6738,11 +6743,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintGuide_begin
+          @attr name uz.BirUz.director:layout_constraintGuide_begin
         */
         public static final int ConstraintLayout_Layout_layout_constraintGuide_begin = 14;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintGuide_end}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintGuide_end}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -6754,11 +6759,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintGuide_end
+          @attr name uz.BirUz.director:layout_constraintGuide_end
         */
         public static final int ConstraintLayout_Layout_layout_constraintGuide_end = 15;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintGuide_percent}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintGuide_percent}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -6768,11 +6773,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintGuide_percent
+          @attr name uz.BirUz.director:layout_constraintGuide_percent
         */
         public static final int ConstraintLayout_Layout_layout_constraintGuide_percent = 16;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintHeight_default}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintHeight_default}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -6785,11 +6790,11 @@ containing a value of this type.
 <tr><td><code>spread</code></td><td>0</td><td></td></tr>
 <tr><td><code>wrap</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintHeight_default
+          @attr name uz.BirUz.director:layout_constraintHeight_default
         */
         public static final int ConstraintLayout_Layout_layout_constraintHeight_default = 17;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintHeight_max}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintHeight_max}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -6801,11 +6806,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintHeight_max
+          @attr name uz.BirUz.director:layout_constraintHeight_max
         */
         public static final int ConstraintLayout_Layout_layout_constraintHeight_max = 18;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintHeight_min}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintHeight_min}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -6817,11 +6822,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintHeight_min
+          @attr name uz.BirUz.director:layout_constraintHeight_min
         */
         public static final int ConstraintLayout_Layout_layout_constraintHeight_min = 19;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintHorizontal_bias}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintHorizontal_bias}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -6831,11 +6836,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintHorizontal_bias
+          @attr name uz.BirUz.director:layout_constraintHorizontal_bias
         */
         public static final int ConstraintLayout_Layout_layout_constraintHorizontal_bias = 20;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintHorizontal_chainStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintHorizontal_chainStyle}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -6849,11 +6854,11 @@ containing a value of this type.
 <tr><td><code>spread_inside</code></td><td>1</td><td></td></tr>
 <tr><td><code>packed</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintHorizontal_chainStyle
+          @attr name uz.BirUz.director:layout_constraintHorizontal_chainStyle
         */
         public static final int ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle = 21;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintHorizontal_weight}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintHorizontal_weight}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -6863,11 +6868,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintHorizontal_weight
+          @attr name uz.BirUz.director:layout_constraintHorizontal_weight
         */
         public static final int ConstraintLayout_Layout_layout_constraintHorizontal_weight = 22;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintLeft_creator}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintLeft_creator}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -6877,11 +6882,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintLeft_creator
+          @attr name uz.BirUz.director:layout_constraintLeft_creator
         */
         public static final int ConstraintLayout_Layout_layout_constraintLeft_creator = 23;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintLeft_toLeftOf}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintLeft_toLeftOf}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -6895,11 +6900,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>parent</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintLeft_toLeftOf
+          @attr name uz.BirUz.director:layout_constraintLeft_toLeftOf
         */
         public static final int ConstraintLayout_Layout_layout_constraintLeft_toLeftOf = 24;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintLeft_toRightOf}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintLeft_toRightOf}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -6913,11 +6918,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>parent</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintLeft_toRightOf
+          @attr name uz.BirUz.director:layout_constraintLeft_toRightOf
         */
         public static final int ConstraintLayout_Layout_layout_constraintLeft_toRightOf = 25;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintRight_creator}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintRight_creator}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -6927,11 +6932,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintRight_creator
+          @attr name uz.BirUz.director:layout_constraintRight_creator
         */
         public static final int ConstraintLayout_Layout_layout_constraintRight_creator = 26;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintRight_toLeftOf}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintRight_toLeftOf}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -6945,11 +6950,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>parent</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintRight_toLeftOf
+          @attr name uz.BirUz.director:layout_constraintRight_toLeftOf
         */
         public static final int ConstraintLayout_Layout_layout_constraintRight_toLeftOf = 27;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintRight_toRightOf}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintRight_toRightOf}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -6963,11 +6968,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>parent</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintRight_toRightOf
+          @attr name uz.BirUz.director:layout_constraintRight_toRightOf
         */
         public static final int ConstraintLayout_Layout_layout_constraintRight_toRightOf = 28;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintStart_toEndOf}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintStart_toEndOf}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -6981,11 +6986,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>parent</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintStart_toEndOf
+          @attr name uz.BirUz.director:layout_constraintStart_toEndOf
         */
         public static final int ConstraintLayout_Layout_layout_constraintStart_toEndOf = 29;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintStart_toStartOf}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintStart_toStartOf}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -6999,11 +7004,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>parent</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintStart_toStartOf
+          @attr name uz.BirUz.director:layout_constraintStart_toStartOf
         */
         public static final int ConstraintLayout_Layout_layout_constraintStart_toStartOf = 30;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintTop_creator}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintTop_creator}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -7013,11 +7018,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintTop_creator
+          @attr name uz.BirUz.director:layout_constraintTop_creator
         */
         public static final int ConstraintLayout_Layout_layout_constraintTop_creator = 31;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintTop_toBottomOf}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintTop_toBottomOf}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -7031,11 +7036,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>parent</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintTop_toBottomOf
+          @attr name uz.BirUz.director:layout_constraintTop_toBottomOf
         */
         public static final int ConstraintLayout_Layout_layout_constraintTop_toBottomOf = 32;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintTop_toTopOf}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintTop_toTopOf}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -7049,11 +7054,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>parent</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintTop_toTopOf
+          @attr name uz.BirUz.director:layout_constraintTop_toTopOf
         */
         public static final int ConstraintLayout_Layout_layout_constraintTop_toTopOf = 33;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintVertical_bias}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintVertical_bias}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -7063,11 +7068,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintVertical_bias
+          @attr name uz.BirUz.director:layout_constraintVertical_bias
         */
         public static final int ConstraintLayout_Layout_layout_constraintVertical_bias = 34;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintVertical_chainStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintVertical_chainStyle}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -7081,11 +7086,11 @@ containing a value of this type.
 <tr><td><code>spread_inside</code></td><td>1</td><td></td></tr>
 <tr><td><code>packed</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintVertical_chainStyle
+          @attr name uz.BirUz.director:layout_constraintVertical_chainStyle
         */
         public static final int ConstraintLayout_Layout_layout_constraintVertical_chainStyle = 35;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintVertical_weight}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintVertical_weight}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -7095,11 +7100,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintVertical_weight
+          @attr name uz.BirUz.director:layout_constraintVertical_weight
         */
         public static final int ConstraintLayout_Layout_layout_constraintVertical_weight = 36;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintWidth_default}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintWidth_default}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -7112,11 +7117,11 @@ containing a value of this type.
 <tr><td><code>spread</code></td><td>0</td><td></td></tr>
 <tr><td><code>wrap</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintWidth_default
+          @attr name uz.BirUz.director:layout_constraintWidth_default
         */
         public static final int ConstraintLayout_Layout_layout_constraintWidth_default = 37;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintWidth_max}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintWidth_max}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -7128,11 +7133,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintWidth_max
+          @attr name uz.BirUz.director:layout_constraintWidth_max
         */
         public static final int ConstraintLayout_Layout_layout_constraintWidth_max = 38;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintWidth_min}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintWidth_min}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -7144,11 +7149,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintWidth_min
+          @attr name uz.BirUz.director:layout_constraintWidth_min
         */
         public static final int ConstraintLayout_Layout_layout_constraintWidth_min = 39;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_editor_absoluteX}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_editor_absoluteX}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -7160,11 +7165,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_editor_absoluteX
+          @attr name uz.BirUz.director:layout_editor_absoluteX
         */
         public static final int ConstraintLayout_Layout_layout_editor_absoluteX = 40;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_editor_absoluteY}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_editor_absoluteY}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -7176,11 +7181,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_editor_absoluteY
+          @attr name uz.BirUz.director:layout_editor_absoluteY
         */
         public static final int ConstraintLayout_Layout_layout_editor_absoluteY = 41;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_goneMarginBottom}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_goneMarginBottom}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -7192,11 +7197,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_goneMarginBottom
+          @attr name uz.BirUz.director:layout_goneMarginBottom
         */
         public static final int ConstraintLayout_Layout_layout_goneMarginBottom = 42;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_goneMarginEnd}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_goneMarginEnd}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -7208,11 +7213,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_goneMarginEnd
+          @attr name uz.BirUz.director:layout_goneMarginEnd
         */
         public static final int ConstraintLayout_Layout_layout_goneMarginEnd = 43;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_goneMarginLeft}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_goneMarginLeft}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -7224,11 +7229,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_goneMarginLeft
+          @attr name uz.BirUz.director:layout_goneMarginLeft
         */
         public static final int ConstraintLayout_Layout_layout_goneMarginLeft = 44;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_goneMarginRight}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_goneMarginRight}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -7240,11 +7245,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_goneMarginRight
+          @attr name uz.BirUz.director:layout_goneMarginRight
         */
         public static final int ConstraintLayout_Layout_layout_goneMarginRight = 45;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_goneMarginStart}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_goneMarginStart}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -7256,11 +7261,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_goneMarginStart
+          @attr name uz.BirUz.director:layout_goneMarginStart
         */
         public static final int ConstraintLayout_Layout_layout_goneMarginStart = 46;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_goneMarginTop}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_goneMarginTop}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -7272,11 +7277,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_goneMarginTop
+          @attr name uz.BirUz.director:layout_goneMarginTop
         */
         public static final int ConstraintLayout_Layout_layout_goneMarginTop = 47;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_optimizationLevel}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_optimizationLevel}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
@@ -7291,7 +7296,7 @@ containing a value of this type.
 <tr><td><code>basic</code></td><td>4</td><td></td></tr>
 <tr><td><code>chains</code></td><td>8</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_optimizationLevel
+          @attr name uz.BirUz.director:layout_optimizationLevel
         */
         public static final int ConstraintLayout_Layout_layout_optimizationLevel = 48;
         /** Attributes that can be used with a ConstraintSet.
@@ -7322,48 +7327,48 @@ containing a value of this type.
            <tr><td><code>{@link #ConstraintSet_android_translationY android:translationY}</code></td><td></td></tr>
            <tr><td><code>{@link #ConstraintSet_android_translationZ android:translationZ}</code></td><td></td></tr>
            <tr><td><code>{@link #ConstraintSet_android_visibility android:visibility}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_creator uz.a1uz.a1uzdirector:layout_constraintBaseline_creator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_toBaselineOf uz.a1uz.a1uzdirector:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_creator uz.a1uz.a1uzdirector:layout_constraintBottom_creator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toBottomOf uz.a1uz.a1uzdirector:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toTopOf uz.a1uz.a1uzdirector:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintDimensionRatio uz.a1uz.a1uzdirector:layout_constraintDimensionRatio}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toEndOf uz.a1uz.a1uzdirector:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toStartOf uz.a1uz.a1uzdirector:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_begin uz.a1uz.a1uzdirector:layout_constraintGuide_begin}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_end uz.a1uz.a1uzdirector:layout_constraintGuide_end}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_percent uz.a1uz.a1uzdirector:layout_constraintGuide_percent}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_default uz.a1uz.a1uzdirector:layout_constraintHeight_default}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_max uz.a1uz.a1uzdirector:layout_constraintHeight_max}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_min uz.a1uz.a1uzdirector:layout_constraintHeight_min}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_bias uz.a1uz.a1uzdirector:layout_constraintHorizontal_bias}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_chainStyle uz.a1uz.a1uzdirector:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_weight uz.a1uz.a1uzdirector:layout_constraintHorizontal_weight}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_creator uz.a1uz.a1uzdirector:layout_constraintLeft_creator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toLeftOf uz.a1uz.a1uzdirector:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toRightOf uz.a1uz.a1uzdirector:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintRight_creator uz.a1uz.a1uzdirector:layout_constraintRight_creator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toLeftOf uz.a1uz.a1uzdirector:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toRightOf uz.a1uz.a1uzdirector:layout_constraintRight_toRightOf}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toEndOf uz.a1uz.a1uzdirector:layout_constraintStart_toEndOf}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toStartOf uz.a1uz.a1uzdirector:layout_constraintStart_toStartOf}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintTop_creator uz.a1uz.a1uzdirector:layout_constraintTop_creator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toBottomOf uz.a1uz.a1uzdirector:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toTopOf uz.a1uz.a1uzdirector:layout_constraintTop_toTopOf}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_bias uz.a1uz.a1uzdirector:layout_constraintVertical_bias}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_chainStyle uz.a1uz.a1uzdirector:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_weight uz.a1uz.a1uzdirector:layout_constraintVertical_weight}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_default uz.a1uz.a1uzdirector:layout_constraintWidth_default}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_max uz.a1uz.a1uzdirector:layout_constraintWidth_max}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_min uz.a1uz.a1uzdirector:layout_constraintWidth_min}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteX uz.a1uz.a1uzdirector:layout_editor_absoluteX}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteY uz.a1uz.a1uzdirector:layout_editor_absoluteY}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_goneMarginBottom uz.a1uz.a1uzdirector:layout_goneMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_goneMarginEnd uz.a1uz.a1uzdirector:layout_goneMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_goneMarginLeft uz.a1uz.a1uzdirector:layout_goneMarginLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_goneMarginRight uz.a1uz.a1uzdirector:layout_goneMarginRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_goneMarginStart uz.a1uz.a1uzdirector:layout_goneMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_goneMarginTop uz.a1uz.a1uzdirector:layout_goneMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_creator uz.BirUz.director:layout_constraintBaseline_creator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_toBaselineOf uz.BirUz.director:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_creator uz.BirUz.director:layout_constraintBottom_creator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toBottomOf uz.BirUz.director:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toTopOf uz.BirUz.director:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintDimensionRatio uz.BirUz.director:layout_constraintDimensionRatio}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toEndOf uz.BirUz.director:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toStartOf uz.BirUz.director:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_begin uz.BirUz.director:layout_constraintGuide_begin}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_end uz.BirUz.director:layout_constraintGuide_end}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_percent uz.BirUz.director:layout_constraintGuide_percent}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_default uz.BirUz.director:layout_constraintHeight_default}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_max uz.BirUz.director:layout_constraintHeight_max}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_min uz.BirUz.director:layout_constraintHeight_min}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_bias uz.BirUz.director:layout_constraintHorizontal_bias}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_chainStyle uz.BirUz.director:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_weight uz.BirUz.director:layout_constraintHorizontal_weight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_creator uz.BirUz.director:layout_constraintLeft_creator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toLeftOf uz.BirUz.director:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toRightOf uz.BirUz.director:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintRight_creator uz.BirUz.director:layout_constraintRight_creator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toLeftOf uz.BirUz.director:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toRightOf uz.BirUz.director:layout_constraintRight_toRightOf}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toEndOf uz.BirUz.director:layout_constraintStart_toEndOf}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toStartOf uz.BirUz.director:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintTop_creator uz.BirUz.director:layout_constraintTop_creator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toBottomOf uz.BirUz.director:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toTopOf uz.BirUz.director:layout_constraintTop_toTopOf}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_bias uz.BirUz.director:layout_constraintVertical_bias}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_chainStyle uz.BirUz.director:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_weight uz.BirUz.director:layout_constraintVertical_weight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_default uz.BirUz.director:layout_constraintWidth_default}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_max uz.BirUz.director:layout_constraintWidth_max}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_min uz.BirUz.director:layout_constraintWidth_min}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteX uz.BirUz.director:layout_editor_absoluteX}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteY uz.BirUz.director:layout_editor_absoluteY}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_goneMarginBottom uz.BirUz.director:layout_goneMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_goneMarginEnd uz.BirUz.director:layout_goneMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_goneMarginLeft uz.BirUz.director:layout_goneMarginLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_goneMarginRight uz.BirUz.director:layout_goneMarginRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_goneMarginStart uz.BirUz.director:layout_goneMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_goneMarginTop uz.BirUz.director:layout_goneMarginTop}</code></td><td></td></tr>
            </table>
            @see #ConstraintSet_android_alpha
            @see #ConstraintSet_android_elevation
@@ -7581,7 +7586,7 @@ containing a value of this type.
         */
         public static final int ConstraintSet_android_visibility = 2;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintBaseline_creator}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintBaseline_creator}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -7591,11 +7596,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintBaseline_creator
+          @attr name uz.BirUz.director:layout_constraintBaseline_creator
         */
         public static final int ConstraintSet_layout_constraintBaseline_creator = 22;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintBaseline_toBaselineOf}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintBaseline_toBaselineOf}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -7609,11 +7614,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>parent</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintBaseline_toBaselineOf
+          @attr name uz.BirUz.director:layout_constraintBaseline_toBaselineOf
         */
         public static final int ConstraintSet_layout_constraintBaseline_toBaselineOf = 23;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintBottom_creator}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintBottom_creator}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -7623,11 +7628,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintBottom_creator
+          @attr name uz.BirUz.director:layout_constraintBottom_creator
         */
         public static final int ConstraintSet_layout_constraintBottom_creator = 24;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintBottom_toBottomOf}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintBottom_toBottomOf}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -7641,11 +7646,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>parent</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintBottom_toBottomOf
+          @attr name uz.BirUz.director:layout_constraintBottom_toBottomOf
         */
         public static final int ConstraintSet_layout_constraintBottom_toBottomOf = 25;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintBottom_toTopOf}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintBottom_toTopOf}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -7659,11 +7664,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>parent</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintBottom_toTopOf
+          @attr name uz.BirUz.director:layout_constraintBottom_toTopOf
         */
         public static final int ConstraintSet_layout_constraintBottom_toTopOf = 26;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintDimensionRatio}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintDimensionRatio}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -7673,11 +7678,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintDimensionRatio
+          @attr name uz.BirUz.director:layout_constraintDimensionRatio
         */
         public static final int ConstraintSet_layout_constraintDimensionRatio = 27;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintEnd_toEndOf}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintEnd_toEndOf}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -7691,11 +7696,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>parent</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintEnd_toEndOf
+          @attr name uz.BirUz.director:layout_constraintEnd_toEndOf
         */
         public static final int ConstraintSet_layout_constraintEnd_toEndOf = 28;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintEnd_toStartOf}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintEnd_toStartOf}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -7709,11 +7714,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>parent</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintEnd_toStartOf
+          @attr name uz.BirUz.director:layout_constraintEnd_toStartOf
         */
         public static final int ConstraintSet_layout_constraintEnd_toStartOf = 29;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintGuide_begin}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintGuide_begin}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -7725,11 +7730,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintGuide_begin
+          @attr name uz.BirUz.director:layout_constraintGuide_begin
         */
         public static final int ConstraintSet_layout_constraintGuide_begin = 30;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintGuide_end}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintGuide_end}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -7741,11 +7746,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintGuide_end
+          @attr name uz.BirUz.director:layout_constraintGuide_end
         */
         public static final int ConstraintSet_layout_constraintGuide_end = 31;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintGuide_percent}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintGuide_percent}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -7755,11 +7760,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintGuide_percent
+          @attr name uz.BirUz.director:layout_constraintGuide_percent
         */
         public static final int ConstraintSet_layout_constraintGuide_percent = 32;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintHeight_default}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintHeight_default}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -7772,11 +7777,11 @@ containing a value of this type.
 <tr><td><code>spread</code></td><td>0</td><td></td></tr>
 <tr><td><code>wrap</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintHeight_default
+          @attr name uz.BirUz.director:layout_constraintHeight_default
         */
         public static final int ConstraintSet_layout_constraintHeight_default = 33;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintHeight_max}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintHeight_max}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -7788,11 +7793,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintHeight_max
+          @attr name uz.BirUz.director:layout_constraintHeight_max
         */
         public static final int ConstraintSet_layout_constraintHeight_max = 34;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintHeight_min}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintHeight_min}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -7804,11 +7809,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintHeight_min
+          @attr name uz.BirUz.director:layout_constraintHeight_min
         */
         public static final int ConstraintSet_layout_constraintHeight_min = 35;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintHorizontal_bias}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintHorizontal_bias}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -7818,11 +7823,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintHorizontal_bias
+          @attr name uz.BirUz.director:layout_constraintHorizontal_bias
         */
         public static final int ConstraintSet_layout_constraintHorizontal_bias = 36;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintHorizontal_chainStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintHorizontal_chainStyle}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -7836,11 +7841,11 @@ containing a value of this type.
 <tr><td><code>spread_inside</code></td><td>1</td><td></td></tr>
 <tr><td><code>packed</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintHorizontal_chainStyle
+          @attr name uz.BirUz.director:layout_constraintHorizontal_chainStyle
         */
         public static final int ConstraintSet_layout_constraintHorizontal_chainStyle = 37;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintHorizontal_weight}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintHorizontal_weight}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -7850,11 +7855,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintHorizontal_weight
+          @attr name uz.BirUz.director:layout_constraintHorizontal_weight
         */
         public static final int ConstraintSet_layout_constraintHorizontal_weight = 38;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintLeft_creator}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintLeft_creator}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -7864,11 +7869,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintLeft_creator
+          @attr name uz.BirUz.director:layout_constraintLeft_creator
         */
         public static final int ConstraintSet_layout_constraintLeft_creator = 39;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintLeft_toLeftOf}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintLeft_toLeftOf}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -7882,11 +7887,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>parent</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintLeft_toLeftOf
+          @attr name uz.BirUz.director:layout_constraintLeft_toLeftOf
         */
         public static final int ConstraintSet_layout_constraintLeft_toLeftOf = 40;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintLeft_toRightOf}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintLeft_toRightOf}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -7900,11 +7905,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>parent</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintLeft_toRightOf
+          @attr name uz.BirUz.director:layout_constraintLeft_toRightOf
         */
         public static final int ConstraintSet_layout_constraintLeft_toRightOf = 41;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintRight_creator}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintRight_creator}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -7914,11 +7919,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintRight_creator
+          @attr name uz.BirUz.director:layout_constraintRight_creator
         */
         public static final int ConstraintSet_layout_constraintRight_creator = 42;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintRight_toLeftOf}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintRight_toLeftOf}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -7932,11 +7937,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>parent</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintRight_toLeftOf
+          @attr name uz.BirUz.director:layout_constraintRight_toLeftOf
         */
         public static final int ConstraintSet_layout_constraintRight_toLeftOf = 43;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintRight_toRightOf}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintRight_toRightOf}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -7950,11 +7955,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>parent</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintRight_toRightOf
+          @attr name uz.BirUz.director:layout_constraintRight_toRightOf
         */
         public static final int ConstraintSet_layout_constraintRight_toRightOf = 44;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintStart_toEndOf}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintStart_toEndOf}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -7968,11 +7973,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>parent</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintStart_toEndOf
+          @attr name uz.BirUz.director:layout_constraintStart_toEndOf
         */
         public static final int ConstraintSet_layout_constraintStart_toEndOf = 45;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintStart_toStartOf}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintStart_toStartOf}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -7986,11 +7991,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>parent</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintStart_toStartOf
+          @attr name uz.BirUz.director:layout_constraintStart_toStartOf
         */
         public static final int ConstraintSet_layout_constraintStart_toStartOf = 46;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintTop_creator}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintTop_creator}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -8000,11 +8005,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintTop_creator
+          @attr name uz.BirUz.director:layout_constraintTop_creator
         */
         public static final int ConstraintSet_layout_constraintTop_creator = 47;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintTop_toBottomOf}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintTop_toBottomOf}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -8018,11 +8023,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>parent</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintTop_toBottomOf
+          @attr name uz.BirUz.director:layout_constraintTop_toBottomOf
         */
         public static final int ConstraintSet_layout_constraintTop_toBottomOf = 48;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintTop_toTopOf}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintTop_toTopOf}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -8036,11 +8041,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>parent</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintTop_toTopOf
+          @attr name uz.BirUz.director:layout_constraintTop_toTopOf
         */
         public static final int ConstraintSet_layout_constraintTop_toTopOf = 49;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintVertical_bias}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintVertical_bias}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -8050,11 +8055,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintVertical_bias
+          @attr name uz.BirUz.director:layout_constraintVertical_bias
         */
         public static final int ConstraintSet_layout_constraintVertical_bias = 50;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintVertical_chainStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintVertical_chainStyle}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -8068,11 +8073,11 @@ containing a value of this type.
 <tr><td><code>spread_inside</code></td><td>1</td><td></td></tr>
 <tr><td><code>packed</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintVertical_chainStyle
+          @attr name uz.BirUz.director:layout_constraintVertical_chainStyle
         */
         public static final int ConstraintSet_layout_constraintVertical_chainStyle = 51;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintVertical_weight}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintVertical_weight}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -8082,11 +8087,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintVertical_weight
+          @attr name uz.BirUz.director:layout_constraintVertical_weight
         */
         public static final int ConstraintSet_layout_constraintVertical_weight = 52;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintWidth_default}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintWidth_default}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -8099,11 +8104,11 @@ containing a value of this type.
 <tr><td><code>spread</code></td><td>0</td><td></td></tr>
 <tr><td><code>wrap</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_constraintWidth_default
+          @attr name uz.BirUz.director:layout_constraintWidth_default
         */
         public static final int ConstraintSet_layout_constraintWidth_default = 53;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintWidth_max}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintWidth_max}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -8115,11 +8120,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintWidth_max
+          @attr name uz.BirUz.director:layout_constraintWidth_max
         */
         public static final int ConstraintSet_layout_constraintWidth_max = 54;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_constraintWidth_min}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_constraintWidth_min}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -8131,11 +8136,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_constraintWidth_min
+          @attr name uz.BirUz.director:layout_constraintWidth_min
         */
         public static final int ConstraintSet_layout_constraintWidth_min = 55;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_editor_absoluteX}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_editor_absoluteX}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -8147,11 +8152,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_editor_absoluteX
+          @attr name uz.BirUz.director:layout_editor_absoluteX
         */
         public static final int ConstraintSet_layout_editor_absoluteX = 56;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_editor_absoluteY}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_editor_absoluteY}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -8163,11 +8168,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_editor_absoluteY
+          @attr name uz.BirUz.director:layout_editor_absoluteY
         */
         public static final int ConstraintSet_layout_editor_absoluteY = 57;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_goneMarginBottom}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_goneMarginBottom}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -8179,11 +8184,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_goneMarginBottom
+          @attr name uz.BirUz.director:layout_goneMarginBottom
         */
         public static final int ConstraintSet_layout_goneMarginBottom = 58;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_goneMarginEnd}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_goneMarginEnd}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -8195,11 +8200,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_goneMarginEnd
+          @attr name uz.BirUz.director:layout_goneMarginEnd
         */
         public static final int ConstraintSet_layout_goneMarginEnd = 59;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_goneMarginLeft}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_goneMarginLeft}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -8211,11 +8216,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_goneMarginLeft
+          @attr name uz.BirUz.director:layout_goneMarginLeft
         */
         public static final int ConstraintSet_layout_goneMarginLeft = 60;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_goneMarginRight}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_goneMarginRight}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -8227,11 +8232,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_goneMarginRight
+          @attr name uz.BirUz.director:layout_goneMarginRight
         */
         public static final int ConstraintSet_layout_goneMarginRight = 61;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_goneMarginStart}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_goneMarginStart}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -8243,11 +8248,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_goneMarginStart
+          @attr name uz.BirUz.director:layout_goneMarginStart
         */
         public static final int ConstraintSet_layout_goneMarginStart = 62;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_goneMarginTop}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_goneMarginTop}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
@@ -8259,7 +8264,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_goneMarginTop
+          @attr name uz.BirUz.director:layout_goneMarginTop
         */
         public static final int ConstraintSet_layout_goneMarginTop = 63;
         /** Attributes that can be used with a CoordinatorLayout.
@@ -8268,8 +8273,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CoordinatorLayout_keylines uz.a1uz.a1uzdirector:keylines}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground uz.a1uz.a1uzdirector:statusBarBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_keylines uz.BirUz.director:keylines}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground uz.BirUz.director:statusBarBackground}</code></td><td></td></tr>
            </table>
            @see #CoordinatorLayout_keylines
            @see #CoordinatorLayout_statusBarBackground
@@ -8278,23 +8283,23 @@ containing a value of this type.
             0x7f0100d7, 0x7f0100d8
         };
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#keylines}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#keylines}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:keylines
+          @attr name uz.BirUz.director:keylines
         */
         public static final int CoordinatorLayout_keylines = 0;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#statusBarBackground}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#statusBarBackground}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:statusBarBackground
+          @attr name uz.BirUz.director:statusBarBackground
         */
         public static final int CoordinatorLayout_statusBarBackground = 1;
         /** Attributes that can be used with a CoordinatorLayout_LayoutParams.
@@ -8304,10 +8309,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CoordinatorLayout_LayoutParams_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchor uz.a1uz.a1uzdirector:layout_anchor}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchorGravity uz.a1uz.a1uzdirector:layout_anchorGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_behavior uz.a1uz.a1uzdirector:layout_behavior}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_keyline uz.a1uz.a1uzdirector:layout_keyline}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchor uz.BirUz.director:layout_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchorGravity uz.BirUz.director:layout_anchorGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_behavior uz.BirUz.director:layout_behavior}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_keyline uz.BirUz.director:layout_keyline}</code></td><td></td></tr>
            </table>
            @see #CoordinatorLayout_LayoutParams_android_layout_gravity
            @see #CoordinatorLayout_LayoutParams_layout_anchor
@@ -8326,17 +8331,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CoordinatorLayout_LayoutParams_android_layout_gravity = 0;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_anchor}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_anchor}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:layout_anchor
+          @attr name uz.BirUz.director:layout_anchor
         */
         public static final int CoordinatorLayout_LayoutParams_layout_anchor = 2;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_anchorGravity}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_anchorGravity}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -8361,11 +8366,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:layout_anchorGravity
+          @attr name uz.BirUz.director:layout_anchorGravity
         */
         public static final int CoordinatorLayout_LayoutParams_layout_anchorGravity = 4;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_behavior}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_behavior}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -8375,11 +8380,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_behavior
+          @attr name uz.BirUz.director:layout_behavior
         */
         public static final int CoordinatorLayout_LayoutParams_layout_behavior = 1;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout_keyline}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout_keyline}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -8389,7 +8394,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layout_keyline
+          @attr name uz.BirUz.director:layout_keyline
         */
         public static final int CoordinatorLayout_LayoutParams_layout_keyline = 3;
         /** Attributes that can be used with a DesignTheme.
@@ -8398,9 +8403,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme uz.a1uz.a1uzdirector:bottomSheetDialogTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #DesignTheme_bottomSheetStyle uz.a1uz.a1uzdirector:bottomSheetStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #DesignTheme_textColorError uz.a1uz.a1uzdirector:textColorError}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme uz.BirUz.director:bottomSheetDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_bottomSheetStyle uz.BirUz.director:bottomSheetStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_textColorError uz.BirUz.director:textColorError}</code></td><td></td></tr>
            </table>
            @see #DesignTheme_bottomSheetDialogTheme
            @see #DesignTheme_bottomSheetStyle
@@ -8410,27 +8415,27 @@ containing a value of this type.
             0x7f0100dd, 0x7f0100de, 0x7f0100df
         };
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#bottomSheetDialogTheme}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#bottomSheetDialogTheme}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:bottomSheetDialogTheme
+          @attr name uz.BirUz.director:bottomSheetDialogTheme
         */
         public static final int DesignTheme_bottomSheetDialogTheme = 0;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#bottomSheetStyle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#bottomSheetStyle}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:bottomSheetStyle
+          @attr name uz.BirUz.director:bottomSheetStyle
         */
         public static final int DesignTheme_bottomSheetStyle = 1;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#textColorError}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#textColorError}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
@@ -8441,7 +8446,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:textColorError
+          @attr name uz.BirUz.director:textColorError
         */
         public static final int DesignTheme_textColorError = 2;
         /** Attributes that can be used with a DrawerArrowToggle.
@@ -8450,14 +8455,14 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength uz.a1uz.a1uzdirector:arrowHeadLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength uz.a1uz.a1uzdirector:arrowShaftLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_barLength uz.a1uz.a1uzdirector:barLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_color uz.a1uz.a1uzdirector:color}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_drawableSize uz.a1uz.a1uzdirector:drawableSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars uz.a1uz.a1uzdirector:gapBetweenBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_spinBars uz.a1uz.a1uzdirector:spinBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_thickness uz.a1uz.a1uzdirector:thickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength uz.BirUz.director:arrowHeadLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength uz.BirUz.director:arrowShaftLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_barLength uz.BirUz.director:barLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_color uz.BirUz.director:color}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_drawableSize uz.BirUz.director:drawableSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars uz.BirUz.director:gapBetweenBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_spinBars uz.BirUz.director:spinBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_thickness uz.BirUz.director:thickness}</code></td><td></td></tr>
            </table>
            @see #DrawerArrowToggle_arrowHeadLength
            @see #DrawerArrowToggle_arrowShaftLength
@@ -8473,7 +8478,7 @@ containing a value of this type.
             0x7f0100e4, 0x7f0100e5, 0x7f0100e6, 0x7f0100e7
         };
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#arrowHeadLength}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#arrowHeadLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -8485,11 +8490,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:arrowHeadLength
+          @attr name uz.BirUz.director:arrowHeadLength
         */
         public static final int DrawerArrowToggle_arrowHeadLength = 4;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#arrowShaftLength}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#arrowShaftLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -8501,11 +8506,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:arrowShaftLength
+          @attr name uz.BirUz.director:arrowShaftLength
         */
         public static final int DrawerArrowToggle_arrowShaftLength = 5;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#barLength}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#barLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -8517,11 +8522,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:barLength
+          @attr name uz.BirUz.director:barLength
         */
         public static final int DrawerArrowToggle_barLength = 6;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#color}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#color}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -8532,11 +8537,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:color
+          @attr name uz.BirUz.director:color
         */
         public static final int DrawerArrowToggle_color = 0;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#drawableSize}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#drawableSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -8548,11 +8553,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:drawableSize
+          @attr name uz.BirUz.director:drawableSize
         */
         public static final int DrawerArrowToggle_drawableSize = 2;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#gapBetweenBars}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#gapBetweenBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -8564,11 +8569,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:gapBetweenBars
+          @attr name uz.BirUz.director:gapBetweenBars
         */
         public static final int DrawerArrowToggle_gapBetweenBars = 3;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#spinBars}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#spinBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -8578,11 +8583,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:spinBars
+          @attr name uz.BirUz.director:spinBars
         */
         public static final int DrawerArrowToggle_spinBars = 1;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#thickness}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#thickness}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -8594,7 +8599,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:thickness
+          @attr name uz.BirUz.director:thickness
         */
         public static final int DrawerArrowToggle_thickness = 7;
         /** Attributes that can be used with a FloatingActionButton.
@@ -8603,14 +8608,14 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #FloatingActionButton_backgroundTint uz.a1uz.a1uzdirector:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode uz.a1uz.a1uzdirector:backgroundTintMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_borderWidth uz.a1uz.a1uzdirector:borderWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_elevation uz.a1uz.a1uzdirector:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_fabSize uz.a1uz.a1uzdirector:fabSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ uz.a1uz.a1uzdirector:pressedTranslationZ}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_rippleColor uz.a1uz.a1uzdirector:rippleColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_useCompatPadding uz.a1uz.a1uzdirector:useCompatPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTint uz.BirUz.director:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode uz.BirUz.director:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_borderWidth uz.BirUz.director:borderWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_elevation uz.BirUz.director:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_fabSize uz.BirUz.director:fabSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ uz.BirUz.director:pressedTranslationZ}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_rippleColor uz.BirUz.director:rippleColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_useCompatPadding uz.BirUz.director:useCompatPadding}</code></td><td></td></tr>
            </table>
            @see #FloatingActionButton_backgroundTint
            @see #FloatingActionButton_backgroundTintMode
@@ -8626,7 +8631,7 @@ containing a value of this type.
             0x7f0100eb, 0x7f0100ec, 0x7f010144, 0x7f010145
         };
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#backgroundTint}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -8637,11 +8642,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:backgroundTint
+          @attr name uz.BirUz.director:backgroundTint
         */
         public static final int FloatingActionButton_backgroundTint = 6;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -8657,11 +8662,11 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:backgroundTintMode
+          @attr name uz.BirUz.director:backgroundTintMode
         */
         public static final int FloatingActionButton_backgroundTintMode = 7;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#borderWidth}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#borderWidth}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -8673,11 +8678,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:borderWidth
+          @attr name uz.BirUz.director:borderWidth
         */
         public static final int FloatingActionButton_borderWidth = 4;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#elevation}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#elevation}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -8689,11 +8694,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:elevation
+          @attr name uz.BirUz.director:elevation
         */
         public static final int FloatingActionButton_elevation = 0;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#fabSize}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#fabSize}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -8706,11 +8711,11 @@ containing a value of this type.
 <tr><td><code>normal</code></td><td>0</td><td></td></tr>
 <tr><td><code>mini</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:fabSize
+          @attr name uz.BirUz.director:fabSize
         */
         public static final int FloatingActionButton_fabSize = 2;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#pressedTranslationZ}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#pressedTranslationZ}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -8722,11 +8727,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:pressedTranslationZ
+          @attr name uz.BirUz.director:pressedTranslationZ
         */
         public static final int FloatingActionButton_pressedTranslationZ = 3;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#rippleColor}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#rippleColor}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -8737,11 +8742,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:rippleColor
+          @attr name uz.BirUz.director:rippleColor
         */
         public static final int FloatingActionButton_rippleColor = 1;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#useCompatPadding}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#useCompatPadding}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -8751,7 +8756,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:useCompatPadding
+          @attr name uz.BirUz.director:useCompatPadding
         */
         public static final int FloatingActionButton_useCompatPadding = 5;
         /** Attributes that can be used with a ForegroundLinearLayout.
@@ -8762,7 +8767,7 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ForegroundLinearLayout_android_foreground android:foreground}</code></td><td></td></tr>
            <tr><td><code>{@link #ForegroundLinearLayout_android_foregroundGravity android:foregroundGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding uz.a1uz.a1uzdirector:foregroundInsidePadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding uz.BirUz.director:foregroundInsidePadding}</code></td><td></td></tr>
            </table>
            @see #ForegroundLinearLayout_android_foreground
            @see #ForegroundLinearLayout_android_foregroundGravity
@@ -8784,7 +8789,7 @@ containing a value of this type.
         */
         public static final int ForegroundLinearLayout_android_foregroundGravity = 1;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#foregroundInsidePadding}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#foregroundInsidePadding}
           attribute's value can be found in the {@link #ForegroundLinearLayout} array.
 
 
@@ -8794,7 +8799,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:foregroundInsidePadding
+          @attr name uz.BirUz.director:foregroundInsidePadding
         */
         public static final int ForegroundLinearLayout_foregroundInsidePadding = 2;
         /** Attributes that can be used with a LinearConstraintLayout.
@@ -8827,10 +8832,10 @@ containing a value of this type.
            <tr><td><code>{@link #LinearLayoutCompat_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_orientation android:orientation}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_divider uz.a1uz.a1uzdirector:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding uz.a1uz.a1uzdirector:dividerPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild uz.a1uz.a1uzdirector:measureWithLargestChild}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_showDividers uz.a1uz.a1uzdirector:showDividers}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_divider uz.BirUz.director:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding uz.BirUz.director:dividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild uz.BirUz.director:measureWithLargestChild}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_showDividers uz.BirUz.director:showDividers}</code></td><td></td></tr>
            </table>
            @see #LinearLayoutCompat_android_baselineAligned
            @see #LinearLayoutCompat_android_baselineAlignedChildIndex
@@ -8878,17 +8883,17 @@ containing a value of this type.
         */
         public static final int LinearLayoutCompat_android_weightSum = 4;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#divider}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#divider}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:divider
+          @attr name uz.BirUz.director:divider
         */
         public static final int LinearLayoutCompat_divider = 5;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#dividerPadding}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#dividerPadding}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -8900,11 +8905,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:dividerPadding
+          @attr name uz.BirUz.director:dividerPadding
         */
         public static final int LinearLayoutCompat_dividerPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#measureWithLargestChild}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#measureWithLargestChild}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -8914,11 +8919,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:measureWithLargestChild
+          @attr name uz.BirUz.director:measureWithLargestChild
         */
         public static final int LinearLayoutCompat_measureWithLargestChild = 6;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#showDividers}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#showDividers}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -8933,7 +8938,7 @@ containing a value of this type.
 <tr><td><code>middle</code></td><td>2</td><td></td></tr>
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:showDividers
+          @attr name uz.BirUz.director:showDividers
         */
         public static final int LinearLayoutCompat_showDividers = 7;
         /** Attributes that can be used with a LinearLayoutCompat_Layout.
@@ -9072,9 +9077,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuItem_actionLayout uz.a1uz.a1uzdirector:actionLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionProviderClass uz.a1uz.a1uzdirector:actionProviderClass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionViewClass uz.a1uz.a1uzdirector:actionViewClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionLayout uz.BirUz.director:actionLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionProviderClass uz.BirUz.director:actionProviderClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionViewClass uz.BirUz.director:actionViewClass}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checked android:checked}</code></td><td></td></tr>
@@ -9088,7 +9093,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_showAsAction uz.a1uz.a1uzdirector:showAsAction}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_showAsAction uz.BirUz.director:showAsAction}</code></td><td></td></tr>
            </table>
            @see #MenuItem_actionLayout
            @see #MenuItem_actionProviderClass
@@ -9116,17 +9121,17 @@ containing a value of this type.
             0x7f0100f4
         };
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionLayout}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionLayout}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:actionLayout
+          @attr name uz.BirUz.director:actionLayout
         */
         public static final int MenuItem_actionLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionProviderClass}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionProviderClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -9136,11 +9141,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:actionProviderClass
+          @attr name uz.BirUz.director:actionProviderClass
         */
         public static final int MenuItem_actionProviderClass = 16;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#actionViewClass}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#actionViewClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -9150,7 +9155,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:actionViewClass
+          @attr name uz.BirUz.director:actionViewClass
         */
         public static final int MenuItem_actionViewClass = 15;
         /**
@@ -9232,7 +9237,7 @@ containing a value of this type.
         */
         public static final int MenuItem_android_visible = 4;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#showAsAction}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#showAsAction}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -9248,7 +9253,7 @@ containing a value of this type.
 <tr><td><code>withText</code></td><td>4</td><td></td></tr>
 <tr><td><code>collapseActionView</code></td><td>8</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:showAsAction
+          @attr name uz.BirUz.director:showAsAction
         */
         public static final int MenuItem_showAsAction = 13;
         /** Attributes that can be used with a MenuView.
@@ -9264,7 +9269,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuView_android_itemTextAppearance android:itemTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_verticalDivider android:verticalDivider}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuView_preserveIconSpacing uz.a1uz.a1uzdirector:preserveIconSpacing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_preserveIconSpacing uz.BirUz.director:preserveIconSpacing}</code></td><td></td></tr>
            </table>
            @see #MenuView_android_headerBackground
            @see #MenuView_android_horizontalDivider
@@ -9322,7 +9327,7 @@ containing a value of this type.
         */
         public static final int MenuView_android_windowAnimationStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#preserveIconSpacing}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#preserveIconSpacing}
           attribute's value can be found in the {@link #MenuView} array.
 
 
@@ -9332,7 +9337,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:preserveIconSpacing
+          @attr name uz.BirUz.director:preserveIconSpacing
         */
         public static final int MenuView_preserveIconSpacing = 7;
         /** Attributes that can be used with a NavigationView.
@@ -9344,13 +9349,13 @@ containing a value of this type.
            <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_elevation uz.a1uz.a1uzdirector:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_headerLayout uz.a1uz.a1uzdirector:headerLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemBackground uz.a1uz.a1uzdirector:itemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemIconTint uz.a1uz.a1uzdirector:itemIconTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemTextAppearance uz.a1uz.a1uzdirector:itemTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemTextColor uz.a1uz.a1uzdirector:itemTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_menu uz.a1uz.a1uzdirector:menu}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_elevation uz.BirUz.director:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_headerLayout uz.BirUz.director:headerLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemBackground uz.BirUz.director:itemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemIconTint uz.BirUz.director:itemIconTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextAppearance uz.BirUz.director:itemTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextColor uz.BirUz.director:itemTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_menu uz.BirUz.director:menu}</code></td><td></td></tr>
            </table>
            @see #NavigationView_android_background
            @see #NavigationView_android_fitsSystemWindows
@@ -9387,7 +9392,7 @@ containing a value of this type.
         */
         public static final int NavigationView_android_maxWidth = 2;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#elevation}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#elevation}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -9399,31 +9404,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:elevation
+          @attr name uz.BirUz.director:elevation
         */
         public static final int NavigationView_elevation = 3;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#headerLayout}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#headerLayout}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:headerLayout
+          @attr name uz.BirUz.director:headerLayout
         */
         public static final int NavigationView_headerLayout = 9;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#itemBackground}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#itemBackground}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:itemBackground
+          @attr name uz.BirUz.director:itemBackground
         */
         public static final int NavigationView_itemBackground = 7;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#itemIconTint}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#itemIconTint}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -9434,21 +9439,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:itemIconTint
+          @attr name uz.BirUz.director:itemIconTint
         */
         public static final int NavigationView_itemIconTint = 5;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#itemTextAppearance}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#itemTextAppearance}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:itemTextAppearance
+          @attr name uz.BirUz.director:itemTextAppearance
         */
         public static final int NavigationView_itemTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#itemTextColor}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#itemTextColor}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -9459,17 +9464,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:itemTextColor
+          @attr name uz.BirUz.director:itemTextColor
         */
         public static final int NavigationView_itemTextColor = 6;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#menu}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#menu}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:menu
+          @attr name uz.BirUz.director:menu
         */
         public static final int NavigationView_menu = 4;
         /** Attributes that can be used with a PopupWindow.
@@ -9479,7 +9484,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PopupWindow_overlapAnchor uz.a1uz.a1uzdirector:overlapAnchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindow_overlapAnchor uz.BirUz.director:overlapAnchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindow_android_popupBackground
            @see #PopupWindow_overlapAnchor
@@ -9494,7 +9499,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int PopupWindow_android_popupBackground = 0;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#overlapAnchor}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#overlapAnchor}
           attribute's value can be found in the {@link #PopupWindow} array.
 
 
@@ -9504,7 +9509,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:overlapAnchor
+          @attr name uz.BirUz.director:overlapAnchor
         */
         public static final int PopupWindow_overlapAnchor = 1;
         /** Attributes that can be used with a PopupWindowBackgroundState.
@@ -9513,7 +9518,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor uz.a1uz.a1uzdirector:state_above_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor uz.BirUz.director:state_above_anchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindowBackgroundState_state_above_anchor
          */
@@ -9521,7 +9526,7 @@ containing a value of this type.
             0x7f0100fd
         };
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#state_above_anchor}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#state_above_anchor}
           attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
 
 
@@ -9531,7 +9536,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:state_above_anchor
+          @attr name uz.BirUz.director:state_above_anchor
         */
         public static final int PopupWindowBackgroundState_state_above_anchor = 0;
         /** Attributes that can be used with a RecyclerView.
@@ -9541,10 +9546,10 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #RecyclerView_android_orientation android:orientation}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_layoutManager uz.a1uz.a1uzdirector:layoutManager}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_reverseLayout uz.a1uz.a1uzdirector:reverseLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_spanCount uz.a1uz.a1uzdirector:spanCount}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_stackFromEnd uz.a1uz.a1uzdirector:stackFromEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_layoutManager uz.BirUz.director:layoutManager}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_reverseLayout uz.BirUz.director:reverseLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_spanCount uz.BirUz.director:spanCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_stackFromEnd uz.BirUz.director:stackFromEnd}</code></td><td></td></tr>
            </table>
            @see #RecyclerView_android_orientation
            @see #RecyclerView_layoutManager
@@ -9563,7 +9568,7 @@ containing a value of this type.
         */
         public static final int RecyclerView_android_orientation = 0;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layoutManager}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layoutManager}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -9573,11 +9578,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:layoutManager
+          @attr name uz.BirUz.director:layoutManager
         */
         public static final int RecyclerView_layoutManager = 1;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#reverseLayout}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#reverseLayout}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -9587,11 +9592,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:reverseLayout
+          @attr name uz.BirUz.director:reverseLayout
         */
         public static final int RecyclerView_reverseLayout = 3;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#spanCount}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#spanCount}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -9601,11 +9606,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:spanCount
+          @attr name uz.BirUz.director:spanCount
         */
         public static final int RecyclerView_spanCount = 2;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#stackFromEnd}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#stackFromEnd}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -9615,7 +9620,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:stackFromEnd
+          @attr name uz.BirUz.director:stackFromEnd
         */
         public static final int RecyclerView_stackFromEnd = 4;
         /** Attributes that can be used with a ScrimInsetsFrameLayout.
@@ -9624,7 +9629,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground uz.a1uz.a1uzdirector:insetForeground}</code></td><td></td></tr>
+           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground uz.BirUz.director:insetForeground}</code></td><td></td></tr>
            </table>
            @see #ScrimInsetsFrameLayout_insetForeground
          */
@@ -9632,7 +9637,7 @@ containing a value of this type.
             0x7f010102
         };
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#insetForeground}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#insetForeground}
           attribute's value can be found in the {@link #ScrimInsetsFrameLayout} array.
 
 
@@ -9640,7 +9645,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name uz.a1uz.a1uzdirector:insetForeground
+          @attr name uz.BirUz.director:insetForeground
         */
         public static final int ScrimInsetsFrameLayout_insetForeground = 0;
         /** Attributes that can be used with a ScrollingViewBehavior_Params.
@@ -9649,7 +9654,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ScrollingViewBehavior_Params_behavior_overlapTop uz.a1uz.a1uzdirector:behavior_overlapTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #ScrollingViewBehavior_Params_behavior_overlapTop uz.BirUz.director:behavior_overlapTop}</code></td><td></td></tr>
            </table>
            @see #ScrollingViewBehavior_Params_behavior_overlapTop
          */
@@ -9657,7 +9662,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010103
         };
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#behavior_overlapTop}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#behavior_overlapTop}
           attribute's value can be found in the {@link #ScrollingViewBehavior_Params} array.
 
 
@@ -9669,7 +9674,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:behavior_overlapTop
+          @attr name uz.BirUz.director:behavior_overlapTop
         */
         public static final int ScrollingViewBehavior_Params_behavior_overlapTop = 0;
         /** Attributes that can be used with a SearchView.
@@ -9682,19 +9687,19 @@ containing a value of this type.
            <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_closeIcon uz.a1uz.a1uzdirector:closeIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_commitIcon uz.a1uz.a1uzdirector:commitIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_defaultQueryHint uz.a1uz.a1uzdirector:defaultQueryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_goIcon uz.a1uz.a1uzdirector:goIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_iconifiedByDefault uz.a1uz.a1uzdirector:iconifiedByDefault}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_layout uz.a1uz.a1uzdirector:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryBackground uz.a1uz.a1uzdirector:queryBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryHint uz.a1uz.a1uzdirector:queryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchHintIcon uz.a1uz.a1uzdirector:searchHintIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchIcon uz.a1uz.a1uzdirector:searchIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_submitBackground uz.a1uz.a1uzdirector:submitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_suggestionRowLayout uz.a1uz.a1uzdirector:suggestionRowLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_voiceIcon uz.a1uz.a1uzdirector:voiceIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_closeIcon uz.BirUz.director:closeIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_commitIcon uz.BirUz.director:commitIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_defaultQueryHint uz.BirUz.director:defaultQueryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_goIcon uz.BirUz.director:goIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault uz.BirUz.director:iconifiedByDefault}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_layout uz.BirUz.director:layout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryBackground uz.BirUz.director:queryBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryHint uz.BirUz.director:queryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchHintIcon uz.BirUz.director:searchHintIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchIcon uz.BirUz.director:searchIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_submitBackground uz.BirUz.director:submitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_suggestionRowLayout uz.BirUz.director:suggestionRowLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_voiceIcon uz.BirUz.director:voiceIcon}</code></td><td></td></tr>
            </table>
            @see #SearchView_android_focusable
            @see #SearchView_android_imeOptions
@@ -9746,27 +9751,27 @@ containing a value of this type.
         */
         public static final int SearchView_android_maxWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#closeIcon}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#closeIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:closeIcon
+          @attr name uz.BirUz.director:closeIcon
         */
         public static final int SearchView_closeIcon = 8;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#commitIcon}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#commitIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:commitIcon
+          @attr name uz.BirUz.director:commitIcon
         */
         public static final int SearchView_commitIcon = 13;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#defaultQueryHint}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#defaultQueryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -9776,21 +9781,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:defaultQueryHint
+          @attr name uz.BirUz.director:defaultQueryHint
         */
         public static final int SearchView_defaultQueryHint = 7;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#goIcon}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#goIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:goIcon
+          @attr name uz.BirUz.director:goIcon
         */
         public static final int SearchView_goIcon = 9;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#iconifiedByDefault}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#iconifiedByDefault}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -9800,31 +9805,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:iconifiedByDefault
+          @attr name uz.BirUz.director:iconifiedByDefault
         */
         public static final int SearchView_iconifiedByDefault = 5;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#layout}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#layout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:layout
+          @attr name uz.BirUz.director:layout
         */
         public static final int SearchView_layout = 4;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#queryBackground}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#queryBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:queryBackground
+          @attr name uz.BirUz.director:queryBackground
         */
         public static final int SearchView_queryBackground = 15;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#queryHint}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#queryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -9834,57 +9839,57 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:queryHint
+          @attr name uz.BirUz.director:queryHint
         */
         public static final int SearchView_queryHint = 6;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#searchHintIcon}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#searchHintIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:searchHintIcon
+          @attr name uz.BirUz.director:searchHintIcon
         */
         public static final int SearchView_searchHintIcon = 11;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#searchIcon}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#searchIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:searchIcon
+          @attr name uz.BirUz.director:searchIcon
         */
         public static final int SearchView_searchIcon = 10;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#submitBackground}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#submitBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:submitBackground
+          @attr name uz.BirUz.director:submitBackground
         */
         public static final int SearchView_submitBackground = 16;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#suggestionRowLayout}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#suggestionRowLayout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:suggestionRowLayout
+          @attr name uz.BirUz.director:suggestionRowLayout
         */
         public static final int SearchView_suggestionRowLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#voiceIcon}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#voiceIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:voiceIcon
+          @attr name uz.BirUz.director:voiceIcon
         */
         public static final int SearchView_voiceIcon = 12;
         /** Attributes that can be used with a SnackbarLayout.
@@ -9894,8 +9899,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SnackbarLayout_elevation uz.a1uz.a1uzdirector:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth uz.a1uz.a1uzdirector:maxActionInlineWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_elevation uz.BirUz.director:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth uz.BirUz.director:maxActionInlineWidth}</code></td><td></td></tr>
            </table>
            @see #SnackbarLayout_android_maxWidth
            @see #SnackbarLayout_elevation
@@ -9911,7 +9916,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SnackbarLayout_android_maxWidth = 0;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#elevation}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#elevation}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -9923,11 +9928,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:elevation
+          @attr name uz.BirUz.director:elevation
         */
         public static final int SnackbarLayout_elevation = 1;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#maxActionInlineWidth}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#maxActionInlineWidth}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -9939,7 +9944,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:maxActionInlineWidth
+          @attr name uz.BirUz.director:maxActionInlineWidth
         */
         public static final int SnackbarLayout_maxActionInlineWidth = 2;
         /** Attributes that can be used with a Spinner.
@@ -9952,7 +9957,7 @@ containing a value of this type.
            <tr><td><code>{@link #Spinner_android_entries android:entries}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_popupTheme uz.a1uz.a1uzdirector:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_popupTheme uz.BirUz.director:popupTheme}</code></td><td></td></tr>
            </table>
            @see #Spinner_android_dropDownWidth
            @see #Spinner_android_entries
@@ -9989,13 +9994,13 @@ containing a value of this type.
         */
         public static final int Spinner_android_prompt = 2;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#popupTheme}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:popupTheme
+          @attr name uz.BirUz.director:popupTheme
         */
         public static final int Spinner_popupTheme = 4;
         /** Attributes that can be used with a SwitchCompat.
@@ -10007,13 +10012,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_showText uz.a1uz.a1uzdirector:showText}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_splitTrack uz.a1uz.a1uzdirector:splitTrack}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchMinWidth uz.a1uz.a1uzdirector:switchMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchPadding uz.a1uz.a1uzdirector:switchPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchTextAppearance uz.a1uz.a1uzdirector:switchTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTextPadding uz.a1uz.a1uzdirector:thumbTextPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_track uz.a1uz.a1uzdirector:track}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_showText uz.BirUz.director:showText}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_splitTrack uz.BirUz.director:splitTrack}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchMinWidth uz.BirUz.director:switchMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchPadding uz.BirUz.director:switchPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchTextAppearance uz.BirUz.director:switchTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTextPadding uz.BirUz.director:thumbTextPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_track uz.BirUz.director:track}</code></td><td></td></tr>
            </table>
            @see #SwitchCompat_android_textOff
            @see #SwitchCompat_android_textOn
@@ -10050,7 +10055,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SwitchCompat_android_thumb = 2;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#showText}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#showText}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -10060,11 +10065,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:showText
+          @attr name uz.BirUz.director:showText
         */
         public static final int SwitchCompat_showText = 9;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#splitTrack}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#splitTrack}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -10074,11 +10079,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:splitTrack
+          @attr name uz.BirUz.director:splitTrack
         */
         public static final int SwitchCompat_splitTrack = 8;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#switchMinWidth}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#switchMinWidth}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -10090,11 +10095,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:switchMinWidth
+          @attr name uz.BirUz.director:switchMinWidth
         */
         public static final int SwitchCompat_switchMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#switchPadding}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#switchPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -10106,21 +10111,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:switchPadding
+          @attr name uz.BirUz.director:switchPadding
         */
         public static final int SwitchCompat_switchPadding = 7;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#switchTextAppearance}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#switchTextAppearance}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:switchTextAppearance
+          @attr name uz.BirUz.director:switchTextAppearance
         */
         public static final int SwitchCompat_switchTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#thumbTextPadding}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#thumbTextPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -10132,17 +10137,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:thumbTextPadding
+          @attr name uz.BirUz.director:thumbTextPadding
         */
         public static final int SwitchCompat_thumbTextPadding = 4;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#track}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#track}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:track
+          @attr name uz.BirUz.director:track
         */
         public static final int SwitchCompat_track = 3;
         /** Attributes that can be used with a TabItem.
@@ -10186,22 +10191,22 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #TabLayout_tabBackground uz.a1uz.a1uzdirector:tabBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabContentStart uz.a1uz.a1uzdirector:tabContentStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabGravity uz.a1uz.a1uzdirector:tabGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabIndicatorColor uz.a1uz.a1uzdirector:tabIndicatorColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabIndicatorHeight uz.a1uz.a1uzdirector:tabIndicatorHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMaxWidth uz.a1uz.a1uzdirector:tabMaxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMinWidth uz.a1uz.a1uzdirector:tabMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMode uz.a1uz.a1uzdirector:tabMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPadding uz.a1uz.a1uzdirector:tabPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingBottom uz.a1uz.a1uzdirector:tabPaddingBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingEnd uz.a1uz.a1uzdirector:tabPaddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingStart uz.a1uz.a1uzdirector:tabPaddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingTop uz.a1uz.a1uzdirector:tabPaddingTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabSelectedTextColor uz.a1uz.a1uzdirector:tabSelectedTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabTextAppearance uz.a1uz.a1uzdirector:tabTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabTextColor uz.a1uz.a1uzdirector:tabTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabBackground uz.BirUz.director:tabBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabContentStart uz.BirUz.director:tabContentStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabGravity uz.BirUz.director:tabGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorColor uz.BirUz.director:tabIndicatorColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorHeight uz.BirUz.director:tabIndicatorHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMaxWidth uz.BirUz.director:tabMaxWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMinWidth uz.BirUz.director:tabMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMode uz.BirUz.director:tabMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPadding uz.BirUz.director:tabPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingBottom uz.BirUz.director:tabPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingEnd uz.BirUz.director:tabPaddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingStart uz.BirUz.director:tabPaddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingTop uz.BirUz.director:tabPaddingTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabSelectedTextColor uz.BirUz.director:tabSelectedTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextAppearance uz.BirUz.director:tabTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextColor uz.BirUz.director:tabTextColor}</code></td><td></td></tr>
            </table>
            @see #TabLayout_tabBackground
            @see #TabLayout_tabContentStart
@@ -10227,17 +10232,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010125, 0x7f010126, 0x7f010127, 0x7f010128
         };
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#tabBackground}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#tabBackground}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:tabBackground
+          @attr name uz.BirUz.director:tabBackground
         */
         public static final int TabLayout_tabBackground = 3;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#tabContentStart}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#tabContentStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -10249,11 +10254,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:tabContentStart
+          @attr name uz.BirUz.director:tabContentStart
         */
         public static final int TabLayout_tabContentStart = 2;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#tabGravity}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#tabGravity}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -10266,11 +10271,11 @@ containing a value of this type.
 <tr><td><code>fill</code></td><td>0</td><td></td></tr>
 <tr><td><code>center</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:tabGravity
+          @attr name uz.BirUz.director:tabGravity
         */
         public static final int TabLayout_tabGravity = 5;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#tabIndicatorColor}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#tabIndicatorColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -10281,11 +10286,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:tabIndicatorColor
+          @attr name uz.BirUz.director:tabIndicatorColor
         */
         public static final int TabLayout_tabIndicatorColor = 0;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#tabIndicatorHeight}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#tabIndicatorHeight}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -10297,11 +10302,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:tabIndicatorHeight
+          @attr name uz.BirUz.director:tabIndicatorHeight
         */
         public static final int TabLayout_tabIndicatorHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#tabMaxWidth}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#tabMaxWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -10313,11 +10318,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:tabMaxWidth
+          @attr name uz.BirUz.director:tabMaxWidth
         */
         public static final int TabLayout_tabMaxWidth = 7;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#tabMinWidth}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#tabMinWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -10329,11 +10334,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:tabMinWidth
+          @attr name uz.BirUz.director:tabMinWidth
         */
         public static final int TabLayout_tabMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#tabMode}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#tabMode}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -10346,11 +10351,11 @@ containing a value of this type.
 <tr><td><code>scrollable</code></td><td>0</td><td></td></tr>
 <tr><td><code>fixed</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:tabMode
+          @attr name uz.BirUz.director:tabMode
         */
         public static final int TabLayout_tabMode = 4;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#tabPadding}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#tabPadding}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -10362,11 +10367,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:tabPadding
+          @attr name uz.BirUz.director:tabPadding
         */
         public static final int TabLayout_tabPadding = 15;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#tabPaddingBottom}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#tabPaddingBottom}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -10378,11 +10383,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:tabPaddingBottom
+          @attr name uz.BirUz.director:tabPaddingBottom
         */
         public static final int TabLayout_tabPaddingBottom = 14;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#tabPaddingEnd}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#tabPaddingEnd}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -10394,11 +10399,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:tabPaddingEnd
+          @attr name uz.BirUz.director:tabPaddingEnd
         */
         public static final int TabLayout_tabPaddingEnd = 13;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#tabPaddingStart}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#tabPaddingStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -10410,11 +10415,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:tabPaddingStart
+          @attr name uz.BirUz.director:tabPaddingStart
         */
         public static final int TabLayout_tabPaddingStart = 11;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#tabPaddingTop}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#tabPaddingTop}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -10426,11 +10431,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:tabPaddingTop
+          @attr name uz.BirUz.director:tabPaddingTop
         */
         public static final int TabLayout_tabPaddingTop = 12;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#tabSelectedTextColor}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#tabSelectedTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -10441,21 +10446,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:tabSelectedTextColor
+          @attr name uz.BirUz.director:tabSelectedTextColor
         */
         public static final int TabLayout_tabSelectedTextColor = 10;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#tabTextAppearance}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#tabTextAppearance}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:tabTextAppearance
+          @attr name uz.BirUz.director:tabTextAppearance
         */
         public static final int TabLayout_tabTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#tabTextColor}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#tabTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -10466,7 +10471,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:tabTextColor
+          @attr name uz.BirUz.director:tabTextColor
         */
         public static final int TabLayout_tabTextColor = 9;
         /** Attributes that can be used with a TextAppearance.
@@ -10483,7 +10488,7 @@ containing a value of this type.
            <tr><td><code>{@link #TextAppearance_android_textSize android:textSize}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_textStyle android:textStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_typeface android:typeface}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextAppearance_textAllCaps uz.a1uz.a1uzdirector:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextAppearance_textAllCaps uz.BirUz.director:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #TextAppearance_android_shadowColor
            @see #TextAppearance_android_shadowDx
@@ -10549,14 +10554,14 @@ containing a value of this type.
         */
         public static final int TextAppearance_android_typeface = 1;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#textAllCaps}
           attribute's value can be found in the {@link #TextAppearance} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name uz.a1uz.a1uzdirector:textAllCaps
+          @attr name uz.BirUz.director:textAllCaps
         */
         public static final int TextAppearance_textAllCaps = 8;
         /** Attributes that can be used with a TextInputLayout.
@@ -10567,15 +10572,15 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #TextInputLayout_android_hint android:hint}</code></td><td></td></tr>
            <tr><td><code>{@link #TextInputLayout_android_textColorHint android:textColorHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterEnabled uz.a1uz.a1uzdirector:counterEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterMaxLength uz.a1uz.a1uzdirector:counterMaxLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance uz.a1uz.a1uzdirector:counterOverflowTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterTextAppearance uz.a1uz.a1uzdirector:counterTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_errorEnabled uz.a1uz.a1uzdirector:errorEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_errorTextAppearance uz.a1uz.a1uzdirector:errorTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled uz.a1uz.a1uzdirector:hintAnimationEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintEnabled uz.a1uz.a1uzdirector:hintEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintTextAppearance uz.a1uz.a1uzdirector:hintTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterEnabled uz.BirUz.director:counterEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterMaxLength uz.BirUz.director:counterMaxLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance uz.BirUz.director:counterOverflowTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterTextAppearance uz.BirUz.director:counterTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorEnabled uz.BirUz.director:errorEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorTextAppearance uz.BirUz.director:errorTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled uz.BirUz.director:hintAnimationEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintEnabled uz.BirUz.director:hintEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintTextAppearance uz.BirUz.director:hintTextAppearance}</code></td><td></td></tr>
            </table>
            @see #TextInputLayout_android_hint
            @see #TextInputLayout_android_textColorHint
@@ -10607,7 +10612,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int TextInputLayout_android_textColorHint = 0;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#counterEnabled}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#counterEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10617,11 +10622,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:counterEnabled
+          @attr name uz.BirUz.director:counterEnabled
         */
         public static final int TextInputLayout_counterEnabled = 6;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#counterMaxLength}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#counterMaxLength}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10631,31 +10636,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:counterMaxLength
+          @attr name uz.BirUz.director:counterMaxLength
         */
         public static final int TextInputLayout_counterMaxLength = 7;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#counterOverflowTextAppearance}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#counterOverflowTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:counterOverflowTextAppearance
+          @attr name uz.BirUz.director:counterOverflowTextAppearance
         */
         public static final int TextInputLayout_counterOverflowTextAppearance = 9;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#counterTextAppearance}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#counterTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:counterTextAppearance
+          @attr name uz.BirUz.director:counterTextAppearance
         */
         public static final int TextInputLayout_counterTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#errorEnabled}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#errorEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10665,21 +10670,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:errorEnabled
+          @attr name uz.BirUz.director:errorEnabled
         */
         public static final int TextInputLayout_errorEnabled = 4;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#errorTextAppearance}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#errorTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:errorTextAppearance
+          @attr name uz.BirUz.director:errorTextAppearance
         */
         public static final int TextInputLayout_errorTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#hintAnimationEnabled}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#hintAnimationEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10689,11 +10694,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:hintAnimationEnabled
+          @attr name uz.BirUz.director:hintAnimationEnabled
         */
         public static final int TextInputLayout_hintAnimationEnabled = 10;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#hintEnabled}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#hintEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10703,17 +10708,17 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:hintEnabled
+          @attr name uz.BirUz.director:hintEnabled
         */
         public static final int TextInputLayout_hintEnabled = 3;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#hintTextAppearance}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#hintTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:hintTextAppearance
+          @attr name uz.BirUz.director:hintTextAppearance
         */
         public static final int TextInputLayout_hintTextAppearance = 2;
         /** Attributes that can be used with a Toolbar.
@@ -10724,29 +10729,29 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseContentDescription uz.a1uz.a1uzdirector:collapseContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseIcon uz.a1uz.a1uzdirector:collapseIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEnd uz.a1uz.a1uzdirector:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetLeft uz.a1uz.a1uzdirector:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetRight uz.a1uz.a1uzdirector:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStart uz.a1uz.a1uzdirector:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logo uz.a1uz.a1uzdirector:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logoDescription uz.a1uz.a1uzdirector:logoDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_maxButtonHeight uz.a1uz.a1uzdirector:maxButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationContentDescription uz.a1uz.a1uzdirector:navigationContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationIcon uz.a1uz.a1uzdirector:navigationIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_popupTheme uz.a1uz.a1uzdirector:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitle uz.a1uz.a1uzdirector:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextAppearance uz.a1uz.a1uzdirector:subtitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextColor uz.a1uz.a1uzdirector:subtitleTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_title uz.a1uz.a1uzdirector:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginBottom uz.a1uz.a1uzdirector:titleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginEnd uz.a1uz.a1uzdirector:titleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginStart uz.a1uz.a1uzdirector:titleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginTop uz.a1uz.a1uzdirector:titleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargins uz.a1uz.a1uzdirector:titleMargins}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextAppearance uz.a1uz.a1uzdirector:titleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextColor uz.a1uz.a1uzdirector:titleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseContentDescription uz.BirUz.director:collapseContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseIcon uz.BirUz.director:collapseIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEnd uz.BirUz.director:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetLeft uz.BirUz.director:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetRight uz.BirUz.director:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStart uz.BirUz.director:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logo uz.BirUz.director:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logoDescription uz.BirUz.director:logoDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_maxButtonHeight uz.BirUz.director:maxButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationContentDescription uz.BirUz.director:navigationContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationIcon uz.BirUz.director:navigationIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_popupTheme uz.BirUz.director:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitle uz.BirUz.director:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextAppearance uz.BirUz.director:subtitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextColor uz.BirUz.director:subtitleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_title uz.BirUz.director:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginBottom uz.BirUz.director:titleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginEnd uz.BirUz.director:titleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginStart uz.BirUz.director:titleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginTop uz.BirUz.director:titleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargins uz.BirUz.director:titleMargins}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextAppearance uz.BirUz.director:titleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextColor uz.BirUz.director:titleTextColor}</code></td><td></td></tr>
            </table>
            @see #Toolbar_android_gravity
            @see #Toolbar_android_minHeight
@@ -10796,7 +10801,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Toolbar_android_minHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#collapseContentDescription}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#collapseContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10806,21 +10811,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:collapseContentDescription
+          @attr name uz.BirUz.director:collapseContentDescription
         */
         public static final int Toolbar_collapseContentDescription = 19;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#collapseIcon}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#collapseIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:collapseIcon
+          @attr name uz.BirUz.director:collapseIcon
         */
         public static final int Toolbar_collapseIcon = 18;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10832,11 +10837,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:contentInsetEnd
+          @attr name uz.BirUz.director:contentInsetEnd
         */
         public static final int Toolbar_contentInsetEnd = 6;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10848,11 +10853,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:contentInsetLeft
+          @attr name uz.BirUz.director:contentInsetLeft
         */
         public static final int Toolbar_contentInsetLeft = 7;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10864,11 +10869,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:contentInsetRight
+          @attr name uz.BirUz.director:contentInsetRight
         */
         public static final int Toolbar_contentInsetRight = 8;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10880,21 +10885,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:contentInsetStart
+          @attr name uz.BirUz.director:contentInsetStart
         */
         public static final int Toolbar_contentInsetStart = 5;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#logo}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#logo}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:logo
+          @attr name uz.BirUz.director:logo
         */
         public static final int Toolbar_logo = 4;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#logoDescription}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#logoDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10904,11 +10909,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:logoDescription
+          @attr name uz.BirUz.director:logoDescription
         */
         public static final int Toolbar_logoDescription = 22;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#maxButtonHeight}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#maxButtonHeight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10920,11 +10925,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:maxButtonHeight
+          @attr name uz.BirUz.director:maxButtonHeight
         */
         public static final int Toolbar_maxButtonHeight = 17;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#navigationContentDescription}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#navigationContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10934,31 +10939,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:navigationContentDescription
+          @attr name uz.BirUz.director:navigationContentDescription
         */
         public static final int Toolbar_navigationContentDescription = 21;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#navigationIcon}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#navigationIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:navigationIcon
+          @attr name uz.BirUz.director:navigationIcon
         */
         public static final int Toolbar_navigationIcon = 20;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#popupTheme}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:popupTheme
+          @attr name uz.BirUz.director:popupTheme
         */
         public static final int Toolbar_popupTheme = 9;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#subtitle}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10968,21 +10973,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:subtitle
+          @attr name uz.BirUz.director:subtitle
         */
         public static final int Toolbar_subtitle = 3;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#subtitleTextAppearance}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#subtitleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:subtitleTextAppearance
+          @attr name uz.BirUz.director:subtitleTextAppearance
         */
         public static final int Toolbar_subtitleTextAppearance = 11;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#subtitleTextColor}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#subtitleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10993,11 +10998,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:subtitleTextColor
+          @attr name uz.BirUz.director:subtitleTextColor
         */
         public static final int Toolbar_subtitleTextColor = 24;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#title}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#title}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11007,11 +11012,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:title
+          @attr name uz.BirUz.director:title
         */
         public static final int Toolbar_title = 2;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#titleMarginBottom}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#titleMarginBottom}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11023,11 +11028,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:titleMarginBottom
+          @attr name uz.BirUz.director:titleMarginBottom
         */
         public static final int Toolbar_titleMarginBottom = 16;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#titleMarginEnd}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#titleMarginEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11039,11 +11044,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:titleMarginEnd
+          @attr name uz.BirUz.director:titleMarginEnd
         */
         public static final int Toolbar_titleMarginEnd = 14;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#titleMarginStart}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#titleMarginStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11055,11 +11060,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:titleMarginStart
+          @attr name uz.BirUz.director:titleMarginStart
         */
         public static final int Toolbar_titleMarginStart = 13;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#titleMarginTop}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#titleMarginTop}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11071,11 +11076,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:titleMarginTop
+          @attr name uz.BirUz.director:titleMarginTop
         */
         public static final int Toolbar_titleMarginTop = 15;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#titleMargins}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#titleMargins}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11087,21 +11092,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:titleMargins
+          @attr name uz.BirUz.director:titleMargins
         */
         public static final int Toolbar_titleMargins = 12;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#titleTextAppearance}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#titleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:titleTextAppearance
+          @attr name uz.BirUz.director:titleTextAppearance
         */
         public static final int Toolbar_titleTextAppearance = 10;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#titleTextColor}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#titleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11112,7 +11117,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:titleTextColor
+          @attr name uz.BirUz.director:titleTextColor
         */
         public static final int Toolbar_titleTextColor = 23;
         /** Attributes that can be used with a View.
@@ -11123,9 +11128,9 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
            <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingEnd uz.a1uz.a1uzdirector:paddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingStart uz.a1uz.a1uzdirector:paddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_theme uz.a1uz.a1uzdirector:theme}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingEnd uz.BirUz.director:paddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingStart uz.BirUz.director:paddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_theme uz.BirUz.director:theme}</code></td><td></td></tr>
            </table>
            @see #View_android_focusable
            @see #View_android_theme
@@ -11150,7 +11155,7 @@ containing a value of this type.
         */
         public static final int View_android_theme = 0;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#paddingEnd}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#paddingEnd}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -11162,11 +11167,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:paddingEnd
+          @attr name uz.BirUz.director:paddingEnd
         */
         public static final int View_paddingEnd = 3;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#paddingStart}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#paddingStart}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -11178,17 +11183,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:paddingStart
+          @attr name uz.BirUz.director:paddingStart
         */
         public static final int View_paddingStart = 2;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#theme}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#theme}
           attribute's value can be found in the {@link #View} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name uz.a1uz.a1uzdirector:theme
+          @attr name uz.BirUz.director:theme
         */
         public static final int View_theme = 4;
         /** Attributes that can be used with a ViewBackgroundHelper.
@@ -11198,8 +11203,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint uz.a1uz.a1uzdirector:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode uz.a1uz.a1uzdirector:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint uz.BirUz.director:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode uz.BirUz.director:backgroundTintMode}</code></td><td></td></tr>
            </table>
            @see #ViewBackgroundHelper_android_background
            @see #ViewBackgroundHelper_backgroundTint
@@ -11215,7 +11220,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ViewBackgroundHelper_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#backgroundTint}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -11226,11 +11231,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name uz.a1uz.a1uzdirector:backgroundTint
+          @attr name uz.BirUz.director:backgroundTint
         */
         public static final int ViewBackgroundHelper_backgroundTint = 1;
         /**
-          <p>This symbol is the offset where the {@link uz.a1uz.a1uzdirector.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link uz.BirUz.director.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -11246,7 +11251,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name uz.a1uz.a1uzdirector:backgroundTintMode
+          @attr name uz.BirUz.director:backgroundTintMode
         */
         public static final int ViewBackgroundHelper_backgroundTintMode = 2;
         /** Attributes that can be used with a ViewStubCompat.

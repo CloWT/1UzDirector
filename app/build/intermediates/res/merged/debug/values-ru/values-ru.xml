@@ -92,9 +92,9 @@
     <string name="accept">Принят</string>
     <string name="action_example">Example action</string>
     <string name="action_settings">Settings</string>
-    <string name="app_name">1 UZ ДИРЕКТОР</string>
+    <string name="app_name">1UZ ДИРЕКТОР</string>
     <string name="begin">начало:</string>
-    <string name="chooseColor">Выбрать цвет:</string>
+    <string name="chooseColor">Выберите цвет:</string>
     <string name="end">конец:</string>
     <string name="inBeginPeriod">На начало периода</string>
     <string name="inEndPeriod">На конец периода</string>

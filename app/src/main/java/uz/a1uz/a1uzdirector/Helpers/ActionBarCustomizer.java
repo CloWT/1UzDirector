@@ -20,6 +20,7 @@ import java.net.URLConnection;
 import java.util.Locale;
 
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.AccountsTable;
+import uz.a1uz.a1uzdirector.Helpers.CustomDialogs.DialogForLangSet;
 import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
@@ -29,6 +30,7 @@ import uz.a1uz.a1uzdirector.constants.URL_cons;
 
 public class ActionBarCustomizer extends AppCompatActivity {
     AlertDialog.Builder builder;
+    DialogForLangSet diLangSet;
     Intent alertInet;
     protected boolean homeButton=true;
 
@@ -44,6 +46,7 @@ public class ActionBarCustomizer extends AppCompatActivity {
         UserInfo.setLan(sPref.getString("lang", String.valueOf(UserInfo.getLanE())),getBaseContext());
         System.out.println("OnCreate3");
         super.onCreate(savedInstanceState);
+        diLangSet=new DialogForLangSet(this,this);
         System.out.println("OnCreate4");
         builder = new AlertDialog.Builder(this);
         AlertBuild();

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">1 UZ ДИРЕКТОР</string>
+    <string name="app_name">1UZ ДИРЕКТОР</string>
     <string name="title_activity_navigation">Navigation</string>
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
@@ -11,7 +11,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_store_period_table">StorePeriodTable</string>
     <string name="title_activity_current_consumption_table">CurrentConsumptionTable</string>
-    <string name="From">гача</string>
+    <string name="From">дан</string>
     <string name="AdministratiroRasxod">Маъмурий харажатлар</string>
     <string name="Bank">Банк</string>
     <string name="Enter">Кириш</string>
@@ -29,7 +29,7 @@
     <string name="ReportAcutal">Ҳисобот амал қилиш муддати</string>
     <string name="password">"махфий код "</string>
     <string name="Period">"Давр "</string>
-    <string name="To">"дан "</string>
+    <string name="To">гача</string>
     <string name="PoRealizatsii">Сотиш бўйича</string>
     <string name="accept">Қабул қилиш</string>
     <string name="InSum">Тушум</string>

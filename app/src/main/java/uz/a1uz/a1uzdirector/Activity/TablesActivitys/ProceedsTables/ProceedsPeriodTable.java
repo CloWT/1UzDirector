@@ -2,7 +2,6 @@ package uz.a1uz.a1uzdirector.Activity.TablesActivitys.ProceedsTables;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.support.v4.content.ContextCompat;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -18,7 +17,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.ProceedsTables.models.ProceedsPeriodResult;
-import uz.a1uz.a1uzdirector.EdatePeriod;
+import uz.a1uz.a1uzdirector.Enums.EdatePeriod;
 import uz.a1uz.a1uzdirector.Helpers.ActionBarCustomizer;
 import uz.a1uz.a1uzdirector.Helpers.LayoutConfiguration;
 import uz.a1uz.a1uzdirector.Helpers.DatePeriodPicker;
