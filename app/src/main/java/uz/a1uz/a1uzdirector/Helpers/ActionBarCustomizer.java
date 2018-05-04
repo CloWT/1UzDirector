@@ -43,7 +43,7 @@ public class ActionBarCustomizer extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         sPref = getPreferences(MODE_PRIVATE);
-        UserInfo.setLan(sPref.getString("lang", String.valueOf(UserInfo.getLanE())),getBaseContext());
+        //UserInfo.setLan(sPref.getString("lang", String.valueOf(UserInfo.getLanE())),getBaseContext());
         System.out.println("OnCreate3");
         super.onCreate(savedInstanceState);
         diLangSet=new DialogForLangSet(this,this);
@@ -121,6 +121,5 @@ public class ActionBarCustomizer extends AppCompatActivity {
         SharedPreferences.Editor ed = sPref.edit();
         ed.putString("lang", lan);
             ed.apply();
-
     }
 }

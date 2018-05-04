@@ -18,12 +18,12 @@
     <string name="Deyatelnost">Фаолият</string>
     <string name="Document">Ҳужжат</string>
     <string name="EdinyNalog">Ягона солиқ тўлови</string>
-    <string name="Edizm">Ед.изм</string>
+    <string name="Edizm">Ўлчов бирлиги</string>
     <string name="Enter">Кириш</string>
     <string name="From">дан</string>
     <string name="GotovyProduck">Тайёр маҳсулот</string>
     <string name="InSum">Тушум</string>
-    <string name="Kolvo">сони</string>
+    <string name="Kolvo">Сони</string>
     <string name="LastMonth">Ўтган ой</string>
     <string name="LastWeek">Ўтган ҳафта</string>
     <string name="MyDoljni">Биз қарздормиз</string>
@@ -70,6 +70,7 @@
     <string name="VydiDeatelnosti">Фаолият турлари</string>
     <string name="Vyruchka">Даромад</string>
     <string name="VyruchkaZaPeriod">Давр даромади</string>
+    <string name="WiFiNoConnect">Интернет ёки Wifi уланмаган</string>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Boshiga o‘tish"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
     <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
@@ -94,7 +95,7 @@
     <string name="app_name">1UZ ДИРЕКТОР</string>
     <string name="begin">бошига:</string>
     <string name="chooseColor">Рангни танланг:</string>
-    <string name="end">охирига :</string>
+    <string name="end">охирига:</string>
     <string name="inBeginPeriod">Давр бошига</string>
     <string name="inEndPeriod">Давр охирига</string>
     <string name="inn">СТИР</string>

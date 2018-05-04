@@ -70,6 +70,7 @@
     <string name="VydiDeatelnosti">"Виды деятельности "</string>
     <string name="Vyruchka">ВЫРУЧКА</string>
     <string name="VyruchkaZaPeriod">ВЫРУЧКА ЗА ПЕРИОД</string>
+    <string name="WiFiNoConnect">Интернет или Wifi не подключен</string>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Перейти на главный экран"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
     <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>

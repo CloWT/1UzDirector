@@ -16,6 +16,8 @@ import java.net.URL;
 
 import uz.a1uz.a1uzdirector.Helpers.UserInfo;
 
+import static uz.a1uz.a1uzdirector.constants.URL_cons.WIDGETS_NAMES;
+
 /**
  * Created by sh.khodjabaev on 30.03.2018.
  */
@@ -31,6 +33,7 @@ public class ParseTaskList extends AsyncTask<String,Integer,String[]> {
     }
 
     public ParseTaskList(Context context,IGetJsonResult logic) {
+        this.context=context;
         logicItem = logic;
     }
     Boolean _isError;
@@ -43,7 +46,12 @@ public class ParseTaskList extends AsyncTask<String,Integer,String[]> {
         try {
             for (int i = 0; i < getJ.length; i++) {
                 URL url= new URL(getJ[i]);
-                JsonFileWriterReader jsonFileWriterReader=new JsonFileWriterReader(context,getJ[i]);
+                JsonFileWriterReader jsonFileWriterReader=new JsonFileWriterReader(context,WIDGETS_NAMES[i]);
+                if(jsonFileWriterReader.mIsHasJsonFile()){
+                    tmp[i]=jsonFileWriterReader.result;
+                    _isError =false;
+                    continue;
+                }
                 HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
                 urlConnection.setRequestProperty("Accept-Language", UserInfo.getLan());
                 urlConnection.setConnectTimeout(20000);
@@ -58,6 +66,7 @@ public class ParseTaskList extends AsyncTask<String,Integer,String[]> {
                     buffer.append(line);
                 }
                 tmp[i] = buffer.toString();
+                jsonFileWriterReader.mCreateAndSaveFile(tmp[i]);
                 _isError =false;
 
                 urlConnection.disconnect();
@@ -69,7 +78,6 @@ public class ParseTaskList extends AsyncTask<String,Integer,String[]> {
         } catch (Exception e) {
             _isError =true;
             e.printStackTrace();
-
         }
         return tmp;
     }

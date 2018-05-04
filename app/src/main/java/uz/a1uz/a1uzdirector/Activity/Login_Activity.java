@@ -57,11 +57,10 @@ public class Login_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         sPref = getPreferences(MODE_PRIVATE);
-        UserInfo.setLan(sPref.getString("lang", String.valueOf(UserInfo.EheaderLang.eRu)),getBaseContext());
+        UserInfo.setLan(sPref.getString("lang", String.valueOf(UserInfo.EheaderLang.eUz)),getBaseContext());
         System.out.println("OnCreate1");
         //homeButton=false; // back button
         super.onCreate(savedInstanceState);
-        JsonFileWriterReader.mIsHasJsonFile(this, URL_cons.ACCOUNTFORBANK);
         System.out.println("OnCreate2");
         setContentView(R.layout.activity_login_);
         etPass=(EditText)findViewById(R.id.password);
@@ -112,6 +111,25 @@ public class Login_Activity extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.e("activity: ","OnStop");
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.e("activity: ","OnStart");
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.e("activity: ","OnDestroy");
+    }
+
     private boolean isNetworkAvailable() {
         ConnectivityManager connectivityManager
                 = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -120,7 +138,7 @@ public class Login_Activity extends AppCompatActivity {
     }
     public void check(View view) {
         if(!isNetworkAvailable()) {
-            Toast.makeText(this, "Internet Or Wifi Not Connected", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.WiFiNoConnect, Toast.LENGTH_SHORT).show();
             return;
         }
         if(INN.getText().length()<1||etPass.getText().length()<1){

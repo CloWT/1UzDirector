@@ -156,9 +156,7 @@ public class ButtonWidgetV2 extends GetJsonResult {
             }
             //BottomLeftItems.notifyDataSetChanged();
         }
-        ArrayAdapter<WidgetDropDownItem> BottomLeftItems=new ArrayAdapter<>(context, android.R.layout.simple_spinner_item,dropDownLeft);
-        BottomLeftItems.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        BottomLeftItems.notifyDataSetChanged();
+
         /**
          *
          */
@@ -175,9 +173,7 @@ public class ButtonWidgetV2 extends GetJsonResult {
                         dd.getString("Name"));
             }
         }
-        ArrayAdapter<WidgetDropDownItem> BottomRightItems=new ArrayAdapter<>(context, android.R.layout.simple_spinner_item,dropDownRight);
-        BottomRightItems.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        BottomRightItems.notifyDataSetChanged();
+
 
 
         Widget_item_model model=new Widget_item_model(dropDownLeft,BottomLEftTex,dropDownRight,BottomRightText,Middle,MiddleText,TopText,backgroundColor,reportUrl,secondReportUrl);

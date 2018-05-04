@@ -99,4 +99,5 @@
     <string name="VyruchkaZaPeriod">ВЫРУЧКА ЗА ПЕРИОД</string>
     <string name="payFor">Оплата</string>
     <string name="chooseColor">Выберите цвет:</string>
+    <string name="WiFiNoConnect">Интернет или Wifi не подключен</string>
 </resources>

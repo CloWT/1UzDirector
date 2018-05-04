@@ -54,7 +54,7 @@
     <string name="TotalAborot">Жами айланма харакат</string>
     <string name="Ostatki">Қолдиқ</string>
     <string name="begin">бошига:</string>
-    <string name="end">охирига :</string>
+    <string name="end">охирига:</string>
     <string name="NotData">Белгиланган давр учун маълумот мавжуд эмас</string>
     <string name="OperationDetail">Батафсил жараён</string>
     <string name="Day100">90 кундан ортиқ</string>
@@ -79,10 +79,10 @@
     <string name="GotovyProduck">Тайёр маҳсулот</string>
     <string name="Torgovl">Савдо-сотиқ</string>
     <string name="Uslug">Хизмат кўрсатиш</string>
-    <string name="Edizm">Ед.изм</string>
+    <string name="Edizm">Ўлчов бирлиги</string>
     <string name="Tsena">Нарх</string>
     <string name="ostatokNakones">Охиридаги қолдиқ</string>
-    <string name="Kolvo">сони</string>
+    <string name="Kolvo">Сони</string>
     <string name="language">Тил</string>
     <string name="SebeStoimostRealiProdukts">"Сотилган маҳсулотлар таннархи "</string>
     <string name="Sklad">Омбор</string>
@@ -96,4 +96,5 @@
     <string name="SchetT">Ҳисобварақ</string>
     <string name="payFor">Тўлов</string>
     <string name="chooseColor">Рангни танланг:</string>
+    <string name="WiFiNoConnect">Интернет ёки Wifi уланмаган</string>
 </resources>

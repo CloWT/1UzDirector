@@ -6,6 +6,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Calendar;
+import java.util.Date;
 
 /**
  * Created by sh.khodjabaev on 01.05.2018.
@@ -14,26 +16,40 @@ import java.io.IOException;
 public class JsonFileWriterReader {
     Context context;
     String fileName;
+    String result;
+    File file;
 
-    public JsonFileWriterReader(Context context, String fileName) {
+    /***
+     *
+     * @param context
+     * @param filename
+     */
+    public JsonFileWriterReader(Context context, String filename) {
         this.context = context;
-        this.fileName = fileName;
+
+        fileName = filename;
+
     }
 
-    private boolean mIsHasJsonFile(){
-        int start = fileName.indexOf("Get"); //6
-        int end =fileName.length();
-        char[] dst=new char[end - start];
-        fileName.getChars(start, end, dst, 0);
-        fileName= String.valueOf(dst);
-            File file=new File("/data/data/" + context.getPackageName() + "/" + fileName+".js");
+    public boolean mIsHasJsonFile(){
+        Calendar calendar=Calendar.getInstance();
+        calendar.add(Calendar.DATE,-1);
+            file=new File("/data/data/" + context.getPackageName() + "/" + fileName+".js");
             boolean f=file.exists();
+            if(f){
+                if(calendar.getTimeInMillis()<file.lastModified()){
+                    result=mReadJsonData(file);
+                    return true;
+                }
+                else return false;
+            }
 
-        return file.exists();
+        return false;
     }
-    public void mCreateAndSaveFile(Context context, String params, String mJsonResponse) {
+    public void mCreateAndSaveFile(String mJsonResponse) {
         try {
-            FileWriter file = new FileWriter("/data/data/" + context.getPackageName() + "/" + params);
+            FileWriter file = new FileWriter(this.file);
+
             file.write(mJsonResponse);
             file.flush();
             file.close();
@@ -41,18 +57,29 @@ public class JsonFileWriterReader {
             e.printStackTrace();
         }
     }
-    public void mReadJsonData(Context context,String params) {
+    private String mReadJsonData(File file) {
+        String mResponse= "";
         try {
-            File f = new File("/data/data/" + context.getPackageName() + "/" + params);
 
-            FileInputStream is = new FileInputStream(f);
+            FileInputStream is = new FileInputStream(file);
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
             is.close();
-            String mResponse = new String(buffer);
+            mResponse = new String(buffer);
         } catch (IOException e) {
             e.printStackTrace();
         }
+        return mResponse;
+    }
+
+    private char[] mTransformFielName(String s) {
+        int start = s.indexOf("widget")+"widget/".length();
+        int end = start+8;
+        char[] dst=new char[end - start];
+        s.getChars(start, end, dst, 0);
+        String ss=String.valueOf(dst);
+        System.out.println(ss);
+        return dst;
     }
 }
