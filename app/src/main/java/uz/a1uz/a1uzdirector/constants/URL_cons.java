@@ -54,6 +54,8 @@ public final class URL_cons {
         public static final String CURRENTCOSTREPORT=UserInfo.Url+"/Rest/currentconsumption/GetCurrentConsumptionReport/";
             public static final String CURRENTCOSTSECONDREPORT=UserInfo.Url+"/Rest/currentconsumption/GetSecondCurrentConsumptionReport/";
 
+    //Important if add new widgets, add WIDGETE_NAME too;
+    //WIDGETS_NAME for cache file
     public static final String[] WIDGETS_NAMES={"GETBANKBUTTON","GETSTOREBUTTON","GETPROCCEDSBUTTON","GETCREDITBUTOON","GETDEBITBUTTON","GETRECURRENTCOSTSBUTTON"};
 
     public static final String ACCOUNTFORBANK= UserInfo.Url+"/Rest/widget/GetAccountForBankButton/";

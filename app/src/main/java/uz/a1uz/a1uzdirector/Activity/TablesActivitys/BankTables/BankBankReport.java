@@ -15,7 +15,7 @@ import org.json.JSONObject;
 
 import java.util.List;
 
-import uz.a1uz.a1uzdirector.Activity.models.WidgetDropDownItem;
+import uz.a1uz.a1uzdirector.Activity.components.models.WidgetDropDownItem;
 import uz.a1uz.a1uzdirector.Enums.EdatePeriod;
 import uz.a1uz.a1uzdirector.Helpers.ActionBarCustomizer;
 import uz.a1uz.a1uzdirector.Helpers.FirstLastDate;

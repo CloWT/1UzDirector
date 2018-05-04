@@ -2,9 +2,7 @@ package uz.a1uz.a1uzdirector.Activity.TablesActivitys.StoreTables;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -21,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.models.AccountReportResult;
-import uz.a1uz.a1uzdirector.Activity.models.WidgetDropDownItem;
+import uz.a1uz.a1uzdirector.Activity.components.models.WidgetDropDownItem;
 import uz.a1uz.a1uzdirector.Helpers.ActionBarCustomizer;
 import uz.a1uz.a1uzdirector.Helpers.Memory_tmp;
 import uz.a1uz.a1uzdirector.Helpers.UrlHepler;

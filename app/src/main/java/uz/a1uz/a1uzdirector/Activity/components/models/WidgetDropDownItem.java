@@ -1,4 +1,4 @@
-package uz.a1uz.a1uzdirector.Activity.models;
+package uz.a1uz.a1uzdirector.Activity.components.models;
 
 /**
  * Created by sh.khodjabaev on 05.03.2018.

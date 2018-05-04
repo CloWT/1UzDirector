@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.UUID;
 
-import uz.a1uz.a1uzdirector.Activity.models.Widget_item_model;
+import uz.a1uz.a1uzdirector.Activity.components.models.Widget_item_model;
 
 /**
  * Created by sh.khodjabaev on 05.03.2018.

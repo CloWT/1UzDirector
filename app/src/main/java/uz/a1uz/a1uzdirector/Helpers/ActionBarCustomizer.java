@@ -21,8 +21,11 @@ import java.util.Locale;
 
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.AccountsTable;
 import uz.a1uz.a1uzdirector.Helpers.CustomDialogs.DialogForLangSet;
+import uz.a1uz.a1uzdirector.JsoN.JsonFileWriterReader;
 import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
+
+import static uz.a1uz.a1uzdirector.constants.URL_cons.WIDGETS_NAMES;
 
 /**
  * Created by sh.khodjabaev on 17.04.2018.
@@ -102,7 +105,7 @@ public class ActionBarCustomizer extends AppCompatActivity {
                startActivity(browserIntent);
                break;
            case R.id.updatActivty:
-               UserInfo.setWidgetListItems(null);
+               mUpdateCache();
                finish();
                startActivity(getIntent());
                break;
@@ -121,5 +124,13 @@ public class ActionBarCustomizer extends AppCompatActivity {
         SharedPreferences.Editor ed = sPref.edit();
         ed.putString("lang", lan);
             ed.apply();
+    }
+    private void mUpdateCache(){
+        UserInfo.setWidgetListItems(null);
+        for (String fileName:WIDGETS_NAMES) {
+            JsonFileWriterReader jsonFileWriterReader=new JsonFileWriterReader(this,fileName);
+            jsonFileWriterReader.mDeleteFile();
+        }
+
     }
 }

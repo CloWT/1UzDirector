@@ -26,15 +26,15 @@ public class JsonFileWriterReader {
      */
     public JsonFileWriterReader(Context context, String filename) {
         this.context = context;
-
         fileName = filename;
+        file=new File("/data/data/" + context.getPackageName() + "/" + fileName+".js");
 
     }
 
     public boolean mIsHasJsonFile(){
         Calendar calendar=Calendar.getInstance();
         calendar.add(Calendar.DATE,-1);
-            file=new File("/data/data/" + context.getPackageName() + "/" + fileName+".js");
+
             boolean f=file.exists();
             if(f){
                 if(calendar.getTimeInMillis()<file.lastModified()){
@@ -72,6 +72,11 @@ public class JsonFileWriterReader {
         }
         return mResponse;
     }
+    public void mDeleteFile(){
+        if(file.exists()) file.delete();
+
+    }
+
 
     private char[] mTransformFielName(String s) {
         int start = s.indexOf("widget")+"widget/".length();

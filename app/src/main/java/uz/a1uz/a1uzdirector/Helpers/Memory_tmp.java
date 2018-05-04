@@ -3,7 +3,7 @@ package uz.a1uz.a1uzdirector.Helpers;
 import java.util.List;
 
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.models.AccountReportResult;
-import uz.a1uz.a1uzdirector.Activity.models.WidgetDropDownItem;
+import uz.a1uz.a1uzdirector.Activity.components.models.WidgetDropDownItem;
 
 /**
  * Created by sh.khodjabaev on 02.04.2018.

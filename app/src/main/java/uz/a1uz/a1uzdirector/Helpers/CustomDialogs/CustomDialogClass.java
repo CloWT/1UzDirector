@@ -2,16 +2,14 @@ package uz.a1uz.a1uzdirector.Helpers.CustomDialogs;
 
 import android.app.Activity;
 import android.app.Dialog;
-import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Button;
-import android.widget.LinearLayout;
 
-import uz.a1uz.a1uzdirector.Activity.models.Widget_item_model;
+import uz.a1uz.a1uzdirector.Activity.components.models.Widget_item_model;
 import uz.a1uz.a1uzdirector.R;
 
 /**

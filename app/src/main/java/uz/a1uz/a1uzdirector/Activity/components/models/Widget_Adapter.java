@@ -1,4 +1,4 @@
-package uz.a1uz.a1uzdirector.Activity.models;
+package uz.a1uz.a1uzdirector.Activity.components.models;
 
 import android.app.Activity;
 import android.content.Context;

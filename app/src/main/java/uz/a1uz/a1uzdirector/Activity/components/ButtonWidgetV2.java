@@ -1,23 +1,17 @@
-package uz.a1uz.a1uzdirector.Activity;
+package uz.a1uz.a1uzdirector.Activity.components;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
-import uz.a1uz.a1uzdirector.Activity.models.WidgetDropDownItem;
-import uz.a1uz.a1uzdirector.Activity.models.Widget_item_model;
+import uz.a1uz.a1uzdirector.Activity.Main_Activity;
+import uz.a1uz.a1uzdirector.Activity.components.models.WidgetDropDownItem;
+import uz.a1uz.a1uzdirector.Activity.components.models.Widget_item_model;
 import uz.a1uz.a1uzdirector.JsoN.GetJsonResult;
 import uz.a1uz.a1uzdirector.JsoN.ParseTaskList;
 import uz.a1uz.a1uzdirector.R;
@@ -36,7 +30,7 @@ public class ButtonWidgetV2 extends GetJsonResult {
     private String[] secondReportUrls;
     private Main_Activity activity;
     private int leng;
-    ButtonWidgetV2(Context context, WidgetsUrlsArr[] widgetsUrlsArrs) {
+    public ButtonWidgetV2(Context context, WidgetsUrlsArr[] widgetsUrlsArrs) {
         super(context);
         activity=(Main_Activity) context;
         leng=widgetsUrlsArrs.length;

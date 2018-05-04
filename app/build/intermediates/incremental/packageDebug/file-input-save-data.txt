@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri May 04 11:03:02 UZT 2018
+#Fri May 04 11:42:49 UZT 2018
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=D\:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_proceeds_period_table.xml
