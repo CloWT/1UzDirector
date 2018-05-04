@@ -48,18 +48,10 @@
                 android:layout_marginBottom="10dp"
                 android:hint="@string/inn"
                 android:inputType="none|number"
-                android:maxEms="3"
-                android:numeric="integer"
                 android:padding="5dp"
                 android:textColor="@color/textColor"
                 android:textSize="30sp"
                 android:visibility="visible" />
-            <Spinner android:id="@+id/spinn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:visibility="gone"
-                />
         </GridLayout>
 
         <EditText
