@@ -47,10 +47,8 @@ public class ActionBarCustomizer extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         sPref = getPreferences(MODE_PRIVATE);
         //UserInfo.setLan(sPref.getString("lang", String.valueOf(UserInfo.getLanE())),getBaseContext());
-        System.out.println("OnCreate3");
         super.onCreate(savedInstanceState);
         diLangSet=new DialogForLangSet(this,this);
-        System.out.println("OnCreate4");
         builder = new AlertDialog.Builder(this);
         AlertBuild();
 
@@ -105,6 +103,7 @@ public class ActionBarCustomizer extends AppCompatActivity {
                startActivity(browserIntent);
                break;
            case R.id.updatActivty:
+               UserInfo.setWidgetListItems(null);
                mUpdateCache();
                finish();
                startActivity(getIntent());
@@ -126,7 +125,6 @@ public class ActionBarCustomizer extends AppCompatActivity {
             ed.apply();
     }
     private void mUpdateCache(){
-        UserInfo.setWidgetListItems(null);
         for (String fileName:WIDGETS_NAMES) {
             JsonFileWriterReader jsonFileWriterReader=new JsonFileWriterReader(this,fileName);
             jsonFileWriterReader.mDeleteFile();

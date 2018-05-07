@@ -28,9 +28,12 @@ import java.util.Set;
 
 import uz.a1uz.a1uzdirector.JsoN.GetJson;
 import uz.a1uz.a1uzdirector.JsoN.IGetJsonResult;
+import uz.a1uz.a1uzdirector.JsoN.JsonFileWriterReader;
 import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.Helpers.UserInfo;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
+
+import static uz.a1uz.a1uzdirector.constants.URL_cons.WIDGETS_NAMES;
 
 public class Login_Activity extends AppCompatActivity {
     Button btLogin;
@@ -80,8 +83,6 @@ public class Login_Activity extends AppCompatActivity {
             case eRu:tgButton.setChecked(false);break;
             case eUz: tgButton.setChecked(true);break;
         }
-        String[] cats = {first, second, third};
-        List<String> catList = Arrays.asList(cats);
         Set<String> set = sPref.getStringSet(INN_S_KEY, null);
 
         if(set!=null){
@@ -168,8 +169,15 @@ public class Login_Activity extends AppCompatActivity {
                     JSONObject c= (JSONObject) jsonObject.get("LogInResult");
                    if(c.getBoolean("IsOk")&&c.getBoolean("IsAuthorization")){
                        UserInfo.setINN(INN.getText().toString());
+                       if(!INN.getText().toString().equals(sPref.getString(LASTINN, "")))
+                           for (String fileName:WIDGETS_NAMES) {
+                               JsonFileWriterReader jsonFileWriterReader=new JsonFileWriterReader(context,fileName);
+                               jsonFileWriterReader.mDeleteFile();
+                           }
                        UserInfo.setWidgetListItems(null);
+
                        mSaveINN(INN.getText().toString());
+
                        OpenAcitive();
                    }else {
                        Toast.makeText(Login_Activity.this, ""+c.getString("Message"), Toast.LENGTH_SHORT).show();
