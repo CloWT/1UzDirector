@@ -69,6 +69,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/tableForBank"
+                android:stretchColumns="0"
                 android:padding="3dp">
                 <TableRow android:background="@color/tableTopColor"
 
@@ -77,6 +78,7 @@
                         android:text="@string/Subkonto"
                         android:gravity="center|center_horizontal"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableHeaderTextSize"
                         android:textColor="@color/textColor"/>
                     <TextView
 
@@ -85,6 +87,7 @@
                         android:gravity="center"
                         android:padding="5dip"
                         android:onClick="cLastDay"
+                        android:textSize="@dimen/TableHeaderTextSize"
                         android:textColor="@color/textColor"
                         />
                     <TextView
@@ -94,6 +97,7 @@
                         android:id="@+id/thisWeek"
                         android:padding="5dip"
                         android:onClick="cThisWeek"
+                        android:textSize="@dimen/TableHeaderTextSize"
                         android:textColor="@color/textColor"
                         />
                     <TextView
@@ -103,12 +107,14 @@
                         android:id="@+id/LastWeek"
                         android:onClick="cLastWeek"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableHeaderTextSize"
                         android:textColor="@color/textColor"
 
                         />
                     <TextView
                         android:text="@string/ThisMonth"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableHeaderTextSize"
                         android:id="@+id/thisMonth"
                         android:onClick="cThisMonth"
                         android:textColor="@color/textColor"
@@ -116,6 +122,7 @@
                     <TextView
                         android:text="@string/LastMonth"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableHeaderTextSize"
                         android:id="@+id/lastMonth"
                         android:onClick="cLastMonth"
                         android:textColor="@color/textColor"
@@ -123,6 +130,7 @@
                     <TextView
                         android:text="@string/Beginyear"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableHeaderTextSize"
                         android:id="@+id/thisYear"
                         android:onClick="cThisyear"
                         android:textColor="@color/textColor"
@@ -134,13 +142,15 @@
                     <TextView
                         android:text="@string/inBeginPeriod"
                         android:gravity="start|center_horizontal"
-                        android:padding="5dip"
+                        android:padding="5dp"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_shape"
                         android:textColor="@color/blue"
                         />
                     <TextView
                         android:id="@+id/BPLastDay"
-                        android:text="---"
+                        android:text="@string/pusto"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:onClick="cLastDay"
                         android:gravity="end"
                         android:padding="5dip"
@@ -148,7 +158,8 @@
                         />
                     <TextView
                         android:id="@+id/BPThisWeek"
-                        android:text="---"
+                        android:text="@string/pusto"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:onClick="cThisWeek"
                         android:gravity="end"
                         android:padding="5dip"
@@ -156,7 +167,8 @@
                         />
                     <TextView
                         android:id="@+id/BPLastWeek"
-                        android:text="---"
+                        android:text="@string/pusto"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:onClick="cLastWeek"
                         android:gravity="end"
                         android:padding="5dip"
@@ -165,7 +177,8 @@
                         />
                     <TextView
                         android:id="@+id/BPThisMonth"
-                        android:text="---"
+                        android:text="@string/pusto"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:onClick="cThisMonth"
                         android:gravity="end"
                         android:padding="5dip"
@@ -173,7 +186,8 @@
                         />
                     <TextView
                         android:id="@+id/BPLastMonth"
-                        android:text="---"
+                        android:text="@string/pusto"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:onClick="cLastMonth"
                         android:gravity="end"
                         android:padding="5dip"
@@ -181,7 +195,8 @@
                         />
                     <TextView
                         android:id="@+id/BPThisYearBegin"
-                        android:text="---"
+                        android:text="@string/pusto"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:onClick="cThisyear"
                         android:gravity="end"
                         android:padding="5dip"
@@ -196,11 +211,13 @@
                         android:text="@string/Prihod"
                         android:gravity="start|center_horizontal"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_shape"
                         android:textColor="@color/blue"/>
                     <TextView
                         android:id="@+id/INLastDay"
-                        android:text="---"
+                        android:text="@string/pusto"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:onClick="cLastDay"
                         android:gravity="end"
                         android:padding="5dip"
@@ -209,18 +226,20 @@
                         />
                     <TextView
                         android:id="@+id/INThisWeek"
-                        android:text="---"
+                        android:text="@string/pusto"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:onClick="cThisWeek"
-                        android:gravity="right"
+                        android:gravity="end"
                         android:padding="5dip"
                         android:textColor="@color/bgc3"
                         android:background="@drawable/border_shape"
                         />
                     <TextView
                         android:id="@+id/INLastWeek"
-                        android:text="---"
+                        android:text="@string/pusto"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:onClick="cLastWeek"
-                        android:gravity="right"
+                        android:gravity="end"
                         android:padding="5dip"
                         android:textColor="@color/bgc3"
                         android:background="@drawable/border_shape"
@@ -228,27 +247,30 @@
                         />
                     <TextView
                         android:id="@+id/INThisMonth"
-                        android:text="---"
+                        android:text="@string/pusto"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:onClick="cThisMonth"
-                        android:gravity="right"
+                        android:gravity="end"
                         android:padding="5dip"
                         android:textColor="@color/bgc3"
                         android:background="@drawable/border_shape"
                         />
                     <TextView
                         android:id="@+id/INLastMonth"
-                        android:text="---"
+                        android:text="@string/pusto"
                         android:onClick="cLastMonth"
-                        android:gravity="right"
+                        android:textSize="@dimen/TableBodyTextSize"
+                        android:gravity="end"
                         android:padding="5dip"
                         android:textColor="@color/bgc3"
                         android:background="@drawable/border_shape"
                         />
                     <TextView
                         android:id="@+id/INThisYearBegin"
-                        android:text="---"
+                        android:text="@string/pusto"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:onClick="cThisyear"
-                        android:gravity="right"
+                        android:gravity="end"
                         android:padding="5dip"
                         android:textColor="@color/bgc3"
                         android:background="@drawable/border_shape"
@@ -262,29 +284,33 @@
                         android:text="@string/Rasxod"
                         android:gravity="left"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_shape"
                         android:textColor="@color/blue"/>
                     <TextView
                         android:id="@+id/OutLastDay"
-                        android:text="---"
+                        android:text="@string/pusto"
                         android:onClick="cLastDay"
                         android:gravity="right"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:textColor="@color/bgc4"
                         android:background="@drawable/border_shape"
                         />
                     <TextView
                         android:id="@+id/OutThisWeek"
-                        android:text="---"
+                        android:text="@string/pusto"
                         android:onClick="cThisWeek"
                         android:gravity="right"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:padding="5dip"
                         android:textColor="@color/bgc4"
                         android:background="@drawable/border_shape"
                         />
                     <TextView
                         android:id="@+id/OutLastWeek"
-                        android:text="---"
+                        android:text="@string/pusto"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:onClick="cLastWeek"
                         android:gravity="right"
                         android:padding="5dip"
@@ -294,7 +320,8 @@
                         />
                     <TextView
                         android:id="@+id/OutThisMonth"
-                        android:text="---"
+                        android:text="@string/pusto"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:onClick="cThisMonth"
                         android:gravity="right"
                         android:padding="5dip"
@@ -303,7 +330,8 @@
                         />
                     <TextView
                         android:id="@+id/OutLastMonth"
-                        android:text="---"
+                        android:text="@string/pusto"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:onClick="cLastMonth"
                         android:gravity="right"
                         android:padding="5dip"
@@ -312,7 +340,8 @@
                         />
                     <TextView
                         android:id="@+id/OutThisYearBegin"
-                        android:text="---"
+                        android:text="@string/pusto"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:onClick="cThisyear"
                         android:gravity="right"
                         android:padding="5dip"
@@ -328,11 +357,13 @@
                         android:text="@string/inEndPeriod"
                         android:gravity="left"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_shape"
                         android:textColor="@color/blue"/>
                     <TextView
                         android:id="@+id/LPLastDay"
-                        android:text="---"
+                        android:text="@string/pusto"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:onClick="cLastDay"
                         android:gravity="right"
                         android:padding="5dip"
@@ -340,7 +371,8 @@
                         />
                     <TextView
                         android:id="@+id/LPThisWeek"
-                        android:text="---"
+                        android:text="@string/pusto"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:onClick="cThisWeek"
                         android:gravity="right"
                         android:padding="5dip"
@@ -348,7 +380,8 @@
                         />
                     <TextView
                         android:id="@+id/LPLastWeek"
-                        android:text="---"
+                        android:text="@string/pusto"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:onClick="cLastWeek"
                         android:gravity="right"
                         android:padding="5dip"
@@ -357,15 +390,18 @@
                         />
                     <TextView
                         android:id="@+id/LPThisMonth"
-                        android:text="---"
+                        android:text="@string/pusto"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:onClick="cThisMonth"
                         android:gravity="right"
+
                         android:padding="5dip"
                         android:background="@drawable/border_shape"
                         />
                     <TextView
                         android:id="@+id/LPLastMonth"
-                        android:text="---"
+                        android:text="@string/pusto"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:onClick="cLastMonth"
                         android:gravity="right"
                         android:padding="5dip"
@@ -373,7 +409,8 @@
                         />
                     <TextView
                         android:id="@+id/LPThisYearBegin"
-                        android:text="---"
+                        android:text="@string/pusto"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:onClick="cThisyear"
                         android:gravity="right"
                         android:padding="5dip"

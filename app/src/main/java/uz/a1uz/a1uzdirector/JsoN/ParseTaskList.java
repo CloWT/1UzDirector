@@ -1,10 +1,8 @@
 package uz.a1uz.a1uzdirector.JsoN;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.AsyncTask;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
@@ -36,8 +34,8 @@ public class ParseTaskList extends AsyncTask<String,Integer,String[]> {
         this.context=context;
         logicItem = logic;
     }
-    Boolean _isError;
-    Exception ee;
+    private Boolean _isError;
+    private Exception exception;
     @Override
     protected String[] doInBackground(String... getJ) {
 
@@ -73,9 +71,11 @@ public class ParseTaskList extends AsyncTask<String,Integer,String[]> {
                 publishProgress(i);
             }
         } catch (FileNotFoundException e){
+            exception =e;
             System.out.println(e.toString());
             _isError =true;
         } catch (Exception e) {
+            exception =e;
             _isError =true;
             e.printStackTrace();
         }
@@ -95,6 +95,6 @@ public class ParseTaskList extends AsyncTask<String,Integer,String[]> {
         if(!_isError){
             logicItem.OnEnd(s);
         }
-        else logicItem.OnError(ee);
+        else logicItem.OnError(exception);
     }
 }

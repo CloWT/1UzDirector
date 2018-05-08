@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v4.content.ContextCompat;
 import android.os.Bundle;
+import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.ProgressBar;
@@ -20,7 +21,7 @@ import java.util.List;
 
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.models.AccountReportResult;
 import uz.a1uz.a1uzdirector.Activity.components.models.WidgetDropDownItem;
-import uz.a1uz.a1uzdirector.Helpers.ActionBarCustomizer;
+import uz.a1uz.a1uzdirector.Helpers.CustomActivity;
 import uz.a1uz.a1uzdirector.Helpers.Memory_tmp;
 import uz.a1uz.a1uzdirector.Helpers.UrlHepler;
 import uz.a1uz.a1uzdirector.Helpers.UserInfo;
@@ -29,7 +30,7 @@ import uz.a1uz.a1uzdirector.JsoN.IGetJsonResult;
 import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
-public class StoreTable extends ActionBarCustomizer {
+public class StoreTable extends CustomActivity {
     String url= UrlHepler.Combine(URL_cons.STOREREPORT, UserInfo.getGUID());
     TableLayout storeTable;
     Context context;
@@ -118,6 +119,7 @@ public class StoreTable extends ActionBarCustomizer {
 
             for (int j = 0; j <TW[0].length ; j++) {
                 TW[i][j]=new TextView(this);
+                TW[i][j].setTextSize(TypedValue.COMPLEX_UNIT_SP, tableBodyTextSize);
             }
             TW[i][0].setText(accountReportResults.get(i).getName());
             TW[i][1].setText(accountReportResults.get(i).getBeginPeriodSum());

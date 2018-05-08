@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:grid="http://schemas.android.com/apk/res-auto"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -41,7 +42,7 @@
         android:id="@+id/layout"
         android:layout_height="wrap_content"
         android:scrollbars="horizontal"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:scrollbarStyle="outsideInset"
         android:fillViewport="true"
         >
@@ -50,296 +51,325 @@
         android:id="@+id/horizontalView"
         android:layout_height="wrap_content"
         android:scrollbars="horizontal"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         >
-    <GridLayout
-        android:layout_width="wrap_content"
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/periodTable"
-        android:columnCount="2"
-        android:rowCount="18">
+        grid:columnCount="2"
+        grid:rowCount="18">
         <TextView
             android:gravity="center"
-            android:layout_gravity="fill"
+            grid:layout_gravity="fill"
             android:background="@drawable/border_dark_shape"
             android:text="@string/StatyaRasxodov"
             android:padding="5dip"
             android:textColor="@color/textColor"
-            />
+            grid:layout_columnWeight="1" />
         <TextView
             android:gravity="center"
-            android:layout_gravity="fill"
+            grid:layout_gravity="fill"
             android:background="@drawable/border_dark_shape"
             android:text="@string/Summa"
             android:padding="5dip"
             android:textColor="@color/textColor"
+            grid:layout_columnWeight="1"
             />
                 <TextView
                     android:gravity="left"
-                    android:layout_gravity="fill"
+                    grid:layout_gravity="fill"
                     android:background="@drawable/border_shape"
                     android:text="@string/SebeStoimostRealiProdukts"
                     android:textStyle="bold"
                     android:padding="5dip"
                     android:textColor="#000000"
+                    grid:layout_columnWeight="1"
                     />
                 <TextView
                     android:gravity="right"
-                    android:layout_gravity="fill"
+                    grid:layout_gravity="fill"
                     android:background="@drawable/border_shape"
                     android:text="0"
                     android:id="@+id/curr1"
                     android:padding="5dip"
                     android:textColor="#2f2f2f"
+                    grid:layout_columnWeight="1"
                     />
                 <TextView
                     android:gravity="left"
-                    android:layout_gravity="fill"
+                    grid:layout_gravity="fill"
                     android:background="@drawable/border_shape"
                     android:text="@string/SebeStoimostGotovyProduksii"
                     android:onClick="Click1"
                     android:padding="5dip"
                     android:textColor="#2d61b5"
+                    grid:layout_columnWeight="1"
                     />
                 <TextView
                     android:gravity="right"
-                    android:layout_gravity="fill"
+                    grid:layout_gravity="fill"
                     android:background="@drawable/border_shape"
                     android:id="@+id/curr2"
                     android:text="0"
                     android:onClick="Click1"
                     android:padding="5dip"
                     android:textColor="#2f2f2f"
+                    grid:layout_columnWeight="1"
                     />
                 <TextView
                     android:gravity="left"
-                    android:layout_gravity="fill"
+                    grid:layout_gravity="fill"
                     android:background="@drawable/border_shape"
                     android:text="@string/SebeStoimostRealizoTovar"
                     android:onClick="Click2"
                     android:padding="5dip"
                     android:textColor="#2d61b5"
+                    grid:layout_columnWeight="1"
                     />
                 <TextView
                     android:gravity="right"
-                    android:layout_gravity="fill"
+                    grid:layout_gravity="fill"
                     android:background="@drawable/border_shape"
                     android:text="0"
                     android:id="@+id/curr3"
                     android:onClick="Click2"
                     android:padding="5dip"
                     android:textColor="#2f2f2f"
+                    grid:layout_columnWeight="1"
                     />
                 <TextView
                     android:gravity="left"
-                    android:layout_gravity="fill"
+                    grid:layout_gravity="fill"
                     android:background="@drawable/border_shape"
                     android:text="@string/SebeStoimVypolnenRabotiUsl"
                     android:onClick="Click3"
                     android:padding="5dip"
                     android:textColor="#2d61b5"
+                    grid:layout_columnWeight="1"
                     />
                 <TextView
                     android:gravity="right"
-                    android:layout_gravity="fill"
+                    grid:layout_gravity="fill"
                     android:background="@drawable/border_shape"
                     android:text="0"
                     android:id="@+id/curr4"
                     android:onClick="Click3"
                     android:padding="5dip"
                     android:textColor="#2f2f2f"
+                    grid:layout_columnWeight="1"
                     />
         <TextView
             android:gravity="left"
-            android:layout_gravity="fill"
+            grid:layout_gravity="fill"
             android:background="@drawable/border_shape"
             android:text="@string/RasxodiPeriod"
             android:textStyle="bold"
             android:padding="5dip"
             android:textColor="#000000"
+            grid:layout_columnWeight="1"
             />
         <TextView
             android:gravity="right"
-            android:layout_gravity="fill"
+            grid:layout_gravity="fill"
             android:background="@drawable/border_shape"
             android:text="0"
             android:id="@+id/curr5"
             android:padding="5dip"
             android:textColor="#2f2f2f"
+            grid:layout_columnWeight="1"
             />
         <TextView
             android:gravity="left"
             android:onClick="Click4"
-            android:layout_gravity="fill"
+            grid:layout_gravity="fill"
             android:background="@drawable/border_shape"
             android:text="@string/PoRealizatsii"
 
             android:padding="5dip"
             android:textColor="#2d61b5"
+            grid:layout_columnWeight="1"
             />
         <TextView
             android:gravity="right"
             android:onClick="Click4"
-            android:layout_gravity="fill"
+            grid:layout_gravity="fill"
             android:background="@drawable/border_shape"
             android:text="0"
             android:id="@+id/curr6"
             android:padding="5dip"
             android:textColor="#2f2f2f"
+            grid:layout_columnWeight="1"
             />
         <TextView
             android:gravity="left"
             android:onClick="Click5"
-            android:layout_gravity="fill"
+            grid:layout_gravity="fill"
             android:background="@drawable/border_shape"
             android:text="@string/AdministratiroRasxod"
             android:padding="5dip"
             android:textColor="#2d61b5"
+            grid:layout_columnWeight="1"
             />
         <TextView
             android:gravity="right"
             android:onClick="Click5"
-            android:layout_gravity="fill"
+            grid:layout_gravity="fill"
             android:background="@drawable/border_shape"
             android:text="0"
             android:id="@+id/curr7"
             android:padding="5dip"
             android:textColor="#2f2f2f"
+            grid:layout_columnWeight="1"
             />
         <TextView
             android:gravity="left"
-            android:layout_gravity="fill"
+            grid:layout_gravity="fill"
             android:background="@drawable/border_shape"
             android:text="@string/ProchieOperatRasxodi"
             android:onClick="Click6"
             android:padding="5dip"
             android:textColor="#2d61b5"
+            grid:layout_columnWeight="1"
             />
         <TextView
             android:gravity="right"
-            android:layout_gravity="fill"
+            grid:layout_gravity="fill"
             android:background="@drawable/border_shape"
             android:onClick="Click6"
             android:text="0"
             android:id="@+id/curr8"
             android:padding="5dip"
             android:textColor="#2f2f2f"
+            grid:layout_columnWeight="1"
             />
         <TextView
             android:gravity="left"
 
-            android:layout_gravity="fill"
+            grid:layout_gravity="fill"
             android:background="@drawable/border_shape"
             android:text="@string/VychitaemIzNalogoPribilivBudushem"
             android:onClick="Click7"
             android:padding="5dip"
             android:textColor="#2d61b5"
+            grid:layout_columnWeight="1"
             />
         <TextView
             android:gravity="right"
-            android:layout_gravity="fill"
+            grid:layout_gravity="fill"
             android:background="@drawable/border_shape"
             android:text="0"
             android:id="@+id/curr9"
             android:onClick="Click7"
             android:padding="5dip"
             android:textColor="#2f2f2f"
+            grid:layout_columnWeight="1"
             />
 
         <TextView
             android:gravity="left"
-            android:layout_gravity="fill"
+            grid:layout_gravity="fill"
             android:background="@drawable/border_shape"
             android:text="@string/RasxodFinansDeayt"
             android:textStyle="bold"
             android:padding="5dip"
             android:textColor="#000000"
+            grid:layout_columnWeight="1"
             />
         <TextView
             android:gravity="right"
-            android:layout_gravity="fill"
+            grid:layout_gravity="fill"
             android:background="@drawable/border_shape"
             android:text="0"
             android:id="@+id/curr10"
             android:padding="5dip"
             android:textColor="#2f2f2f"
+            grid:layout_columnWeight="1"
             />
         <TextView
             android:gravity="left"
-            android:layout_gravity="fill"
+            grid:layout_gravity="fill"
             android:background="@drawable/border_shape"
             android:text="@string/RasxodProtsent"
 
             android:padding="5dip"
             android:textColor="#2f2f2f"
+            grid:layout_columnWeight="1"
             />
         <TextView
             android:gravity="right"
-            android:layout_gravity="fill"
+            grid:layout_gravity="fill"
             android:background="@drawable/border_shape"
             android:text="0"
             android:id="@+id/curr11"
             android:padding="5dip"
             android:textColor="#2f2f2f"
+            grid:layout_columnWeight="1"
             />
         <TextView
             android:gravity="left"
-            android:layout_gravity="fill"
+            grid:layout_gravity="fill"
             android:background="@drawable/border_shape"
             android:text="@string/Ubitki"
 
             android:padding="5dip"
             android:textColor="#2f2f2f"
+            grid:layout_columnWeight="1"
             />
         <TextView
             android:gravity="right"
-            android:layout_gravity="fill"
+            grid:layout_gravity="fill"
             android:background="@drawable/border_shape"
             android:text="0"
             android:id="@+id/curr12"
             android:padding="5dip"
             android:textColor="#2f2f2f"
+            grid:layout_columnWeight="1"
             />
         <TextView
             android:gravity="left"
-            android:layout_gravity="fill"
+            grid:layout_gravity="fill"
             android:background="@drawable/border_shape"
             android:text="@string/ProCiRasxodi"
 
             android:padding="5dip"
             android:textColor="#2f2f2f"
+            grid:layout_columnWeight="1"
             />
         <TextView
             android:gravity="right"
-            android:layout_gravity="fill"
+            grid:layout_gravity="fill"
             android:background="@drawable/border_shape"
             android:text="0"
             android:id="@+id/curr13"
             android:padding="5dip"
             android:textColor="#2f2f2f"
+            grid:layout_columnWeight="1"
             />
 
         <TextView
             android:gravity="left"
-            android:layout_gravity="fill"
+            grid:layout_gravity="fill"
             android:background="@drawable/border_shape"
             android:text="@string/RasxodiNalog"
             android:textStyle="bold"
             android:padding="5dip"
             android:textColor="#000000"
+            grid:layout_columnWeight="1"
             />
         <TextView
             android:gravity="right"
-            android:layout_gravity="fill"
+            grid:layout_gravity="fill"
             android:background="@drawable/border_shape"
             android:text="0"
             android:id="@+id/curr14"
             android:padding="5dip"
             android:textColor="#2f2f2f"
+            grid:layout_columnWeight="1"
             />
         <TextView
             android:gravity="left"
-            android:layout_gravity="fill"
+            grid:layout_gravity="fill"
             android:background="@drawable/border_shape"
             android:text="@string/EdinyNalog"
 
@@ -348,48 +378,48 @@
             />
         <TextView
             android:gravity="right"
-            android:layout_gravity="fill"
             android:background="@drawable/border_shape"
             android:text="0"
             android:id="@+id/curr15"
             android:padding="5dip"
             android:textColor="#2f2f2f"
-            />
+            grid:layout_gravity="fill"
+            grid:layout_columnWeight="1" />
         <TextView
             android:gravity="left"
-            android:layout_gravity="fill"
             android:background="@drawable/border_shape"
             android:text="@string/Prochie"
 
             android:padding="5dip"
             android:textColor="#2f2f2f"
-            />
+            grid:layout_gravity="fill"
+            grid:layout_columnWeight="1" />
         <TextView
             android:gravity="right"
-            android:layout_gravity="fill"
             android:background="@drawable/border_shape"
             android:text="0"
             android:id="@+id/curr16"
             android:padding="5dip"
             android:textColor="#2f2f2f"
-            />
+            grid:layout_gravity="fill"
+            grid:layout_columnWeight="1" />
         <TextView
             android:gravity="left"
-            android:layout_gravity="fill"
             android:background="@drawable/border_dark_shape"
             android:text="@string/total"
 
             android:padding="5dip"
             android:textColor="@color/textColor"
-            />
+            grid:layout_gravity="fill"
+            grid:layout_columnWeight="1" />
         <TextView
             android:gravity="right"
-            android:layout_gravity="fill"
             android:background="@drawable/border_dark_shape"
             android:id="@+id/curr17"
             android:text="0"
             android:padding="5dip"
             android:textColor="@color/textColor"
-            />
-    </GridLayout></HorizontalScrollView></ScrollView>
+            grid:layout_gravity="fill"
+            grid:layout_columnWeight="1" />
+    </android.support.v7.widget.GridLayout></HorizontalScrollView></ScrollView>
 </LinearLayout>

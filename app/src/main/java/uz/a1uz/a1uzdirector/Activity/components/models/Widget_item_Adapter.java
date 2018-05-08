@@ -129,17 +129,6 @@ public class Widget_item_Adapter extends ArrayAdapter<Widget_item_model> impleme
         }
         Widget_item_model wg=items.get(position);
         SpinnerAddItems(holder,wg);
-        SharedPreferences sPref=((Activity)context).getPreferences(Context.MODE_PRIVATE);
-//        Set<String> set = sPref.getStringSet("WIDGETCOLORS", null);
-//        counter=0;
-//
-//        for (String s : set) {
-//            if(position==counter) {
-//                holder.linearLayout.setBackgroundResource(Integer.parseInt(s));
-//                break;
-//            }
-//            counter++;
-//        }
         holder.linearLayout.setBackgroundResource(wg.getBackgroundColor());
         holder.linearLayout.setOnClickListener(new LayoutClick(wg));
         holder.ImageRight.setOnClickListener(new popOnClick(wg,holder));

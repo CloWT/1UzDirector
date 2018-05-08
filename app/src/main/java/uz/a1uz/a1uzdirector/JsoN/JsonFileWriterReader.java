@@ -14,10 +14,8 @@ import java.util.Date;
  */
 
 public class JsonFileWriterReader {
-    Context context;
-    String fileName;
     String result;
-    File file;
+    private File file;
 
     /***
      *
@@ -25,15 +23,14 @@ public class JsonFileWriterReader {
      * @param filename
      */
     public JsonFileWriterReader(Context context, String filename) {
-        this.context = context;
-        fileName = filename;
-        file=new File("/data/data/" + context.getPackageName() + "/" + fileName+".js");
+        String fileName = filename;
+        file=new File(String.format("/data/data/%s/%s.js", context.getPackageName(), fileName));
 
     }
 
     public boolean mIsHasJsonFile(){
         Calendar calendar=Calendar.getInstance();
-        calendar.add(Calendar.DATE,-1);
+        calendar.add(Calendar.HOUR,-1);
 
             boolean f=file.exists();
             if(f){

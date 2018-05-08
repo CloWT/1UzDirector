@@ -30,12 +30,14 @@
 
     android:id="@+id/tableForStore"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:stretchColumns="0">
     <TableRow android:background="@color/tableTopColor"
 
         >
         <TextView
             android:text="@string/store"
+            android:textSize="@dimen/TableHeaderTextSize"
             android:layout_gravity="center|center_horizontal"
             android:padding="5dip"
             android:textColor="@color/textColor"/>
@@ -43,12 +45,14 @@
 
             android:text="@string/BeginPeriod"
             android:gravity="center"
+            android:textSize="@dimen/TableHeaderTextSize"
             android:padding="5dip"
             android:textColor="@color/textColor"
             />
         <TextView
 
             android:text="@string/InSum"
+            android:textSize="@dimen/TableHeaderTextSize"
             android:gravity="center"
             android:padding="5dip"
             android:textColor="@color/textColor"
@@ -56,6 +60,7 @@
         <TextView
 
             android:text="@string/OutSum"
+            android:textSize="@dimen/TableHeaderTextSize"
             android:gravity="center"
             android:padding="5dip"
             android:textColor="@color/textColor"
@@ -63,6 +68,7 @@
             />
         <TextView
             android:text="@string/CurrentSum"
+            android:textSize="@dimen/TableHeaderTextSize"
             android:padding="5dip"
             android:textColor="@color/textColor"
             />

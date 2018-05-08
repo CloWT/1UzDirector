@@ -2,10 +2,9 @@ package uz.a1uz.a1uzdirector.Activity.TablesActivitys.CreditTables;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.GridLayout;
@@ -20,7 +19,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import uz.a1uz.a1uzdirector.Helpers.ActionBarCustomizer;
+import uz.a1uz.a1uzdirector.Helpers.CustomActivity;
 import uz.a1uz.a1uzdirector.Helpers.LayoutConfiguration;
 import uz.a1uz.a1uzdirector.Helpers.UrlHepler;
 import uz.a1uz.a1uzdirector.Helpers.UserInfo;
@@ -29,7 +28,7 @@ import uz.a1uz.a1uzdirector.JsoN.IGetJsonResult;
 import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
-public class CreditTable extends ActionBarCustomizer implements LayoutConfiguration<CreditReportResult> {
+public class CreditTable extends CustomActivity implements LayoutConfiguration<CreditReportResult> {
     String url= UrlHepler.Combine(URL_cons.CREDITREPORT, UserInfo.getGUID());
     GridLayout creditTable;
     Context context;
@@ -134,6 +133,7 @@ public class CreditTable extends ActionBarCustomizer implements LayoutConfigurat
 
             for (int j = 0; j < txResult[0].length; j++) {
                 txResult[i][j]=new TextView(this);
+                txResult[i][j].setTextSize(TypedValue.COMPLEX_UNIT_SP, tableBodyTextSize);
                 txResult[i][j].setOnClickListener(click);
                 txResult[i][j].setTextColor(ContextCompat.getColor(this,R.color.tableTopColor));
                 txResult[i][j].setBackgroundResource(R.drawable.border_shape);
@@ -156,6 +156,7 @@ public class CreditTable extends ActionBarCustomizer implements LayoutConfigurat
             }else{
                 for (int j = 0; j < txResult[0].length; j++) {
                     txResult[i][j]=new TextView(this);
+                    txResult[i][j].setTextSize(TypedValue.COMPLEX_UNIT_SP, tableBodyTextSize);
                     txResult[i][j].setTextColor(ContextCompat.getColor(this,R.color.textColor));
                     txResult[i][j].setBackgroundResource(R.color.tableTopColor);
 

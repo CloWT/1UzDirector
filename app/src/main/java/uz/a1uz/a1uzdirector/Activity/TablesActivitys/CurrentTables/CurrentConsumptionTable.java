@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.GridLayout;
+import android.support.v7.widget.GridLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -13,7 +13,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import uz.a1uz.a1uzdirector.Enums.EdatePeriod;
-import uz.a1uz.a1uzdirector.Helpers.ActionBarCustomizer;
+import uz.a1uz.a1uzdirector.Helpers.CustomActivity;
 import uz.a1uz.a1uzdirector.Helpers.DatePeriodPicker;
 import uz.a1uz.a1uzdirector.Helpers.FirstLastDate;
 import uz.a1uz.a1uzdirector.Helpers.UrlHepler;
@@ -23,7 +23,7 @@ import uz.a1uz.a1uzdirector.JsoN.IGetJsonResult;
 import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
-public class CurrentConsumptionTable extends ActionBarCustomizer {
+public class CurrentConsumptionTable extends CustomActivity {
     GridLayout periodTable;
     Context context;
     ProgressBar progressBar;

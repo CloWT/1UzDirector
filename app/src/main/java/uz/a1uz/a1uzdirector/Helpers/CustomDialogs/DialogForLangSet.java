@@ -9,7 +9,6 @@ import android.view.Window;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 
-import uz.a1uz.a1uzdirector.Helpers.ActionBarCustomizer;
 import uz.a1uz.a1uzdirector.Helpers.UserInfo;
 import uz.a1uz.a1uzdirector.R;
 

@@ -9,7 +9,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import uz.a1uz.a1uzdirector.Enums.EdatePeriod;
-import uz.a1uz.a1uzdirector.Helpers.ActionBarCustomizer;
+import uz.a1uz.a1uzdirector.Helpers.CustomActivity;
 import uz.a1uz.a1uzdirector.Helpers.FirstLastDate;
 import uz.a1uz.a1uzdirector.Helpers.UrlHepler;
 import uz.a1uz.a1uzdirector.Helpers.UserInfo;
@@ -18,7 +18,7 @@ import uz.a1uz.a1uzdirector.JsoN.IGetJsonResult;
 import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
-public class ProceedsTable extends ActionBarCustomizer {
+public class ProceedsTable extends CustomActivity {
     String url= UrlHepler.Combine(URL_cons.PROCCEDREPORT, UserInfo.getGUID());
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v4.content.ContextCompat;
 import android.os.Bundle;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.ProgressBar;
@@ -22,7 +23,7 @@ import java.util.List;
 
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.models.AccountReportResult;
 import uz.a1uz.a1uzdirector.Activity.components.models.WidgetDropDownItem;
-import uz.a1uz.a1uzdirector.Helpers.ActionBarCustomizer;
+import uz.a1uz.a1uzdirector.Helpers.CustomActivity;
 import uz.a1uz.a1uzdirector.Helpers.LayoutConfiguration;
 import uz.a1uz.a1uzdirector.JsoN.GetJson;
 import uz.a1uz.a1uzdirector.JsoN.IGetJsonResult;
@@ -32,11 +33,12 @@ import uz.a1uz.a1uzdirector.Helpers.UrlHepler;
 import uz.a1uz.a1uzdirector.Helpers.UserInfo;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
-public class AccountsTable extends ActionBarCustomizer implements LayoutConfiguration<AccountReportResult> {
-String url= UrlHepler.Combine(URL_cons.ACCOUNTREPORT, UserInfo.getGUID());
-TableLayout bankTable;
-Context context;
-ProgressBar progressBar;
+public class AccountsTable extends CustomActivity implements LayoutConfiguration<AccountReportResult> {
+    String url= UrlHepler.Combine(URL_cons.ACCOUNTREPORT, UserInfo.getGUID());
+    TableLayout bankTable;
+    Context context;
+    ProgressBar progressBar;
+
 
 
     @Override
@@ -44,11 +46,12 @@ ProgressBar progressBar;
 //        SharedPreferences sPref = getPreferences(MODE_PRIVATE);
 //        UserInfo.setLan(sPref.getString("lang", String.valueOf(UserInfo.EheaderLang.eRu)),getBaseContext());
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_accounts_table);
-
-
         context=this;
+        float tabSize=TypedValue.applyDimension(
+                TypedValue.COMPLEX_UNIT_SP, 14, this.getResources().getDisplayMetrics());
+
+
         System.out.println("OnCreat");
         setSubTitleC(getString(R.string.Bank));
         bankTable=(TableLayout)findViewById(R.id.tableForBank);
@@ -144,6 +147,7 @@ ProgressBar progressBar;
             for (int j = 0; j <5 ; j++) {
                 TW[i][j].setGravity(j==0? Gravity.START:Gravity.END);
                 TW[i][j].setBackgroundResource(R.drawable.border_shape);
+                TW[i][j].setTextSize(TypedValue.COMPLEX_UNIT_SP, tableBodyTextSize);
                 if(accountReportResults.size()-1==i){
                     TW[i][j].setTextColor(ContextCompat.getColor(this,R.color.textColor));
                     TW[i][j].setBackgroundResource(R.color.tableTopColor);

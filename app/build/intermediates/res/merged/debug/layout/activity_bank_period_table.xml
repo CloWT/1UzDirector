@@ -56,21 +56,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/periodTable"
+
+        android:stretchColumns="0"
         >
         <TableRow android:background="@color/tableTopColor"
             android:id="@+id/headerTR">
 
         <TextView
-
             android:text="@string/OperationDetail"
             android:layout_gravity="center|center_horizontal"
             android:padding="5dip"
+            android:textSize="@dimen/TableHeaderTextSize"
             android:textColor="@color/textColor"/>
         <TextView
 
             android:text="@string/InSum"
             android:gravity="center"
             android:padding="5dip"
+            android:textSize="@dimen/TableHeaderTextSize"
             android:textColor="@color/textColor"
             />
         <TextView
@@ -78,6 +81,7 @@
             android:text="@string/OutSum"
             android:gravity="center"
             android:padding="5dip"
+            android:textSize="@dimen/TableHeaderTextSize"
             android:textColor="@color/textColor"
             />
         </TableRow>

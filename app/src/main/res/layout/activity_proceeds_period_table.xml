@@ -56,6 +56,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/periodTable"
+                android:stretchColumns="2"
                 >
                 <TableRow android:background="@color/tableTopColor"
                     android:id="@+id/headerTR">
@@ -65,10 +66,12 @@
                         android:text="@string/NumZnak"
                         android:layout_gravity="center|center_horizontal"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:textColor="@color/textColor"/>
                     <TextView
 
                         android:text="@string/Date"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:gravity="center"
                         android:padding="5dip"
                         android:textColor="@color/textColor"
@@ -76,6 +79,7 @@
                     <TextView
 
                         android:text="@string/Contragent"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:gravity="center"
                         android:padding="5dip"
                         android:textColor="@color/textColor"
@@ -83,6 +87,7 @@
                     <TextView
 
                         android:text="@string/Document"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:gravity="center"
                         android:padding="5dip"
                         android:textColor="@color/textColor"
@@ -90,6 +95,7 @@
                     <TextView
 
                         android:text="@string/Deyatelnost"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:gravity="center"
                         android:padding="5dip"
                         android:textColor="@color/textColor"
@@ -97,6 +103,7 @@
                     <TextView
 
                         android:text="@string/Summa"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:gravity="center"
                         android:padding="5dip"
                         android:textColor="@color/textColor"

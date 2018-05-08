@@ -16,8 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:visibility="gone"
-        android:indeterminateDrawable="@drawable/progressbarcust"
-        android:indeterminateOnly="true"/>
+/>
 
         <HorizontalScrollView
             android:id="@+id/horizontalView"
@@ -30,26 +29,31 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/tableForBank"
+                android:padding="3dp"
+                android:stretchColumns="0"
                 >
                 <TableRow android:background="@color/tableTopColor"
 
                     >
                     <TextView
                         android:text="@string/Scheta"
+                        android:textSize="@dimen/TableHeaderTextSize"
                         android:layout_gravity="center|center_horizontal"
-                        android:padding="5dip"
+                        android:padding="5dp"
                         android:textColor="@color/textColor"/>
                     <TextView
 
                         android:text="@string/BeginDay"
+                        android:textSize="@dimen/TableHeaderTextSize"
                         android:gravity="center"
-                        android:padding="5dip"
+                        android:padding="5dp"
                         android:textColor="@color/textColor"
                         />
                     <TextView
 
                         android:text="@string/InSum"
                         android:gravity="center"
+                        android:textSize="@dimen/TableHeaderTextSize"
                         android:padding="5dip"
                         android:textColor="@color/textColor"
                         />
@@ -57,13 +61,15 @@
 
                         android:text="@string/OutSum"
                         android:gravity="center"
-                        android:padding="5dip"
+                        android:textSize="@dimen/TableHeaderTextSize"
+                        android:padding="5dp"
                         android:textColor="@color/textColor"
 
                         />
                     <TextView
                         android:text="@string/CurrentSum"
-                        android:padding="5dip"
+                        android:padding="5dp"
+                        android:textSize="@dimen/TableHeaderTextSize"
                         android:textColor="@color/textColor"
                         />
                 </TableRow>

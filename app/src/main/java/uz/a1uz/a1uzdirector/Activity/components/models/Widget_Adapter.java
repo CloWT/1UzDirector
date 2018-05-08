@@ -3,44 +3,86 @@ package uz.a1uz.a1uzdirector.Activity.components.models;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.support.annotation.NonNull;
+import android.support.v7.widget.PopupMenu;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.BaseAdapter;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import java.util.ArrayList;
+import java.util.List;
 
+import uz.a1uz.a1uzdirector.Activity.Main_Activity;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.AccountsTable;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.CreditTables.CreditTable;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.CurrentTables.CurrentConsumptionTable;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.DebitTables.DebitTable;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.ProceedsTables.ProceedsTable;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.StoreTables.StoreTable;
+import uz.a1uz.a1uzdirector.Helpers.CustomDialogs.CustomDialogClass;
 import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
 /**
- * Created by sh.khodjabaev on 09.04.2018.
+ * Created by sh.khodjabaev on 09.03.2018.
  */
 
-public class Widget_Adapter extends BaseAdapter {
-    private Context context;
-    private ArrayList<Widget_item_model> items;
+public class Widget_Adapter extends ArrayAdapter<Widget_item_model> implements View.OnClickListener {
+    private final Context context;
+    private final List<Widget_item_model> items;
     private LayoutInflater inflater;
 
 
 
-    public Widget_Adapter(Context context, ArrayList<Widget_item_model> items) {
+    public Widget_Adapter(Context context, List<Widget_item_model> items) {
+        super(context, R.layout.widget, items);
         this.context = context;
         this.items = items;
         this.inflater= (LayoutInflater) context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
+    }
+
+    @Override
+    public void onClick(View v) {
+
+
+
+        int position=(Integer) v.getTag();
+        Object object= getItem(position);
+        Widget_item_model dataModel=(Widget_item_model)object;
+
+
+        switch (v.getId())
+        {
+            case R.id.left_spinner:
+                if(dataModel.getBottomLeftItems().length>0) v.performClick();
+
+                break;
+        }
+    }
+
+    static class ViewHolder{
+        TextView     TopTex          ;
+        ImageView    ImageRight      ;
+        TextView     MiddleText      ;
+        Spinner      LeftSpinner     ;
+        TextView     BottomLeftText  ;
+        ImageButton  LeftSpinImage   ;
+        TextView     BottomRightText ;
+        ImageButton  RightSpinImage  ;
+        Spinner      RightSpinner    ;
+        LinearLayout linearLayout    ;
+        LinearLayout LeftBotomLayout ;
+        LinearLayout RightBotomLayout ;
+
     }
 
     @Override
@@ -59,100 +101,78 @@ public class Widget_Adapter extends BaseAdapter {
         return position;
     }
 
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View convertView, @NonNull ViewGroup parent) {
+        ViewHolder holder;
 
         View view =convertView;
-       if(view==null) {
-           view = inflater.inflate(R.layout.widget, parent, false);
-       }
-        Widget_item_model wg=getWidget(position);
-        TextView TopTex         =(TextView   ) view.findViewById(R.id.TopText);
-        ImageView ImageRight     =(ImageView  ) view.findViewById(R.id.ImageRight);
-        TextView MiddleText     =(TextView   ) view.findViewById(R.id.MiddleText);
-        Spinner LeftSpinner    =(Spinner    ) view.findViewById(R.id.left_spinner);
-        TextView BottomLeftText =(TextView   ) view.findViewById(R.id.BottomLeftText);
+        view=inflater.inflate(R.layout.widget,parent,false);
+
+
+
+            holder=new ViewHolder();
+            holder.TopTex         =(TextView   ) view.findViewById(R.id.TopText);
+            holder.ImageRight     =(ImageView  ) view.findViewById(R.id.ImageRight);
+            holder.MiddleText     =(TextView   ) view.findViewById(R.id.MiddleText);
+            holder.LeftSpinner    =(Spinner    ) view.findViewById(R.id.left_spinner);
+            holder.BottomLeftText =(TextView   ) view.findViewById(R.id.BottomLeftText);
+
+            holder.BottomRightText=(TextView   ) view.findViewById(R.id.BottomRightText);
+            holder.RightSpinImage =(ImageButton) view.findViewById(R.id.right_spin_img);
+            holder.RightSpinner   =(Spinner    ) view.findViewById(R.id.right_spinner);
+            holder.linearLayout   =(LinearLayout) view.findViewById(R.id.linearLayout);
+            holder.LeftBotomLayout=(LinearLayout)view.findViewById(R.id.left_bottom_layout);
+            holder.RightBotomLayout=(LinearLayout) view.findViewById(R.id.right_bottom_layout);
+
+            view.setTag(holder);
+
+
+
+
         ImageButton LeftSpinImage  =(ImageButton) view.findViewById(R.id.left_spin_img);
-        TextView BottomRightText=(TextView   ) view.findViewById(R.id.BottomRightText);
-        ImageButton RightSpinImage =(ImageButton) view.findViewById(R.id.right_spin_img);
-        Spinner RightSpinner   =(Spinner    ) view.findViewById(R.id.right_spinner);
-        LinearLayout linearLayout   =(LinearLayout) view.findViewById(R.id.linearLayout);
-        LinearLayout LeftBotomLayout=(LinearLayout)view.findViewById(R.id.left_bottom_layout);
-        LinearLayout RightBotomLayout=(LinearLayout) view.findViewById(R.id.right_bottom_layout);
+        if(getItem(position).getBottomLeftItems().length>0){
+            //
+            holder.LeftBotomLayout.setOnClickListener(new OnClick(holder.LeftSpinner));
+            LeftSpinImage.setVisibility(View.VISIBLE);}
 
-        SpinnerAddElements(wg, LeftSpinner, RightSpinner);
+        Widget_item_model wg=getItem(position);
+        SpinnerAddItems(holder,wg);
+        holder.linearLayout.setBackgroundResource(wg.getBackgroundColor());
+        holder.linearLayout.setOnClickListener(new LayoutClick(wg));
+        holder.ImageRight.setOnClickListener(new popOnClick(wg,holder));
+        holder.TopTex.setText(wg.getTopText());
+        holder.MiddleText.setText(wg.getMiddleText());
+        holder.BottomLeftText.setText(wg.getBottomLeftText());
+        holder.BottomRightText.setText(wg.getBottomRightText());
 
-        SpinnerAddItems(LeftBotomLayout,LeftSpinImage,LeftSpinner,wg);
-        TopTex.setText(wg.getTopText());
-        MiddleText.setText(wg.getMiddleText());
-        BottomLeftText.setText(wg.getBottomLeftText());
-        BottomRightText.setText(wg.getBottomRightText());
-        linearLayout.setBackgroundResource(wg.getBackgroundColor());
-        linearLayout.setOnClickListener(new Widget_Adapter.LayoutClick(wg));
 
         return view;
     }
 
-    private void SpinnerAddElements(Widget_item_model wg, Spinner leftSpinner, Spinner rightSpinner) {
-        ArrayAdapter<WidgetDropDownItem> leftSpinAdap = new ArrayAdapter<>(
-                context, R.layout.simple_spinner_item,wg.getBottomLeftItems());
-        leftSpinAdap.setDropDownViewResource(R.layout.simple_spinner_dropdown_item);
-        leftSpinner.setAdapter(leftSpinAdap);
-        leftSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                System.out.println("Clickk");
-            }
 
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-
-        ArrayAdapter<WidgetDropDownItem> rightSpinAdap = new ArrayAdapter<>(
-                context,R.layout.simple_spinner_item,wg.getBottomLeftItems());
-        rightSpinAdap.setDropDownViewResource(R.layout.simple_spinner_dropdown_item);
-        rightSpinner.setAdapter(rightSpinAdap);
-        rightSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                System.out.println("Clickk");
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-    }
-
-    Widget_item_model getWidget(int position){
-        return ((Widget_item_model) getItem(position));
-    }
-    private void SpinnerAddItems(LinearLayout leftBotomLayout, ImageButton leftSpinImage, Spinner leftSpinner, Widget_item_model wg) {
+    /**
+     *
+     * @param holder
+     * @param wg
+     */
+    private void SpinnerAddItems(ViewHolder holder, Widget_item_model wg) {
         if(wg.getBottomLeftItems().length>0){
-            leftBotomLayout.setOnClickListener(new Widget_Adapter.OnClick(leftSpinner));
-            leftSpinImage.setVisibility(View.VISIBLE);
-//            ArrayAdapter<WidgetDropDownItem> spinnerArrayAdapter = new ArrayAdapter<>(
-//                    context,R.layout.spinner_item,wg.getBottomLeftItems());
-//            spinnerArrayAdapter.setDropDownViewResource(R.layout.spinner_item);
-//            holder.LeftSpinner.setAdapter(spinnerArrayAdapter);
-//           // holder.LeftSpinner.setOnItemSelectedListener(new ItemSelected(holder,wg));
-//            holder.LeftSpinner.setOnItemSelectedListener(new ItemSelected(holder,wg));
+            ArrayAdapter<WidgetDropDownItem> spinnerArrayAdapter = new ArrayAdapter<>(
+                    context,R.layout.simple_spinner_item,wg.getBottomLeftItems());
+            spinnerArrayAdapter.setDropDownViewResource(R.layout.simple_spinner_dropdown_item);
+            holder.LeftSpinner.setAdapter(spinnerArrayAdapter);
+            holder.LeftSpinner.setOnItemSelectedListener(new ItemSelected(holder,wg));
         }
         if(wg.getBottomRightItems().length>0){
+          holder.RightSpinImage.setVisibility(View.VISIBLE);
 
-            //holder.RightBotomLayout.setOnClickListener(new OnClick(holder.RightSpinner));
-           // holder.RightSpinImage.setVisibility(View.VISIBLE);
-            //holder.RightSpinner.setAdapter(wg.getBottomRightItems());
         }
 
     }
 
     private class ItemSelected implements AdapterView.OnItemSelectedListener{
-        Widget_item_Adapter.ViewHolder holder;
+        ViewHolder holder;
         Widget_item_model wg;
-        public ItemSelected(Widget_item_Adapter.ViewHolder holder, Widget_item_model wg) {
+        public ItemSelected(ViewHolder holder, Widget_item_model wg) {
             this.holder=holder;
             this.wg=wg;
         }
@@ -169,7 +189,7 @@ public class Widget_Adapter extends BaseAdapter {
             WidgetDropDownItem dropDownItem=(WidgetDropDownItem)parent.getSelectedItem();
             wg.setMiddle(dropDownItem.ButtonMiddle);
             wg.setMiddleText(dropDownItem.ButtonMiddleText);
-            wg.setBottomLeftText(dropDownItem.ButtonMiddleText);
+            wg.setBottomLeftText(dropDownItem.getName());
             holder.MiddleText.setText(wg.getMiddleText());
             holder.BottomLeftText.setText(wg.getBottomLeftText());
 
@@ -193,13 +213,24 @@ public class Widget_Adapter extends BaseAdapter {
         }
     }
 
+    private class popOnClick implements View.OnClickListener{
+        Widget_item_model wg;
+        ViewHolder holder;
+        popOnClick(Widget_item_model wg, ViewHolder holder) {
+            this.wg=wg;
+            this.holder=holder;
+        }
+        @Override
+        public void onClick(View v) {
+            CustomDialogClass dialogClass=new CustomDialogClass(((Main_Activity)context),holder.linearLayout,wg);
+            dialogClass.show();
 
-
-
+        }
+    }
 
     private class LayoutClick implements View.OnClickListener {
         Widget_item_model wg;
-        public LayoutClick(Widget_item_model wg) {
+        LayoutClick(Widget_item_model wg) {
             this.wg=wg;
         }
 

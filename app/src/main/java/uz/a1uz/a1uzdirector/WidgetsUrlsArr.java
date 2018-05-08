@@ -10,7 +10,6 @@ public class WidgetsUrlsArr {
     String urlSecondReport;
 
     /**
-     *
      * @param urlButoon
      * @param urlReport
      * @param urlSecondReport

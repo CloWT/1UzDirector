@@ -4,9 +4,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v4.content.ContextCompat;
 import android.os.Bundle;
+import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
-import android.widget.GridLayout;
 import android.widget.ProgressBar;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.models.BankPeriodResult;
 import uz.a1uz.a1uzdirector.Enums.EdatePeriod;
-import uz.a1uz.a1uzdirector.Helpers.ActionBarCustomizer;
+import uz.a1uz.a1uzdirector.Helpers.CustomActivity;
 import uz.a1uz.a1uzdirector.Helpers.LayoutConfiguration;
 import uz.a1uz.a1uzdirector.Helpers.DatePeriodPicker;
 import uz.a1uz.a1uzdirector.Helpers.FirstLastDate;
@@ -30,7 +30,7 @@ import uz.a1uz.a1uzdirector.Helpers.UrlHepler;
 import uz.a1uz.a1uzdirector.Helpers.UserInfo;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
-public class BankPeriodTable extends ActionBarCustomizer implements LayoutConfiguration<BankPeriodResult> {
+public class BankPeriodTable extends CustomActivity implements LayoutConfiguration<BankPeriodResult> {
     TableLayout periodTable;
     int ReportID;
     Context context=this;
@@ -164,7 +164,8 @@ public class BankPeriodTable extends ActionBarCustomizer implements LayoutConfig
 
         for (int i = 0; i < sizeP; i++) {
             TR[i]=new TableRow(this);
-            for (int j = 0; j < TW[0].length; j++) {TW[i][j]=new TextView(this);}
+            for (int j = 0; j < TW[0].length; j++) {TW[i][j]=new TextView(this);
+                TW[i][j].setTextSize(TypedValue.COMPLEX_UNIT_SP, tableBodyTextSize);}
             TW[i][0].setText(periodResults.get(i).getDetail());
             TW[i][1].setText(periodResults.get(i).getInSum());
             TW[i][2].setText(periodResults.get(i).getOutSum());

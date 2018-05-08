@@ -28,6 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/tableForBank"
+                android:stretchColumns="0"
                 >
                 <TableRow android:background="@color/tableTopColor"
 
@@ -36,6 +37,7 @@
                         android:text="@string/VydiDeatelnosti"
                         android:gravity="center|center_horizontal"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableHeaderTextSize"
                         android:textColor="@color/textColor"/>
                     <TextView
 
@@ -43,6 +45,7 @@
                         android:id="@+id/lastDay"
                         android:gravity="center"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableHeaderTextSize"
                         android:onClick="cLastDay"
                         android:textColor="@color/textColor"
                         />
@@ -52,6 +55,7 @@
                         android:gravity="center"
                         android:id="@+id/thisWeek"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableHeaderTextSize"
                         android:onClick="cThisWeek"
                         android:textColor="@color/textColor"
                         />
@@ -62,12 +66,14 @@
                         android:id="@+id/LastWeek"
                         android:onClick="cLastWeek"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableHeaderTextSize"
                         android:textColor="@color/textColor"
 
                         />
                     <TextView
                         android:text="@string/ThisMonth"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableHeaderTextSize"
                         android:id="@+id/thisMonth"
                         android:onClick="cThisMonth"
                         android:textColor="@color/textColor"
@@ -82,6 +88,7 @@
                     <TextView
                         android:text="@string/Beginyear"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableHeaderTextSize"
                         android:id="@+id/thisYear"
                         android:onClick="cThisyear"
                         android:textColor="@color/textColor"
@@ -94,56 +101,63 @@
                         android:text="@string/GotovyProduck"
                         android:gravity="left|center_horizontal"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_shape"
                         android:textColor="@color/blue"
                         />
                     <TextView
                         android:id="@+id/ReadyLastDay"
-                        android:text="0"
+                        android:text="@string/zero"
                         android:onClick="cLastDay"
                         android:gravity="right"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_shape"
                         />
                     <TextView
                         android:id="@+id/ReadyThisWeek"
-                        android:text="0"
+                        android:text="@string/zero"
                         android:onClick="cThisWeek"
                         android:gravity="right"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_shape"
                         />
                     <TextView
                         android:id="@+id/ReadyLastWeek"
-                        android:text="0"
+                        android:text="@string/zero"
                         android:onClick="cLastWeek"
                         android:gravity="right"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_shape"
 
                         />
                     <TextView
                         android:id="@+id/ReadyThisMonth"
-                        android:text="0"
+                        android:text="@string/zero"
                         android:onClick="cThisMonth"
                         android:gravity="right"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_shape"
                         />
                     <TextView
                         android:id="@+id/ReadyLastMonth"
-                        android:text="0"
+                        android:text="@string/zero"
                         android:onClick="cLastMonth"
                         android:gravity="right"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_shape"
                         />
                     <TextView
                         android:id="@+id/ReadyThisYearBegin"
-                        android:text="0"
+                        android:text="@string/zero"
                         android:onClick="cThisyear"
                         android:gravity="right"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_shape"
                         />
                 </TableRow>
@@ -155,14 +169,16 @@
                         android:text="@string/Torgovl"
                         android:gravity="left|center_horizontal"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_shape"
                         android:textColor="@color/blue"/>
                     <TextView
                         android:id="@+id/OTLastDay"
-                        android:text="0"
+                        android:text="@string/zero"
                         android:onClick="cLastDay"
                         android:gravity="right"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_shape"
                         />
                     <TextView
@@ -171,39 +187,44 @@
                         android:onClick="cThisWeek"
                         android:gravity="right"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_shape"
                         />
                     <TextView
                         android:id="@+id/OTLastWeek"
-                        android:text="0"
+                        android:text="@string/zero"
                         android:onClick="cLastWeek"
                         android:gravity="right"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_shape"
 
                         />
                     <TextView
                         android:id="@+id/OTThisMonth"
-                        android:text="0"
+                        android:text="@string/zero"
                         android:onClick="cThisMonth"
                         android:gravity="right"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_shape"
                         />
                     <TextView
                         android:id="@+id/OTLastMonth"
-                        android:text="0"
+                        android:text="@string/zero"
                         android:onClick="cLastMonth"
                         android:gravity="right"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_shape"
                         />
                     <TextView
                         android:id="@+id/OTThisYearBegin"
-                        android:text="0"
+                        android:text="@string/zero"
                         android:onClick="cThisyear"
                         android:gravity="right"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_shape"
                         />
                 </TableRow>
@@ -215,55 +236,62 @@
                         android:text="@string/Uslug"
                         android:gravity="left"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_shape"
                         android:textColor="@color/blue"/>
                     <TextView
                         android:id="@+id/SerLastDay"
-                        android:text="0"
+                        android:text="@string/zero"
                         android:onClick="cLastDay"
                         android:gravity="end"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_shape"
                         />
                     <TextView
                         android:id="@+id/SerThisWeek"
-                        android:text="0"
+                        android:text="@string/zero"
                         android:onClick="cThisWeek"
                         android:gravity="end"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_shape"
                         />
                     <TextView
                         android:id="@+id/SerLastWeek"
-                        android:text="0"
+                        android:text="@string/zero"
                         android:onClick="cLastWeek"
                         android:gravity="end"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_shape"
 
                         />
                     <TextView
                         android:id="@+id/SerThisMonth"
-                        android:text="0"
+                        android:text="@string/zero"
                         android:onClick="cThisMonth"
                         android:gravity="end"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_shape"
                         />
                     <TextView
                         android:id="@+id/SerLastMonth"
-                        android:text="0"
+                        android:text="@string/zero"
                         android:onClick="cLastMonth"
                         android:gravity="end"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_shape"
                         />
                     <TextView
                         android:id="@+id/SerThisYearBegin"
-                        android:text="0"
+                        android:text="@string/zero"
                         android:onClick="cThisyear"
                         android:gravity="end"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_shape"
                         />
                 </TableRow>
@@ -275,60 +303,67 @@
                         android:text="@string/total"
                         android:gravity="start"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_dark_shape"
                         android:textColor="@color/textColor"/>
                     <TextView
                         android:id="@+id/TotalLastDay"
-                        android:text="0"
+                        android:text="@string/zero"
                         android:onClick="cLastDay"
                         android:gravity="end"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_dark_shape"
                         android:textColor="@color/textColor"
                         />
                     <TextView
                         android:id="@+id/TotalThisWeek"
-                        android:text="0"
+                        android:text="@string/zero"
                         android:onClick="cThisWeek"
                         android:gravity="end"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_dark_shape"
                         android:textColor="@color/textColor"
                         />
                     <TextView
                         android:id="@+id/TotalLastWeek"
-                        android:text="0"
+                        android:text="@string/zero"
                         android:onClick="cLastWeek"
                         android:gravity="end"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_dark_shape"
                         android:textColor="@color/textColor"
 
                         />
                     <TextView
                         android:id="@+id/TotalThisMonth"
-                        android:text="0"
+                        android:text="@string/zero"
                         android:onClick="cThisMonth"
                         android:gravity="end"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_dark_shape"
                         android:textColor="@color/textColor"
                         />
                     <TextView
                         android:id="@+id/TotalLastMonth"
-                        android:text="0"
+                        android:text="@string/zero"
                         android:onClick="cLastMonth"
                         android:gravity="end"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_dark_shape"
                         android:textColor="@color/textColor"
                         />
                     <TextView
                         android:id="@+id/TotalThisYearBegin"
-                        android:text="0"
+                        android:text="@string/zero"
                         android:onClick="cThisyear"
                         android:gravity="end"
                         android:padding="5dip"
+                        android:textSize="@dimen/TableBodyTextSize"
                         android:background="@drawable/border_dark_shape"
                         android:textColor="@color/textColor"
                         />

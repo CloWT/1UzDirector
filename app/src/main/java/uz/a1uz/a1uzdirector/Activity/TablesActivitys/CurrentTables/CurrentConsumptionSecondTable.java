@@ -17,7 +17,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import uz.a1uz.a1uzdirector.Helpers.ActionBarCustomizer;
+import uz.a1uz.a1uzdirector.Helpers.CustomActivity;
 import uz.a1uz.a1uzdirector.Helpers.DatePeriodPicker;
 import uz.a1uz.a1uzdirector.Helpers.LayoutConfiguration;
 import uz.a1uz.a1uzdirector.Helpers.UrlHepler;
@@ -27,7 +27,7 @@ import uz.a1uz.a1uzdirector.JsoN.IGetJsonResult;
 import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
-public class CurrentConsumptionSecondTable extends ActionBarCustomizer implements LayoutConfiguration<CurrentConsumptionSecondTable.CurrentReportResult> {
+public class CurrentConsumptionSecondTable extends CustomActivity implements LayoutConfiguration<CurrentConsumptionSecondTable.CurrentReportResult> {
     GridLayout periodTable;
     int ReportID;
     Context context;

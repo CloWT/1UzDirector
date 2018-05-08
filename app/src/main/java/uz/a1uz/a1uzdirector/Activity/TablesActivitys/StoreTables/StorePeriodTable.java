@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
+import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.GridLayout;
@@ -20,7 +21,7 @@ import java.util.List;
 
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.StoreTables.models.StorePeriodResult;
 import uz.a1uz.a1uzdirector.Enums.EdatePeriod;
-import uz.a1uz.a1uzdirector.Helpers.ActionBarCustomizer;
+import uz.a1uz.a1uzdirector.Helpers.CustomActivity;
 import uz.a1uz.a1uzdirector.Helpers.LayoutConfiguration;
 import uz.a1uz.a1uzdirector.Helpers.DatePeriodPicker;
 import uz.a1uz.a1uzdirector.Helpers.FirstLastDate;
@@ -31,7 +32,7 @@ import uz.a1uz.a1uzdirector.JsoN.IGetJsonResult;
 import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
-public class StorePeriodTable extends ActionBarCustomizer implements LayoutConfiguration<StorePeriodResult> {
+public class StorePeriodTable extends CustomActivity implements LayoutConfiguration<StorePeriodResult> {
     GridLayout periodTable;
     int ReportID;
     Context context;
@@ -193,6 +194,7 @@ public class StorePeriodTable extends ActionBarCustomizer implements LayoutConfi
             param.columnSpec = GridLayout.spec(0,11);
             param.setGravity(Gravity.FILL);
             tx=new TextView(this);
+            tx.setTextSize(TypedValue.COMPLEX_UNIT_SP, tableBodyTextSize);
             tx.setGravity(Gravity.CENTER_HORIZONTAL);
             tx.setTextColor(ContextCompat.getColor(this,R.color.tableTopColor));
             tx.setBackgroundResource(R.drawable.border_shape);
@@ -203,6 +205,7 @@ public class StorePeriodTable extends ActionBarCustomizer implements LayoutConfi
             for (int i = 0; i < textView[0].length; i++) {
                 textView[0][i]=new TextView(this);
 //                textView[0][i].setGravity(Gravity.FILL);
+                textView[0][i].setTextSize(TypedValue.COMPLEX_UNIT_SP, tableBodyTextSize);
 
 
                 textView[0][i].setTextColor(ContextCompat.getColor(this,R.color.textColor));
@@ -218,6 +221,7 @@ public class StorePeriodTable extends ActionBarCustomizer implements LayoutConfi
 
             for (int j = 0; j <textView[0].length ; j++) {
                 textView[i][j]=new TextView(this);
+                textView[i][j].setTextSize(TypedValue.COMPLEX_UNIT_SP, tableBodyTextSize);
 
                 if(i<sizeP-1&&sizeP>1){
 
