@@ -100,4 +100,7 @@
     <string name="payFor">Оплата</string>
     <string name="chooseColor">Выберите цвет:</string>
     <string name="WiFiNoConnect">Интернет или Wifi не подключен</string>
+    <string name="zero">0</string>
+    <string name="title_activity_main">Navigation_Activity</string>
+    <string name="pusto">---</string>
 </resources>

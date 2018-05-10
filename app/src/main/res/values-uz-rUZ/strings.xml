@@ -97,4 +97,7 @@
     <string name="payFor">Тўлов</string>
     <string name="chooseColor">Рангни танланг:</string>
     <string name="WiFiNoConnect">Интернет ёки Wifi уланмаган</string>
+    <string name="zero">0</string>
+    <string name="title_activity_main">Navigation_Activity</string>
+    <string name="pusto">---</string>
 </resources>

@@ -20,7 +20,6 @@
         <activity
             android:name="uz.a1uz.a1uzdirector.Activity.Login_Activity"
             android:windowSoftInputMode="stateVisible|adjustResize" >
->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -70,6 +69,11 @@
         <activity
             android:name="uz.a1uz.a1uzdirector.Activity.TablesActivitys.CurrentTables.CurrentConsumptionSecondTable"
             android:configChanges="orientation" />
+        <activity
+            android:name="uz.a1uz.a1uzdirector.Activity.MainActivity"
+            android:label="@string/title_activity_main" >
+                        >
+        </activity>
     </application>
 
 </manifest>

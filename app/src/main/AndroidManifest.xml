@@ -11,41 +11,63 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppThemess">
-        <activity android:name=".Activity.Login_Activity" android:windowSoftInputMode="stateVisible|adjustResize">>
+        <activity
+            android:name=".Activity.Login_Activity"
+            android:windowSoftInputMode="stateVisible|adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity android:name=".Activity.Main_Activity" android:configChanges="orientation" />
-        <activity android:name=".Activity.TablesActivitys.BankTables.AccountsTable" android:configChanges="orientation"
-            />
-        <activity android:name=".Activity.TablesActivitys.BankTables.BankBankReport" android:configChanges="orientation"
-             />
-        <activity android:name=".Activity.TablesActivitys.BankTables.BankPeriodTable" android:configChanges="orientation"
-             />
-        <activity android:name=".Activity.TablesActivitys.ProceedsTables.ProceedsTable"  android:configChanges="orientation"
-            />
-        <activity android:name=".Activity.TablesActivitys.ProceedsTables.ProceedsPeriodTable"  android:configChanges="orientation"
-            />
+        <activity
+            android:name=".Activity.Main_Activity"
+            android:configChanges="orientation" />
+        <activity
+            android:name=".Activity.TablesActivitys.BankTables.AccountsTable"
+            android:configChanges="orientation" />
+        <activity
+            android:name=".Activity.TablesActivitys.BankTables.BankBankReport"
+            android:configChanges="orientation" />
+        <activity
+            android:name=".Activity.TablesActivitys.BankTables.BankPeriodTable"
+            android:configChanges="orientation" />
+        <activity
+            android:name=".Activity.TablesActivitys.ProceedsTables.ProceedsTable"
+            android:configChanges="orientation" />
+        <activity
+            android:name=".Activity.TablesActivitys.ProceedsTables.ProceedsPeriodTable"
+            android:configChanges="orientation" />
         <activity android:name=".Helpers.DatePeriodPicker" />
-        <activity android:name=".Activity.TablesActivitys.StoreTables.StoreTable"  android:configChanges="orientation"
-            />
-        <activity android:name=".Activity.TablesActivitys.StoreTables.StorePeriodTable"  android:configChanges="orientation"
-            />
-        <activity android:name=".Activity.TablesActivitys.CreditTables.CreditTable"  android:configChanges="orientation"
-            />
-        <activity android:name=".Activity.TablesActivitys.CreditTables.CreditSecondReport"  android:configChanges="orientation"
-            />
-        <activity android:name=".Activity.TablesActivitys.DebitTables.DebitTable"  android:configChanges="orientation"
-            />
-        <activity android:name=".Activity.TablesActivitys.DebitTables.DebitSecondReport"  android:configChanges="orientation"
-            />
-        <activity android:name=".Activity.TablesActivitys.CurrentTables.CurrentConsumptionTable"  android:configChanges="orientation"
-            />
-        <activity android:name=".Activity.TablesActivitys.CurrentTables.CurrentConsumptionSecondTable"  android:configChanges="orientation"
-            />
+        <activity
+            android:name=".Activity.TablesActivitys.StoreTables.StoreTable"
+            android:configChanges="orientation" />
+        <activity
+            android:name=".Activity.TablesActivitys.StoreTables.StorePeriodTable"
+            android:configChanges="orientation" />
+        <activity
+            android:name=".Activity.TablesActivitys.CreditTables.CreditTable"
+            android:configChanges="orientation" />
+        <activity
+            android:name=".Activity.TablesActivitys.CreditTables.CreditSecondReport"
+            android:configChanges="orientation" />
+        <activity
+            android:name=".Activity.TablesActivitys.DebitTables.DebitTable"
+            android:configChanges="orientation" />
+        <activity
+            android:name=".Activity.TablesActivitys.DebitTables.DebitSecondReport"
+            android:configChanges="orientation" />
+        <activity
+            android:name=".Activity.TablesActivitys.CurrentTables.CurrentConsumptionTable"
+            android:configChanges="orientation" />
+        <activity
+            android:name=".Activity.TablesActivitys.CurrentTables.CurrentConsumptionSecondTable"
+            android:configChanges="orientation" />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:label="@string/title_activity_main"
+            >                        ></activity>
     </application>
 
 </manifest>

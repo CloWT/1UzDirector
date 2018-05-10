@@ -2021,8 +2021,27 @@
                     "startLine": 108,
                     "startColumn": 4,
                     "startOffset": 6788,
+                    "endColumn": 37,
+                    "endOffset": 6821
+                },
+                "from": {
+                    "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\values-ru\\strings.xml",
+                    "position": {
+                        "startLine": 104,
+                        "startColumn": 4,
+                        "startOffset": 5554,
+                        "endColumn": 37,
+                        "endOffset": 5587
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 109,
+                    "startColumn": 4,
+                    "startOffset": 6826,
                     "endColumn": 100,
-                    "endOffset": 6884
+                    "endOffset": 6922
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-ru\\values-ru.xml",
@@ -2037,11 +2056,11 @@
             },
             {
                 "to": {
-                    "startLine": 109,
+                    "startLine": 110,
                     "startColumn": 4,
-                    "startOffset": 6889,
+                    "startOffset": 6927,
                     "endColumn": 40,
-                    "endOffset": 6925
+                    "endOffset": 6963
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\values-ru\\strings.xml",
@@ -2056,11 +2075,11 @@
             },
             {
                 "to": {
-                    "startLine": 110,
+                    "startLine": 111,
                     "startColumn": 4,
-                    "startOffset": 6930,
+                    "startOffset": 6968,
                     "endColumn": 51,
-                    "endOffset": 6977
+                    "endOffset": 7015
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\values-ru\\strings.xml",
@@ -2075,11 +2094,11 @@
             },
             {
                 "to": {
-                    "startLine": 111,
+                    "startLine": 112,
                     "startColumn": 4,
-                    "startOffset": 6982,
+                    "startOffset": 7020,
                     "endColumn": 92,
-                    "endOffset": 7070
+                    "endOffset": 7108
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\values-ru\\strings.xml",
@@ -2094,11 +2113,30 @@
             },
             {
                 "to": {
-                    "startLine": 112,
+                    "startLine": 113,
                     "startColumn": 4,
-                    "startOffset": 7075,
+                    "startOffset": 7113,
+                    "endColumn": 67,
+                    "endOffset": 7176
+                },
+                "from": {
+                    "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\values-ru\\strings.xml",
+                    "position": {
+                        "startLine": 103,
+                        "startColumn": 4,
+                        "startOffset": 5485,
+                        "endColumn": 67,
+                        "endOffset": 5548
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 114,
+                    "startColumn": 4,
+                    "startOffset": 7181,
                     "endColumn": 64,
-                    "endOffset": 7135
+                    "endOffset": 7241
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\values-ru\\strings.xml",
@@ -2113,11 +2151,11 @@
             },
             {
                 "to": {
-                    "startLine": 113,
+                    "startLine": 115,
                     "startColumn": 4,
-                    "startOffset": 7140,
+                    "startOffset": 7246,
                     "endColumn": 78,
-                    "endOffset": 7214
+                    "endOffset": 7320
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\values-ru\\strings.xml",
@@ -2132,11 +2170,11 @@
             },
             {
                 "to": {
-                    "startLine": 114,
+                    "startLine": 116,
                     "startColumn": 4,
-                    "startOffset": 7219,
+                    "startOffset": 7325,
                     "endColumn": 52,
-                    "endOffset": 7267
+                    "endOffset": 7373
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\values-ru\\strings.xml",
@@ -2151,11 +2189,11 @@
             },
             {
                 "to": {
-                    "startLine": 115,
+                    "startLine": 117,
                     "startColumn": 4,
-                    "startOffset": 7272,
+                    "startOffset": 7378,
                     "endColumn": 52,
-                    "endOffset": 7320
+                    "endOffset": 7426
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\values-ru\\strings.xml",
@@ -2170,11 +2208,11 @@
             },
             {
                 "to": {
-                    "startLine": 116,
+                    "startLine": 118,
                     "startColumn": 4,
-                    "startOffset": 7325,
+                    "startOffset": 7431,
                     "endColumn": 52,
-                    "endOffset": 7373
+                    "endOffset": 7479
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\values-ru\\strings.xml",
@@ -2189,11 +2227,11 @@
             },
             {
                 "to": {
-                    "startLine": 117,
+                    "startLine": 119,
                     "startColumn": 4,
-                    "startOffset": 7378,
+                    "startOffset": 7484,
                     "endColumn": 39,
-                    "endOffset": 7413
+                    "endOffset": 7519
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\values-ru\\strings.xml",
@@ -2208,11 +2246,11 @@
             },
             {
                 "to": {
-                    "startLine": 118,
+                    "startLine": 120,
                     "startColumn": 4,
-                    "startOffset": 7418,
+                    "startOffset": 7524,
                     "endColumn": 43,
-                    "endOffset": 7457
+                    "endOffset": 7563
                 },
                 "from": {
                     "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\values-ru\\strings.xml",
@@ -2222,6 +2260,25 @@
                         "startOffset": 2321,
                         "endColumn": 43,
                         "endOffset": 2360
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 121,
+                    "startColumn": 4,
+                    "startOffset": 7568,
+                    "endColumn": 34,
+                    "endOffset": 7598
+                },
+                "from": {
+                    "file": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\values-ru\\strings.xml",
+                    "position": {
+                        "startLine": 102,
+                        "startColumn": 4,
+                        "startOffset": 5449,
+                        "endColumn": 34,
+                        "endOffset": 5479
                     }
                 }
             }

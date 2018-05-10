@@ -105,10 +105,12 @@
     <string name="ostatokNakones">Охиридаги қолдиқ</string>
     <string name="password">"махфий код "</string>
     <string name="payFor">Тўлов</string>
+    <string name="pusto">---</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
     <string name="store">Омборлар</string>
     <string name="thisWeek">Жорий ҳафта</string>
     <string name="title_activity_current_consumption_table">CurrentConsumptionTable</string>
+    <string name="title_activity_main">Navigation_Activity</string>
     <string name="title_activity_navigation">Navigation</string>
     <string name="title_activity_store_period_table">StorePeriodTable</string>
     <string name="title_section1">Section 1</string>
@@ -116,4 +118,5 @@
     <string name="title_section3">Section  3</string>
     <string name="total">"Жами "</string>
     <string name="yesterday">Кеча</string>
+    <string name="zero">0</string>
 </resources>
