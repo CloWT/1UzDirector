@@ -4,23 +4,11 @@
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\menu\\date_picker_drawer.xml"
     },
     {
-        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\menu\\navigation.xml",
-        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\menu\\navigation.xml"
-    },
-    {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu.xml",
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\menu\\menu.xml"
     },
     {
-        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main_drawer.xml",
-        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
-    },
-    {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\menu\\color_change_popup.xml",
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\menu\\color_change_popup.xml"
-    },
-    {
-        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
-        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\menu\\main.xml"
     }
 ]

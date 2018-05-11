@@ -2,8 +2,8 @@ package uz.a1uz.a1uzdirector.Activity.TablesActivitys.CreditTables;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v4.content.ContextCompat;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
@@ -29,10 +29,13 @@ import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
 public class CreditTable extends CustomActivity implements LayoutConfiguration<CreditReportResult> {
-    String url= UrlHepler.Combine(URL_cons.CREDITREPORT, UserInfo.getGUID());
+    String url = UrlHepler.Combine(URL_cons.CREDITREPORT, UserInfo.getGUID());
     GridLayout creditTable;
     Context context;
     ProgressBar progressBar;
+    TextView[][] txResult;
+    int columnCount = 7;
+    GridLayout.LayoutParams param2 = new GridLayout.LayoutParams();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,16 +44,16 @@ public class CreditTable extends CustomActivity implements LayoutConfiguration<C
         setSubTitleC(getString(R.string.MyDoljni));
         //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
-        context=this;
-        creditTable=(GridLayout) findViewById(R.id.periodTable);
-        progressBar=(ProgressBar)findViewById(R.id.progres);
+        context = this;
+        creditTable = (GridLayout) findViewById(R.id.periodTable);
+        progressBar = (ProgressBar) findViewById(R.id.progres);
         creditTable.setVisibility(View.GONE);
         param2.setGravity(Gravity.FILL);
 
         GetJson.execute(url, new IGetJsonResult() {
             @Override
             public void OnBegin() {
-                ((CreditTable)context).progressBar.setVisibility(View.VISIBLE);
+                ((CreditTable) context).progressBar.setVisibility(View.VISIBLE);
             }
 
             @Override
@@ -66,14 +69,14 @@ public class CreditTable extends CustomActivity implements LayoutConfiguration<C
             @Override
             public void OnEnd(JSONObject jsonObject) {
                 try {
-                    ((CreditTable)context).progressBar.setVisibility(View.GONE);
-                    ((CreditTable)context).creditTable.setVisibility(View.VISIBLE);
-                    List<CreditReportResult> creditReportResults=new ArrayList<>();
-                    JSONObject js=(JSONObject) jsonObject.get("GetCreditReportResult");
-                    JSONArray jsAr=js.getJSONArray("CreditItemList");
+                    ((CreditTable) context).progressBar.setVisibility(View.GONE);
+                    ((CreditTable) context).creditTable.setVisibility(View.VISIBLE);
+                    List<CreditReportResult> creditReportResults = new ArrayList<>();
+                    JSONObject js = (JSONObject) jsonObject.get("GetCreditReportResult");
+                    JSONArray jsAr = js.getJSONArray("CreditItemList");
                     JSONObject tmp;
                     for (int i = 0; i < jsAr.length(); i++) {
-                        tmp=jsAr.getJSONObject(i);
+                        tmp = jsAr.getJSONObject(i);
                         creditReportResults.add(new CreditReportResult(
                                 tmp.getString("Number"),
                                 tmp.getInt("ReportDecriptionID"),
@@ -100,7 +103,6 @@ public class CreditTable extends CustomActivity implements LayoutConfiguration<C
                     AddElemsToTable(creditReportResults);
 
 
-
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -110,64 +112,68 @@ public class CreditTable extends CustomActivity implements LayoutConfiguration<C
 
             @Override
             public void OnError(Exception e) {
-                ((CreditTable)context).progressBar.setVisibility(View.GONE);
-                Toast.makeText(context, ""+e.getMessage(), Toast.LENGTH_SHORT).show();
+                ((CreditTable) context).progressBar.setVisibility(View.GONE);
+                Toast.makeText(context, "" + e.getMessage(), Toast.LENGTH_SHORT).show();
 
             }
         });
     }
-    TextView[][] txResult;
-    int columnCount=7;
-    GridLayout.LayoutParams param2 =new GridLayout.LayoutParams();
-
 
     @Override
     public void AddElemsToTable(List<CreditReportResult> periodResult) {
         TextViewClear();
 
-        int sizeP=periodResult.size();
-        txResult=new TextView[sizeP][columnCount];
+        int sizeP = periodResult.size();
+        txResult = new TextView[sizeP][columnCount];
         for (int i = 0; i < txResult.length; i++) {
-            if(i<sizeP-1){
-                OnClick click=new OnClick(periodResult.get(i).getReportDecriptionID());
+            if (i < sizeP - 1) {
+                OnClick click = new OnClick(periodResult.get(i).getReportDecriptionID());
 
-            for (int j = 0; j < txResult[0].length; j++) {
-                txResult[i][j]=new TextView(this);
-                txResult[i][j].setTextSize(TypedValue.COMPLEX_UNIT_SP, tableBodyTextSize);
-                txResult[i][j].setOnClickListener(click);
-                txResult[i][j].setTextColor(ContextCompat.getColor(this,R.color.tableTopColor));
-                txResult[i][j].setBackgroundResource(R.drawable.border_shape);
-
-                if(j<2||j==columnCount-1){
-                    txResult[i][j].setBackgroundResource(R.drawable.border_shape);
-                }else {
-                    switch (j){
-                        case 2: txResult[i][j].setBackgroundResource(R.drawable.border_shape_red1); break;
-                        case 3: txResult[i][j].setBackgroundResource(R.drawable.border_shape_red2);break;
-                        case 4: txResult[i][j].setBackgroundResource(R.drawable.border_shape_red3);break;
-                        case 5: txResult[i][j].setBackgroundResource(R.drawable.border_shape_red4);break;
-                    }
-                }
-               // txResult[i][j].setLayoutParams(param2);
-                txResult[i][j].setPadding(15,15,15,15);
-                creditTable.addView(txResult[i][j]);
-
-            }
-            }else{
                 for (int j = 0; j < txResult[0].length; j++) {
-                    txResult[i][j]=new TextView(this);
+                    txResult[i][j] = new TextView(this);
                     txResult[i][j].setTextSize(TypedValue.COMPLEX_UNIT_SP, tableBodyTextSize);
-                    txResult[i][j].setTextColor(ContextCompat.getColor(this,R.color.textColor));
+                    txResult[i][j].setOnClickListener(click);
+                    txResult[i][j].setTextColor(ContextCompat.getColor(this, R.color.tableTopColor));
+                    txResult[i][j].setBackgroundResource(R.drawable.border_shape);
+
+                    if (j < 2 || j == columnCount - 1) {
+                        txResult[i][j].setBackgroundResource(R.drawable.border_shape);
+                    } else {
+                        switch (j) {
+                            case 2:
+                                txResult[i][j].setBackgroundResource(R.drawable.border_shape_red1);
+                                break;
+                            case 3:
+                                txResult[i][j].setBackgroundResource(R.drawable.border_shape_red2);
+                                break;
+                            case 4:
+                                txResult[i][j].setBackgroundResource(R.drawable.border_shape_red3);
+                                break;
+                            case 5:
+                                txResult[i][j].setBackgroundResource(R.drawable.border_shape_red4);
+                                break;
+                        }
+                    }
+                    // txResult[i][j].setLayoutParams(param2);
+                    txResult[i][j].setPadding(15, 15, 15, 15);
+                    creditTable.addView(txResult[i][j]);
+
+                }
+            } else {
+                for (int j = 0; j < txResult[0].length; j++) {
+                    txResult[i][j] = new TextView(this);
+                    txResult[i][j].setTextSize(TypedValue.COMPLEX_UNIT_SP, tableBodyTextSize);
+                    txResult[i][j].setTextColor(ContextCompat.getColor(this, R.color.textColor));
                     txResult[i][j].setBackgroundResource(R.color.tableTopColor);
 
-                    txResult[i][j].setPadding(15,15,15,15);
+                    txResult[i][j].setPadding(15, 15, 15, 15);
                     creditTable.addView(txResult[i][j]);
 
                 }
 
             }
 
-            CustomSetTex(txResult[i],periodResult.get(i));
+            CustomSetTex(txResult[i], periodResult.get(i));
             CustomLayoutParams(txResult[i]);
         }
 
@@ -185,16 +191,14 @@ public class CreditTable extends CustomActivity implements LayoutConfiguration<C
         txV[6].setText(periodResults.getSumma());
 
 
-
         // Apply the updated layout parameters to TextView
-
 
 
     }
 
     @Override
     public void CustomLayoutParams(TextView[] txV) {
-        for (TextView tx:txV) {
+        for (TextView tx : txV) {
             GridLayout.LayoutParams lp = (GridLayout.LayoutParams) tx.getLayoutParams();
             lp.setGravity(Gravity.FILL_HORIZONTAL);
             tx.setLayoutParams(lp);
@@ -203,25 +207,27 @@ public class CreditTable extends CustomActivity implements LayoutConfiguration<C
 
 
     private void TextViewClear() {
-        if(txResult!=null){
-            for (TextView[] textViews:txResult){
-                for (TextView tx :textViews) {
+        if (txResult != null) {
+            for (TextView[] textViews : txResult) {
+                for (TextView tx : textViews) {
                     creditTable.removeView(tx);
                 }
             }
         }
     }
-    class OnClick implements  View.OnClickListener{
+
+    class OnClick implements View.OnClickListener {
         int id;
+
         OnClick(int ReportDecriptionID) {
-            id=ReportDecriptionID;
+            id = ReportDecriptionID;
 
         }
 
         @Override
         public void onClick(View v) {
-            Intent intent=new Intent(context,CreditSecondReport.class);
-            intent.putExtra("ID",id);
+            Intent intent = new Intent(context, CreditSecondReport.class);
+            intent.putExtra("ID", id);
             startActivity(intent);
         }
     }

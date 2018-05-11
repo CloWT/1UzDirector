@@ -2,8 +2,8 @@ package uz.a1uz.a1uzdirector.Activity.TablesActivitys.ProceedsTables;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v4.content.ContextCompat;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
@@ -12,17 +12,20 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.List;
+
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.ProceedsTables.models.ProceedsPeriodResult;
 import uz.a1uz.a1uzdirector.Enums.EdatePeriod;
 import uz.a1uz.a1uzdirector.Helpers.CustomActivity;
-import uz.a1uz.a1uzdirector.Helpers.LayoutConfiguration;
 import uz.a1uz.a1uzdirector.Helpers.DatePeriodPicker;
 import uz.a1uz.a1uzdirector.Helpers.FirstLastDate;
+import uz.a1uz.a1uzdirector.Helpers.LayoutConfiguration;
 import uz.a1uz.a1uzdirector.Helpers.UrlHepler;
 import uz.a1uz.a1uzdirector.Helpers.UserInfo;
 import uz.a1uz.a1uzdirector.JsoN.GetJson;
@@ -39,7 +42,7 @@ public class ProceedsPeriodTable extends CustomActivity implements LayoutConfigu
     Intent inDatePicker;
     TableRow[] TR;
     String url;
-    int requesCodeForDatePicker=3;
+    int requesCodeForDatePicker = 3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,41 +50,45 @@ public class ProceedsPeriodTable extends CustomActivity implements LayoutConfigu
         setContentView(R.layout.activity_proceeds_period_table);
         setSubTitleC(getString(R.string.VyruchkaZaPeriod));
 
-        context=this;
-        periodTable=(TableLayout) findViewById(R.id.periodTable);
-        progressBar=(ProgressBar)findViewById(R.id.progres);
+        context = this;
+        periodTable = (TableLayout) findViewById(R.id.periodTable);
+        progressBar = (ProgressBar) findViewById(R.id.progres);
         progressBar.setVisibility(View.VISIBLE);
-        tDatePeriod=(TextView) findViewById(R.id.tDatePeriod);
+        tDatePeriod = (TextView) findViewById(R.id.tDatePeriod);
 
-        FirstLastDate datFL=new FirstLastDate();
-        inDatePicker =new Intent(context, DatePeriodPicker.class);
-        Intent inProceedTable=getIntent();
-        ReportID=inProceedTable.getIntExtra("ReportID",-1);
-        EdatePeriod e=EdatePeriod.valueOf(inProceedTable.getStringExtra("DateE"));
+        FirstLastDate datFL = new FirstLastDate();
+        inDatePicker = new Intent(context, DatePeriodPicker.class);
+        Intent inProceedTable = getIntent();
+        ReportID = inProceedTable.getIntExtra("ReportID", -1);
+        EdatePeriod e = EdatePeriod.valueOf(inProceedTable.getStringExtra("DateE"));
 
         periodTable.setVisibility(View.INVISIBLE);
         datFL.GetPeriodDate(e);
         tDatePeriod.setText(String.format("%s - %s", datFL.getFirstDate(), datFL.getLastDate()));
-        url= UrlHepler.Combine(URL_cons.PROCCEDPERIODREPORT,ReportID+"",
-                datFL.getFirstDate(),datFL.getLastDate(),
+        url = UrlHepler.Combine(URL_cons.PROCCEDPERIODREPORT, ReportID + "",
+                datFL.getFirstDate(), datFL.getLastDate(),
                 UserInfo.getGUID());
-        getFromJson(datFL.getFirstDate(),datFL.getLastDate());
+        getFromJson(datFL.getFirstDate(), datFL.getLastDate());
 
     }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
-        if (data == null) {return;}
-        if(requestCode==requesCodeForDatePicker&& resultCode==RESULT_OK){
+        if (data == null) {
+            return;
+        }
+        if (requestCode == requesCodeForDatePicker && resultCode == RESULT_OK) {
             String firstDate = data.getStringExtra("fDate");
             String secondDate = data.getStringExtra("sDate");
             tDatePeriod.setText(String.format("%s - %s", firstDate, secondDate));
             getFromJson(firstDate, secondDate);
         }
     }
-    void getFromJson(String fDate, String sDate){
-        String url=UrlHepler.Combine(URL_cons.PROCCEDPERIODREPORT,ReportID+"",
-                fDate,sDate,
+
+    void getFromJson(String fDate, String sDate) {
+        String url = UrlHepler.Combine(URL_cons.PROCCEDPERIODREPORT, ReportID + "",
+                fDate, sDate,
                 UserInfo.getGUID());
         GetJson.execute(url, new IGetJsonResult() {
             @Override
@@ -101,18 +108,18 @@ public class ProceedsPeriodTable extends CustomActivity implements LayoutConfigu
 
             @Override
             public void OnEnd(JSONObject jsonObject) {
-                try{
+                try {
                     progressBar.setVisibility(View.GONE);
                     periodTable.setVisibility(View.VISIBLE);
                     JSONObject tmp;
-                    List<ProceedsPeriodResult> periodResults=new ArrayList<>();
-                    JSONObject js=(JSONObject)jsonObject.get("GetProceedsPeriodReportResult");
-                    JSONArray jsonArray=js.getJSONArray("ItemList");
+                    List<ProceedsPeriodResult> periodResults = new ArrayList<>();
+                    JSONObject js = (JSONObject) jsonObject.get("GetProceedsPeriodReportResult");
+                    JSONArray jsonArray = js.getJSONArray("ItemList");
 
-                    for (int i=0;i<jsonArray.length(); i++){
-                        tmp=jsonArray.getJSONObject(i);
+                    for (int i = 0; i < jsonArray.length(); i++) {
+                        tmp = jsonArray.getJSONObject(i);
                         periodResults.add(new ProceedsPeriodResult(
-                                ""+tmp.getInt("Number"),
+                                "" + tmp.getInt("Number"),
                                 tmp.getString("Date"),
                                 tmp.getString("Contragent"),
                                 tmp.getString("Contract"),
@@ -120,17 +127,15 @@ public class ProceedsPeriodTable extends CustomActivity implements LayoutConfigu
                                 tmp.getString("Summa"))
                         );
                     }
-                    if(jsonArray.length()<1)periodResults.add(new ProceedsPeriodResult(
-                            "","",getString(R.string.NotData),"","",""
+                    if (jsonArray.length() < 1) periodResults.add(new ProceedsPeriodResult(
+                            "", "", getString(R.string.NotData), "", "", ""
                     ));
-                    periodResults.add(new ProceedsPeriodResult(getString(R.string.total),"","","",
-                            "",js.getString("TotalSumma")));
+                    periodResults.add(new ProceedsPeriodResult(getString(R.string.total), "", "", "",
+                            "", js.getString("TotalSumma")));
                     AddElemsToTable(periodResults);
 
 
-
-                }
-                catch (JSONException ignored){
+                } catch (JSONException ignored) {
 
                 }
 
@@ -139,25 +144,26 @@ public class ProceedsPeriodTable extends CustomActivity implements LayoutConfigu
             @Override
             public void OnError(Exception e) {
                 progressBar.setVisibility(View.GONE);
-                Toast.makeText(context, ""+e.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "" + e.getMessage(), Toast.LENGTH_SHORT).show();
 
             }
         });
 
     }
+
     @Override
-    public void AddElemsToTable(List<ProceedsPeriodResult> periodResults){
-        if(TR!=null)
-            for (TableRow tr:TR) {
+    public void AddElemsToTable(List<ProceedsPeriodResult> periodResults) {
+        if (TR != null)
+            for (TableRow tr : TR) {
                 periodTable.removeView(tr);
             }
-        int sizeP=periodResults.size();
-        TextView TW[][]=new TextView[sizeP][6];
-        TR=new TableRow[sizeP];
+        int sizeP = periodResults.size();
+        TextView TW[][] = new TextView[sizeP][6];
+        TR = new TableRow[sizeP];
         for (int i = 0; i < sizeP; i++) {
-            TR[i]=new TableRow(this);
+            TR[i] = new TableRow(this);
             for (int j = 0; j < TW[0].length; j++) {
-                TW[i][j]=new TextView(this);
+                TW[i][j] = new TextView(this);
                 TW[i][j].setTextSize(TypedValue.COMPLEX_UNIT_SP, tableBodyTextSize);
             }
             TW[i][0].setText(periodResults.get(i).getNumber());
@@ -167,21 +173,21 @@ public class ProceedsPeriodTable extends CustomActivity implements LayoutConfigu
             TW[i][4].setText(periodResults.get(i).getVidType());
             TW[i][5].setText(periodResults.get(i).getSumma());
             for (int j = 0; j < TW[0].length; j++) {
-                if(i<sizeP-1&&sizeP>1){
+                if (i < sizeP - 1 && sizeP > 1) {
                     TW[i][j].setGravity(Gravity.START);
-                    TW[i][j].setTextColor(ContextCompat.getColor(this,R.color.tableTopColor));
+                    TW[i][j].setTextColor(ContextCompat.getColor(this, R.color.tableTopColor));
                     TW[i][j].setBackgroundResource(R.drawable.border_shape);
-                }else{
+                } else {
                     TW[i][j].setGravity(Gravity.START);
-                    TW[i][j].setTextColor(ContextCompat.getColor(this,R.color.textColor));
+                    TW[i][j].setTextColor(ContextCompat.getColor(this, R.color.textColor));
                     TW[i][j].setBackgroundResource(R.color.tableTopColor);
 
                 }
 
-                TW[i][j].setPadding(15,15,15,15);
+                TW[i][j].setPadding(15, 15, 15, 15);
                 TR[i].addView(TW[i][j]);
-        }
-        periodTable.addView(TR[i]);
+            }
+            periodTable.addView(TR[i]);
 
         }
 
@@ -199,6 +205,6 @@ public class ProceedsPeriodTable extends CustomActivity implements LayoutConfigu
     }
 
     public void tDateClick(View view) {
-        startActivityForResult(inDatePicker,requesCodeForDatePicker);
+        startActivityForResult(inDatePicker, requesCodeForDatePicker);
     }
 }

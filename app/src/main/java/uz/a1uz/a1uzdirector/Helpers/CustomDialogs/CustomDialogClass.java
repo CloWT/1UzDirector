@@ -17,10 +17,10 @@ import uz.a1uz.a1uzdirector.R;
  */
 
 public class CustomDialogClass extends Dialog implements View.OnClickListener {
-    Button color1,color2,color3,color4,color5,color6;
-    ViewGroup group;
-    Activity context;
-    Widget_item_model widget_item_model;
+    private ViewGroup group;
+    private Activity context;
+    private Widget_item_model widget_item_model;
+    private int color;
     public CustomDialogClass(@NonNull Activity context, ViewGroup g, Widget_item_model wg) {
         super(context);
         this.context=context;
@@ -36,12 +36,12 @@ public class CustomDialogClass extends Dialog implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.custom_dialog_for_color_picker);
-        color1=(Button)findViewById(R.id.color1);
-        color2=(Button)findViewById(R.id.color2);
-        color3=(Button)findViewById(R.id.color3);
-        color4=(Button)findViewById(R.id.color4);
-        color5=(Button)findViewById(R.id.color5);
-        color6=(Button)findViewById(R.id.color6);
+        Button color1 = (Button) findViewById(R.id.color1);
+        Button color2 = (Button) findViewById(R.id.color2);
+        Button color3 = (Button) findViewById(R.id.color3);
+        Button color4 = (Button) findViewById(R.id.color4);
+        Button color5 = (Button) findViewById(R.id.color5);
+        Button color6 = (Button) findViewById(R.id.color6);
         color1.setOnClickListener(this);
         color2.setOnClickListener(this);
         color3.setOnClickListener(this);
@@ -49,7 +49,7 @@ public class CustomDialogClass extends Dialog implements View.OnClickListener {
         color5.setOnClickListener(this);
         color6.setOnClickListener(this);
     }
-    int color;
+
 
     @Override
     public void onClick(View v) {

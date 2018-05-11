@@ -3,7 +3,6 @@ package uz.a1uz.a1uzdirector.Activity.components.models;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.support.v7.widget.PopupMenu;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -14,7 +13,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -36,52 +34,33 @@ import uz.a1uz.a1uzdirector.constants.URL_cons;
  */
 
 public class Widget_item_Adapter extends ArrayAdapter<Widget_item_model> implements View.OnClickListener {
+    int counter = 0;
     private Context context;
     private List<Widget_item_model> items;
     private LayoutInflater inflater;
-
-
 
     public Widget_item_Adapter(Context context, List<Widget_item_model> items) {
         super(context, R.layout.widget, items);
         this.context = context;
         this.items = items;
-        this.inflater= (LayoutInflater) context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
+        this.inflater = (LayoutInflater) context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
     }
 
     @Override
     public void onClick(View v) {
 
 
+        int position = (Integer) v.getTag();
+        Object object = getItem(position);
+        Widget_item_model dataModel = (Widget_item_model) object;
 
-        int position=(Integer) v.getTag();
-        Object object= getItem(position);
-        Widget_item_model dataModel=(Widget_item_model)object;
 
-
-        switch (v.getId())
-        {
+        switch (v.getId()) {
             case R.id.left_spinner:
-                if(dataModel.getBottomLeftItems().length>0) v.performClick();
+                if (dataModel.getBottomLeftItems().length > 0) v.performClick();
 
                 break;
         }
-    }
-
-    static class ViewHolder{
-        TextView     TopTex          ;
-        ImageView    ImageRight      ;
-        TextView     MiddleText      ;
-        Spinner      LeftSpinner     ;
-        TextView     BottomLeftText  ;
-        ImageButton  LeftSpinImage   ;
-        TextView     BottomRightText ;
-        ImageButton  RightSpinImage  ;
-        Spinner      RightSpinner    ;
-        LinearLayout linearLayout    ;
-        LinearLayout LeftBotomLayout ;
-        LinearLayout RightBotomLayout ;
-
     }
 
     @Override
@@ -99,39 +78,38 @@ public class Widget_item_Adapter extends ArrayAdapter<Widget_item_model> impleme
     public long getItemId(int position) {
         return position;
     }
-    int counter=0;
 
     public View getView(final int position, View convertView, ViewGroup parent) {
-         ViewHolder holder;
+        ViewHolder holder;
 
-        View view =convertView;
-        if(view==null) {
+        View view = convertView;
+        if (view == null) {
 
-            view=inflater.inflate(R.layout.widget,parent,false);
-            holder=new ViewHolder();
-            holder.TopTex         =(TextView   ) view.findViewById(R.id.TopText);
-            holder.ImageRight     =(ImageView  ) view.findViewById(R.id.ImageRight);
-            holder.MiddleText     =(TextView   ) view.findViewById(R.id.MiddleText);
-            holder.LeftSpinner    =(Spinner    ) view.findViewById(R.id.left_spinner);
-            holder.BottomLeftText =(TextView   ) view.findViewById(R.id.BottomLeftText);
-            holder.LeftSpinImage  =(ImageButton) view.findViewById(R.id.left_spin_img);
-            holder.BottomRightText=(TextView   ) view.findViewById(R.id.BottomRightText);
-            holder.RightSpinImage =(ImageButton) view.findViewById(R.id.right_spin_img);
-            holder.RightSpinner   =(Spinner    ) view.findViewById(R.id.right_spinner);
-            holder.linearLayout   =(LinearLayout) view.findViewById(R.id.linearLayout);
-            holder.LeftBotomLayout=(LinearLayout)view.findViewById(R.id.left_bottom_layout);
-            holder.RightBotomLayout=(LinearLayout) view.findViewById(R.id.right_bottom_layout);
+            view = inflater.inflate(R.layout.widget, parent, false);
+            holder = new ViewHolder();
+            holder.TopTex = (TextView) view.findViewById(R.id.TopText);
+            holder.ImageRight = (ImageView) view.findViewById(R.id.ImageRight);
+            holder.MiddleText = (TextView) view.findViewById(R.id.MiddleText);
+            holder.LeftSpinner = (Spinner) view.findViewById(R.id.left_spinner);
+            holder.BottomLeftText = (TextView) view.findViewById(R.id.BottomLeftText);
+            holder.LeftSpinImage = (ImageButton) view.findViewById(R.id.left_spin_img);
+            holder.BottomRightText = (TextView) view.findViewById(R.id.BottomRightText);
+            holder.RightSpinImage = (ImageButton) view.findViewById(R.id.right_spin_img);
+            holder.RightSpinner = (Spinner) view.findViewById(R.id.right_spinner);
+            holder.linearLayout = (LinearLayout) view.findViewById(R.id.linearLayout);
+            holder.LeftBotomLayout = (LinearLayout) view.findViewById(R.id.left_bottom_layout);
+            holder.RightBotomLayout = (LinearLayout) view.findViewById(R.id.right_bottom_layout);
             view.setTag(holder);
 
 
-                }else {
-            holder= (ViewHolder) view.getTag();
+        } else {
+            holder = (ViewHolder) view.getTag();
         }
-        Widget_item_model wg=items.get(position);
-        SpinnerAddItems(holder,wg);
+        Widget_item_model wg = items.get(position);
+        SpinnerAddItems(holder, wg);
         holder.linearLayout.setBackgroundResource(wg.getBackgroundColor());
         holder.linearLayout.setOnClickListener(new LayoutClick(wg));
-        holder.ImageRight.setOnClickListener(new popOnClick(wg,holder));
+        holder.ImageRight.setOnClickListener(new popOnClick(wg, holder));
         holder.TopTex.setText(wg.getTopText());
         holder.MiddleText.setText(wg.getMiddleText());
         holder.BottomLeftText.setText(wg.getBottomLeftText());
@@ -141,24 +119,22 @@ public class Widget_item_Adapter extends ArrayAdapter<Widget_item_model> impleme
         return view;
     }
 
-
     /**
-     *
      * @param holder
      * @param wg
      */
     private void SpinnerAddItems(ViewHolder holder, Widget_item_model wg) {
-        if(wg.getBottomLeftItems().length>0){
+        if (wg.getBottomLeftItems().length > 0) {
             //
             holder.LeftBotomLayout.setOnClickListener(new OnClick(holder.LeftSpinner));
             holder.LeftSpinImage.setVisibility(View.VISIBLE);
             ArrayAdapter<WidgetDropDownItem> spinnerArrayAdapter = new ArrayAdapter<>(
-                    context,R.layout.simple_spinner_item,wg.getBottomLeftItems());
+                    context, R.layout.simple_spinner_item, wg.getBottomLeftItems());
             spinnerArrayAdapter.setDropDownViewResource(R.layout.simple_spinner_dropdown_item);
             holder.LeftSpinner.setAdapter(spinnerArrayAdapter);
-            holder.LeftSpinner.setOnItemSelectedListener(new ItemSelected(holder,wg));
+            holder.LeftSpinner.setOnItemSelectedListener(new ItemSelected(holder, wg));
         }
-        if(wg.getBottomRightItems().length>0){
+        if (wg.getBottomRightItems().length > 0) {
             System.out.println();
             //holder.RightBotomLayout.setOnClickListener(new OnClick(holder.RightSpinner));
             holder.RightSpinImage.setVisibility(View.VISIBLE);
@@ -167,16 +143,32 @@ public class Widget_item_Adapter extends ArrayAdapter<Widget_item_model> impleme
 
     }
 
-    private class ItemSelected implements AdapterView.OnItemSelectedListener{
+    static class ViewHolder {
+        TextView TopTex;
+        ImageView ImageRight;
+        TextView MiddleText;
+        Spinner LeftSpinner;
+        TextView BottomLeftText;
+        ImageButton LeftSpinImage;
+        TextView BottomRightText;
+        ImageButton RightSpinImage;
+        Spinner RightSpinner;
+        LinearLayout linearLayout;
+        LinearLayout LeftBotomLayout;
+        LinearLayout RightBotomLayout;
+
+    }
+
+    private class ItemSelected implements AdapterView.OnItemSelectedListener {
         ViewHolder holder;
         Widget_item_model wg;
+
         public ItemSelected(ViewHolder holder, Widget_item_model wg) {
-            this.holder=holder;
-            this.wg=wg;
+            this.holder = holder;
+            this.wg = wg;
         }
 
         /**
-         *
          * @param parent
          * @param view
          * @param position
@@ -184,7 +176,7 @@ public class Widget_item_Adapter extends ArrayAdapter<Widget_item_model> impleme
          */
         @Override
         public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-            WidgetDropDownItem dropDownItem=(WidgetDropDownItem)parent.getSelectedItem();
+            WidgetDropDownItem dropDownItem = (WidgetDropDownItem) parent.getSelectedItem();
             wg.setMiddle(dropDownItem.ButtonMiddle);
             wg.setMiddleText(dropDownItem.ButtonMiddleText);
             wg.setBottomLeftText(dropDownItem.getName());
@@ -199,10 +191,11 @@ public class Widget_item_Adapter extends ArrayAdapter<Widget_item_model> impleme
         }
     }
 
-    private class OnClick implements View.OnClickListener{
-Spinner spinner;
+    private class OnClick implements View.OnClickListener {
+        Spinner spinner;
+
         public OnClick(Spinner leftSpinner) {
-            spinner=leftSpinner;
+            spinner = leftSpinner;
         }
 
         @Override
@@ -211,18 +204,14 @@ Spinner spinner;
         }
     }
 
-    private class popOnClick implements View.OnClickListener{
+    private class popOnClick implements View.OnClickListener {
         Widget_item_model wg;
         ViewHolder holder;
-        public popOnClick(Widget_item_model wg, ViewHolder holder) {
-            this.wg=wg;
-            this.holder=holder;
-        }
-        PopupMenu.OnMenuItemClickListener onMenuItemClickListener=new PopupMenu.OnMenuItemClickListener() {
+        PopupMenu.OnMenuItemClickListener onMenuItemClickListener = new PopupMenu.OnMenuItemClickListener() {
 
             @Override
             public boolean onMenuItemClick(MenuItem item) {
-                switch (item.getItemId()){
+                switch (item.getItemId()) {
                     case R.id.red:
                         holder.linearLayout.setBackgroundResource(R.color.bgc4);
                         wg.setBackgroundColor(R.color.bgc4);
@@ -231,18 +220,21 @@ Spinner spinner;
                         holder.linearLayout.setBackgroundResource(R.color.bgc3);
                         wg.setBackgroundColor(R.color.bgc3);
                         return true;
-                    default:return false;
+                    default:
+                        return false;
                 }
             }
         };
+
+        public popOnClick(Widget_item_model wg, ViewHolder holder) {
+            this.wg = wg;
+            this.holder = holder;
+        }
+
         @Override
         public void onClick(View v) {
-//            PopupMenu popupMenu = new PopupMenu(context, v);
-//            popupMenu.inflate(R.menu.color_change_popup);
-//            popupMenu.show();
-//            Toast.makeText(context, ""+wg.getBackgroundColor(), Toast.LENGTH_SHORT).show();
-//            popupMenu.setOnMenuItemClickListener(onMenuItemClickListener);
-            CustomDialogClass dialogClass=new CustomDialogClass(((Main_Activity)context),holder.linearLayout,wg);
+
+            CustomDialogClass dialogClass = new CustomDialogClass(((Main_Activity) context), holder.linearLayout, wg);
             dialogClass.show();
 
         }
@@ -250,35 +242,40 @@ Spinner spinner;
 
     private class LayoutClick implements View.OnClickListener {
         Widget_item_model wg;
+
         LayoutClick(Widget_item_model wg) {
-            this.wg=wg;
+            this.wg = wg;
         }
 
         @Override
         public void onClick(View v) {
             Intent intent;
-            switch (wg.getReportUrl()){
+            switch (wg.getReportUrl()) {
                 case URL_cons.ACCOUNTREPORT:
-                    intent= new Intent(context, AccountsTable.class);
+                    intent = new Intent(context, AccountsTable.class);
                     context.startActivity(intent);
                     break;
                 case URL_cons.STOREREPORT:
-                    intent= new Intent(context, StoreTable.class);
-                    context.startActivity(intent);break;
+                    intent = new Intent(context, StoreTable.class);
+                    context.startActivity(intent);
+                    break;
                 case URL_cons.PROCCEDREPORT:
-                    intent= new Intent(context, ProceedsTable.class);
+                    intent = new Intent(context, ProceedsTable.class);
                     context.startActivity(intent);
                     break;
                 case URL_cons.CREDITREPORT:
-                    intent= new Intent(context, CreditTable.class);
-                    context.startActivity(intent);break;
+                    intent = new Intent(context, CreditTable.class);
+                    context.startActivity(intent);
+                    break;
                 case URL_cons.DEBITREPORT:
-                    intent= new Intent(context, DebitTable.class);
+                    intent = new Intent(context, DebitTable.class);
                     context.startActivity(intent);
                     break;
 
-                case URL_cons.CURRENTCOSTREPORT: intent= new Intent(context, CurrentConsumptionTable.class);
-                    context.startActivity(intent);break;
+                case URL_cons.CURRENTCOSTREPORT:
+                    intent = new Intent(context, CurrentConsumptionTable.class);
+                    context.startActivity(intent);
+                    break;
             }
 
         }

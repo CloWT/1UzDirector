@@ -3,8 +3,8 @@ package uz.a1uz.a1uzdirector.Activity.TablesActivitys.CurrentTables;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.support.v7.widget.GridLayout;
+import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -28,11 +28,10 @@ public class CurrentConsumptionTable extends CustomActivity {
     Context context;
     ProgressBar progressBar;
     Intent inDatePicker;
-    int requesCodeForDatePicker=3;
+    int requesCodeForDatePicker = 3;
     TextView tDatePeriod;
-    String beginDate,endDate;
+    String beginDate, endDate;
     Intent secondConsumTable;
-
 
 
     @Override
@@ -42,28 +41,28 @@ public class CurrentConsumptionTable extends CustomActivity {
 
         setSubTitleC(getString(R.string.TekushiyRasxody));
 
-        context=this;
-        periodTable=(GridLayout)findViewById(R.id.periodTable);
-        progressBar=(ProgressBar)findViewById(R.id.progres);
-        tDatePeriod=(TextView) findViewById(R.id.tDatePeriod);
+        context = this;
+        periodTable = (GridLayout) findViewById(R.id.periodTable);
+        progressBar = (ProgressBar) findViewById(R.id.progres);
+        tDatePeriod = (TextView) findViewById(R.id.tDatePeriod);
 
-        inDatePicker=new Intent(context, DatePeriodPicker.class);
-        secondConsumTable=new Intent(context,CurrentConsumptionSecondTable.class);
+        inDatePicker = new Intent(context, DatePeriodPicker.class);
+        secondConsumTable = new Intent(context, CurrentConsumptionSecondTable.class);
 
-        FirstLastDate datFL=new FirstLastDate(EdatePeriod.ThisMonth);
-        beginDate=datFL.getFirstDate();
-        endDate=datFL.getLastDate();
+        FirstLastDate datFL = new FirstLastDate(EdatePeriod.ThisMonth);
+        beginDate = datFL.getFirstDate();
+        endDate = datFL.getLastDate();
 
-        tDatePeriod.setText(String.format("%s - %s",beginDate , endDate));
+        tDatePeriod.setText(String.format("%s - %s", beginDate, endDate));
 
-        getFromJson(UrlHepler.Combine(URL_cons.CURRENTCOSTREPORT,datFL.getFirstDate(),datFL.getLastDate(),
+        getFromJson(UrlHepler.Combine(URL_cons.CURRENTCOSTREPORT, datFL.getFirstDate(), datFL.getLastDate(),
                 UserInfo.getGUID()));
 
 
     }
 
     private void getFromJson(String url) {
-        IGetJsonResult logic=new IGetJsonResult() {
+        IGetJsonResult logic = new IGetJsonResult() {
             @Override
             public void OnBegin() {
                 progressBar.setVisibility(View.VISIBLE);
@@ -83,34 +82,32 @@ public class CurrentConsumptionTable extends CustomActivity {
 
             @Override
             public void OnEnd(JSONObject jsonObject) {
-                try{
+                try {
                     progressBar.setVisibility(View.GONE);
                     periodTable.setVisibility(View.VISIBLE);
-                    JSONArray js=jsonObject.getJSONArray("GetCurrentConsumptionReportResult");
+                    JSONArray js = jsonObject.getJSONArray("GetCurrentConsumptionReportResult");
 
 
+                    ((TextView) findViewById(R.id.curr1)).setText(js.getString(0));
+                    ((TextView) findViewById(R.id.curr2)).setText(js.getString(1));
+                    ((TextView) findViewById(R.id.curr3)).setText(js.getString(2));
+                    ((TextView) findViewById(R.id.curr4)).setText(js.getString(3));
+                    ((TextView) findViewById(R.id.curr5)).setText(js.getString(4));
+                    ((TextView) findViewById(R.id.curr6)).setText(js.getString(5));
+                    ((TextView) findViewById(R.id.curr7)).setText(js.getString(6));
+                    ((TextView) findViewById(R.id.curr8)).setText(js.getString(7));
+                    ((TextView) findViewById(R.id.curr9)).setText(js.getString(8));
+                    ((TextView) findViewById(R.id.curr10)).setText(js.getString(9));
+                    ((TextView) findViewById(R.id.curr11)).setText(js.getString(10));
+                    ((TextView) findViewById(R.id.curr12)).setText(js.getString(11));
+                    ((TextView) findViewById(R.id.curr13)).setText(js.getString(12));
+                    ((TextView) findViewById(R.id.curr14)).setText(js.getString(13));
+                    ((TextView) findViewById(R.id.curr15)).setText(js.getString(14));
+                    ((TextView) findViewById(R.id.curr16)).setText(js.getString(15));
+                    ((TextView) findViewById(R.id.curr17)).setText(js.getString(16));
 
-                    ((TextView)findViewById(R.id.curr1)).setText(js.getString(0));
-                    ((TextView)findViewById(R.id.curr2)).setText(js.getString(1));
-                    ((TextView)findViewById(R.id.curr3)).setText(js.getString(2));
-                    ((TextView)findViewById(R.id.curr4)).setText(js.getString(3));
-                    ((TextView)findViewById(R.id.curr5)).setText(js.getString(4));
-                    ((TextView)findViewById(R.id.curr6)).setText(js.getString(5));
-                    ((TextView)findViewById(R.id.curr7)).setText(js.getString(6));
-                    ((TextView)findViewById(R.id.curr8)).setText(js.getString(7));
-                    ((TextView)findViewById(R.id.curr9)).setText(js.getString(8));
-                    ((TextView)findViewById(R.id.curr10)).setText(js.getString(9));
-                    ((TextView)findViewById(R.id.curr11)).setText(js.getString(10));
-                    ((TextView)findViewById(R.id.curr12)).setText(js.getString(11));
-                    ((TextView)findViewById(R.id.curr13)).setText(js.getString(12));
-                    ((TextView)findViewById(R.id.curr14)).setText(js.getString(13));
-                    ((TextView)findViewById(R.id.curr15)).setText(js.getString(14));
-                    ((TextView)findViewById(R.id.curr16)).setText(js.getString(15));
-                    ((TextView)findViewById(R.id.curr17)).setText(js.getString(16));
 
-
-                }
-                catch (JSONException ignored){
+                } catch (JSONException ignored) {
 
                 }
 
@@ -124,30 +121,36 @@ public class CurrentConsumptionTable extends CustomActivity {
             }
         };
 
-        GetJson.execute(url,logic);
+        GetJson.execute(url, logic);
 
     }
 
     public void Click1(View view) {
-        sendDataToSecondTable(1,getString(R.string.SebeStoimostGotovyProduksii));
+        sendDataToSecondTable(1, getString(R.string.SebeStoimostGotovyProduksii));
     }
+
     public void Click2(View view) {
-        sendDataToSecondTable(2,getString(R.string.SebeStoimostRealizoTovar));
+        sendDataToSecondTable(2, getString(R.string.SebeStoimostRealizoTovar));
     }
+
     public void Click3(View view) {
-        sendDataToSecondTable(3,getString(R.string.SebeStoimVypolnenRabotiUsl));
+        sendDataToSecondTable(3, getString(R.string.SebeStoimVypolnenRabotiUsl));
     }
+
     public void Click4(View view) {
-        sendDataToSecondTable(4,getString(R.string.PoRealizatsii));
+        sendDataToSecondTable(4, getString(R.string.PoRealizatsii));
     }
+
     public void Click5(View view) {
-        sendDataToSecondTable(5,getString(R.string.AdministratiroRasxod));
+        sendDataToSecondTable(5, getString(R.string.AdministratiroRasxod));
     }
+
     public void Click6(View view) {
-        sendDataToSecondTable(6,getString(R.string.ProchieOperatRasxodi));
+        sendDataToSecondTable(6, getString(R.string.ProchieOperatRasxodi));
     }
+
     public void Click7(View view) {
-        sendDataToSecondTable(7,getString(R.string.VychitaemIzNalogoPribilivBudushem));
+        sendDataToSecondTable(7, getString(R.string.VychitaemIzNalogoPribilivBudushem));
     }
 
     private void sendDataToSecondTable(int value, String name) {
@@ -159,19 +162,20 @@ public class CurrentConsumptionTable extends CustomActivity {
         secondConsumTable.putExtra("bDate", beginDate);
         secondConsumTable.putExtra("eDate", endDate);
         secondConsumTable.putExtra("id", value);
-        secondConsumTable.putExtra("Name",name);
+        secondConsumTable.putExtra("Name", name);
         startActivity(secondConsumTable);
     }
 
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if(data==null){
+        if (data == null) {
 
-            return;}
-        if(requestCode==requesCodeForDatePicker && resultCode==RESULT_OK){
-            beginDate=data.getStringExtra("fDate");
-            endDate=data.getStringExtra("sDate");
+            return;
+        }
+        if (requestCode == requesCodeForDatePicker && resultCode == RESULT_OK) {
+            beginDate = data.getStringExtra("fDate");
+            endDate = data.getStringExtra("sDate");
             String url = UrlHepler.Combine(URL_cons.CURRENTCOSTREPORT, beginDate,
                     endDate,
                     UserInfo.getGUID());
@@ -180,7 +184,7 @@ public class CurrentConsumptionTable extends CustomActivity {
     }
 
     public void tDateClick(View view) {
-        startActivityForResult(inDatePicker,requesCodeForDatePicker);
+        startActivityForResult(inDatePicker, requesCodeForDatePicker);
     }
 }
 

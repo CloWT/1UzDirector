@@ -58,7 +58,7 @@ public class ParseTaskList extends AsyncTask<String,Integer,String[]> {
 
                 InputStream inputStream = new BufferedInputStream(urlConnection.getInputStream());
                 StringBuilder buffer = new StringBuilder();
-                BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"), 16);
+                BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"), 64);
                 String line;
                 while ((line = reader.readLine()) != null) {
                     buffer.append(line);

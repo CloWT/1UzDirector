@@ -28,6 +28,7 @@ public class DatePeriodPicker extends AppCompatActivity {
     Calendar second;
     Spinner spinner;
     Context context;
+    String tempDate;
 
     TextView fDate,sDate;
     @Override
@@ -35,11 +36,10 @@ public class DatePeriodPicker extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_date_period_picker);
         spinner=(Spinner)findViewById(R.id.dateSpin);
-        SpinnerAction();
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//        getSupportActionBar().setHomeButtonEnabled(true);
         fDate=(TextView)findViewById(R.id.firstDate);
         sDate=(TextView)findViewById(R.id.secondDate);
+
+        SpinnerAction();
         first=Calendar.getInstance();
         second=Calendar.getInstance();
         SetTextDate(first,fDate);
@@ -106,7 +106,7 @@ public class DatePeriodPicker extends AppCompatActivity {
         }
 
     }
-    String tempDate;
+
     protected void SetTextDate(Calendar c, TextView date){
         tempDate=c.get(Calendar.DAY_OF_MONTH)+" "+c.getDisplayName(Calendar.MONTH,Calendar.LONG, Locale.getDefault())+" "+c.get(Calendar.YEAR);
 

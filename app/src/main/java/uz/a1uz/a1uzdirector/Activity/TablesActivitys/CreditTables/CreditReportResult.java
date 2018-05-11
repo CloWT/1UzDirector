@@ -7,8 +7,8 @@ package uz.a1uz.a1uzdirector.Activity.TablesActivitys.CreditTables;
 public class CreditReportResult {
     private String number;
     private int reportDecriptionID;
-    private String contragent,contract,summa, day30,
-    day60, day90,day100;
+    private String contragent, contract, summa, day30,
+            day60, day90, day100;
 
     /**
      * @param number №

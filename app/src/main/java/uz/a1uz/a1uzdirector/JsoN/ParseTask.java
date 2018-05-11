@@ -22,12 +22,12 @@ import uz.a1uz.a1uzdirector.Helpers.UserInfo;
 
 public class ParseTask extends AsyncTask<Void, Void, String> {
     private Boolean _isError;
-    String urltext;
+    private String urltext;
 
-    HttpURLConnection urlConnection = null;
-    BufferedReader reader = null;
-    String resultJson = "";
-    IGetJsonResult logicItem;
+    private HttpURLConnection urlConnection = null;
+    private BufferedReader reader = null;
+    private String resultJson = "";
+    private IGetJsonResult logicItem;
 
 
     public ParseTask(IGetJsonResult logic) {
@@ -55,7 +55,7 @@ public class ParseTask extends AsyncTask<Void, Void, String> {
             urlConnection.connect();
             InputStream inputStream = urlConnection.getInputStream();
             StringBuffer buffer = new StringBuffer();
-            reader = new BufferedReader(new InputStreamReader(inputStream,"UTF-8"), 16);
+            reader = new BufferedReader(new InputStreamReader(inputStream,"UTF-8"), 128);
             String line;
             while ((line = reader.readLine()) != null) {
                 buffer.append(line);

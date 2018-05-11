@@ -6,11 +6,11 @@ package uz.a1uz.a1uzdirector.Helpers;
 
 public class UrlHepler {
     public static String Combine(String... urls){
-        String result = urls[0];
+        StringBuilder result = new StringBuilder(urls[0]);
         for (int i = 1; i <urls.length ; i++) {
-            result+= "/"+urls[i];
+            result.append("/").append(urls[i]);
         }
 
-        return result;
+        return result.toString();
     }
 }

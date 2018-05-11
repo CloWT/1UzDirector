@@ -19,6 +19,8 @@ public class UserInfo {
     private static EheaderLang lan=EheaderLang.eRu;
     private static List<Widget_item_model> widgetListItems;
     private static String INN;
+    static Locale locale;
+    static Configuration config;
 
 
     public static String getGUID() {
@@ -30,8 +32,7 @@ public class UserInfo {
         UserInfo.GUID = GUID;
     }
 
-    static Locale locale;
-    static Configuration config;
+
 
     public static String getLan() {
         return String.valueOf(lan);
@@ -72,6 +73,7 @@ public class UserInfo {
         return INN;
     }
 
+    
     public enum EheaderLang {
         eRu("ru-RU"),eUz("uz"),eUz_Cyrl("uz-Cyrl-UZ");
 

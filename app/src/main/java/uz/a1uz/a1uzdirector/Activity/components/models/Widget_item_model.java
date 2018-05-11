@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 public class Widget_item_model implements Serializable {
     private WidgetDropDownItem[] BottomLeftItems;
-//    private ArrayAdapter<WidgetDropDownItem> BottomLeftItems;
+    //    private ArrayAdapter<WidgetDropDownItem> BottomLeftItems;
     private String BottomLeftText;
     //private ArrayAdapter<WidgetDropDownItem> BottomRightItems;
     private WidgetDropDownItem[] BottomRightItems;
@@ -21,7 +21,6 @@ public class Widget_item_model implements Serializable {
     private String SecondReportUrl;
 
     /**
-     *
      * @param bottomLeftItems
      * @param bottomLeftText
      * @param bottomRightItems
@@ -48,9 +47,9 @@ public class Widget_item_model implements Serializable {
         Middle = middle;
         MiddleText = middleText;
         TopText = topText;
-        this.backgroundColor=backgroundColor;
-        ReportUrl=reportUrl;
-        SecondReportUrl=secondReportUrl;
+        this.backgroundColor = backgroundColor;
+        ReportUrl = reportUrl;
+        SecondReportUrl = secondReportUrl;
 
     }
 
@@ -60,6 +59,10 @@ public class Widget_item_model implements Serializable {
 
     public WidgetDropDownItem[] getBottomLeftItems() {
         return BottomLeftItems;
+    }
+
+    public void setBottomLeftItems(WidgetDropDownItem[] bottomLeftItems) {
+        BottomLeftItems = bottomLeftItems;
     }
 
     public String getReportUrl() {
@@ -74,55 +77,52 @@ public class Widget_item_model implements Serializable {
         return BottomLeftText;
     }
 
-    public WidgetDropDownItem[] getBottomRightItems() {
-        return BottomRightItems;
-    }
-
-    public String getBottomRightText() {
-        return BottomRightText;
-    }
-
-    public String getMiddleText() {
-        return MiddleText;
-    }
-
-    public String getTopText() {
-        return TopText;
-    }
-
-    public double getMiddle() {
-        return Middle;
-    }
-
-    public int getBackgroundColor() {
-        return backgroundColor;
-    }
-    public void setBottomLeftItems(WidgetDropDownItem[] bottomLeftItems) {
-        BottomLeftItems = bottomLeftItems;
-    }
-
     public void setBottomLeftText(String bottomLeftText) {
         BottomLeftText = bottomLeftText;
+    }
+
+    public WidgetDropDownItem[] getBottomRightItems() {
+        return BottomRightItems;
     }
 
     public void setBottomRightItems(WidgetDropDownItem[] bottomRightItems) {
         BottomRightItems = bottomRightItems;
     }
 
+    public String getBottomRightText() {
+        return BottomRightText;
+    }
+
     public void setBottomRightText(String bottomRightText) {
         BottomRightText = bottomRightText;
     }
 
-    public void setMiddle(double middle) {
-        Middle = middle;
+    public String getMiddleText() {
+        return MiddleText;
     }
 
     public void setMiddleText(String middleText) {
         MiddleText = middleText;
     }
 
+    public String getTopText() {
+        return TopText;
+    }
+
     public void setTopText(String topText) {
         TopText = topText;
+    }
+
+    public double getMiddle() {
+        return Middle;
+    }
+
+    public void setMiddle(double middle) {
+        Middle = middle;
+    }
+
+    public int getBackgroundColor() {
+        return backgroundColor;
     }
 
     public void setBackgroundColor(int backgroundColor) {

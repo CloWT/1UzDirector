@@ -2,8 +2,8 @@ package uz.a1uz.a1uzdirector.Activity.TablesActivitys.StoreTables;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v4.content.ContextCompat;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
@@ -31,26 +31,28 @@ import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
 public class StoreTable extends CustomActivity {
-    String url= UrlHepler.Combine(URL_cons.STOREREPORT, UserInfo.getGUID());
+    String url = UrlHepler.Combine(URL_cons.STOREREPORT, UserInfo.getGUID());
     TableLayout storeTable;
     Context context;
     ProgressBar progressBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setSubTitleC(getString(R.string.Sklad));
 
         setContentView(R.layout.activity_store_table);
-        context=this;
-        storeTable=(TableLayout)findViewById(R.id.tableForStore);
-        progressBar=(ProgressBar)findViewById(R.id.progres);
+        context = this;
+        storeTable = (TableLayout) findViewById(R.id.tableForStore);
+        progressBar = (ProgressBar) findViewById(R.id.progres);
 
         storeTable.setVisibility(View.INVISIBLE);
         GetJson.execute(url, new IGetJsonResult() {
             StoreTable activity;
+
             @Override
             public void OnBegin() {
-                activity=(StoreTable)context;
+                activity = (StoreTable) context;
                 activity.progressBar.setVisibility(View.VISIBLE);
             }
 
@@ -71,11 +73,11 @@ public class StoreTable extends CustomActivity {
                     activity.storeTable.setVisibility(View.VISIBLE);
                     JSONObject tmp;
                     List<WidgetDropDownItem> list = new ArrayList<>();
-                    List<AccountReportResult> accRepResults=new ArrayList<>();
-                    JSONObject hh= (JSONObject) jsonObject.get("GetStoresReportResult");
-                    JSONArray jsAr=hh.getJSONArray("Items");
+                    List<AccountReportResult> accRepResults = new ArrayList<>();
+                    JSONObject hh = (JSONObject) jsonObject.get("GetStoresReportResult");
+                    JSONArray jsAr = hh.getJSONArray("Items");
                     for (int i = 0; i < jsAr.length(); i++) {
-                        tmp=jsAr.getJSONObject(i);
+                        tmp = jsAr.getJSONObject(i);
                         accRepResults.add(new AccountReportResult(
                                 tmp.getString("Name"),
                                 tmp.getString("BeginPeriodSum"),
@@ -84,8 +86,8 @@ public class StoreTable extends CustomActivity {
                                 tmp.getString("CurrentSum"),
                                 tmp.getInt("ReportDecriptionID")
                         ));
-                        if(i<=jsAr.length()-1)
-                            list.add(new WidgetDropDownItem(tmp.getInt("ReportDecriptionID"),tmp.getString("Name")));
+                        if (i <= jsAr.length() - 1)
+                            list.add(new WidgetDropDownItem(tmp.getInt("ReportDecriptionID"), tmp.getString("Name")));
 
                     }
                     accRepResults.add(new AccountReportResult(
@@ -111,14 +113,15 @@ public class StoreTable extends CustomActivity {
             }
         });
     }
-    private void AddElemsToTable(List<AccountReportResult> accountReportResults){
-        TextView TW[][]=new TextView[5][5];
-        TableRow[] TR=new TableRow[accountReportResults.size()];
-        for (int i = 0; i < accountReportResults.size(); i++) {
-            TR[i]=new TableRow(this);
 
-            for (int j = 0; j <TW[0].length ; j++) {
-                TW[i][j]=new TextView(this);
+    private void AddElemsToTable(List<AccountReportResult> accountReportResults) {
+        TextView TW[][] = new TextView[5][5];
+        TableRow[] TR = new TableRow[accountReportResults.size()];
+        for (int i = 0; i < accountReportResults.size(); i++) {
+            TR[i] = new TableRow(this);
+
+            for (int j = 0; j < TW[0].length; j++) {
+                TW[i][j] = new TextView(this);
                 TW[i][j].setTextSize(TypedValue.COMPLEX_UNIT_SP, tableBodyTextSize);
             }
             TW[i][0].setText(accountReportResults.get(i).getName());
@@ -127,44 +130,44 @@ public class StoreTable extends CustomActivity {
             TW[i][3].setText(accountReportResults.get(i).getOutSum());
             TW[i][4].setText(accountReportResults.get(i).getCurrentSum());
 
-            for (int j = 0; j <5 ; j++) {
-                TW[i][j].setGravity(j==0? Gravity.START:Gravity.END);
+            for (int j = 0; j < 5; j++) {
+                TW[i][j].setGravity(j == 0 ? Gravity.START : Gravity.END);
                 TW[i][j].setBackgroundResource(R.drawable.border_shape);
-                if(accountReportResults.size()-1==i){
-                    TW[i][j].setTextColor(ContextCompat.getColor(this,R.color.textColor));
+                if (accountReportResults.size() - 1 == i) {
+                    TW[i][j].setTextColor(ContextCompat.getColor(this, R.color.textColor));
                     TW[i][j].setBackgroundResource(R.color.tableTopColor);
                 }
-                if (j==0&&i<accountReportResults.size()-1)
-                    TW[i][j].setTextColor(ContextCompat.getColor(this,R.color.blue));
-                TW[i][j].setPadding(5,5,5,5);
+                if (j == 0 && i < accountReportResults.size() - 1)
+                    TW[i][j].setTextColor(ContextCompat.getColor(this, R.color.blue));
+                TW[i][j].setPadding(5, 5, 5, 5);
                 TR[i].addView(TW[i][j]);
             }
-            if(accountReportResults.size()-1==i){
+            if (accountReportResults.size() - 1 == i) {
 
-                TR[i].setBackgroundColor(ContextCompat.getColor(this,R.color.tableTopColor));
-            }
-
-            else{
-                TR[i].setBackgroundColor(ContextCompat.getColor(this,R.color.textColor));
-                TR[i].setOnClickListener(new ClickT(accountReportResults.get(i),this));
+                TR[i].setBackgroundColor(ContextCompat.getColor(this, R.color.tableTopColor));
+            } else {
+                TR[i].setBackgroundColor(ContextCompat.getColor(this, R.color.textColor));
+                TR[i].setOnClickListener(new ClickT(accountReportResults.get(i), this));
             }
             storeTable.addView(TR[i]);
         }
 
     }
+
     private class ClickT implements View.OnClickListener {
         AccountReportResult accountReportResult;
         Context context;
+
         ClickT(AccountReportResult accountReportResult, Context context) {
-            this.accountReportResult=accountReportResult;
-            this.context=context;
+            this.accountReportResult = accountReportResult;
+            this.context = context;
         }
 
         @Override
         public void onClick(View v) {
-            Intent intent= new Intent(context, StorePeriodTable.class);
-            intent.putExtra("ReportID",accountReportResult.getReportDecriptionID());
-            intent.putExtra("Name",accountReportResult.getName());
+            Intent intent = new Intent(context, StorePeriodTable.class);
+            intent.putExtra("ReportID", accountReportResult.getReportDecriptionID());
+            intent.putExtra("Name", accountReportResult.getName());
             startActivity(intent);
 
         }

@@ -13,8 +13,7 @@ public abstract class GetJsonResult implements IGetJsonResult {
         this.context=context;
     }
 
-    public GetJsonResult() {
-    }
+
 
     @Override
     public void OnError(Exception e) {

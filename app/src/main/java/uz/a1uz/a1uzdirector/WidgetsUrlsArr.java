@@ -5,9 +5,9 @@ package uz.a1uz.a1uzdirector;
  */
 
 public class WidgetsUrlsArr {
-    String urlButoon;
-    String urlReport;
-    String urlSecondReport;
+    private String urlButoon;
+    private String urlReport;
+    private String urlSecondReport;
 
     /**
      * @param urlButoon

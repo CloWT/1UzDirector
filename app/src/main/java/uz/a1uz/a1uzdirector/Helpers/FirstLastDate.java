@@ -19,25 +19,11 @@ public class FirstLastDate{
     private String firstDate;
     private String lastDate;
     private Context context;
-
-    public FirstLastDate(EdatePeriod edatePeriod) {
-        GetPeriodDate(edatePeriod);
-    }
-    FirstLastDate(EdatePeriod edatePeriod, Context context) {
-        this.context=context;
-        GetPeriodDate(edatePeriod);
-    }
     private static DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy", Locale.getDefault());
-    public FirstLastDate() {
-
-    }
-    static String CustomDateFormat(Calendar date){
-        return dateFormat.format(date.getTime());
-    }
 
     Calendar first = Calendar.getInstance();
     Calendar second = Calendar.getInstance();
-    FirstLastDate dat = null;
+    FirstLastDate firstLastDate = null;
     DatePickerDialog.OnDateSetListener dateF = new DatePickerDialog.OnDateSetListener() {
 
         @Override
@@ -65,7 +51,46 @@ public class FirstLastDate{
 
     };
 
-    public FirstLastDate GetPeriodDate(EdatePeriod edatePeriod){
+    /***
+     *
+     * @param edatePeriod
+     */
+    public FirstLastDate(EdatePeriod edatePeriod) {
+        GetPeriodDate(edatePeriod);
+    }
+
+    /***
+     *
+     * @param edatePeriod
+     * @param context
+     */
+    public FirstLastDate(EdatePeriod edatePeriod, Context context) {
+        this.context=context;
+        GetPeriodDate(edatePeriod);
+    }
+
+    /***
+     *
+     */
+    public FirstLastDate() {
+
+    }
+
+    /***
+     *
+     * @param date
+     * @return
+     */
+    static String CustomDateFormat(Calendar date){
+        return dateFormat.format(date.getTime());
+    }
+
+    /***
+     *
+     * @param edatePeriod
+     * @return
+     */
+    public void GetPeriodDate(EdatePeriod edatePeriod){
         switch (edatePeriod){
             case ThisDay:{
                 this.firstDate=dateFormat.format(first.getTime());
@@ -117,12 +142,8 @@ public class FirstLastDate{
 
             }break;        }
 
-        return dat;
+
     }
-
-
-
-
 
     public String getFirstDate() {
         return firstDate;

@@ -7,7 +7,6 @@ import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Calendar;
-import java.util.Date;
 
 /**
  * Created by sh.khodjabaev on 01.05.2018.
@@ -16,6 +15,7 @@ import java.util.Date;
 public class JsonFileWriterReader {
     String result;
     private File file;
+    Calendar calendar;
 
     /***
      *
@@ -24,17 +24,18 @@ public class JsonFileWriterReader {
      */
     public JsonFileWriterReader(Context context, String filename) {
         String fileName = filename;
+        calendar=Calendar.getInstance();
         file=new File(String.format("/data/data/%s/%s.js", context.getPackageName(), fileName));
 
     }
 
     public boolean mIsHasJsonFile(){
-        Calendar calendar=Calendar.getInstance();
-        calendar.add(Calendar.HOUR,-1);
+
+
 
             boolean f=file.exists();
             if(f){
-                if(calendar.getTimeInMillis()<file.lastModified()){
+                if(isFileOutDate()){
                     result=mReadJsonData(file);
                     return true;
                 }
@@ -43,11 +44,17 @@ public class JsonFileWriterReader {
 
         return false;
     }
-    public void mCreateAndSaveFile(String mJsonResponse) {
+
+    private boolean isFileOutDate() {
+        calendar.add(Calendar.MINUTE,-60);
+        return calendar.getTimeInMillis()<file.lastModified();
+    }
+
+    public void mCreateAndSaveFile(String textForSave) {
         try {
             FileWriter file = new FileWriter(this.file);
 
-            file.write(mJsonResponse);
+            file.write(textForSave);
             file.flush();
             file.close();
         } catch (IOException e) {
@@ -55,7 +62,6 @@ public class JsonFileWriterReader {
         }
     }
     private String mReadJsonData(File file) {
-        String mResponse= "";
         try {
 
             FileInputStream is = new FileInputStream(file);
@@ -63,18 +69,20 @@ public class JsonFileWriterReader {
             byte[] buffer = new byte[size];
             is.read(buffer);
             is.close();
-            mResponse = new String(buffer);
+            return new String(buffer);
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return mResponse;
+        return "";
     }
     public void mDeleteFile(){
-        if(file.exists()) file.delete();
+        if(file.exists()){
+            file.delete();
+        }
 
     }
 
-
+//old version code
     private char[] mTransformFielName(String s) {
         int start = s.indexOf("widget")+"widget/".length();
         int end = start+8;

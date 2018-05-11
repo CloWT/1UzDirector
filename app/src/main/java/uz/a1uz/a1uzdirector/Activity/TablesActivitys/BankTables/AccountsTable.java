@@ -2,8 +2,8 @@ package uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v4.content.ContextCompat;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
@@ -12,7 +12,6 @@ import android.widget.ProgressBar;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
-
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -25,20 +24,19 @@ import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.models.AccountRe
 import uz.a1uz.a1uzdirector.Activity.components.models.WidgetDropDownItem;
 import uz.a1uz.a1uzdirector.Helpers.CustomActivity;
 import uz.a1uz.a1uzdirector.Helpers.LayoutConfiguration;
-import uz.a1uz.a1uzdirector.JsoN.GetJson;
-import uz.a1uz.a1uzdirector.JsoN.IGetJsonResult;
 import uz.a1uz.a1uzdirector.Helpers.Memory_tmp;
-import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.Helpers.UrlHepler;
 import uz.a1uz.a1uzdirector.Helpers.UserInfo;
+import uz.a1uz.a1uzdirector.JsoN.GetJson;
+import uz.a1uz.a1uzdirector.JsoN.IGetJsonResult;
+import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.constants.URL_cons;
 
 public class AccountsTable extends CustomActivity implements LayoutConfiguration<AccountReportResult> {
-    String url= UrlHepler.Combine(URL_cons.ACCOUNTREPORT, UserInfo.getGUID());
+    String url = UrlHepler.Combine(URL_cons.ACCOUNTREPORT, UserInfo.getGUID());
     TableLayout bankTable;
     Context context;
     ProgressBar progressBar;
-
 
 
     @Override
@@ -47,22 +45,23 @@ public class AccountsTable extends CustomActivity implements LayoutConfiguration
 //        UserInfo.setLan(sPref.getString("lang", String.valueOf(UserInfo.EheaderLang.eRu)),getBaseContext());
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_accounts_table);
-        context=this;
-        float tabSize=TypedValue.applyDimension(
+        context = this;
+        float tabSize = TypedValue.applyDimension(
                 TypedValue.COMPLEX_UNIT_SP, 14, this.getResources().getDisplayMetrics());
 
 
         System.out.println("OnCreat");
         setSubTitleC(getString(R.string.Bank));
-        bankTable=(TableLayout)findViewById(R.id.tableForBank);
-        progressBar=(ProgressBar)findViewById(R.id.progres);
+        bankTable = (TableLayout) findViewById(R.id.tableForBank);
+        progressBar = (ProgressBar) findViewById(R.id.progres);
 
         bankTable.setVisibility(View.INVISIBLE);
         GetJson.execute(url, new IGetJsonResult() {
             AccountsTable activity;
+
             @Override
             public void OnBegin() {
-                activity=(AccountsTable)context;
+                activity = (AccountsTable) context;
                 activity.progressBar.setVisibility(View.VISIBLE);
 
             }
@@ -82,13 +81,13 @@ public class AccountsTable extends CustomActivity implements LayoutConfiguration
                 try {
                     activity.progressBar.setVisibility(View.GONE);
                     activity.bankTable.setVisibility(View.VISIBLE);
-                JSONObject tmp;
-                List<WidgetDropDownItem>list = new ArrayList<>();
-                List<AccountReportResult> accRepResults=new ArrayList<>();
-                    JSONObject hh= (JSONObject) jsonObject.get("GetAccountsReportResult");
-                JSONArray jsAr=hh.getJSONArray("Items");
+                    JSONObject tmp;
+                    List<WidgetDropDownItem> list = new ArrayList<>();
+                    List<AccountReportResult> accRepResults = new ArrayList<>();
+                    JSONObject hh = (JSONObject) jsonObject.get("GetAccountsReportResult");
+                    JSONArray jsAr = hh.getJSONArray("Items");
                     for (int i = 0; i < jsAr.length(); i++) {
-                        tmp=jsAr.getJSONObject(i);
+                        tmp = jsAr.getJSONObject(i);
                         accRepResults.add(new AccountReportResult(
                                 tmp.getString("Name"),
                                 tmp.getString("BeginPeriodSum"),
@@ -97,8 +96,8 @@ public class AccountsTable extends CustomActivity implements LayoutConfiguration
                                 tmp.getString("CurrentSum"),
                                 tmp.getInt("ReportDecriptionID")
                         ));
-                        if(i<=jsAr.length()-1)
-                            list.add(new WidgetDropDownItem(tmp.getInt("ReportDecriptionID"),tmp.getString("Name")));
+                        if (i <= jsAr.length() - 1)
+                            list.add(new WidgetDropDownItem(tmp.getInt("ReportDecriptionID"), tmp.getString("Name")));
 
                     }
                     accRepResults.add(new AccountReportResult(
@@ -120,57 +119,50 @@ public class AccountsTable extends CustomActivity implements LayoutConfiguration
 
             @Override
             public void OnError(Exception e) {
-                Log.e("Eroor",e.getMessage());
+                Log.e("Eroor", e.getMessage());
 
             }
         });
 
 
-
-
-
     }
 
     @Override
-    public void AddElemsToTable(List<AccountReportResult> accountReportResults){
-        TextView TW[][]=new TextView[5][5];
-        TableRow[] TR=new TableRow[accountReportResults.size()];
+    public void AddElemsToTable(List<AccountReportResult> accountReportResults) {
+        TextView TW[][] = new TextView[5][5];
+        TableRow[] TR = new TableRow[accountReportResults.size()];
         for (int i = 0; i < accountReportResults.size(); i++) {
-            TR[i]=new TableRow(this);
+            TR[i] = new TableRow(this);
 
-            for (int j = 0; j <TW[0].length ; j++) {
-                TW[i][j]=new TextView(this);
+            for (int j = 0; j < TW[0].length; j++) {
+                TW[i][j] = new TextView(this);
             }
 
-            CustomSetTex(TW[i],accountReportResults.get(i));
+            CustomSetTex(TW[i], accountReportResults.get(i));
 
-            for (int j = 0; j <5 ; j++) {
-                TW[i][j].setGravity(j==0? Gravity.START:Gravity.END);
+            for (int j = 0; j < 5; j++) {
+                TW[i][j].setGravity(j == 0 ? Gravity.START : Gravity.END);
                 TW[i][j].setBackgroundResource(R.drawable.border_shape);
                 TW[i][j].setTextSize(TypedValue.COMPLEX_UNIT_SP, tableBodyTextSize);
-                if(accountReportResults.size()-1==i){
-                    TW[i][j].setTextColor(ContextCompat.getColor(this,R.color.textColor));
+                if (accountReportResults.size() - 1 == i) {
+                    TW[i][j].setTextColor(ContextCompat.getColor(this, R.color.textColor));
                     TW[i][j].setBackgroundResource(R.color.tableTopColor);
                 }
-                if (j==0&&i<accountReportResults.size()-1)
-                    TW[i][j].setTextColor(ContextCompat.getColor(this,R.color.blue));
-                TW[i][j].setPadding(10,10,10,10);
+                if (j == 0 && i < accountReportResults.size() - 1)
+                    TW[i][j].setTextColor(ContextCompat.getColor(this, R.color.blue));
+                TW[i][j].setPadding(10, 10, 10, 10);
                 TR[i].addView(TW[i][j]);
             }
-            if(accountReportResults.size()-1==i){
+            if (accountReportResults.size() - 1 == i) {
 
-                TR[i].setBackgroundColor(ContextCompat.getColor(this,R.color.tableTopColor));
-            }
-
-            else{
-                TR[i].setBackgroundColor(ContextCompat.getColor(this,R.color.textColor));
-                TR[i].setOnClickListener(new ClickT(accountReportResults.get(i).getReportDecriptionID(),this));
+                TR[i].setBackgroundColor(ContextCompat.getColor(this, R.color.tableTopColor));
+            } else {
+                TR[i].setBackgroundColor(ContextCompat.getColor(this, R.color.textColor));
+                TR[i].setOnClickListener(new ClickT(accountReportResults.get(i).getReportDecriptionID(), this));
             }
 
 
             bankTable.addView(TR[i]);
-
-
 
 
         }
@@ -194,15 +186,16 @@ public class AccountsTable extends CustomActivity implements LayoutConfiguration
     private class ClickT implements View.OnClickListener {
         int accountReportResult;
         Context context;
+
         ClickT(int accountReportResult, Context context) {
-            this.accountReportResult=accountReportResult;
-            this.context=context;
+            this.accountReportResult = accountReportResult;
+            this.context = context;
         }
 
         @Override
         public void onClick(View v) {
-            Intent intent= new Intent(context, BankBankReport.class);
-            intent.putExtra("ReportID",accountReportResult);
+            Intent intent = new Intent(context, BankBankReport.class);
+            intent.putExtra("ReportID", accountReportResult);
             startActivity(intent);
 
         }

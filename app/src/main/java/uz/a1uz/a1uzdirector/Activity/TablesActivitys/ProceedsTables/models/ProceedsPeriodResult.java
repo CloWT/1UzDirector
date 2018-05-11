@@ -6,7 +6,7 @@ package uz.a1uz.a1uzdirector.Activity.TablesActivitys.ProceedsTables.models;
 
 public class ProceedsPeriodResult {
 
-    String number,date,contragent,contract,vidType,summa;
+    String number, date, contragent, contract, vidType, summa;
 
     public ProceedsPeriodResult(String number, String date, String contragent, String contract, String vidType, String summa) {
         this.number = number;

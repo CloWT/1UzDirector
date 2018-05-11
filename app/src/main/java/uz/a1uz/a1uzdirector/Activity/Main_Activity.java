@@ -20,38 +20,57 @@ import uz.a1uz.a1uzdirector.Helpers.UserInfo;
 import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.WidgetsUrlsArr;
 
-import static uz.a1uz.a1uzdirector.constants.URL_cons.*;
+import static uz.a1uz.a1uzdirector.constants.URL_cons.ACCOUNTREPORT;
+import static uz.a1uz.a1uzdirector.constants.URL_cons.BANKREPORT;
+import static uz.a1uz.a1uzdirector.constants.URL_cons.CREDITREPORT;
+import static uz.a1uz.a1uzdirector.constants.URL_cons.CREDITSECONDREPORT;
+import static uz.a1uz.a1uzdirector.constants.URL_cons.CURRENTCOSTREPORT;
+import static uz.a1uz.a1uzdirector.constants.URL_cons.CURRENTCOSTSECONDREPORT;
+import static uz.a1uz.a1uzdirector.constants.URL_cons.DEBITREPORT;
+import static uz.a1uz.a1uzdirector.constants.URL_cons.DEBITSECONDREPORT;
+import static uz.a1uz.a1uzdirector.constants.URL_cons.GETBANKBUTTON;
+import static uz.a1uz.a1uzdirector.constants.URL_cons.GETCREDITBUTOON;
+import static uz.a1uz.a1uzdirector.constants.URL_cons.GETDEBITBUTTON;
+import static uz.a1uz.a1uzdirector.constants.URL_cons.GETPROCCEDSBUTTON;
+import static uz.a1uz.a1uzdirector.constants.URL_cons.GETRECURRENTCOSTSBUTTON;
+import static uz.a1uz.a1uzdirector.constants.URL_cons.GETSTOREBUTTON;
+import static uz.a1uz.a1uzdirector.constants.URL_cons.PROCCEDPERIODREPORT;
+import static uz.a1uz.a1uzdirector.constants.URL_cons.PROCCEDREPORT;
+import static uz.a1uz.a1uzdirector.constants.URL_cons.STOREPERIODREPORT;
+import static uz.a1uz.a1uzdirector.constants.URL_cons.STOREREPORT;
 
 public class Main_Activity extends CustomActivity {
-    public static final String GUID="UserGuid";
+    public static final String GUID = "UserGuid";
     public List<Widget_item_model> items;
     public Widget_item_Adapter adapter;
     public ProgressBar progressBar;
-    ListView listView;
-    public WidgetsUrlsArr[] urlsArr=
+    public WidgetsUrlsArr[] urlsArr =
             {
-                    new WidgetsUrlsArr(GETBANKBUTTON,ACCOUNTREPORT,BANKREPORT),
-                    new WidgetsUrlsArr(GETSTOREBUTTON,STOREREPORT,STOREPERIODREPORT),
-                    new WidgetsUrlsArr(GETPROCCEDSBUTTON,PROCCEDREPORT,PROCCEDPERIODREPORT),
-                    new WidgetsUrlsArr(GETCREDITBUTOON,CREDITREPORT,CREDITSECONDREPORT),
-                    new WidgetsUrlsArr(GETDEBITBUTTON,DEBITREPORT,DEBITSECONDREPORT),
-                    new WidgetsUrlsArr(GETRECURRENTCOSTSBUTTON,CURRENTCOSTREPORT,CURRENTCOSTSECONDREPORT)
+                    new WidgetsUrlsArr(GETBANKBUTTON, ACCOUNTREPORT, BANKREPORT),
+                    new WidgetsUrlsArr(GETSTOREBUTTON, STOREREPORT, STOREPERIODREPORT),
+                    new WidgetsUrlsArr(GETPROCCEDSBUTTON, PROCCEDREPORT, PROCCEDPERIODREPORT),
+                    new WidgetsUrlsArr(GETCREDITBUTOON, CREDITREPORT, CREDITSECONDREPORT),
+                    new WidgetsUrlsArr(GETDEBITBUTTON, DEBITREPORT, DEBITSECONDREPORT),
+                    new WidgetsUrlsArr(GETRECURRENTCOSTSBUTTON, CURRENTCOSTREPORT, CURRENTCOSTSECONDREPORT)
             };
+    ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_);
-        progressBar=(ProgressBar)findViewById(R.id.progres);
-        if(UserInfo.getWidgetListItems()!=null){ items=UserInfo.getWidgetListItems();
+        setContentView(R.layout.activity_main);
+        progressBar = (ProgressBar) findViewById(R.id.progres);
+        if (UserInfo.getWidgetListItems() != null) {
+            items = UserInfo.getWidgetListItems();
 
+        } else {
+            items = new ArrayList<>();
+            new ButtonWidgetV2(this, urlsArr);
         }
-        else{
-            items=new ArrayList<>();
-            new ButtonWidgetV2(this, urlsArr);}
-        adapter=new Widget_item_Adapter(this,items);
+        adapter = new Widget_item_Adapter(this, items);
         adapter.notifyDataSetChanged();
-        listView= (ListView) findViewById(R.id.custList);
+        listView = (ListView) findViewById(R.id.custList);
+        assert listView != null;
         listView.setDividerHeight(15);
         listView.setAdapter(adapter);
 
@@ -61,8 +80,8 @@ public class Main_Activity extends CustomActivity {
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
-        Log.e("On: ","Save");
-        outState.putString(GUID,UserInfo.getGUID());
+        Log.e("On: ", "Save");
+        outState.putString(GUID, UserInfo.getGUID());
         super.onSaveInstanceState(outState);
     }
 
@@ -70,24 +89,25 @@ public class Main_Activity extends CustomActivity {
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         UserInfo.setGUID(savedInstanceState.getString(GUID));
-        Log.e("On: ","Get");
+        Log.e("On: ", "Get");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        SharedPreferences sPref=getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences sPref = getPreferences(Context.MODE_PRIVATE);
         Set<String> set = new TreeSet<>();
         List<String> listOfExistingScores = new ArrayList<>();
 
         SharedPreferences.Editor ed = sPref.edit();
-        if(items.size()>0){
-        ed.putInt("w_bank",items.get(0).getBackgroundColor());
-        ed.putInt("w_store",items.get(1).getBackgroundColor());
-        ed.putInt("w_proceeds",items.get(2).getBackgroundColor());
-        ed.putInt("w_credit",items.get(3).getBackgroundColor());
-        ed.putInt("w_debit",items.get(4).getBackgroundColor());
-        ed.putInt("w_currentconsumption",items.get(5).getBackgroundColor());}
+        if (items.size() > 0) {
+            ed.putInt("w_bank", items.get(0).getBackgroundColor());
+            ed.putInt("w_store", items.get(1).getBackgroundColor());
+            ed.putInt("w_proceeds", items.get(2).getBackgroundColor());
+            ed.putInt("w_credit", items.get(3).getBackgroundColor());
+            ed.putInt("w_debit", items.get(4).getBackgroundColor());
+            ed.putInt("w_currentconsumption", items.get(5).getBackgroundColor());
+        }
         ed.apply();
     }
 

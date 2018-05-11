@@ -13,15 +13,15 @@ public class AccountReportResult {
     private int ReportDecriptionID;
 
 
-
     public AccountReportResult(String name, String beginPeriodSum, String inSum, String outSum, String currentSum, int reportDecriptionID) {
         this.name = name;
         BeginPeriodSum = beginPeriodSum;
         InSum = inSum;
         OutSum = outSum;
         CurrentSum = currentSum;
-        ReportDecriptionID=reportDecriptionID;
+        ReportDecriptionID = reportDecriptionID;
     }
+
     public int getReportDecriptionID() {
         return ReportDecriptionID;
     }

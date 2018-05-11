@@ -22,9 +22,9 @@ import java.util.List;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.StoreTables.models.StorePeriodResult;
 import uz.a1uz.a1uzdirector.Enums.EdatePeriod;
 import uz.a1uz.a1uzdirector.Helpers.CustomActivity;
-import uz.a1uz.a1uzdirector.Helpers.LayoutConfiguration;
 import uz.a1uz.a1uzdirector.Helpers.DatePeriodPicker;
 import uz.a1uz.a1uzdirector.Helpers.FirstLastDate;
+import uz.a1uz.a1uzdirector.Helpers.LayoutConfiguration;
 import uz.a1uz.a1uzdirector.Helpers.UrlHepler;
 import uz.a1uz.a1uzdirector.Helpers.UserInfo;
 import uz.a1uz.a1uzdirector.JsoN.GetJson;
@@ -40,48 +40,50 @@ public class StorePeriodTable extends CustomActivity implements LayoutConfigurat
     Intent inDatePicker;
     String url;
     TextView tDatePeriod;
-    int requesCodeForDatePicker=6;
+    int requesCodeForDatePicker = 6;
+    TextView textView[][];
+    TextView tx;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setSubTitleC(getString(R.string.Sklad));
         setContentView(R.layout.activity_store_period_table);
-        context=this;
+        context = this;
 
-        periodTable=(GridLayout)findViewById(R.id.periodTable);
-        progressBar=(ProgressBar)findViewById(R.id.progres);
-        tDatePeriod=(TextView) findViewById(R.id.tDatePeriod);
+        periodTable = (GridLayout) findViewById(R.id.periodTable);
+        progressBar = (ProgressBar) findViewById(R.id.progres);
+        tDatePeriod = (TextView) findViewById(R.id.tDatePeriod);
 
-        inDatePicker=new Intent(context, DatePeriodPicker.class);
+        inDatePicker = new Intent(context, DatePeriodPicker.class);
 
-        FirstLastDate datFL=new FirstLastDate(EdatePeriod.ThisMonth);
+        FirstLastDate datFL = new FirstLastDate(EdatePeriod.ThisMonth);
         tDatePeriod.setText(String.format("%s - %s", datFL.getFirstDate(), datFL.getLastDate()));
 
 
-        Intent inProceedTable=getIntent();
-        ReportID=inProceedTable.getIntExtra("ReportID",-1);
-        String name=inProceedTable.getStringExtra("Name");
-        url= UrlHepler.Combine(URL_cons.STOREPERIODREPORT, String.valueOf(ReportID),
-                datFL.getFirstDate(),datFL.getLastDate(), UserInfo.getGUID());
-        getFromJson(datFL.getFirstDate(),datFL.getLastDate());
+        Intent inProceedTable = getIntent();
+        ReportID = inProceedTable.getIntExtra("ReportID", -1);
+        String name = inProceedTable.getStringExtra("Name");
+        url = UrlHepler.Combine(URL_cons.STOREPERIODREPORT, String.valueOf(ReportID),
+                datFL.getFirstDate(), datFL.getLastDate(), UserInfo.getGUID());
+        getFromJson(datFL.getFirstDate(), datFL.getLastDate());
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if(data==null) return;
-        if(requestCode==requesCodeForDatePicker && resultCode==RESULT_OK){
-            String firstDate=data.getStringExtra("fDate");
-            String secondDate=data.getStringExtra("sDate");
+        if (data == null) return;
+        if (requestCode == requesCodeForDatePicker && resultCode == RESULT_OK) {
+            String firstDate = data.getStringExtra("fDate");
+            String secondDate = data.getStringExtra("sDate");
             tDatePeriod.setText(String.format("%s - %s", firstDate, secondDate));
-            getFromJson(firstDate,secondDate);
+            getFromJson(firstDate, secondDate);
 
         }
 
     }
 
     private void getFromJson(String fDate, String sDate) {
-        IGetJsonResult logic=new IGetJsonResult() {
+        IGetJsonResult logic = new IGetJsonResult() {
             @Override
             public void OnBegin() {
                 progressBar.setVisibility(View.VISIBLE);
@@ -101,16 +103,16 @@ public class StorePeriodTable extends CustomActivity implements LayoutConfigurat
 
             @Override
             public void OnEnd(JSONObject jsonObject) {
-                try{
+                try {
                     progressBar.setVisibility(View.GONE);
                     periodTable.setVisibility(View.VISIBLE);
                     JSONObject tmp;
-                    List<StorePeriodResult> periodResults=new ArrayList<>();
-                    JSONObject js=(JSONObject)jsonObject.get("GetStorePeriodReportResult");
-                    JSONArray jsonArray=js.getJSONArray("StorePeriodItemList");
+                    List<StorePeriodResult> periodResults = new ArrayList<>();
+                    JSONObject js = (JSONObject) jsonObject.get("GetStorePeriodReportResult");
+                    JSONArray jsonArray = js.getJSONArray("StorePeriodItemList");
 
-                    for (int i=0;i<jsonArray.length(); i++){
-                        tmp=jsonArray.getJSONObject(i);
+                    for (int i = 0; i < jsonArray.length(); i++) {
+                        tmp = jsonArray.getJSONObject(i);
                         periodResults.add(new StorePeriodResult(
                                 tmp.getString("Name"),
                                 tmp.getString("UM"),
@@ -140,9 +142,7 @@ public class StorePeriodTable extends CustomActivity implements LayoutConfigurat
                     AddElemsToTable(periodResults);
 
 
-
-                }
-                catch (JSONException ignored){
+                } catch (JSONException ignored) {
 
                 }
 
@@ -156,19 +156,16 @@ public class StorePeriodTable extends CustomActivity implements LayoutConfigurat
             }
         };
 
-        url= UrlHepler.Combine(URL_cons.STOREPERIODREPORT, String.valueOf(ReportID),
-                fDate,sDate, UserInfo.getGUID());
+        url = UrlHepler.Combine(URL_cons.STOREPERIODREPORT, String.valueOf(ReportID),
+                fDate, sDate, UserInfo.getGUID());
 
-        GetJson.execute(url,logic);
+        GetJson.execute(url, logic);
     }
-    TextView textView[][];
-
-
 
     private void TextViewClear() {
-        if(textView!=null){
-            for (TextView[] textViews:textView){
-                for (TextView tx :textViews) {
+        if (textView != null) {
+            for (TextView[] textViews : textView) {
+                for (TextView tx : textViews) {
                     periodTable.removeView(tx);
                 }
             }
@@ -178,77 +175,80 @@ public class StorePeriodTable extends CustomActivity implements LayoutConfigurat
     }
 
     public void tDateClick(View view) {
-        startActivityForResult(inDatePicker,requesCodeForDatePicker);
+        startActivityForResult(inDatePicker, requesCodeForDatePicker);
     }
-    TextView tx;
+
     @Override
     public void AddElemsToTable(List<StorePeriodResult> periodResults) {
 
-        GridLayout.LayoutParams param2 =new GridLayout.LayoutParams();
+        GridLayout.LayoutParams param2 = new GridLayout.LayoutParams();
         param2.setGravity(Gravity.FILL);
         TextViewClear();
-        int sizeP=periodResults.size();
-        textView=new TextView[sizeP][11];
-        if(sizeP==1){
-            GridLayout.LayoutParams param =new GridLayout.LayoutParams();
-            param.columnSpec = GridLayout.spec(0,11);
+        int sizeP = periodResults.size();
+        textView = new TextView[sizeP][11];
+
+        if (sizeP == 1) {
+            GridLayout.LayoutParams param = new GridLayout.LayoutParams();
+            param.columnSpec = GridLayout.spec(0, 11);
             param.setGravity(Gravity.FILL);
-            tx=new TextView(this);
+            tx = new TextView(this);
             tx.setTextSize(TypedValue.COMPLEX_UNIT_SP, tableBodyTextSize);
             tx.setGravity(Gravity.CENTER_HORIZONTAL);
-            tx.setTextColor(ContextCompat.getColor(this,R.color.tableTopColor));
+            tx.setTextColor(ContextCompat.getColor(this, R.color.tableTopColor));
             tx.setBackgroundResource(R.drawable.border_shape);
             tx.setText(getString(R.string.NotData));
             tx.setLayoutParams(param);
             periodTable.addView(tx);
 
             for (int i = 0; i < textView[0].length; i++) {
-                textView[0][i]=new TextView(this);
+                textView[0][i] = new TextView(this);
 //                textView[0][i].setGravity(Gravity.FILL);
                 textView[0][i].setTextSize(TypedValue.COMPLEX_UNIT_SP, tableBodyTextSize);
 
 
-                textView[0][i].setTextColor(ContextCompat.getColor(this,R.color.textColor));
+                textView[0][i].setTextColor(ContextCompat.getColor(this, R.color.textColor));
                 textView[0][i].setBackgroundResource(R.color.tableTopColor);
                 periodTable.addView(textView[0][i]);
             }
-            CustomSetTex(textView[0],periodResults.get(0));
+            CustomSetTex(textView[0], periodResults.get(0));
             CustomLayoutParams(textView[0]);
 
-            return;}
+            return;
+        }
 
         for (int i = 0; i < textView.length; i++) {
 
-            for (int j = 0; j <textView[0].length ; j++) {
-                textView[i][j]=new TextView(this);
+            for (int j = 0; j < textView[0].length; j++) {
+                textView[i][j] = new TextView(this);
                 textView[i][j].setTextSize(TypedValue.COMPLEX_UNIT_SP, tableBodyTextSize);
 
-                if(i<sizeP-1&&sizeP>1){
+                if (i < sizeP - 1 && sizeP > 1) {
 
 //                    textView[i][j].setGravity(j==0? Gravity.START:Gravity.END);
-                    textView[i][j].setTextColor(ContextCompat.getColor(this,R.color.tableTopColor));
+                    textView[i][j].setTextColor(ContextCompat.getColor(this, R.color.tableTopColor));
                     textView[i][j].setBackgroundResource(R.drawable.border_shape);
 
-                }else{
+                } else {
 
 //
-                    textView[i][j].setTextColor(ContextCompat.getColor(this,R.color.textColor));
+                    textView[i][j].setTextColor(ContextCompat.getColor(this, R.color.textColor));
                     textView[i][j].setBackgroundResource(R.color.tableTopColor);
 
                 }
-                textView[i][i].setLayoutParams(param2);
-                textView[i][j].setPadding(15,15,15,15);
+                //textView[i][j].setLayoutParams(param2);
+                textView[i][j].setPadding(15, 15, 15, 15);
                 periodTable.addView(textView[i][j]);
             }
-            CustomSetTex(textView[i],periodResults.get(i));
+            CustomSetTex(textView[i], periodResults.get(i));
             CustomLayoutParams(textView[i]);
 
         }
 
 
     }
+
     @Override
-    public void CustomSetTex(TextView[] txV, StorePeriodResult periodResults){
+    public void CustomSetTex(TextView[] txV, StorePeriodResult periodResults) {
         txV[0].setText(periodResults.getName());
         txV[1].setText(periodResults.getUM());
         txV[2].setText(periodResults.getPrice());
@@ -265,7 +265,7 @@ public class StorePeriodTable extends CustomActivity implements LayoutConfigurat
 
     @Override
     public void CustomLayoutParams(TextView[] txV) {
-        for (TextView tx:txV) {
+        for (TextView tx : txV) {
             GridLayout.LayoutParams lp = (GridLayout.LayoutParams) tx.getLayoutParams();
             lp.setGravity(Gravity.FILL_HORIZONTAL);
             tx.setLayoutParams(lp);

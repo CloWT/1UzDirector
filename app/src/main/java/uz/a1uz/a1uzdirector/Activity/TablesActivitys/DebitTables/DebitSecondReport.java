@@ -35,25 +35,28 @@ public class DebitSecondReport extends CustomActivity implements LayoutConfigura
     ProgressBar progressBar;
     TextView debitT;
     Intent intent;
+    TextView[][] txResult;
+    int columnCount = 7;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_debit_second_report);
         setSubTitleC(getString(R.string.Detalizat));
-        context=this;
-        debitTable =(GridLayout) findViewById(R.id.periodTable);
-        progressBar=(ProgressBar)findViewById(R.id.progres);
-        debitT =(TextView)findViewById(R.id.creditT);
+        context = this;
+        debitTable = (GridLayout) findViewById(R.id.periodTable);
+        progressBar = (ProgressBar) findViewById(R.id.progres);
+        debitT = (TextView) findViewById(R.id.creditT);
 
-        intent=getIntent();
-        int id=intent.getIntExtra("ID",-1);
+        intent = getIntent();
+        int id = intent.getIntExtra("ID", -1);
 
         debitTable.setVisibility(View.GONE);
-        url= UrlHepler.Combine(URL_cons.DEBITSECONDREPORT, String.valueOf(id),UserInfo.getGUID());
+        url = UrlHepler.Combine(URL_cons.DEBITSECONDREPORT, String.valueOf(id), UserInfo.getGUID());
         GetJson.execute(url, new IGetJsonResult() {
             @Override
             public void OnBegin() {
-                ((DebitSecondReport)context).progressBar.setVisibility(View.VISIBLE);
+                ((DebitSecondReport) context).progressBar.setVisibility(View.VISIBLE);
             }
 
             @Override
@@ -69,14 +72,14 @@ public class DebitSecondReport extends CustomActivity implements LayoutConfigura
             @Override
             public void OnEnd(JSONObject jsonObject) {
                 try {
-                    ((DebitSecondReport)context).progressBar.setVisibility(View.GONE);
-                    ((DebitSecondReport)context).debitTable.setVisibility(View.VISIBLE);
-                    List<DebitReportResult> debitReportResults=new ArrayList<>();
-                    JSONObject js=(JSONObject) jsonObject.get("GetDebitSecondReportResult");
-                    JSONArray jsAr=js.getJSONArray("DebitItemList");
+                    ((DebitSecondReport) context).progressBar.setVisibility(View.GONE);
+                    ((DebitSecondReport) context).debitTable.setVisibility(View.VISIBLE);
+                    List<DebitReportResult> debitReportResults = new ArrayList<>();
+                    JSONObject js = (JSONObject) jsonObject.get("GetDebitSecondReportResult");
+                    JSONArray jsAr = js.getJSONArray("DebitItemList");
                     JSONObject tmp;
                     for (int i = 0; i < jsAr.length(); i++) {
-                        tmp=jsAr.getJSONObject(i);
+                        tmp = jsAr.getJSONObject(i);
                         debitReportResults.add(new DebitReportResult(
                                 tmp.getString("Number"),
                                 tmp.getInt("ReportDecriptionID"),
@@ -88,7 +91,7 @@ public class DebitSecondReport extends CustomActivity implements LayoutConfigura
                                 tmp.getString("Day90"),
                                 tmp.getString("Day100")
                         ));
-                        if(i==0) debitT.setText(tmp.getString("Contragent"));
+                        if (i == 0) debitT.setText(tmp.getString("Contragent"));
                     }
                     debitReportResults.add(new DebitReportResult(
                             "",
@@ -104,7 +107,6 @@ public class DebitSecondReport extends CustomActivity implements LayoutConfigura
                     AddElemsToTable(debitReportResults);
 
 
-
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -114,53 +116,58 @@ public class DebitSecondReport extends CustomActivity implements LayoutConfigura
 
             @Override
             public void OnError(Exception e) {
-                ((DebitTable)context).progressBar.setVisibility(View.GONE);
-                Toast.makeText(context, ""+e.getMessage(), Toast.LENGTH_SHORT).show();
+                ((DebitTable) context).progressBar.setVisibility(View.GONE);
+                Toast.makeText(context, "" + e.getMessage(), Toast.LENGTH_SHORT).show();
 
             }
         });
     }
 
-    TextView[][] txResult;
-    int columnCount=7;
-
     @Override
     public void AddElemsToTable(List<DebitReportResult> periodResult) {
         TextViewClear();
-        int sizeP=periodResult.size();
-        txResult=new TextView[sizeP][columnCount];
+        int sizeP = periodResult.size();
+        txResult = new TextView[sizeP][columnCount];
         for (int i = 0; i < txResult.length; i++) {
-            if(i<sizeP-1){
+            if (i < sizeP - 1) {
 
 
                 for (int j = 0; j < txResult[0].length; j++) {
-                    txResult[i][j]=new TextView(this);
+                    txResult[i][j] = new TextView(this);
                     txResult[i][j].setTextSize(TypedValue.COMPLEX_UNIT_SP, tableBodyTextSize);
-                    txResult[i][j].setTextColor(ContextCompat.getColor(this,R.color.tableTopColor));
+                    txResult[i][j].setTextColor(ContextCompat.getColor(this, R.color.tableTopColor));
                     txResult[i][j].setBackgroundResource(R.drawable.border_shape);
 
-                    if(j<2||j==columnCount-1){
+                    if (j < 2 || j == columnCount - 1) {
                         txResult[i][j].setBackgroundResource(R.drawable.border_shape);
-                    }else {
-                        switch (j){
-                            case 2: txResult[i][j].setBackgroundResource(R.drawable.border_shape_red1); break;
-                            case 3: txResult[i][j].setBackgroundResource(R.drawable.border_shape_red2);break;
-                            case 4: txResult[i][j].setBackgroundResource(R.drawable.border_shape_red3);break;
-                            case 5: txResult[i][j].setBackgroundResource(R.drawable.border_shape_red4);break;
+                    } else {
+                        switch (j) {
+                            case 2:
+                                txResult[i][j].setBackgroundResource(R.drawable.border_shape_red1);
+                                break;
+                            case 3:
+                                txResult[i][j].setBackgroundResource(R.drawable.border_shape_red2);
+                                break;
+                            case 4:
+                                txResult[i][j].setBackgroundResource(R.drawable.border_shape_red3);
+                                break;
+                            case 5:
+                                txResult[i][j].setBackgroundResource(R.drawable.border_shape_red4);
+                                break;
                         }
                     }
 
-                    txResult[i][j].setPadding(15,15,15,15);
+                    txResult[i][j].setPadding(15, 15, 15, 15);
                     debitTable.addView(txResult[i][j]);
 
                 }
-            }else{
+            } else {
                 for (int j = 0; j < txResult[0].length; j++) {
-                    txResult[i][j]=new TextView(this);
+                    txResult[i][j] = new TextView(this);
                     txResult[i][j].setTextSize(TypedValue.COMPLEX_UNIT_SP, tableBodyTextSize);
-                    txResult[i][j].setTextColor(ContextCompat.getColor(this,R.color.textColor));
+                    txResult[i][j].setTextColor(ContextCompat.getColor(this, R.color.textColor));
                     txResult[i][j].setBackgroundResource(R.color.tableTopColor);
-                    txResult[i][j].setPadding(15,15,15,15);
+                    txResult[i][j].setPadding(15, 15, 15, 15);
                     debitTable.addView(txResult[i][j]);
 
                 }
@@ -168,20 +175,22 @@ public class DebitSecondReport extends CustomActivity implements LayoutConfigura
             }
 
 
-            CustomSetTex(txResult[i],periodResult.get(i));
+            CustomSetTex(txResult[i], periodResult.get(i));
             CustomLayoutParams(txResult[i]);
         }
 
 
     }
+
     @Override
     public void CustomLayoutParams(TextView[] txV) {
-        for (TextView tx:txV) {
+        for (TextView tx : txV) {
             GridLayout.LayoutParams lp = (GridLayout.LayoutParams) tx.getLayoutParams();
             lp.setGravity(Gravity.FILL_HORIZONTAL);
             tx.setLayoutParams(lp);
         }
     }
+
     @Override
     public void CustomSetTex(TextView[] txV, DebitReportResult periodResults) {
         txV[0].setText(periodResults.getNumber());
@@ -196,9 +205,9 @@ public class DebitSecondReport extends CustomActivity implements LayoutConfigura
     }
 
     private void TextViewClear() {
-        if(txResult!=null){
-            for (TextView[] textViews:txResult){
-                for (TextView tx :textViews) {
+        if (txResult != null) {
+            for (TextView[] textViews : txResult) {
+                for (TextView tx : textViews) {
                     debitTable.removeView(tx);
                 }
             }

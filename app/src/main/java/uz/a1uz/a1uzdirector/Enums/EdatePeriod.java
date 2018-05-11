@@ -28,7 +28,6 @@ public enum EdatePeriod {
 
     public String getStringVal() {
        Locale l=Locale.getDefault();
-       String country=l.getDisplayLanguage();
         switch (l.toString()){
             case "uz":return secondValue;
             default:return stringVal;

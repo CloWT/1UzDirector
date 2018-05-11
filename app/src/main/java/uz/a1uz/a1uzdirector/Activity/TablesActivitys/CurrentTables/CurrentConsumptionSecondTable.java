@@ -2,8 +2,8 @@ package uz.a1uz.a1uzdirector.Activity.TablesActivitys.CurrentTables;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v4.content.ContextCompat;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.GridLayout;
@@ -33,10 +33,13 @@ public class CurrentConsumptionSecondTable extends CustomActivity implements Lay
     Context context;
     ProgressBar progressBar;
     Intent inDatePicker;
-    int requesCodeForDatePicker=4;
-    TextView tDatePeriod,tForName;
-    String beginDate,endDate;
+    int requesCodeForDatePicker = 4;
+    TextView tDatePeriod, tForName;
+    String beginDate, endDate;
     Intent inParent;
+    TextView[][] txResult;
+    int columnCount = 2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,22 +47,22 @@ public class CurrentConsumptionSecondTable extends CustomActivity implements Lay
 
         setSubTitleC(getString(R.string.StatyaRasxodov));
 
-        context=this;
-        periodTable=(GridLayout)findViewById(R.id.periodTable);
-        progressBar=(ProgressBar)findViewById(R.id.progres);
-        tDatePeriod=(TextView) findViewById(R.id.tDatePeriod);
-        tForName=(TextView) findViewById(R.id.forName);
+        context = this;
+        periodTable = (GridLayout) findViewById(R.id.periodTable);
+        progressBar = (ProgressBar) findViewById(R.id.progres);
+        tDatePeriod = (TextView) findViewById(R.id.tDatePeriod);
+        tForName = (TextView) findViewById(R.id.forName);
 
-        inDatePicker=new Intent(context, DatePeriodPicker.class);
-        inParent=getIntent();
+        inDatePicker = new Intent(context, DatePeriodPicker.class);
+        inParent = getIntent();
 
-        ReportID=inParent.getIntExtra("id",-1);
+        ReportID = inParent.getIntExtra("id", -1);
         tForName.setText(inParent.getStringExtra("Name"));
-        beginDate=inParent.getStringExtra("bDate");
-        endDate=inParent.getStringExtra("eDate");
-        tDatePeriod.setText(String.format("%s - %s",beginDate , endDate));
-        String url= UrlHepler.Combine(URL_cons.CURRENTCOSTSECONDREPORT,ReportID+"",
-                beginDate,endDate,
+        beginDate = inParent.getStringExtra("bDate");
+        endDate = inParent.getStringExtra("eDate");
+        tDatePeriod.setText(String.format("%s - %s", beginDate, endDate));
+        String url = UrlHepler.Combine(URL_cons.CURRENTCOSTSECONDREPORT, ReportID + "",
+                beginDate, endDate,
                 UserInfo.getGUID());
         getFromJson(url);
     }
@@ -67,19 +70,21 @@ public class CurrentConsumptionSecondTable extends CustomActivity implements Lay
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (data == null) {return;}
-        if(requestCode==requesCodeForDatePicker&& resultCode==RESULT_OK){
+        if (data == null) {
+            return;
+        }
+        if (requestCode == requesCodeForDatePicker && resultCode == RESULT_OK) {
             String firstDate = data.getStringExtra("fDate");
             String secondDate = data.getStringExtra("sDate");
-            String url= UrlHepler.Combine(URL_cons.CURRENTCOSTSECONDREPORT,ReportID+"",
-                    firstDate,secondDate,
+            String url = UrlHepler.Combine(URL_cons.CURRENTCOSTSECONDREPORT, ReportID + "",
+                    firstDate, secondDate,
                     UserInfo.getGUID());
             tDatePeriod.setText(String.format("%s - %s", firstDate, secondDate));
             getFromJson(url);
         }
     }
 
-    void getFromJson(String url){
+    void getFromJson(String url) {
         GetJson.execute(url, new IGetJsonResult() {
             @Override
             public void OnBegin() {
@@ -100,18 +105,18 @@ public class CurrentConsumptionSecondTable extends CustomActivity implements Lay
             public void OnEnd(JSONObject jsonObject) {
                 try {
 
-                    JSONObject js=(JSONObject) jsonObject.get("GetSecondCurrentConsumptionReportResult");
-                    List<CurrentReportResult> currentReportResultList=new ArrayList<>();
-                    JSONArray jsonArray=js.getJSONArray("RecurrentCostsItemList");
+                    JSONObject js = (JSONObject) jsonObject.get("GetSecondCurrentConsumptionReportResult");
+                    List<CurrentReportResult> currentReportResultList = new ArrayList<>();
+                    JSONArray jsonArray = js.getJSONArray("RecurrentCostsItemList");
                     JSONObject tmp;
                     for (int i = 0; i < jsonArray.length(); i++) {
-                        tmp=jsonArray.getJSONObject(i);
+                        tmp = jsonArray.getJSONObject(i);
                         currentReportResultList.add(new CurrentReportResult(
                                 tmp.getString("Name"),
                                 tmp.getString("Summa")
                         ));
                     }
-                    currentReportResultList.add(new CurrentReportResult(getString(R.string.total),js.getString("Total")));
+                    currentReportResultList.add(new CurrentReportResult(getString(R.string.total), js.getString("Total")));
                     AddElemsToTable(currentReportResultList);
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -127,23 +132,18 @@ public class CurrentConsumptionSecondTable extends CustomActivity implements Lay
     }
 
     public void tDateClick(View view) {
-        startActivityForResult(inDatePicker,requesCodeForDatePicker);
+        startActivityForResult(inDatePicker, requesCodeForDatePicker);
     }
-
-
-
 
     @Override
     public void CustomLayoutParams(TextView[] txV) {
-        for (TextView tx:txV) {
+        for (TextView tx : txV) {
             GridLayout.LayoutParams lp = (GridLayout.LayoutParams) tx.getLayoutParams();
             lp.setGravity(Gravity.FILL_HORIZONTAL);
             tx.setLayoutParams(lp);
         }
 
     }
-    TextView[][] txResult;
-    int columnCount=2;
 
     /***
      *
@@ -153,39 +153,47 @@ public class CurrentConsumptionSecondTable extends CustomActivity implements Lay
     public void AddElemsToTable(List<CurrentReportResult> reportResults) {
 
         TextViewClear();
-        int sizeP=reportResults.size();
-        txResult=new TextView[sizeP][columnCount];
+        int sizeP = reportResults.size();
+        txResult = new TextView[sizeP][columnCount];
         for (int i = 0; i < txResult.length; i++) {
-            if(i<sizeP-1){
+            if (i < sizeP - 1) {
 
 
                 for (int j = 0; j < txResult[0].length; j++) {
-                    txResult[i][j]=new TextView(this);
+                    txResult[i][j] = new TextView(this);
 
-                    txResult[i][j].setTextColor(ContextCompat.getColor(this,R.color.tableTopColor));
+                    txResult[i][j].setTextColor(ContextCompat.getColor(this, R.color.tableTopColor));
                     txResult[i][j].setBackgroundResource(R.drawable.border_shape);
 
-                    if(j<2||j==columnCount-1){
+                    if (j < 2 || j == columnCount - 1) {
                         txResult[i][j].setBackgroundResource(R.drawable.border_shape);
-                    }else {
-                        switch (j){
-                            case 2: txResult[i][j].setBackgroundResource(R.drawable.border_shape_red1); break;
-                            case 3: txResult[i][j].setBackgroundResource(R.drawable.border_shape_red2);break;
-                            case 4: txResult[i][j].setBackgroundResource(R.drawable.border_shape_red3);break;
-                            case 5: txResult[i][j].setBackgroundResource(R.drawable.border_shape_red4);break;
+                    } else {
+                        switch (j) {
+                            case 2:
+                                txResult[i][j].setBackgroundResource(R.drawable.border_shape_red1);
+                                break;
+                            case 3:
+                                txResult[i][j].setBackgroundResource(R.drawable.border_shape_red2);
+                                break;
+                            case 4:
+                                txResult[i][j].setBackgroundResource(R.drawable.border_shape_red3);
+                                break;
+                            case 5:
+                                txResult[i][j].setBackgroundResource(R.drawable.border_shape_red4);
+                                break;
                         }
                     }
 
-                    txResult[i][j].setPadding(15,15,15,15);
+                    txResult[i][j].setPadding(15, 15, 15, 15);
                     periodTable.addView(txResult[i][j]);
 
                 }
-            }else{
+            } else {
                 for (int j = 0; j < txResult[0].length; j++) {
-                    txResult[i][j]=new TextView(this);
-                    txResult[i][j].setTextColor(ContextCompat.getColor(this,R.color.textColor));
+                    txResult[i][j] = new TextView(this);
+                    txResult[i][j].setTextColor(ContextCompat.getColor(this, R.color.textColor));
                     txResult[i][j].setBackgroundResource(R.color.tableTopColor);
-                    txResult[i][j].setPadding(15,15,15,15);
+                    txResult[i][j].setPadding(15, 15, 15, 15);
                     periodTable.addView(txResult[i][j]);
 
                 }
@@ -193,10 +201,9 @@ public class CurrentConsumptionSecondTable extends CustomActivity implements Lay
             }
 
 
-            CustomSetTex(txResult[i],reportResults.get(i));
+            CustomSetTex(txResult[i], reportResults.get(i));
             CustomLayoutParams(txResult[i]);
         }
-
 
 
     }
@@ -209,9 +216,9 @@ public class CurrentConsumptionSecondTable extends CustomActivity implements Lay
     }
 
     private void TextViewClear() {
-        if(txResult!=null){
-            for (TextView[] textViews:txResult){
-                for (TextView tx :textViews) {
+        if (txResult != null) {
+            for (TextView[] textViews : txResult) {
+                for (TextView tx : textViews) {
                     periodTable.removeView(tx);
                 }
             }
@@ -221,7 +228,7 @@ public class CurrentConsumptionSecondTable extends CustomActivity implements Lay
     /***
      *
      */
-     class  CurrentReportResult{
+    class CurrentReportResult {
         String name;
         String summa;
 

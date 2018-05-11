@@ -10,16 +10,16 @@ public class WidgetDropDownItem {
     double ButtonMiddle;
     String Name;
 
-    public WidgetDropDownItem(int id, String buttonMiddleText,double buttonMiddle, String name) {
+    public WidgetDropDownItem(int id, String buttonMiddleText, double buttonMiddle, String name) {
         Id = id;
         ButtonMiddleText = buttonMiddleText;
         Name = name;
-        ButtonMiddle=buttonMiddle;
+        ButtonMiddle = buttonMiddle;
     }
 
     public WidgetDropDownItem(int reportDecriptionID, String name) {
-        Id=reportDecriptionID;
-        Name=name;
+        Id = reportDecriptionID;
+        Name = name;
     }
 
     public int getId() {
@@ -33,6 +33,7 @@ public class WidgetDropDownItem {
     public String getButtonMiddleText() {
         return ButtonMiddleText;
     }
+
     public double getButtonMiddle() {
         return ButtonMiddle;
     }

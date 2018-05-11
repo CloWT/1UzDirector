@@ -17,8 +17,8 @@ import uz.a1uz.a1uzdirector.R;
  */
 
 public class DialogForLangSet extends Dialog implements CompoundButton.OnCheckedChangeListener {
-    Context context;
-    AppCompatActivity activity;
+    private Context context;
+    private AppCompatActivity activity;
     public DialogForLangSet(@NonNull Context context,AppCompatActivity appCompatActivity) {
         super(context);
         activity=appCompatActivity;
