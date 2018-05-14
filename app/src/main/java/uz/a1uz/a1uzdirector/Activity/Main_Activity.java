@@ -80,6 +80,7 @@ public class Main_Activity extends CustomActivity {
             limitDate.setText(UserInfo.getLimitDate());
 
         } else {
+
             items = new ArrayList<>();
             GetJson.execute(UrlHepler.Combine(URL_cons.GETWEBUSERINFO, UserInfo.getGUID()), new IGetJsonResult() {
                 @Override
