@@ -53,6 +53,7 @@ public class CustomActivity extends AppCompatActivity {
         builder = new AlertDialog.Builder(this);
         AlertBuild();
 
+
     }
 
 
@@ -105,6 +106,8 @@ public class CustomActivity extends AppCompatActivity {
                break;
            case R.id.updatActivty:
                UserInfo.setWidgetListItems(null);
+               UserInfo.setLimitDate("");
+               UserInfo.setOrganizationName("");
                mUpdateCache();
                finish();
                startActivity(getIntent());

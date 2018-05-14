@@ -83,7 +83,7 @@ public class Widget_item_Adapter extends ArrayAdapter<Widget_item_model> impleme
         ViewHolder holder;
 
         View view = convertView;
-        if (view == null) {
+       // if (view == null) {
 
             view = inflater.inflate(R.layout.widget, parent, false);
             holder = new ViewHolder();
@@ -102,9 +102,9 @@ public class Widget_item_Adapter extends ArrayAdapter<Widget_item_model> impleme
             view.setTag(holder);
 
 
-        } else {
-            holder = (ViewHolder) view.getTag();
-        }
+//        } else {
+//            holder = (ViewHolder) view.getTag();
+//        }
         Widget_item_model wg = items.get(position);
         SpinnerAddItems(holder, wg);
         holder.linearLayout.setBackgroundResource(wg.getBackgroundColor());

@@ -12,12 +12,12 @@
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
-        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_alert_dialog_material.xml"
-    },
-    {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_accounts_table.xml",
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\layout\\activity_accounts_table.xml"
+    },
+    {
+        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
@@ -246,6 +246,10 @@
     {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_proceeds_table.xml",
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\layout\\activity_proceeds_table.xml"
+    },
+    {
+        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\header_for_list.xml",
+        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\layout\\header_for_list.xml"
     },
     {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",

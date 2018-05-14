@@ -183,6 +183,8 @@ public class Login_Activity extends AppCompatActivity {
                 jsonFileWriterReader.mDeleteFile();
             }
         UserInfo.setWidgetListItems(null);
+        UserInfo.setOrganizationName("");
+        UserInfo.setLimitDate("");
     }
 
     void OpenAcitive() {

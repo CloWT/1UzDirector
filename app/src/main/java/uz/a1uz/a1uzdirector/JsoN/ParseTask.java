@@ -24,8 +24,6 @@ public class ParseTask extends AsyncTask<Void, Void, String> {
     private Boolean _isError;
     private String urltext;
 
-    private HttpURLConnection urlConnection = null;
-    private BufferedReader reader = null;
     private String resultJson = "";
     private IGetJsonResult logicItem;
 
@@ -48,14 +46,14 @@ public class ParseTask extends AsyncTask<Void, Void, String> {
     protected String doInBackground(Void... params) {
         try {
             URL url= new URL(urltext);
-            urlConnection = (HttpURLConnection) url.openConnection();
-            urlConnection.setRequestProperty("Accept-Language", UserInfo.getLan());
+            HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+            urlConnection.setRequestProperty("Accept-Language", UserInfo.getHeaderLang());
             urlConnection.setConnectTimeout(50000);
             urlConnection.setRequestMethod("GET");
             urlConnection.connect();
             InputStream inputStream = urlConnection.getInputStream();
             StringBuilder buffer = new StringBuilder();
-            reader = new BufferedReader(new InputStreamReader(inputStream,"UTF-8"), 128);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"), 128);
             String line;
             while ((line = reader.readLine()) != null) {
                 buffer.append(line);

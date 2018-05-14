@@ -51,14 +51,14 @@ public class ParseTaskList extends AsyncTask<String,Integer,String[]> {
                     continue;
                 }
                 HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
-                urlConnection.setRequestProperty("Accept-Language", UserInfo.getLan());
-                urlConnection.setConnectTimeout(20000);
+                urlConnection.setRequestProperty("Accept-Language", UserInfo.getHeaderLang());
+                urlConnection.setConnectTimeout(40000);
                 urlConnection.setRequestMethod("GET");
                 urlConnection.connect();
 
                 InputStream inputStream = new BufferedInputStream(urlConnection.getInputStream());
                 StringBuilder buffer = new StringBuilder();
-                BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"), 64);
+                BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"), 128);
                 String line;
                 while ((line = reader.readLine()) != null) {
                     buffer.append(line);

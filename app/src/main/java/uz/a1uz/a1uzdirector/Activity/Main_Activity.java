@@ -6,6 +6,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.ListView;
 import android.widget.ProgressBar;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,9 +21,13 @@ import uz.a1uz.a1uzdirector.Activity.components.ButtonWidgetV2;
 import uz.a1uz.a1uzdirector.Activity.components.models.Widget_item_Adapter;
 import uz.a1uz.a1uzdirector.Activity.components.models.Widget_item_model;
 import uz.a1uz.a1uzdirector.Helpers.CustomActivity;
+import uz.a1uz.a1uzdirector.Helpers.UrlHepler;
 import uz.a1uz.a1uzdirector.Helpers.UserInfo;
+import uz.a1uz.a1uzdirector.JsoN.GetJson;
+import uz.a1uz.a1uzdirector.JsoN.IGetJsonResult;
 import uz.a1uz.a1uzdirector.R;
 import uz.a1uz.a1uzdirector.WidgetsUrlsArr;
+import uz.a1uz.a1uzdirector.constants.URL_cons;
 
 import static uz.a1uz.a1uzdirector.constants.URL_cons.ACCOUNTREPORT;
 import static uz.a1uz.a1uzdirector.constants.URL_cons.BANKREPORT;
@@ -54,19 +63,65 @@ public class Main_Activity extends CustomActivity {
                     new WidgetsUrlsArr(GETRECURRENTCOSTSBUTTON, CURRENTCOSTREPORT, CURRENTCOSTSECONDREPORT)
             };
     ListView listView;
-
+     TextView orgName;
+    TextView limitDate;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         progressBar = (ProgressBar) findViewById(R.id.progres);
+        orgName =(TextView)findViewById(R.id._organiz);
+        limitDate =(TextView)findViewById(R.id._limitDate);
+
+
         if (UserInfo.getWidgetListItems() != null) {
             items = UserInfo.getWidgetListItems();
+            orgName.setText(UserInfo.getOrganizationName());
+            limitDate.setText(UserInfo.getLimitDate());
 
         } else {
             items = new ArrayList<>();
+            GetJson.execute(UrlHepler.Combine(URL_cons.GETWEBUSERINFO, UserInfo.getGUID()), new IGetJsonResult() {
+                @Override
+                public void OnBegin() {
+
+                }
+
+                @Override
+                public void OnProgressUpdate(int progress) {
+
+                }
+
+                @Override
+                public void OnEnd(String[] jsonStringsArr) {
+
+                }
+
+                @Override
+                public void OnEnd(JSONObject jsonObject) {
+                    try {
+                        JSONObject jc = (JSONObject) jsonObject.get("GetWebUserInfoResult");
+                        UserInfo.setLimitDate(jc.getString("LimitDate"));
+                        UserInfo.setOrganizationName(jc.getString("OrganizationName"));
+                        orgName.setText(UserInfo.getOrganizationName());
+                        limitDate.setText(UserInfo.getLimitDate());
+
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+
+                }
+
+                @Override
+                public void OnError(Exception e) {
+
+                }
+            });
+
             new ButtonWidgetV2(this, urlsArr);
         }
+
         adapter = new Widget_item_Adapter(this, items);
         adapter.notifyDataSetChanged();
         listView = (ListView) findViewById(R.id.custList);
