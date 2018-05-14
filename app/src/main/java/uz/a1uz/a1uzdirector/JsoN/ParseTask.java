@@ -50,11 +50,11 @@ public class ParseTask extends AsyncTask<Void, Void, String> {
             URL url= new URL(urltext);
             urlConnection = (HttpURLConnection) url.openConnection();
             urlConnection.setRequestProperty("Accept-Language", UserInfo.getLan());
-            urlConnection.setConnectTimeout(15000);
+            urlConnection.setConnectTimeout(50000);
             urlConnection.setRequestMethod("GET");
             urlConnection.connect();
             InputStream inputStream = urlConnection.getInputStream();
-            StringBuffer buffer = new StringBuffer();
+            StringBuilder buffer = new StringBuilder();
             reader = new BufferedReader(new InputStreamReader(inputStream,"UTF-8"), 128);
             String line;
             while ((line = reader.readLine()) != null) {

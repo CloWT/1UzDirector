@@ -40,7 +40,6 @@ public class Login_Activity extends AppCompatActivity {
     EditText etPass;
     SharedPreferences sPref;
     ArrayAdapter adapter;
-    String first = "", second = "", third = "";
     Context context;
     ToggleButton tgButton;
 
@@ -146,7 +145,7 @@ public class Login_Activity extends AppCompatActivity {
 
             @Override
             public void OnError(Exception e) {
-                //Toast.makeText(context, "Error message"+e.getMessage(), Toast.LENGTH_LONG).show();
+                Toast.makeText(context, "Error message"+e.getMessage(), Toast.LENGTH_LONG).show();
 
                 ((Login_Activity) context).btLogin.setEnabled(true);
             }
@@ -158,12 +157,7 @@ public class Login_Activity extends AppCompatActivity {
                     JSONObject c = (JSONObject) jsonObject.get("LogInResult");
                     if (c.getBoolean("IsOk") && c.getBoolean("IsAuthorization")) {
                         UserInfo.setINN(INN.getText().toString());
-                        if (!INN.getText().toString().equals(sPref.getString(LASTINN, "")))
-                            for (String fileName : WIDGETS_NAMES) {
-                                JsonFileWriterReader jsonFileWriterReader = new JsonFileWriterReader(context, fileName);
-                                jsonFileWriterReader.mDeleteFile();
-                            }
-                        UserInfo.setWidgetListItems(null);
+                        WriteClearCache();
 
                         mSaveINN(INN.getText().toString());
 
@@ -180,6 +174,15 @@ public class Login_Activity extends AppCompatActivity {
         });
 
 
+    }
+
+    private void WriteClearCache() {
+        if (!INN.getText().toString().equals(sPref.getString(LASTINN, "")))
+            for (String fileName : WIDGETS_NAMES) {
+                JsonFileWriterReader jsonFileWriterReader = new JsonFileWriterReader(context, fileName);
+                jsonFileWriterReader.mDeleteFile();
+            }
+        UserInfo.setWidgetListItems(null);
     }
 
     void OpenAcitive() {

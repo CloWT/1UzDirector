@@ -70,7 +70,7 @@ public class Main_Activity extends CustomActivity {
         adapter = new Widget_item_Adapter(this, items);
         adapter.notifyDataSetChanged();
         listView = (ListView) findViewById(R.id.custList);
-        assert listView != null;
+
         listView.setDividerHeight(15);
         listView.setAdapter(adapter);
 

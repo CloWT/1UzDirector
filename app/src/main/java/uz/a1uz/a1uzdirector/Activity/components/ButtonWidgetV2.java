@@ -112,10 +112,11 @@ public class ButtonWidgetV2 extends GetJsonResult {
 
     @Override
     public void OnError(Exception e) {
-
+        activity.progressBar.setVisibility(View.GONE);
+        Log.e("Errorr",e.getLocalizedMessage());
     }
 
-    public void StringToJson(String str, int backgroundColor, String reportUrl, String secondReportUrl) throws JSONException {
+    private void StringToJson(String str, int backgroundColor, String reportUrl, String secondReportUrl) throws JSONException {
         JSONObject js = (JSONObject) new JSONObject(str).get("GetValueResult");
         Boolean isOk = js.getBoolean("IsOk");
         String message = js.getString("Message");

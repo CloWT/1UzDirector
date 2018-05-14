@@ -14,13 +14,12 @@ import uz.a1uz.a1uzdirector.Activity.components.models.Widget_item_model;
  */
 
 public class UserInfo {
-    public static final String Url="http://83.69.139.133:5050";//="http://10.0.2.2:8080";
+    public static final String Url="http://83.69.139.133:5050";
     private static String GUID;
     private static EheaderLang lan=EheaderLang.eRu;
     private static List<Widget_item_model> widgetListItems;
     private static String INN;
-    static Locale locale;
-    static Configuration config;
+    static boolean isDemo=true;
 
 
     public static String getGUID() {
@@ -43,9 +42,9 @@ public class UserInfo {
 
     public static void setLan(EheaderLang lan, Context context) {
         UserInfo.lan = lan;
-        locale = new Locale(lan.toString());
+        Locale locale = new Locale(lan.toString());
         Locale.setDefault(locale);
-        config = new Configuration();
+        Configuration config = new Configuration();
         config.locale = locale;
         context.getResources().updateConfiguration(config,
                 context.getResources().getDisplayMetrics());
