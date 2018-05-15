@@ -12,12 +12,12 @@
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_accounts_table.xml",
-        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\layout\\activity_accounts_table.xml"
-    },
-    {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_accounts_table.xml",
+        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\layout\\activity_accounts_table.xml"
     },
     {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
@@ -116,6 +116,10 @@
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\notification_template_lines.xml"
     },
     {
+        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\app_bar_main_navigation.xml",
+        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\layout\\app_bar_main_navigation.xml"
+    },
+    {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\widget.xml",
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\layout\\widget.xml"
     },
@@ -188,6 +192,10 @@
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\layout\\activity_store_period_table.xml"
     },
     {
+        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_main_navigation.xml",
+        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\layout\\content_main_navigation.xml"
+    },
+    {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\notification_template_part_chronometer.xml"
     },
@@ -198,6 +206,10 @@
     {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_credit_table.xml",
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\layout\\activity_credit_table.xml"
+    },
+    {
+        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main_navigation.xml",
+        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\layout\\activity_main_navigation.xml"
     },
     {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_proceeds_period_table.xml",
@@ -218,6 +230,10 @@
     {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\layout\\design_navigation_item_header.xml"
+    },
+    {
+        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nav_header_main_navigation.xml",
+        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\layout\\nav_header_main_navigation.xml"
     },
     {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
