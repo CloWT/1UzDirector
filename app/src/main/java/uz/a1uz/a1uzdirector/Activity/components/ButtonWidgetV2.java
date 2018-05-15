@@ -135,6 +135,7 @@ public class ButtonWidgetV2 extends GetJsonResult {
 
             Widget_item_model model = new Widget_item_model(dropDownLeft, "",
                     dropDownRight, "", Middle, MiddleText, "", backgroundColor, reportUrl, secondReportUrl);
+            model.setError(true);
 
             activity.items.add(model);
             activity.adapter.notifyDataSetChanged();

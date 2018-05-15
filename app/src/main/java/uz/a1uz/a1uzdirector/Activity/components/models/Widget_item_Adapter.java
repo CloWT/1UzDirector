@@ -108,7 +108,7 @@ public class Widget_item_Adapter extends ArrayAdapter<Widget_item_model> impleme
         Widget_item_model wg = items.get(position);
         SpinnerAddItems(holder, wg);
         holder.linearLayout.setBackgroundResource(wg.getBackgroundColor());
-        holder.linearLayout.setOnClickListener(new LayoutClick(wg));
+        if(!wg.isError())holder.linearLayout.setOnClickListener(new LayoutClick(wg));
         holder.ImageRight.setOnClickListener(new popOnClick(wg, holder));
         holder.TopTex.setText(wg.getTopText());
         holder.MiddleText.setText(wg.getMiddleText());

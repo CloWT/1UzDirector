@@ -19,6 +19,15 @@ public class Widget_item_model implements Serializable {
     private int backgroundColor;
     private String ReportUrl;
     private String SecondReportUrl;
+    private boolean isError=false;
+
+    public boolean isError() {
+        return isError;
+    }
+
+    public void setError(boolean error) {
+        isError = error;
+    }
 
     /**
      * @param bottomLeftItems
