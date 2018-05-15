@@ -1,7 +1,7 @@
 [
     {
-        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main_navigation.xml",
-        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\menu\\main_navigation.xml"
+        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main_navigtation.xml",
+        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\menu\\main_navigtation.xml"
     },
     {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\menu\\date_picker_drawer.xml",
@@ -12,8 +12,8 @@
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\menu\\menu.xml"
     },
     {
-        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main_navigation_drawer.xml",
-        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\menu\\activity_main_navigation_drawer.xml"
+        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main_navigtation_drawer.xml",
+        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\menu\\activity_main_navigtation_drawer.xml"
     },
     {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\menu\\color_change_popup.xml",
