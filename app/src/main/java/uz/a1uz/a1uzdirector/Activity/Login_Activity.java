@@ -98,7 +98,9 @@ public class Login_Activity extends AppCompatActivity {
 
     private void mINN_Config() {
         INN.setImeOptions(EditorInfo.IME_ACTION_NEXT);
-        INN.setText(sPref.getString(LASTINN, ""));
+        String inn = sPref.getString(LASTINN, "");
+        INN.setText(inn);
+        if (inn.length() > 2) etPass.requestFocus();
         INN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -188,7 +190,7 @@ public class Login_Activity extends AppCompatActivity {
     }
 
     void OpenAcitive() {
-        Intent intent = new Intent(this, Main_Activity.class);
+        Intent intent = new Intent(this, MainNavigation.class);
         startActivity(intent);
     }
 

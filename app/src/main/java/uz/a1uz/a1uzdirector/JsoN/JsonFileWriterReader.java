@@ -25,7 +25,12 @@ public class JsonFileWriterReader {
     public JsonFileWriterReader(Context context, String filename) {
         String fileName = filename;
         calendar=Calendar.getInstance();
-        file=new File(String.format("/data/data/%s/%s.js", context.getPackageName(), fileName));
+        File root = new File(String.format("/data/data/%s/", context.getPackageName()), "jsonCache");
+        if (!root.exists()) {
+            root.mkdirs();
+        }
+        file = new File(root, fileName + ".js");
+        //file=new File(String.format("/data/data/%s/%s.js", context.getPackageName(), fileName));
 
     }
 

@@ -100,4 +100,11 @@
     <string name="zero">0</string>
     <string name="title_activity_main">Navigation_Activity</string>
     <string name="pusto">---</string>
+    <string name="updateS">Маълумотларни янгилаш</string>
+    <string name="exitS">Блоклаш</string>
+    <string name="title_activity_main_navigtation">MainNavigtation</string>
+    <string name="WriteINN_For_pay">"Тўлов учун СТИРни киритинг "</string>
+    <string name="payfor">"Тўлаш "</string>
+    <string name="infoS">Маълумот</string>
+    <string name="innIsIncorrect">"СТИР хато киртилган, СТИРни узунлиги: "</string>
 </resources>

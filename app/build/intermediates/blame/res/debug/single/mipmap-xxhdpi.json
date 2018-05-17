@@ -4,10 +4,6 @@
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\mipmap-xxhdpi\\bg_image.png"
     },
     {
-        "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\uz_launcher_ic.png",
-        "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\mipmap-xxhdpi\\uz_launcher_ic.png"
-    },
-    {
         "merged": "D:\\Sherzod\\Android\\1UzDirector\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
         "source": "D:\\Sherzod\\Android\\1UzDirector\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },

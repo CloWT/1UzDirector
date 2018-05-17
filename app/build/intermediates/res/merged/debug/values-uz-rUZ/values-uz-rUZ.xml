@@ -71,6 +71,7 @@
     <string name="Vyruchka">Даромад</string>
     <string name="VyruchkaZaPeriod">Давр даромади</string>
     <string name="WiFiNoConnect">Интернет ёки Wifi уланмаган</string>
+    <string name="WriteINN_For_pay">"Тўлов учун СТИРни киритинг "</string>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Boshiga o‘tish"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
     <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
@@ -96,27 +97,33 @@
     <string name="begin">бошига:</string>
     <string name="chooseColor">Рангни танланг:</string>
     <string name="end">охирига:</string>
+    <string name="exitS">Блоклаш</string>
     <string name="inBeginPeriod">Давр бошига</string>
     <string name="inEndPeriod">Давр охирига</string>
+    <string name="infoS">Маълумот</string>
     <string name="inn">СТИР</string>
+    <string name="innIsIncorrect">"СТИР хато киртилган, СТИРни узунлиги: "</string>
     <string name="language">Тил</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="ostatokNakones">Охиридаги қолдиқ</string>
     <string name="password">"махфий код "</string>
     <string name="payFor">Тўлов</string>
+    <string name="payfor">"Тўлаш "</string>
     <string name="pusto">---</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
     <string name="store">Омборлар</string>
     <string name="thisWeek">Жорий ҳафта</string>
     <string name="title_activity_current_consumption_table">CurrentConsumptionTable</string>
     <string name="title_activity_main">Navigation_Activity</string>
+    <string name="title_activity_main_navigtation">MainNavigtation</string>
     <string name="title_activity_navigation">Navigation</string>
     <string name="title_activity_store_period_table">StorePeriodTable</string>
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section  3</string>
     <string name="total">"Жами "</string>
+    <string name="updateS">Маълумотларни янгилаш</string>
     <string name="yesterday">Кеча</string>
     <string name="zero">0</string>
 </resources>

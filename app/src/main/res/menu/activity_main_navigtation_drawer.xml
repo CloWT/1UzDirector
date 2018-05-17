@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_sync"
+        android:icon="@drawable/ic_sync_black_24dp"
+        android:title="@string/updateS" />
+    <item
+        android:id="@+id/nav_payment"
+        android:icon="@drawable/ic_payment_black_24dp"
+        android:title="@string/payFor" />
+    <item
+        android:id="@+id/nav_info"
+        android:icon="@drawable/ic_info_black_24dp"
+        android:title="@string/infoS" />
+
+
+    <item android:title="@string/language">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_uz"
+
+                    android:title="Ўзбекча" />
+                <item
+                    android:id="@+id/nav_ru"
+
+                    android:title="Русский" />
+            </group>
+        </menu>
+        <group>
+            <item
+                android:id="@+id/nav_lock"
+                android:icon="@drawable/ic_lock_black_24dp"
+                android:title="@string/exitS" />
+        </group>
+
+
+    </item>
+
+
+</menu>

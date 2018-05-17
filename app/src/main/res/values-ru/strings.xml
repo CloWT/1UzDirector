@@ -103,4 +103,11 @@
     <string name="zero">0</string>
     <string name="title_activity_main">Navigation_Activity</string>
     <string name="pusto">---</string>
+    <string name="WriteINN_For_pay">Введите ИНН для оплаты</string>
+    <string name="exitS">"Блокировка "</string>
+    <string name="infoS">Информация</string>
+    <string name="updateS">Обновить данные</string>
+    <string name="payfor">Оплатить</string>
+    <string name="title_activity_main_navigtation">MainNavigtation</string>
+    <string name="innIsIncorrect">ИНН введен не правильно, длина ИНН не должно превысит:</string>
 </resources>

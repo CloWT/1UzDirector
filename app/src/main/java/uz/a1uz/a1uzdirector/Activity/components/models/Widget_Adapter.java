@@ -17,7 +17,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import uz.a1uz.a1uzdirector.Activity.Main_Activity;
+import uz.a1uz.a1uzdirector.Activity.MainNavigation;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.BankTables.AccountsTable;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.CreditTables.CreditTable;
 import uz.a1uz.a1uzdirector.Activity.TablesActivitys.CurrentTables.CurrentConsumptionTable;
@@ -80,8 +80,7 @@ public class Widget_Adapter extends ArrayAdapter<Widget_item_model> implements V
     public View getView(int position, View convertView, @NonNull ViewGroup parent) {
         ViewHolder holder;
 
-        View view = convertView;
-        view = inflater.inflate(R.layout.widget, parent, false);
+        View view = inflater.inflate(R.layout.widget, parent, false);
 
 
         holder = new ViewHolder();
@@ -213,7 +212,7 @@ public class Widget_Adapter extends ArrayAdapter<Widget_item_model> implements V
 
         @Override
         public void onClick(View v) {
-            CustomDialogClass dialogClass = new CustomDialogClass(((Main_Activity) context), holder.linearLayout, wg);
+            CustomDialogClass dialogClass = new CustomDialogClass(((MainNavigation) context), holder.linearLayout, wg);
             dialogClass.show();
 
         }

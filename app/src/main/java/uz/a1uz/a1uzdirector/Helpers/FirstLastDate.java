@@ -81,7 +81,7 @@ public class FirstLastDate{
      * @param date
      * @return
      */
-    static String CustomDateFormat(Calendar date){
+    public static String CustomDateFormat(Calendar date) {
         return dateFormat.format(date.getTime());
     }
 

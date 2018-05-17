@@ -9,7 +9,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import uz.a1uz.a1uzdirector.Activity.Main_Activity;
+import uz.a1uz.a1uzdirector.Activity.MainNavigation;
 import uz.a1uz.a1uzdirector.Activity.components.models.WidgetDropDownItem;
 import uz.a1uz.a1uzdirector.Activity.components.models.Widget_item_model;
 import uz.a1uz.a1uzdirector.Helpers.UrlHepler;
@@ -28,12 +28,12 @@ public class ButtonWidgetV2 extends GetJsonResult {
     private String[] buttonUrls;
     private String[] reportUrls;
     private String[] secondReportUrls;
-    private Main_Activity activity;
+    private MainNavigation activity;
     private int leng;
 
     public ButtonWidgetV2(Context context, WidgetsUrlsArr[] widgetsUrlsArrs) {
         super(context);
-        activity = (Main_Activity) context;
+        activity = (MainNavigation) context;
         leng = widgetsUrlsArrs.length;
         buttonUrls = new String[leng];
         reportUrls = new String[leng];
@@ -176,7 +176,7 @@ public class ButtonWidgetV2 extends GetJsonResult {
 
 
         Widget_item_model model = new Widget_item_model(dropDownLeft, BottomLEftTex, dropDownRight, BottomRightText, Middle, MiddleText, TopText, backgroundColor, reportUrl, secondReportUrl);
-        activity = (Main_Activity) context;
+        activity = (MainNavigation) context;
         activity.items.add(model);
         activity.adapter.notifyDataSetChanged();
     }

@@ -71,6 +71,7 @@
     <string name="Vyruchka">ВЫРУЧКА</string>
     <string name="VyruchkaZaPeriod">ВЫРУЧКА ЗА ПЕРИОД</string>
     <string name="WiFiNoConnect">Интернет или Wifi не подключен</string>
+    <string name="WriteINN_For_pay">Введите ИНН для оплаты</string>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Перейти на главный экран"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
     <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
@@ -97,27 +98,33 @@
     <string name="begin">начало:</string>
     <string name="chooseColor">Выберите цвет:</string>
     <string name="end">конец:</string>
+    <string name="exitS">"Блокировка "</string>
     <string name="inBeginPeriod">На начало периода</string>
     <string name="inEndPeriod">На конец периода</string>
+    <string name="infoS">Информация</string>
     <string name="inn">ИНН</string>
+    <string name="innIsIncorrect">ИНН введен не правильно, длина ИНН не должно превысит:</string>
     <string name="language">Язык</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="ostatokNakones">Остаток на конец</string>
     <string name="password">пароль</string>
     <string name="payFor">Оплата</string>
+    <string name="payfor">Оплатить</string>
     <string name="pusto">---</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">">999"</string>
     <string name="store">Склады</string>
     <string name="thisWeek">Текущая неделя</string>
     <string name="title_activity_current_consumption_table">CurrentConsumptionTable</string>
     <string name="title_activity_main">Navigation_Activity</string>
+    <string name="title_activity_main_navigtation">MainNavigtation</string>
     <string name="title_activity_navigation">Navigation</string>
     <string name="title_activity_store_period_table">StorePeriodTable</string>
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
     <string name="total">Итого</string>
+    <string name="updateS">Обновить данные</string>
     <string name="yesterday">Вчера</string>
     <string name="zero">0</string>
 </resources>

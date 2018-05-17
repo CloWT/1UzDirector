@@ -9,12 +9,19 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+
     android:orientation="vertical"
-    tools:context="uz.a1uz.a1uzdirector.Activity.Main_Activity">
-    <include
-        layout="@layout/header_for_list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="uz.a1uz.a1uzdirector.Activity.MainNavigation"
+    tools:showIn="@layout/app_bar_main_navigtation">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/current_Date"
+        android:padding="5dp"
+        android:layout_gravity="right"
+        android:text="" />
 
     <ProgressBar
 
