@@ -21,7 +21,8 @@
         android:id="@+id/current_Date"
         android:padding="5dp"
         android:layout_gravity="right"
-        android:text="" />
+        android:text=""
+        android:textColor="@color/textColor" />
 
     <ProgressBar
 

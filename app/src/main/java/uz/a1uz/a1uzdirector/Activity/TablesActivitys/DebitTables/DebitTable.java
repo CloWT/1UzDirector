@@ -131,7 +131,7 @@ public class DebitTable extends CustomActivity implements LayoutConfiguration<De
                     txResult[i][j] = new TextView(this);
                     txResult[i][j].setTextSize(TypedValue.COMPLEX_UNIT_SP, tableBodyTextSize);
                     txResult[i][j].setOnClickListener(click);
-                    txResult[i][j].setTextColor(ContextCompat.getColor(this, R.color.tableTopColor));
+                    txResult[i][j].setTextColor(ContextCompat.getColor(this, R.color.passwordColor));
                     txResult[i][j].setBackgroundResource(R.drawable.border_shape);
 
                     if (j < 2 || j == columnCount - 1) {

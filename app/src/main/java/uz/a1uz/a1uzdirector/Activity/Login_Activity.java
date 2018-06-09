@@ -35,6 +35,8 @@ import static uz.a1uz.a1uzdirector.constants.URL_cons.WIDGETS_NAMES;
 public class Login_Activity extends AppCompatActivity {
     public static final String INN_S_KEY = "INN";
     public static final String LASTINN = "INN_last";
+    private static final String DEMO_INN = "123456789";
+    private static final String DEMO_PASS = "123";
     Button btLogin;
     AutoCompleteTextView INN;
     EditText etPass;
@@ -121,12 +123,22 @@ public class Login_Activity extends AppCompatActivity {
             Toast.makeText(this, R.string.WiFiNoConnect, Toast.LENGTH_SHORT).show();
             return;
         }
-        if (INN.getText().length() < 1 || etPass.getText().length() < 1) {
-            //Toast.makeText(this, "Password is Empty", Toast.LENGTH_SHORT).show();
-            return;
-        }
 
         String url = String.format("%s/%s/%s/%s", URL_cons.LOGINRESULT, INN.getText().toString(), etPass.getText().toString(), UserInfo.getGUID());
+        ;
+        switch (view.getId()) {
+            case R.id.btLogin:
+                if (INN.getText().length() < 1 || etPass.getText().length() < 1) {
+                    //Toast.makeText(this, "Password is Empty", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                url = String.format("%s/%s/%s/%s", URL_cons.LOGINRESULT, INN.getText().toString(), etPass.getText().toString(), UserInfo.getGUID());
+                break;
+            case R.id.btLoginDemo:
+                url = String.format("%s/%s/%s/%s", URL_cons.LOGINRESULT, DEMO_INN, DEMO_PASS, UserInfo.getGUID());
+                break;
+        }
+
         GetJson.execute(url, new IGetJsonResult() {
             @Override
             public void OnBegin() {

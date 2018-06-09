@@ -69,11 +69,20 @@
 
             />
         <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Enter"
+        android:onClick="check"
+        android:id="@+id/btLogin"
+        android:background="@color/ButtColor"
+        android:layout_marginBottom="10dp"
+        />
+        <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/Enter"
+            android:text="Демо"
             android:onClick="check"
-            android:id="@+id/btLogin"
+            android:id="@+id/btLoginDemo"
             android:background="@color/ButtColor"
             android:layout_marginBottom="10dp"
             />

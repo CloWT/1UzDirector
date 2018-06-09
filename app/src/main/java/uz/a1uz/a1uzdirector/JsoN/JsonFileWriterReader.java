@@ -23,13 +23,12 @@ public class JsonFileWriterReader {
      * @param filename
      */
     public JsonFileWriterReader(Context context, String filename) {
-        String fileName = filename;
         calendar=Calendar.getInstance();
         File root = new File(String.format("/data/data/%s/", context.getPackageName()), "jsonCache");
         if (!root.exists()) {
             root.mkdirs();
         }
-        file = new File(root, fileName + ".js");
+        file = new File(root, filename + ".js");
         //file=new File(String.format("/data/data/%s/%s.js", context.getPackageName(), fileName));
 
     }
@@ -51,7 +50,7 @@ public class JsonFileWriterReader {
     }
 
     private boolean isFileOutDate() {
-        calendar.add(Calendar.MINUTE,-60);
+        calendar.add(Calendar.MINUTE, -10);
         return calendar.getTimeInMillis()<file.lastModified();
     }
 
